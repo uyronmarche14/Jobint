@@ -1,0 +1,752 @@
+[
+  {
+    "question_id": "Q001",
+    "question_text": "What is the difference between an abstract class and an interface?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Backend Developer"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A001",
+        "answer_quality": "High",
+        "answer_text": "An abstract class can have both abstract and concrete methods, allowing for some implementation. An interface, on the other hand, can only have abstract methods (in languages prior to Java 8) and cannot hold state. Classes can implement multiple interfaces but only extend one abstract class."
+      }
+    ]
+  },
+  {
+    "question_id": "Q002",
+    "question_text": "Explain the concept of RESTful APIs.",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Full Stack Developer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A002",
+        "answer_quality": "High",
+        "answer_text": "RESTful APIs adhere to the constraints of REST architecture, utilizing standard HTTP methods like GET, POST, PUT, and DELETE. They are stateless, cacheable, and provide a uniform interface for interacting with resources identified by URIs."
+      }
+    ]
+  },
+  {
+    "question_id": "Q003",
+    "question_text": "Describe how garbage collection works in Java.",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A003",
+        "answer_quality": "High",
+        "answer_text": "Java's garbage collector automatically frees memory by deleting objects that are no longer reachable in the application. It uses algorithms like Mark-and-Sweep and can be configured with different garbage collection strategies like Serial, Parallel, CMS, and G1."
+      }
+    ]
+  },
+  {
+    "question_id": "Q004",
+    "question_text": "What is a race condition, and how do you prevent it?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Systems Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A004",
+        "answer_quality": "High",
+        "answer_text": "A race condition occurs when the system's substantive behavior is dependent on the sequence or timing of uncontrollable events. It can be prevented using synchronization mechanisms like locks, semaphores, or atomic operations to ensure that only one thread accesses a resource at a time."
+      }
+    ]
+  },
+  {
+    "question_id": "Q005",
+    "question_text": "Explain the SOLID principles in object-oriented design.",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Architect"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A005",
+        "answer_quality": "High",
+        "answer_text": "SOLID stands for Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion principles. These are guidelines to make software designs more understandable, flexible, and maintainable."
+      }
+    ]
+  },
+  {
+    "question_id": "Q006",
+    "question_text": "What is the difference between synchronous and asynchronous programming?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Frontend Developer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A006",
+        "answer_quality": "High",
+        "answer_text": "Synchronous programming executes tasks sequentially, blocking the execution until the current task is finished. Asynchronous programming allows tasks to run independently of the main execution flow, enabling non-blocking operations and improving performance, especially in I/O operations."
+      }
+    ]
+  },
+  {
+    "question_id": "Q007",
+    "question_text": "Can you explain what a closure is in JavaScript?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Frontend Developer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A007",
+        "answer_quality": "High",
+        "answer_text": "A closure is a feature in JavaScript where an inner function has access to its own scope, the outer function's scope, and the global scope. It allows the inner function to retain access to the variables of the outer function even after the outer function has returned."
+      }
+    ]
+  },
+  {
+    "question_id": "Q008",
+    "question_text": "What is a microservice architecture?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Backend Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A008",
+        "answer_quality": "High",
+        "answer_text": "Microservice architecture structures an application as a collection of loosely coupled services. Each service is fine-grained and performs a single function, enabling continuous delivery and deployment, and improving scalability and maintainability."
+      }
+    ]
+  },
+  {
+    "question_id": "Q009",
+    "question_text": "How does the HTTPS protocol work?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Security Engineer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A009",
+        "answer_quality": "High",
+        "answer_text": "HTTPS secures HTTP communications by using SSL/TLS protocols to encrypt data between the client and server. It involves a handshake process to establish a secure session, using asymmetric encryption to exchange symmetric keys for encrypting the session data."
+      }
+    ]
+  },
+  {
+    "question_id": "Q010",
+    "question_text": "What is a deadlock in concurrent programming?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Systems Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A010",
+        "answer_quality": "High",
+        "answer_text": "A deadlock occurs when two or more threads are blocked forever, each waiting for the other to release a resource. Deadlocks can be prevented by avoiding circular wait conditions, acquiring resources in a consistent order, or using lock hierarchies."
+      }
+    ]
+  },
+  {
+    "question_id": "Q011",
+    "question_text": "Explain the Model-View-Controller (MVC) architecture.",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Full Stack Developer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A011",
+        "answer_quality": "High",
+        "answer_text": "MVC is a software design pattern that separates an application into three interconnected components. The Model manages data and business logic, the View handles UI and presentation, and the Controller processes user input and interacts with the Model and View."
+      }
+    ]
+  },
+  {
+    "question_id": "Q012",
+    "question_text": "What are design patterns? Name and describe one.",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Architect"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A012",
+        "answer_quality": "High",
+        "answer_text": "Design patterns are typical solutions to common problems in software design. One example is the Singleton pattern, which ensures a class has only one instance and provides a global point of access to it."
+      }
+    ]
+  },
+  {
+    "question_id": "Q013",
+    "question_text": "What is dependency injection?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Backend Developer"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A013",
+        "answer_quality": "High",
+        "answer_text": "Dependency injection is a design pattern where an object receives other objects it depends on, called dependencies, from an external source rather than creating them itself. This promotes loose coupling and easier testing."
+      }
+    ]
+  },
+  {
+    "question_id": "Q014",
+    "question_text": "Explain the CAP theorem in distributed systems.",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Systems Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A014",
+        "answer_quality": "High",
+        "answer_text": "The CAP theorem states that a distributed system cannot simultaneously guarantee Consistency, Availability, and Partition Tolerance. Systems must choose to prioritize two out of the three based on requirements."
+      }
+    ]
+  },
+  {
+    "question_id": "Q015",
+    "question_text": "What is the purpose of a load balancer?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "DevOps Engineer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A015",
+        "answer_quality": "High",
+        "answer_text": "A load balancer distributes incoming network or application traffic across multiple servers to ensure no single server becomes a bottleneck, improving responsiveness and availability."
+      }
+    ]
+  },
+  {
+    "question_id": "Q016",
+    "question_text": "How do you prevent SQL injection attacks?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Security Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A016",
+        "answer_quality": "High",
+        "answer_text": "Prevent SQL injection by using prepared statements with parameterized queries, validating and sanitizing user inputs, and implementing proper access controls and least privilege."
+      }
+    ]
+  },
+  {
+    "question_id": "Q017",
+    "question_text": "What is the difference between process and thread?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Systems Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A017",
+        "answer_quality": "High",
+        "answer_text": "A process is an independent executing program with its own memory space, while a thread is a subset of a process that shares the same memory space but can run concurrently."
+      }
+    ]
+  },
+  {
+    "question_id": "Q018",
+    "question_text": "Explain how hash tables work.",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A018",
+        "answer_quality": "High",
+        "answer_text": "Hash tables store key-value pairs using a hash function to compute an index into an array of buckets. When collisions occur, methods like chaining or open addressing are used to resolve them."
+      }
+    ]
+  },
+  {
+    "question_id": "Q019",
+    "question_text": "What is the purpose of the 'this' keyword in object-oriented programming?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A019",
+        "answer_quality": "High",
+        "answer_text": "The 'this' keyword refers to the current instance of the class within its own methods, allowing access to instance variables and other methods."
+      }
+    ]
+  },
+  {
+    "question_id": "Q020",
+    "question_text": "Describe how you would implement a stack using a queue.",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A020",
+        "answer_quality": "High",
+        "answer_text": "To implement a stack using a queue, you can use two queues. For the push operation, enqueue the new element to one queue and then dequeue all elements from the other queue and enqueue them to the first one, ensuring LIFO order."
+      }
+    ]
+  },
+  {
+    "question_id": "Q021",
+    "question_text": "What are the benefits of using Docker containers?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "DevOps Engineer"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A021",
+        "answer_quality": "High",
+        "answer_text": "Docker containers package applications with their dependencies, ensuring consistency across environments. They improve scalability, resource utilization, and simplify deployment processes."
+      }
+    ]
+  },
+  {
+    "question_id": "Q022",
+    "question_text": "Explain event bubbling and capturing in JavaScript.",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Frontend Developer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A022",
+        "answer_quality": "High",
+        "answer_text": "Event bubbling is when an event propagates from the target element up through its ancestors. Event capturing is the reverse, where the event starts from the root and propagates down to the target. JavaScript event handling can use both phases."
+      }
+    ]
+  },
+  {
+    "question_id": "Q023",
+    "question_text": "What is a NoSQL database? Give an example.",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Database Administrator"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A023",
+        "answer_quality": "High",
+        "answer_text": "A NoSQL database is a non-relational data storage system designed for distributed data stores with large data storage needs. Examples include MongoDB (document store) and Cassandra (wide-column store)."
+      }
+    ]
+  },
+  {
+    "question_id": "Q024",
+    "question_text": "How do you optimize a database query?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Database Administrator"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A024",
+        "answer_quality": "High",
+        "answer_text": "Optimize queries by indexing relevant columns, avoiding SELECT *, using joins efficiently, analyzing query execution plans, and minimizing subqueries."
+      }
+    ]
+  },
+  {
+    "question_id": "Q025",
+    "question_text": "What is continuous integration and continuous deployment (CI/CD)?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "DevOps Engineer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A025",
+        "answer_quality": "High",
+        "answer_text": "CI/CD are practices that automate the integration of code changes and deployment to production. Continuous Integration involves frequent code integration, while Continuous Deployment automates the release of code to production after passing tests."
+      }
+    ]
+  },
+  {
+    "question_id": "Q026",
+    "question_text": "Explain the difference between TCP and UDP protocols.",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Network Engineer"],
+    "industries": ["Tech", "Telecommunications"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A026",
+        "answer_quality": "High",
+        "answer_text": "TCP (Transmission Control Protocol) is connection-oriented, ensuring reliable data transmission with error checking. UDP (User Datagram Protocol) is connectionless, faster but less reliable, suitable for applications like streaming where speed is crucial."
+      }
+    ]
+  },
+  {
+    "question_id": "Q027",
+    "question_text": "What is a middleware in web development?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Backend Developer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A027",
+        "answer_quality": "High",
+        "answer_text": "Middleware is software that lies between an operating system and the applications running on it, enabling communication and data management. In web development, middleware functions process requests before they reach the endpoint."
+      }
+    ]
+  },
+  {
+    "question_id": "Q028",
+    "question_text": "How does a DNS lookup work?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Network Engineer"],
+    "industries": ["Tech", "Telecommunications"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A028",
+        "answer_quality": "High",
+        "answer_text": "A DNS lookup resolves a domain name to an IP address. The process involves querying recursive resolvers, root servers, TLD servers, and authoritative name servers to retrieve the required DNS records."
+      }
+    ]
+  },
+  {
+    "question_id": "Q029",
+    "question_text": "What are the HTTP request methods and their purposes?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Backend Developer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A029",
+        "answer_quality": "High",
+        "answer_text": "Common HTTP methods include GET (retrieve data), POST (submit data), PUT (update data), DELETE (delete data), PATCH (partial update), and HEAD (retrieve headers). They define the action to be performed on the resource."
+      }
+    ]
+  },
+  {
+    "question_id": "Q030",
+    "question_text": "What is polymorphism in object-oriented programming?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A030",
+        "answer_quality": "High",
+        "answer_text": "Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables methods to perform different functions based on the object invoking them, supporting method overriding and overloading."
+      }
+    ]
+  },
+  {
+    "question_id": "Q031",
+    "question_text": "What is the purpose of using version control systems like Git?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "DevOps Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A031",
+        "answer_quality": "High",
+        "answer_text": "Version control systems track changes to code over time, allowing multiple developers to collaborate, revert to previous states, and manage code branches effectively."
+      }
+    ]
+  },
+  {
+    "question_id": "Q032",
+    "question_text": "Describe how you would design a URL shortening service.",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Architect"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A032",
+        "answer_quality": "High",
+        "answer_text": "Designing a URL shortener involves generating unique keys for long URLs, storing mappings in a database, handling redirects, ensuring scalability, and possibly implementing features like custom URLs and analytics."
+      }
+    ]
+  },
+  {
+    "question_id": "Q033",
+    "question_text": "What are the main differences between monolithic and microservices architectures?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Architect"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A033",
+        "answer_quality": "High",
+        "answer_text": "Monolithic architecture builds an application as a single unit, while microservices architecture structures it as a collection of small, independent services. Microservices offer better scalability and flexibility but introduce complexity in communication and deployment."
+      }
+    ]
+  },
+  {
+    "question_id": "Q034",
+    "question_text": "Explain what a RESTful API means and how it differs from SOAP.",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Backend Developer"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A034",
+        "answer_quality": "High",
+        "answer_text": "RESTful APIs use HTTP protocols and are stateless, providing a uniform interface. SOAP is a protocol that uses XML for message format and relies on WS-* standards, which is heavier and more complex. REST is generally simpler and more scalable."
+      }
+    ]
+  },
+  {
+    "question_id": "Q035",
+    "question_text": "What is the purpose of indexing in databases?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Database Administrator"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A035",
+        "answer_quality": "High",
+        "answer_text": "Indexing improves the speed of data retrieval operations by providing quick access to rows in a table, similar to an index in a book. However, it can slow down write operations."
+      }
+    ]
+  },
+  {
+    "question_id": "Q036",
+    "question_text": "What are web sockets and how do they work?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Frontend Developer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A036",
+        "answer_quality": "High",
+        "answer_text": "WebSockets provide a full-duplex communication channel over a single TCP connection. They enable real-time data transfer between client and server, starting with a handshake process to establish the connection."
+      }
+    ]
+  },
+  {
+    "question_id": "Q037",
+    "question_text": "Explain the concept of immutability in programming.",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A037",
+        "answer_quality": "High",
+        "answer_text": "Immutability refers to objects whose state cannot be modified after they are created. This leads to simpler and more predictable code, reducing side effects and making concurrent programming safer."
+      }
+    ]
+  },
+  {
+    "question_id": "Q038",
+    "question_text": "What is Test-Driven Development (TDD)?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "QA Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A038",
+        "answer_quality": "High",
+        "answer_text": "TDD is a software development approach where tests are written before writing the bare minimum of code required to pass the tests. It encourages simple designs and inspires confidence."
+      }
+    ]
+  },
+  {
+    "question_id": "Q039",
+    "question_text": "How do you handle exceptions in your code?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A039",
+        "answer_quality": "High",
+        "answer_text": "I handle exceptions by using try-catch blocks to catch anticipated exceptions, logging errors for debugging, and ensuring resources are properly closed using finally blocks or try-with-resources statements."
+      }
+    ]
+  },
+  {
+    "question_id": "Q040",
+    "question_text": "What are reactive programming principles?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Frontend Developer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A040",
+        "answer_quality": "High",
+        "answer_text": "Reactive programming is about building asynchronous, non-blocking, and event-driven applications that can handle real-time updates. It focuses on data streams and the propagation of change."
+      }
+    ]
+  },
+  {
+    "question_id": "Q041",
+    "question_text": "Explain the use of OAuth in web applications.",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Security Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A041",
+        "answer_quality": "High",
+        "answer_text": "OAuth is an open-standard authorization protocol that allows third-party services to access user data without exposing user credentials. It uses tokens to grant limited access and is commonly used for 'Login with Google/Facebook' functionalities."
+      }
+    ]
+  },
+  {
+    "question_id": "Q042",
+    "question_text": "What is the importance of refactoring code?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A042",
+        "answer_quality": "High",
+        "answer_text": "Refactoring improves the internal structure of code without changing its external behavior. It enhances readability, reduces complexity, and makes future enhancements easier."
+      }
+    ]
+  },
+  {
+    "question_id": "Q043",
+    "question_text": "How do you ensure the security of a web application?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Security Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A043",
+        "answer_quality": "High",
+        "answer_text": "Security can be ensured by implementing input validation, using HTTPS, employing security headers, managing authentication and authorization properly, and regularly updating dependencies to patch vulnerabilities."
+      }
+    ]
+  },
+  {
+    "question_id": "Q044",
+    "question_text": "What is the significance of the DRY principle in coding?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A044",
+        "answer_quality": "High",
+        "answer_text": "DRY stands for 'Don't Repeat Yourself.' It emphasizes reducing repetition of code by abstracting common functionality, which makes code more maintainable and less error-prone."
+      }
+    ]
+  },
+  {
+    "question_id": "Q045",
+    "question_text": "What are the differences between a relational database and a non-relational database?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Database Administrator"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A045",
+        "answer_quality": "High",
+        "answer_text": "Relational databases use structured schemas and SQL for querying, suitable for complex transactions. Non-relational databases are more flexible, store unstructured data, and can scale horizontally, making them suitable for big data applications."
+      }
+    ]
+  },
+  {
+    "question_id": "Q046",
+    "question_text": "How do you handle state management in frontend applications?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Frontend Developer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A046",
+        "answer_quality": "High",
+        "answer_text": "State management can be handled using libraries like Redux or MobX, or by using React's Context API and hooks. It involves managing the application's state in a predictable and centralized manner."
+      }
+    ]
+  },
+  {
+    "question_id": "Q047",
+    "question_text": "What is the purpose of unit testing, and how do you implement it?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "QA Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A047",
+        "answer_quality": "High",
+        "answer_text": "Unit testing verifies individual components or functions for correctness. It's implemented using testing frameworks like JUnit for Java or Jest for JavaScript, writing test cases that assert expected outcomes."
+      }
+    ]
+  },
+  {
+    "question_id": "Q048",
+    "question_text": "Explain the differences between Agile and Waterfall methodologies.",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Project Manager"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A048",
+        "answer_quality": "High",
+        "answer_text": "Waterfall is a linear and sequential approach, suitable for projects with well-defined requirements. Agile is iterative and incremental, promoting flexibility and customer feedback, ideal for projects with evolving requirements."
+      }
+    ]
+  },
+  {
+    "question_id": "Q049",
+    "question_text": "What is memoization and how is it used?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A049",
+        "answer_quality": "High",
+        "answer_text": "Memoization is an optimization technique that caches the results of expensive function calls and returns the cached result when the same inputs occur again, improving performance."
+      }
+    ]
+  },
+  {
+    "question_id": "Q050",
+    "question_text": "How would you approach debugging a complex issue in production?",
+    "question_type": "Behavioral",
+    "roles": ["Software Engineer"],
+    "industries": ["Any"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A050",
+        "answer_quality": "High",
+        "answer_text": "I would first gather as much information as possible, check logs, reproduce the issue if possible, isolate variables, and systematically test hypotheses. Communication with the team and possibly rolling back recent changes could also be part of the strategy."
+      }
+    ]
+  }
+]

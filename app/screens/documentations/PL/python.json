@@ -1,0 +1,421 @@
+{
+  "languages": {
+    "Python": {
+      "topics": [
+        {
+          "title": "Introduction to Python",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Python is a high-level, interpreted programming language known for its readability and simplicity. It's widely used for web development, data analysis, artificial intelligence, and more.",
+          "example": "```python\nprint('Hello, World!')\n```"
+        },
+        {
+          "title": "Variables and Data Types",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Variables are containers for storing data values. Python supports various data types like integers, floats, strings, booleans, lists, tuples, dictionaries, and sets.",
+          "example": "```python\n# Integer\nage = 30\n\n# Float\nprice = 19.99\n\n# String\nname = 'Alice'\n\n# Boolean\nis_student = True\n```"
+        },
+        {
+          "title": "Operators",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Operators are used to perform operations on variables and values. Python supports arithmetic, assignment, comparison, logical, bitwise, membership, and identity operators.",
+          "example": "```python\n# Arithmetic Operators\na = 10\nb = 3\nprint(a + b)  # Addition\nprint(a - b)  # Subtraction\nprint(a * b)  # Multiplication\nprint(a / b)  # Division\n```"
+        },
+        {
+          "title": "Strings",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Strings in Python are arrays of bytes representing Unicode characters. They are used to handle textual data.",
+          "example": "```python\ngreeting = 'Hello, World!'\nprint(greeting)\nprint(greeting[0])       # Accessing first character\nprint(greeting[0:5])     # Slicing\nprint(len(greeting))     # Length of the string\n```"
+        },
+        {
+          "title": "String Methods",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Python provides a set of built-in methods that you can use on strings for various operations like formatting, searching, and modifying strings.",
+          "example": "```python\ntext = '  Hello, Python!  '\nprint(text.strip())         # Remove whitespace\nprint(text.lower())         # Convert to lowercase\nprint(text.upper())         # Convert to uppercase\nprint(text.replace('Python', 'World'))\n```"
+        },
+        {
+          "title": "User Input",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Python allows you to get input from the user using the `input()` function.",
+          "example": "```python\nname = input('Enter your name: ')\nprint(f'Hello, {name}!')\n```"
+        },
+        {
+          "title": "Type Casting",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Type casting is converting one data type to another. Python supports functions like `int()`, `float()`, `str()`, etc., for type casting.",
+          "example": "```python\nx = '5'\ny = int(x) + 10\nprint(y)  # Output: 15\n```"
+        },
+        {
+          "title": "If Statements",
+          "level": "Beginner",
+          "type": "Control Flow",
+          "description": "If statements are used for decision-making operations. They execute a block of code if a specified condition is true.",
+          "example": "```python\nx = 10\nif x > 5:\n    print('x is greater than 5')\nelif x == 5:\n    print('x is equal to 5')\nelse:\n    print('x is less than 5')\n```"
+        },
+        {
+          "title": "For Loops",
+          "level": "Beginner",
+          "type": "Loops",
+          "description": "For loops are used for iterating over a sequence (like a list, tuple, dictionary, set, or string).",
+          "example": "```python\nfor i in range(5):\n    print(i)\n\nfruits = ['apple', 'banana', 'cherry']\nfor fruit in fruits:\n    print(fruit)\n```"
+        },
+        {
+          "title": "While Loops",
+          "level": "Beginner",
+          "type": "Loops",
+          "description": "While loops execute a set of statements as long as a condition is true.",
+          "example": "```python\ncount = 0\nwhile count < 5:\n    print(count)\n    count += 1\n```"
+        },
+        {
+          "title": "Break and Continue Statements",
+          "level": "Beginner",
+          "type": "Control Flow",
+          "description": "`break` and `continue` statements are used to alter the flow of loops. `break` exits the loop, while `continue` skips to the next iteration.",
+          "example": "```python\nfor i in range(10):\n    if i == 5:\n        break\n    print(i)\n\nfor i in range(10):\n    if i % 2 == 0:\n        continue\n    print(i)\n```"
+        },
+        {
+          "title": "Functions",
+          "level": "Beginner",
+          "type": "Functions",
+          "description": "Functions are blocks of code that run when they are called. They can accept parameters and return data.",
+          "example": "```python\ndef greet(name):\n    return f'Hello, {name}!'\n\nprint(greet('Alice'))\n```"
+        },
+        {
+          "title": "Default Parameters",
+          "level": "Beginner",
+          "type": "Functions",
+          "description": "Functions can have default parameter values, which are used if no argument is provided during the function call.",
+          "example": "```python\ndef greet(name='Guest'):\n    print(f'Hello, {name}!')\n\ngreet('Alice')  # Output: Hello, Alice!\ngreet()         # Output: Hello, Guest!\n```"
+        },
+        {
+          "title": "Keyword Arguments",
+          "level": "Beginner",
+          "type": "Functions",
+          "description": "Keyword arguments allow you to pass arguments to functions with parameter names, making the code more readable.",
+          "example": "```python\ndef describe_pet(pet_name, animal_type):\n    print(f'I have a {animal_type} named {pet_name}.')\n\ndescribe_pet(animal_type='dog', pet_name='Buddy')\n```"
+        },
+        {
+          "title": "Variable Scope",
+          "level": "Beginner",
+          "type": "Functions",
+          "description": "The scope of a variable determines where it can be accessed. Variables defined inside a function are local, while those defined outside are global.",
+          "example": "```python\ndef my_function():\n    x = 10  # Local variable\n    print(x)\n\nx = 20  # Global variable\nmy_function()  # Output: 10\nprint(x)       # Output: 20\n```"
+        },
+        {
+          "title": "Lists",
+          "level": "Beginner",
+          "type": "Data Structures",
+          "description": "Lists are used to store multiple items in a single variable. They are ordered, mutable, and allow duplicate elements.",
+          "example": "```python\nfruits = ['apple', 'banana', 'cherry']\nfruits.append('orange')\nprint(fruits)\n```"
+        },
+        {
+          "title": "List Methods",
+          "level": "Beginner",
+          "type": "Data Structures",
+          "description": "Python provides various methods to manipulate lists, such as `append()`, `insert()`, `remove()`, `pop()`, `sort()`, and `reverse()`.",
+          "example": "```python\nnumbers = [5, 2, 9, 1]\nnumbers.sort()\nprint(numbers)  # Output: [1, 2, 5, 9]\n```"
+        },
+        {
+          "title": "Tuples",
+          "level": "Beginner",
+          "type": "Data Structures",
+          "description": "Tuples are used to store multiple items in a single variable. They are ordered and immutable (cannot be changed after creation).",
+          "example": "```python\ncoordinates = (10, 20)\nprint(coordinates[0])\n```"
+        },
+        {
+          "title": "Sets",
+          "level": "Beginner",
+          "type": "Data Structures",
+          "description": "Sets are used to store multiple items in a single variable. They are unordered, unindexed, and do not allow duplicate elements.",
+          "example": "```python\nfruits = {'apple', 'banana', 'cherry'}\nfruits.add('orange')\nprint(fruits)\n```"
+        },
+        {
+          "title": "Dictionaries",
+          "level": "Beginner",
+          "type": "Data Structures",
+          "description": "Dictionaries are used to store data values in key:value pairs. They are unordered, changeable, and indexed.",
+          "example": "```python\nperson = {'name': 'Alice', 'age': 30}\nprint(person['name'])\nperson['age'] = 31\nprint(person)\n```"
+        },
+        {
+          "title": "Dictionary Methods",
+          "level": "Beginner",
+          "type": "Data Structures",
+          "description": "Dictionaries have methods like `keys()`, `values()`, `items()`, `get()`, and `update()` to access and manipulate data.",
+          "example": "```python\nperson = {'name': 'Bob', 'age': 25}\nfor key, value in person.items():\n    print(f'{key}: {value}')\n```"
+        },
+        {
+          "title": "List Comprehensions",
+          "level": "Intermediate",
+          "type": "Data Structures",
+          "description": "List comprehensions provide a concise way to create lists based on existing lists or iterables.",
+          "example": "```python\nsquares = [x**2 for x in range(10)]\nprint(squares)\n```"
+        },
+        {
+          "title": "Nested Loops",
+          "level": "Intermediate",
+          "type": "Loops",
+          "description": "Nested loops are loops within loops. The inner loop runs completely for each iteration of the outer loop.",
+          "example": "```python\nfor i in range(1, 4):\n    for j in range(1, 3):\n        print(f'i={i}, j={j}')\n```"
+        },
+        {
+          "title": "Modules and Packages",
+          "level": "Intermediate",
+          "type": "Modules",
+          "description": "Modules are files containing Python code, which can define functions, classes, and variables. Packages are directories containing multiple modules.",
+          "example": "```python\n# In a file named my_module.py\ndef add(a, b):\n    return a + b\n\n# In another fileimport my_module\nprint(my_module.add(2, 3))\n```"
+        },
+        {
+          "title": "File Handling",
+          "level": "Intermediate",
+          "type": "File I/O",
+          "description": "File handling allows you to read from and write to files using functions like `open()`, `read()`, `write()`, and `close()`.",
+          "example": "```python\n# Writing to a file\nwith open('example.txt', 'w') as file:\n    file.write('Hello, World!')\n\n# Reading from a file\nwith open('example.txt', 'r') as file:\n    content = file.read()\n    print(content)\n```"
+        },
+        {
+          "title": "Exception Handling",
+          "level": "Intermediate",
+          "type": "Error Handling",
+          "description": "Exception handling lets you handle errors gracefully using `try`, `except`, `else`, and `finally` blocks.",
+          "example": "```python\ntry:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print('Cannot divide by zero')\nelse:\n    print('Division successful')\nfinally:\n    print('Execution completed')\n```"
+        },
+        {
+          "title": "Lambda Functions",
+          "level": "Intermediate",
+          "type": "Functions",
+          "description": "Lambda functions are small anonymous functions defined using the `lambda` keyword. They can have any number of arguments but only one expression.",
+          "example": "```python\nmultiply = lambda x, y: x * y\nprint(multiply(5, 3))\n```"
+        },
+        {
+          "title": "Map, Filter, and Reduce",
+          "level": "Intermediate",
+          "type": "Functional Programming",
+          "description": "These functions support functional programming by applying a function to sequences. `map()` applies a function to all items, `filter()` selects items based on a function, and `reduce()` applies a function cumulatively.",
+          "example": "```python\nfrom functools import reduce\n# Map example\nnumbers = [1, 2, 3, 4]\nsquares = list(map(lambda x: x ** 2, numbers))\nprint(squares)\n\n# Filter example\neven_numbers = list(filter(lambda x: x % 2 == 0, numbers))\nprint(even_numbers)\n\n# Reduce example\nproduct = reduce(lambda x, y: x * y, numbers)\nprint(product)\n```"
+        },
+        {
+          "title": "Classes and Objects",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Classes are blueprints for creating objects (instances). Objects have attributes (variables) and methods (functions) associated with them.",
+          "example": "```python\nclass Dog:\n    def __init__(self, name):\n        self.name = name\n    def bark(self):\n        print(f'{self.name} says woof!')\n\nmy_dog = Dog('Buddy')\nmy_dog.bark()\n```"
+        },
+        {
+          "title": "Inheritance",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Inheritance allows a class to inherit attributes and methods from another class, promoting code reusability.",
+          "example": "```python\nclass Animal:\n    def eat(self):\n        print('Eating')\n\nclass Cat(Animal):\n    def meow(self):\n        print('Meow')\n\nmy_cat = Cat()\nmy_cat.eat()\nmy_cat.meow()\n```"
+        },
+        {
+          "title": "Polymorphism",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Polymorphism allows objects of different classes to be treated as objects of a common superclass.",
+          "example": "```python\nclass Bird:\n    def fly(self):\n        print('Bird is flying')\n\nclass Airplane:\n    def fly(self):\n        print('Airplane is flying')\n\nfor obj in [Bird(), Airplane()]:\n    obj.fly()\n```"
+        },
+        {
+          "title": "Iterators",
+          "level": "Intermediate",
+          "type": "Iterators",
+          "description": "Iterators are objects that can be iterated upon. They implement the iterator protocol, consisting of the `__iter__()` and `__next__()` methods.",
+          "example": "```python\nmy_list = [1, 2, 3]\nmy_iter = iter(my_list)\nprint(next(my_iter))  # Output: 1\nprint(next(my_iter))  # Output: 2\n```"
+        },
+        {
+          "title": "Generators",
+          "level": "Advanced",
+          "type": "Iterators",
+          "description": "Generators are functions that return an iterator object with a sequence of values instead of a single value, using the `yield` keyword.",
+          "example": "```python\ndef fibonacci(n):\n    a, b = 0, 1\n    while a < n:\n        yield a\n        a, b = b, a + b\n\nfor num in fibonacci(10):\n    print(num)\n```"
+        },
+        {
+          "title": "List Slicing",
+          "level": "Intermediate",
+          "type": "Data Structures",
+          "description": "List slicing allows you to access a range of elements in a list using the colon `:` operator.",
+          "example": "```python\nmy_list = [0, 1, 2, 3, 4, 5]\nprint(my_list[1:4])    # Output: [1, 2, 3]\nprint(my_list[:3])     # Output: [0, 1, 2]\nprint(my_list[3:])     # Output: [3, 4, 5]\n```"
+        },
+        {
+          "title": "Recursion",
+          "level": "Intermediate",
+          "type": "Functions",
+          "description": "Recursion occurs when a function calls itself directly or indirectly. It's used to solve problems that can be broken down into smaller, repetitive problems.",
+          "example": "```python\ndef factorial(n):\n    if n == 1:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))  # Output: 120\n```"
+        },
+        {
+          "title": "Regular Expressions",
+          "level": "Advanced",
+          "type": "String Manipulation",
+          "description": "Regular expressions are sequences of characters that define search patterns, mainly for use in pattern matching with strings.",
+          "example": "```python\nimport re\ntext = 'The rain in Spain'\nmatch = re.search(r'rain', text)\nif match:\n    print('Match found')\nelse:\n    print('No match')\n```"
+        },
+        {
+          "title": "Date and Time",
+          "level": "Intermediate",
+          "type": "Modules",
+          "description": "The `datetime` module supplies classes for manipulating dates and times.",
+          "example": "```python\nimport datetime\nnow = datetime.datetime.now()\nprint(now)\nprint(now.strftime('%Y-%m-%d %H:%M:%S'))\n```"
+        },
+        {
+          "title": "JSON Handling",
+          "level": "Intermediate",
+          "type": "Data Formats",
+          "description": "Python has built-in support for JSON with the `json` module, allowing you to parse JSON strings or convert Python objects to JSON.",
+          "example": "```python\nimport json\n# Convert Python object to JSON\nperson = {'name': 'Alice', 'age': 30}\nperson_json = json.dumps(person)\nprint(person_json)\n\n# Convert JSON to Python object\nperson_dict = json.loads(person_json)\nprint(person_dict['name'])\n```"
+        },
+        {
+          "title": "Decorators",
+          "level": "Advanced",
+          "type": "Functions",
+          "description": "Decorators are functions that modify the behavior of other functions or methods. They are a powerful tool for code reuse and metaprogramming.",
+          "example": "```python\ndef my_decorator(func):\n    def wrapper():\n        print('Before function call')\n        func()\n        print('After function call')\n    return wrapper\n\n@my_decorator\ndef say_hello():\n    print('Hello!')\n\nsay_hello()\n```"
+        },
+        {
+          "title": "Context Managers",
+          "level": "Advanced",
+          "type": "File I/O",
+          "description": "Context managers allow you to allocate and release resources precisely when you want to. The most widely used example is the `with` statement.",
+          "example": "```python\nwith open('file.txt', 'w') as file:\n    file.write('Hello, World!')\n# The file is automatically closed after the with block\n```"
+        },
+        {
+          "title": "Exception Raising",
+          "level": "Intermediate",
+          "type": "Error Handling",
+          "description": "You can raise exceptions using the `raise` keyword. This is useful when you want to trigger an error under certain conditions.",
+          "example": "```python\ndef divide(a, b):\n    if b == 0:\n        raise ValueError('Cannot divide by zero')\n    return a / b\n\ntry:\n    result = divide(10, 0)\nexcept ValueError as e:\n    print(e)\n```"
+        },
+        {
+          "title": "Unit Testing",
+          "level": "Advanced",
+          "type": "Testing",
+          "description": "Unit testing involves writing tests for small units of code using frameworks like `unittest` or `pytest`.",
+          "example": "```python\nimport unittest\n\ndef add(a, b):\n    return a + b\n\nclass TestAddFunction(unittest.TestCase):\n    def test_add(self):\n        self.assertEqual(add(2, 3), 5)\n        self.assertEqual(add(-1, 1), 0)\n\nif __name__ == '__main__':\n    unittest.main()\n```"
+        },
+        {
+          "title": "Logging",
+          "level": "Advanced",
+          "type": "Modules",
+          "description": "The `logging` module in Python provides a flexible framework for emitting log messages from Python programs.",
+          "example": "```python\nimport logging\nlogging.basicConfig(level=logging.INFO)\nlogging.info('This is an info message')\nlogging.warning('This is a warning message')\n```"
+        },
+        {
+          "title": "Multithreading",
+          "level": "Advanced",
+          "type": "Concurrency",
+          "description": "Multithreading allows you to run multiple threads concurrently, enabling parallel execution of code.",
+          "example": "```python\nimport threading\ndef print_numbers():\n    for i in range(5):\n        print(i)\n\nthread = threading.Thread(target=print_numbers)\nthread.start()\nthread.join()\n```"
+        },
+        {
+          "title": "Multiprocessing",
+          "level": "Advanced",
+          "type": "Concurrency",
+          "description": "The `multiprocessing` module allows you to create processes that can run concurrently on different CPU cores.",
+          "example": "```python\nimport multiprocessing\ndef worker(num):\n    print(f'Worker {num}')\n\nif __name__ == '__main__':\n    processes = []\n    for i in range(5):\n        p = multiprocessing.Process(target=worker, args=(i,))\n        processes.append(p)\n        p.start()\n\n    for p in processes:\n        p.join()\n```"
+        },
+        {
+          "title": "Asynchronous Programming",
+          "level": "Advanced",
+          "type": "Concurrency",
+          "description": "Asynchronous programming allows you to write code that runs concurrently using the `async` and `await` keywords with the `asyncio` library.",
+          "example": "```python\nimport asyncio\nasync def say_hello():\n    print('Hello')\n    await asyncio.sleep(1)\n    print('World')\n\nasyncio.run(say_hello())\n```"
+        },
+        {
+          "title": "Web Development with Flask",
+          "level": "Advanced",
+          "type": "Web Development",
+          "description": "Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.",
+          "example": "```python\nfrom flask import Flask\napp = Flask(__name__)\n\n@app.route('/')\ndef home():\n    return 'Hello, Flask!'\n\nif __name__ == '__main__':\n    app.run(debug=True)\n```"
+        },
+        {
+          "title": "Web Development with Django",
+          "level": "Advanced",
+          "type": "Web Development",
+          "description": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+          "example": "```python\n# This is a simplified example; Django projects have a specific structure\nfrom django.http import HttpResponse\n\ndef home(request):\n    return HttpResponse('Hello, Django!')\n```"
+        },
+        {
+          "title": "Data Analysis with Pandas",
+          "level": "Advanced",
+          "type": "Data Analysis",
+          "description": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool built on top of the Python programming language.",
+          "example": "```python\nimport pandas as pd\ndata = {'Name': ['Alice', 'Bob'], 'Age': [25, 30]}\ndf = pd.DataFrame(data)\nprint(df)\n```"
+        },
+        {
+          "title": "Data Visualization with Matplotlib",
+          "level": "Advanced",
+          "type": "Data Visualization",
+          "description": "Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.",
+          "example": "```python\nimport matplotlib.pyplot as plt\nx = [1, 2, 3, 4]\ny = [10, 20, 25, 30]\nplt.plot(x, y)\nplt.xlabel('X-axis')\nplt.ylabel('Y-axis')\nplt.title('Simple Plot')\nplt.show()\n```"
+        },
+        {
+          "title": "NumPy for Numerical Computing",
+          "level": "Advanced",
+          "type": "Data Analysis",
+          "description": "NumPy is the fundamental package for scientific computing with Python, providing support for arrays and matrices.",
+          "example": "```python\nimport numpy as np\narr = np.array([1, 2, 3, 4])\nprint(arr * 2)  # Output: [2 4 6 8]\n```"
+        },
+        {
+          "title": "Virtual Environments",
+          "level": "Intermediate",
+          "type": "Environment Management",
+          "description": "Virtual environments allow you to create isolated environments for Python projects, ensuring that dependencies are managed separately.",
+          "example": "```bash\n# Create a virtual environment\npython -m venv myenv\n\n# Activate the virtual environment (Windows)\nmyenv\\Scripts\\activate\n\n# Activate the virtual environment (Unix or MacOS)\nsource myenv/bin/activate\n\n# Install packages\npip install requests\n```"
+        },
+        {
+          "title": "Pip and Package Management",
+          "level": "Beginner",
+          "type": "Environment Management",
+          "description": "Pip is the package installer for Python. You can use pip to install packages from the Python Package Index and other indexes.",
+          "example": "```bash\n# Install a package\npip install requests\n\n# List installed packages\npip list\n\n# Upgrade a package\npip install --upgrade requests\n```"
+        },
+        {
+          "title": "Object-Oriented Programming Principles",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Understanding the four main principles of OOP: Encapsulation, Abstraction, Inheritance, and Polymorphism.",
+          "example": "```python\n# Encapsulation\nclass Person:\n    def __init__(self, name):\n        self.__name = name  # Private variable\n\n    def get_name(self):\n        return self.__name\n\nperson = Person('Alice')\nprint(person.get_name())\n```"
+        },
+        {
+          "title": "Abstract Base Classes",
+          "level": "Advanced",
+          "type": "Object-Oriented Programming",
+          "description": "Abstract Base Classes (ABCs) are classes that cannot be instantiated and typically contain one or more abstract methods.",
+          "example": "```python\nfrom abc import ABC, abstractmethod\nclass Animal(ABC):\n    @abstractmethod\n    def make_sound(self):\n        pass\n\nclass Dog(Animal):\n    def make_sound(self):\n        print('Woof!')\n\nmy_dog = Dog()\nmy_dog.make_sound()\n```"
+        },
+        {
+          "title": "Metaclasses",
+          "level": "Advanced",
+          "type": "Object-Oriented Programming",
+          "description": "Metaclasses are classes of classes that define how classes behave. They are a powerful tool for metaprogramming.",
+          "example": "```python\nclass Meta(type):\n    def __new__(cls, name, bases, attrs):\n        attrs['id'] = 1234\n        return super(Meta, cls).__new__(cls, name, bases, attrs)\n\nclass MyClass(metaclass=Meta):\n    pass\n\nprint(MyClass.id)  # Output: 1234\n```"
+        },
+        {
+          "title": "Property Decorators",
+          "level": "Advanced",
+          "type": "Object-Oriented Programming",
+          "description": "Property decorators allow you to define methods in a class that can be accessed like attributes, providing a way to customize access and assignment.",
+          "example": "```python\nclass Celsius:\n    def __init__(self, temperature=0):\n        self._temperature = temperature\n\n    @property\n    def temperature(self):\n        return self._temperature\n\n    @temperature.setter\n    def temperature(self, value):\n        if value < -273.15:\n            raise ValueError('Temperature below -273.15 is not possible')\n        self._temperature = value\n\nc = Celsius()\nc.temperature = 25\nprint(c.temperature)\n```"
+        },
+        {
+          "title": "Type Hinting",
+          "level": "Intermediate",
+          "type": "Basics",
+          "description": "Type hinting allows you to specify the expected data types of variables, function parameters, and return values, which helps with code readability and debugging.",
+          "example": "```python\ndef greet(name: str) -> str:\n    return f'Hello, {name}!'\n\nage: int = 30\n```"
+        },
+        {
+          "title": "Pythonic Conventions",
+          "level": "Intermediate",
+          "type": "Best Practices",
+          "description": "Learn about Pythonic ways of writing code, such as following PEP 8 style guidelines, using list comprehensions, and following naming conventions.",
+          "example": "```python\n# PEP 8 recommends using lowercase_with_underscores for variable names\nmy_variable = 10\n\n# Use list comprehensions for concise code\nsquares = [x**2 for x in range(10)]\n```"
+        }
+      ]
+    }
+  }
+}

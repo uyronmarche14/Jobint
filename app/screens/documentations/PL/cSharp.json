@@ -1,0 +1,379 @@
+{
+  "languages": {
+    "C#": {
+      "topics": [
+        {
+          "title": "Introduction to C#",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "C# is a modern, object-oriented programming language developed by Microsoft. It's used for developing desktop applications, web applications, and more.",
+          "example": "```csharp\nusing System;\n\nclass Program\n{\n    static void Main()\n    {\n        Console.WriteLine(\"Hello, World!\");\n    }\n}\n```"
+        },
+        {
+          "title": "Variables and Data Types",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Variables in C# are used to store data. C# is a statically typed language, meaning that variables must be declared with a data type before use.",
+          "example": "```csharp\nint age = 30;\ndouble price = 19.99;\nstring name = \"Alice\";\nbool isStudent = true;\n```"
+        },
+        {
+          "title": "Operators",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Operators are used to perform operations on variables and values. C# supports arithmetic, assignment, comparison, logical, bitwise, and other operators.",
+          "example": "```csharp\nint a = 10;\nint b = 3;\nConsole.WriteLine(a + b);  // Addition\nConsole.WriteLine(a - b);  // Subtraction\nConsole.WriteLine(a * b);  // Multiplication\nConsole.WriteLine(a / b);  // Division\n```"
+        },
+        {
+          "title": "Strings",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Strings in C# are sequences of characters. They are immutable and can be manipulated using various methods.",
+          "example": "```csharp\nstring greeting = \"Hello, World!\";\nConsole.WriteLine(greeting);\nConsole.WriteLine(greeting[0]);          // Accessing first character\nConsole.WriteLine(greeting.Length);      // Length of the string\n```"
+        },
+        {
+          "title": "String Interpolation",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "String interpolation allows you to embed expressions inside string literals, using the `$` symbol.",
+          "example": "```csharp\nstring name = \"Alice\";\nstring message = $\"Hello, {name}!\";\nConsole.WriteLine(message);\n```"
+        },
+        {
+          "title": "User Input",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "C# allows you to get input from the user using the `Console.ReadLine()` method.",
+          "example": "```csharp\nConsole.Write(\"Enter your name: \");\nstring name = Console.ReadLine();\nConsole.WriteLine($\"Hello, {name}!\");\n```"
+        },
+        {
+          "title": "Type Casting",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Type casting is converting one data type to another. C# supports both implicit and explicit casting.",
+          "example": "```csharp\nint x = 10;\ndouble y = x;  // Implicit casting\n\ndouble a = 9.78;\nint b = (int)a;  // Explicit casting\n```"
+        },
+        {
+          "title": "If Statements",
+          "level": "Beginner",
+          "type": "Control Flow",
+          "description": "If statements are used to perform different actions based on different conditions.",
+          "example": "```csharp\nint x = 10;\nif (x > 5)\n{\n    Console.WriteLine(\"x is greater than 5\");\n}\nelse if (x == 5)\n{\n    Console.WriteLine(\"x is equal to 5\");\n}\nelse\n{\n    Console.WriteLine(\"x is less than 5\");\n}\n```"
+        },
+        {
+          "title": "Switch Statements",
+          "level": "Beginner",
+          "type": "Control Flow",
+          "description": "Switch statements are used to select one of many code blocks to execute.",
+          "example": "```csharp\nstring fruit = \"apple\";\nswitch (fruit)\n{\n    case \"apple\":\n        Console.WriteLine(\"Apple is red.\");\n        break;\n    case \"banana\":\n        Console.WriteLine(\"Banana is yellow.\");\n        break;\n    default:\n        Console.WriteLine(\"Unknown fruit.\");\n        break;\n}\n```"
+        },
+        {
+          "title": "For Loops",
+          "level": "Beginner",
+          "type": "Loops",
+          "description": "For loops are used to execute a block of code a specified number of times.",
+          "example": "```csharp\nfor (int i = 0; i < 5; i++)\n{\n    Console.WriteLine(i);\n}\n```"
+        },
+        {
+          "title": "While Loops",
+          "level": "Beginner",
+          "type": "Loops",
+          "description": "While loops execute a block of code as long as a specified condition is true.",
+          "example": "```csharp\nint count = 0;\nwhile (count < 5)\n{\n    Console.WriteLine(count);\n    count++;\n}\n```"
+        },
+        {
+          "title": "Do...While Loops",
+          "level": "Beginner",
+          "type": "Loops",
+          "description": "Do...while loops execute a block of code once, before checking if the condition is true, then repeat the loop as long as the condition is true.",
+          "example": "```csharp\nint count = 0;\ndo\n{\n    Console.WriteLine(count);\n    count++;\n} while (count < 5);\n```"
+        },
+        {
+          "title": "Arrays",
+          "level": "Beginner",
+          "type": "Data Structures",
+          "description": "Arrays are used to store multiple values in a single variable. They are fixed in size once declared.",
+          "example": "```csharp\nint[] numbers = { 1, 2, 3, 4, 5 };\nConsole.WriteLine(numbers[0]);\n```"
+        },
+        {
+          "title": "Lists",
+          "level": "Beginner",
+          "type": "Data Structures",
+          "description": "Lists are dynamic arrays that can change size. They are part of the `System.Collections.Generic` namespace.",
+          "example": "```csharp\nusing System.Collections.Generic;\n\nList<string> fruits = new List<string>();\nfruits.Add(\"apple\");\nfruits.Add(\"banana\");\nConsole.WriteLine(fruits[0]);\n```"
+        },
+        {
+          "title": "Methods",
+          "level": "Beginner",
+          "type": "Functions",
+          "description": "Methods are blocks of code that perform a particular task. They are defined within classes.",
+          "example": "```csharp\nclass Program\n{\n    static void Main()\n    {\n        Greet(\"Alice\");\n    }\n\n    static void Greet(string name)\n    {\n        Console.WriteLine($\"Hello, {name}!\");\n    }\n}\n```"
+        },
+        {
+          "title": "Method Overloading",
+          "level": "Beginner",
+          "type": "Functions",
+          "description": "Method overloading allows multiple methods to have the same name with different parameters.",
+          "example": "```csharp\nclass MathOperations\n{\n    public int Add(int a, int b)\n    {\n        return a + b;\n    }\n\n    public double Add(double a, double b)\n    {\n        return a + b;\n    }\n}\n```"
+        },
+        {
+          "title": "Classes and Objects",
+          "level": "Beginner",
+          "type": "Object-Oriented Programming",
+          "description": "Classes are blueprints for creating objects. Objects are instances of classes.",
+          "example": "```csharp\nclass Dog\n{\n    public string Name { get; set; }\n    public void Bark()\n    {\n        Console.WriteLine($\"{Name} says woof!\");\n    }\n}\n\nclass Program\n{\n    static void Main()\n    {\n        Dog myDog = new Dog();\n        myDog.Name = \"Buddy\";\n        myDog.Bark();\n    }\n}\n```"
+        },
+        {
+          "title": "Encapsulation",
+          "level": "Beginner",
+          "type": "Object-Oriented Programming",
+          "description": "Encapsulation is the concept of wrapping data and methods that operate on data within a single unit (class), and restricting access to some of the object's components.",
+          "example": "```csharp\nclass BankAccount\n{\n    private decimal balance;\n\n    public void Deposit(decimal amount)\n    {\n        balance += amount;\n    }\n\n    public decimal GetBalance()\n    {\n        return balance;\n    }\n}\n```"
+        },
+        {
+          "title": "Inheritance",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Inheritance allows a class to inherit members from a base class.",
+          "example": "```csharp\nclass Animal\n{\n    public void Eat()\n    {\n        Console.WriteLine(\"Eating\");\n    }\n}\n\nclass Cat : Animal\n{\n    public void Meow()\n    {\n        Console.WriteLine(\"Meow\");\n    }\n}\n\nclass Program\n{\n    static void Main()\n    {\n        Cat myCat = new Cat();\n        myCat.Eat();\n        myCat.Meow();\n    }\n}\n```"
+        },
+        {
+          "title": "Polymorphism",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Polymorphism allows methods to have the same name but behave differently based on the object that is calling them.",
+          "example": "```csharp\nclass Animal\n{\n    public virtual void Speak()\n    {\n        Console.WriteLine(\"Animal speaks\");\n    }\n}\n\nclass Dog : Animal\n{\n    public override void Speak()\n    {\n        Console.WriteLine(\"Dog barks\");\n    }\n}\n\nclass Program\n{\n    static void Main()\n    {\n        Animal myAnimal = new Dog();\n        myAnimal.Speak();  // Output: Dog barks\n    }\n}\n```"
+        },
+        {
+          "title": "Interfaces",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Interfaces define a contract that implementing classes must follow, without providing implementation.",
+          "example": "```csharp\ninterface IFlyable\n{\n    void Fly();\n}\n\nclass Bird : IFlyable\n{\n    public void Fly()\n    {\n        Console.WriteLine(\"Bird is flying\");\n    }\n}\n```"
+        },
+        {
+          "title": "Abstract Classes",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Abstract classes are classes that cannot be instantiated and can contain abstract methods.",
+          "example": "```csharp\nabstract class Shape\n{\n    public abstract double GetArea();\n}\n\nclass Circle : Shape\n{\n    public double Radius { get; set; }\n\n    public override double GetArea()\n    {\n        return Math.PI * Radius * Radius;\n    }\n}\n```"
+        },
+        {
+          "title": "Properties",
+          "level": "Beginner",
+          "type": "Object-Oriented Programming",
+          "description": "Properties are members that provide a flexible mechanism to read, write, or compute the values of private fields.",
+          "example": "```csharp\nclass Person\n{\n    private string name;\n    public string Name\n    {\n        get { return name; }\n        set { name = value; }\n    }\n}\n```"
+        },
+        {
+          "title": "Exception Handling",
+          "level": "Intermediate",
+          "type": "Error Handling",
+          "description": "Exception handling allows you to handle runtime errors using try, catch, and finally blocks.",
+          "example": "```csharp\ntry\n{\n    int[] numbers = { 1, 2, 3 };\n    Console.WriteLine(numbers[5]);\n}\ncatch (IndexOutOfRangeException ex)\n{\n    Console.WriteLine(\"Index out of range\");\n}\nfinally\n{\n    Console.WriteLine(\"Finished\");\n}\n```"
+        },
+        {
+          "title": "Generics",
+          "level": "Intermediate",
+          "type": "Generics",
+          "description": "Generics allow you to define classes, methods, and data structures with a placeholder for the type of data they store or use.",
+          "example": "```csharp\npublic class GenericList<T>\n{\n    private T[] items;\n    public void Add(T item)\n    {\n        // Implementation\n    }\n}\n```"
+        },
+        {
+          "title": "Delegates",
+          "level": "Intermediate",
+          "type": "Delegates and Events",
+          "description": "Delegates are type-safe pointers to methods. They are used to pass methods as arguments to other methods.",
+          "example": "```csharp\ndelegate int MathOperation(int a, int b);\n\nclass Program\n{\n    static int Add(int a, int b) => a + b;\n    static void Main()\n    {\n        MathOperation op = Add;\n        int result = op(5, 3);\n        Console.WriteLine(result);\n    }\n}\n```"
+        },
+        {
+          "title": "Events",
+          "level": "Intermediate",
+          "type": "Delegates and Events",
+          "description": "Events are a way for a class to provide notifications to clients of that class when some interesting thing happens to an object.",
+          "example": "```csharp\nclass Publisher\n{\n    public event EventHandler<EventArgs> OnChange;\n    public void RaiseEvent()\n    {\n        if (OnChange != null)\n            OnChange(this, EventArgs.Empty);\n    }\n}\n\nclass Subscriber\n{\n    public void Subscribe(Publisher pub)\n    {\n        pub.OnChange += HandleEvent;\n    }\n\n    void HandleEvent(object sender, EventArgs e)\n    {\n        Console.WriteLine(\"Event received\");\n    }\n}\n```"
+        },
+        {
+          "title": "Lambda Expressions",
+          "level": "Intermediate",
+          "type": "Functions",
+          "description": "Lambda expressions are anonymous functions that can contain expressions or statements and are used to create delegates or expression tree types.",
+          "example": "```csharp\nFunc<int, int> square = x => x * x;\nConsole.WriteLine(square(5));  // Output: 25\n```"
+        },
+        {
+          "title": "LINQ (Language Integrated Query)",
+          "level": "Intermediate",
+          "type": "Data Access",
+          "description": "LINQ provides a consistent way to query data from different data sources.",
+          "example": "```csharp\nint[] numbers = { 1, 2, 3, 4, 5 };\nvar evenNumbers = from num in numbers\n                  where num % 2 == 0\n                  select num;\n\nforeach (var n in evenNumbers)\n{\n    Console.WriteLine(n);\n}\n```"
+        },
+        {
+          "title": "Async and Await",
+          "level": "Advanced",
+          "type": "Asynchronous Programming",
+          "description": "Async and await keywords are used for asynchronous programming, allowing you to write code that doesn't block the main thread.",
+          "example": "```csharp\nusing System.Net.Http;\nusing System.Threading.Tasks;\n\nasync Task<string> FetchDataAsync()\n{\n    using (HttpClient client = new HttpClient())\n    {\n        string result = await client.GetStringAsync(\"https://api.example.com/data\");\n        return result;\n    }\n}\n\n// Calling the async method\nstring data = await FetchDataAsync();\nConsole.WriteLine(data);\n```"
+        },
+        {
+          "title": "Exception Filtering",
+          "level": "Intermediate",
+          "type": "Error Handling",
+          "description": "Exception filters allow you to specify a condition for catching exceptions.",
+          "example": "```csharp\ntry\n{\n    // Code that may throw an exception\n}\ncatch (Exception ex) when (ex.Message.Contains(\"specific text\"))\n{\n    // Handle specific exception\n}\n```"
+        },
+        {
+          "title": "Nullable Types",
+          "level": "Intermediate",
+          "type": "Basics",
+          "description": "Nullable types represent value-type variables that can be assigned the value null.",
+          "example": "```csharp\nint? nullableInt = null;\nif (nullableInt.HasValue)\n{\n    Console.WriteLine(nullableInt.Value);\n}\nelse\n{\n    Console.WriteLine(\"Value is null\");\n}\n```"
+        },
+        {
+          "title": "Extension Methods",
+          "level": "Intermediate",
+          "type": "Functions",
+          "description": "Extension methods allow you to add new methods to existing types without modifying the original type.",
+          "example": "```csharp\npublic static class StringExtensions\n{\n    public static bool IsNullOrEmpty(this string str)\n    {\n        return string.IsNullOrEmpty(str);\n    }\n}\n\nstring test = \"Hello\";\nbool result = test.IsNullOrEmpty();\n```"
+        },
+        {
+          "title": "Attributes",
+          "level": "Intermediate",
+          "type": "Metadata",
+          "description": "Attributes provide a powerful method of associating metadata, or declarative information, with code.",
+          "example": "```csharp\n[Obsolete(\"Use NewMethod instead\")]\nvoid OldMethod()\n{\n    // Implementation\n}\n```"
+        },
+        {
+          "title": "Reflection",
+          "level": "Advanced",
+          "type": "Metadata",
+          "description": "Reflection provides objects that describe assemblies, modules, and types. It allows for dynamic creation of types and invocation of methods.",
+          "example": "```csharp\nusing System.Reflection;\n\nType type = typeof(String);\nMethodInfo method = type.GetMethod(\"Substring\", new[] { typeof(int), typeof(int) });\nstring result = (string)method.Invoke(\"Hello, World!\", new object[] { 7, 5 });\nConsole.WriteLine(result);  // Output: World\n```"
+        },
+        {
+          "title": "Generics Constraints",
+          "level": "Intermediate",
+          "type": "Generics",
+          "description": "Generic constraints allow you to place limitations on the types that can be used as arguments for a type parameter in a generic class or method.",
+          "example": "```csharp\npublic class Repository<T> where T : IEntity\n{\n    public void Add(T item)\n    {\n        // Implementation\n    }\n}\n\npublic interface IEntity\n{\n    int Id { get; set; }\n}\n```"
+        },
+        {
+          "title": "Indexer",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Indexers allow instances of a class or struct to be indexed like arrays.",
+          "example": "```csharp\nclass SampleCollection<T>\n{\n    private T[] arr = new T[100];\n    public T this[int i]\n    {\n        get { return arr[i]; }\n        set { arr[i] = value; }\n    }\n}\n\nSampleCollection<string> collection = new SampleCollection<string>();\ncollection[0] = \"Hello\";\nConsole.WriteLine(collection[0]);\n```"
+        },
+        {
+          "title": "Partial Classes and Methods",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Partial classes and methods allow you to split the definition of a class or method over multiple files.",
+          "example": "```csharp\n// File1.cs\npublic partial class MyClass\n{\n    partial void OnSomethingHappened();\n}\n\n// File2.cs\npublic partial class MyClass\n{\n    partial void OnSomethingHappened()\n    {\n        Console.WriteLine(\"Something happened\");\n    }\n}\n```"
+        },
+        {
+          "title": "Threading",
+          "level": "Advanced",
+          "type": "Concurrency",
+          "description": "Threading allows multiple sequences of code to run concurrently.",
+          "example": "```csharp\nusing System.Threading;\n\nThread thread = new Thread(new ThreadStart(ThreadMethod));\nthread.Start();\n\nvoid ThreadMethod()\n{\n    for (int i = 0; i < 5; i++)\n    {\n        Console.WriteLine(\"Thread: {0}\", i);\n        Thread.Sleep(1000);\n    }\n}\n```"
+        },
+        {
+          "title": "Tasks and Parallel Programming",
+          "level": "Advanced",
+          "type": "Concurrency",
+          "description": "Tasks and the Task Parallel Library (TPL) provide efficient and scalable parallelism.",
+          "example": "```csharp\nusing System.Threading.Tasks;\n\nTask task = Task.Run(() =>\n{\n    // Do work on a background thread\n    Console.WriteLine(\"Task running\");\n});\ntask.Wait();\n```"
+        },
+        {
+          "title": "Dependency Injection",
+          "level": "Advanced",
+          "type": "Design Patterns",
+          "description": "Dependency Injection is a design pattern that allows a class to receive its dependencies from an external source rather than creating them itself.",
+          "example": "```csharp\npublic interface IMessageService\n{\n    void SendMessage(string message);\n}\n\npublic class EmailService : IMessageService\n{\n    public void SendMessage(string message)\n    {\n        // Send email\n    }\n}\n\npublic class Notification\n{\n    private readonly IMessageService _messageService;\n    public Notification(IMessageService messageService)\n    {\n        _messageService = messageService;\n    }\n    public void Notify(string message)\n    {\n        _messageService.SendMessage(message);\n    }\n}\n\n// Usage\nIMessageService messageService = new EmailService();\nNotification notification = new Notification(messageService);\n```"
+        },
+        {
+          "title": "Data Access with Entity Framework",
+          "level": "Advanced",
+          "type": "Data Access",
+          "description": "Entity Framework is an ORM (Object-Relational Mapper) that enables developers to work with databases using .NET objects.",
+          "example": "```csharp\nusing (var context = new MyDbContext())\n{\n    var customers = context.Customers.ToList();\n    foreach (var customer in customers)\n    {\n        Console.WriteLine(customer.Name);\n    }\n}\n```"
+        },
+        {
+          "title": "Web Development with ASP.NET Core",
+          "level": "Advanced",
+          "type": "Web Development",
+          "description": "ASP.NET Core is a cross-platform, high-performance framework for building modern, cloud-enabled, Internet-connected applications.",
+          "example": "```csharp\n// Startup.cs\npublic void Configure(IApplicationBuilder app)\n{\n    app.Run(async (context) =>\n    {\n        await context.Response.WriteAsync(\"Hello, ASP.NET Core!\");\n    });\n}\n```"
+        },
+        {
+          "title": "Unit Testing with MSTest",
+          "level": "Intermediate",
+          "type": "Testing",
+          "description": "MSTest is Microsoft's tool for unit testing in Visual Studio.",
+          "example": "```csharp\nusing Microsoft.VisualStudio.TestTools.UnitTesting;\n\n[TestClass]\npublic class MathTests\n{\n    [TestMethod]\n    public void Add_TwoNumbers_ReturnsSum()\n    {\n        int result = Add(2, 3);\n        Assert.AreEqual(5, result);\n    }\n\n    int Add(int a, int b)\n    {\n        return a + b;\n    }\n}\n```"
+        },
+        {
+          "title": "Memory Management and Garbage Collection",
+          "level": "Advanced",
+          "type": "Memory Management",
+          "description": "Understanding how .NET manages memory and how garbage collection works is crucial for writing efficient applications.",
+          "example": "```csharp\n// Objects that are no longer referenced are eligible for garbage collection\nMyClass obj = new MyClass();\nobj = null;\n// The garbage collector will clean up the memory at some point\n```"
+        },
+        {
+          "title": "Nullable Reference Types",
+          "level": "Intermediate",
+          "type": "Basics",
+          "description": "Nullable reference types help you to catch null-reference exceptions at compile time.",
+          "example": "```csharp\n#nullable enable\nstring? name = null;\nif (name != null)\n{\n    Console.WriteLine(name.Length);\n}\n#nullable disable\n```"
+        },
+        {
+          "title": "Pattern Matching",
+          "level": "Intermediate",
+          "type": "Control Flow",
+          "description": "Pattern matching enhances the capabilities of the `switch` statement and introduces new expressions.",
+          "example": "```csharp\nobject obj = 42;\nswitch (obj)\n{\n    case int i:\n        Console.WriteLine($\"Integer: {i}\");\n        break;\n    case string s:\n        Console.WriteLine($\"String: {s}\");\n        break;\n    default:\n        Console.WriteLine(\"Unknown type\");\n        break;\n}\n```"
+        },
+        {
+          "title": "Tuples",
+          "level": "Intermediate",
+          "type": "Data Structures",
+          "description": "Tuples are lightweight data structures that can hold multiple items.",
+          "example": "```csharp\nvar person = (Name: \"Alice\", Age: 30);\nConsole.WriteLine(person.Name);\nConsole.WriteLine(person.Age);\n```"
+        },
+        {
+          "title": "Records",
+          "level": "Intermediate",
+          "type": "Data Structures",
+          "description": "Records are reference types that provide built-in functionality for encapsulating data.",
+          "example": "```csharp\npublic record Person(string Name, int Age);\n\nPerson person = new Person(\"Alice\", 30);\nConsole.WriteLine(person.Name);\n```"
+        },
+        {
+          "title": "Global Using Directives",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Global using directives allow you to specify namespaces that are imported globally across all files in the project.",
+          "example": "```csharp\n// In a file named GlobalUsings.cs\nglobal using System;\n\n// Now System namespace is available in all files without explicit using statements\n```"
+        },
+        {
+          "title": "Top-Level Statements",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Top-level statements allow you to write programs without explicitly declaring a class or Main method.",
+          "example": "```csharp\n// Program.cs\nConsole.WriteLine(\"Hello, World!\");\n```"
+        },
+        {
+          "title": "Implicit Usings",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Implicit usings automatically include commonly used namespaces in your project.",
+          "example": "```csharp\n// In .NET 6 and later, templates include implicit usings by default\n// You don't need to add using System; or using System.Collections.Generic;\n```"
+        },
+        {
+          "title": "File-Scoped Namespace Declarations",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "File-scoped namespace declarations reduce indentation by applying a namespace to an entire file.",
+          "example": "```csharp\nnamespace MyNamespace;\n\nclass MyClass\n{\n    // Class code here\n}\n```"
+        }
+      ]
+    }
+  }
+}

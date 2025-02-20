@@ -1,0 +1,95 @@
+[
+  {
+    "id": 1,
+    "title": "Research the Company",
+    "description": "Understand the company's mission, values, and recent achievements. This will help you tailor your answers and demonstrate genuine interest.",
+    "image": "require('./tips/research.jpg')",
+    "moreInfo": "Researching the company allows you to align your responses with their values and goals. It shows that you are proactive and genuinely interested in the role. Additionally, consider checking their social media and recent news articles to get a well-rounded view of their current initiatives.",
+    "interviewQuestions": [
+      "What do you know about our company?",
+      "Why do you want to work here?"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Practice Common Questions",
+    "description": "Prepare answers to frequently asked questions like 'Tell me about yourself' and 'What are your strengths?'.", 
+    "image": "require('../../assets/tips/practice.jpg')",
+    "moreInfo": "Practicing common questions helps you articulate your thoughts clearly and confidently. It reduces anxiety and improves your delivery during the interview. Use the STAR method to structure your answers for behavioral questions, ensuring you cover the Situation, Task, Action, and Result.",
+    "interviewQuestions": [
+      "Can you tell me about yourself?",
+      "What are your greatest strengths and weaknesses?"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Dress Professionally",
+    "description": "Ensure your attire is appropriate for the company culture while maintaining professionalism.",
+    "image": "require('./../assets/tips/dress.jpg')",
+    "moreInfo": "Dressing professionally creates a positive first impression. It reflects your seriousness about the role and respect for the interview process. Research the company's dress code to ensure your attire aligns with their culture, whether it's business formal, business casual, or casual.",
+    "interviewQuestions": [
+      "How should I dress for the interview?"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Arrive Early",
+    "description": "Plan to arrive at least 10 minutes early to allow yourself time to settle and relax before the interview.",
+    "image": "require('../../assets/tips/arrive.jpg')",
+    "moreInfo": "Arriving early demonstrates punctuality and allows you to acclimate to the interview environment. It also gives you time to review your notes and calm any nerves. Consider using this time to observe the office culture and get a feel for the workplace atmosphere.",
+    "interviewQuestions": [
+      "What time should I arrive for the interview?"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Prepare Questions",
+    "description": "Have thoughtful questions ready for the interviewer to show your enthusiasm and preparation.",
+    "image": "require('../../assets/tips/prepare.jpg')",
+    "moreInfo": "Asking questions shows your interest in the role and company. It also helps you determine if the company is the right fit for you. Prepare a list of questions about the team, company culture, and growth opportunities to engage in a meaningful conversation with your interviewer.",
+    "interviewQuestions": [
+      "What questions should I ask during the interview?"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Follow Up",
+    "description": "Send a thank-you email within 24 hours to express your gratitude and reiterate your interest in the role.",
+    "image": "require('../../assets/tips/follow.jpg')",
+    "moreInfo": "Following up with a thank-you email reinforces your interest in the position and keeps you fresh in the interviewer's mind. In your email, mention specific points discussed during the interview to personalize your message and express your enthusiasm for the role.",
+    "interviewQuestions": [
+      "How should I follow up after the interview?"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Technical Questions Preparation",
+    "description": "Be prepared to answer technical questions relevant to your field, such as coding challenges or system design questions.",
+    "image": "require('../../assets/tips/technical.jpg')",
+    "moreInfo": "Review common technical questions and practice coding problems on platforms like LeetCode or HackerRank. Familiarize yourself with the technologies mentioned in the job description and be ready to discuss your experience with them in detail.",
+    "interviewQuestions": [
+      "What technical skills are essential for this position?"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Behavioral Questions Preparation",
+    "description": "Prepare for behavioral questions using the STAR method (Situation, Task, Action, Result).",
+    "image": "require('../../assets/tips/behavioral.jpg')",
+    "moreInfo": "Think of examples from your past experiences that demonstrate your skills and how you handle challenges. Practice articulating these examples clearly and concisely, focusing on the impact of your actions.",
+    "interviewQuestions": [
+      "Can you give an example of a challenge you faced and how you overcame it?"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Boost Your Interview IQ",
+    "description": "Understand the types of interviews and what to expect during each stage of the process.",
+    "image": "require('../../assets/tips/boost.jpg')",
+    "moreInfo": "Familiarize yourself with the different interview formats, such as phone, video, and in-person interviews. Each format has its own nuances that you should be prepared for.",
+    "interviewQuestions": [
+      "What should I expect during a phone interview?",
+      "How do I prepare for a video interview?"
+    ]
+  }
+]

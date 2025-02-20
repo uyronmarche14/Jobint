@@ -1,0 +1,456 @@
+{
+  "languages": {
+    "Ruby": {
+      "topics": [
+        {
+          "title": "Introduction to Ruby",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Ruby is a dynamic, open-source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.",
+          "example": "# Hello World in Ruby\nputs 'Hello, World!'"
+        },
+        {
+          "title": "Variables and Data Types",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Variables are used to store data. Ruby supports various data types like Integer, Float, String, Symbol, Array, Hash, and more.",
+          "example": "# Variable declarations\nage = 25             # Integer\nprice = 19.99        # Float\nname = 'Alice'       # String\nis_student = true    # Boolean"
+        },
+        {
+          "title": "Strings and String Interpolation",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Strings are sequences of characters. String interpolation allows you to embed expressions within string literals.",
+          "example": "# Strings and interpolation\nname = 'Alice'\nputs \"Hello, #{name}!\""
+        },
+        {
+          "title": "Operators",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Operators are used to perform operations on variables and values. Ruby supports arithmetic, assignment, comparison, logical, and other operators.",
+          "example": "# Arithmetic Operators\na = 10\nb = 3\nputs a + b  # Addition\nputs a - b  # Subtraction\nputs a * b  # Multiplication\nputs a / b  # Division"
+        },
+        {
+          "title": "Arrays",
+          "level": "Beginner",
+          "type": "Data Structures",
+          "description": "Arrays are ordered, integer-indexed collections of any object. They can store multiple values in a single variable.",
+          "example": "# Array examples\nfruits = ['apple', 'banana', 'cherry']\nfruits << 'orange'\nputs fruits.inspect"
+        },
+        {
+          "title": "Hashes",
+          "level": "Beginner",
+          "type": "Data Structures",
+          "description": "Hashes are collections of key-value pairs, similar to dictionaries in other languages.",
+          "example": "# Hash examples\nperson = { name: 'Alice', age: 30 }\nputs person[:name]\nperson[:age] = 31\nputs person.inspect"
+        },
+        {
+          "title": "Symbols",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Symbols are lightweight, immutable identifiers used as names or labels. They are often used as hash keys or for referencing method names.",
+          "example": "# Symbol examples\nstatus = :pending\nputs status\nputs status.object_id"
+        },
+        {
+          "title": "Conditional Statements",
+          "level": "Beginner",
+          "type": "Control Flow",
+          "description": "Conditional statements execute code based on whether a condition is true or false. Ruby uses `if`, `elsif`, `else`, and `unless` keywords.",
+          "example": "# If statement\nage = 18\nif age >= 18\n  puts 'You are an adult.'\nelsif age >= 13\n  puts 'You are a teenager.'\nelse\n  puts 'You are a child.'\nend"
+        },
+        {
+          "title": "Loops",
+          "level": "Beginner",
+          "type": "Loops",
+          "description": "Loops allow you to execute a block of code multiple times. Ruby provides `while`, `until`, `for`, and iterators like `each`.",
+          "example": "# While loop\ncount = 0\nwhile count < 5\n  puts count\n  count += 1\nend\n\n# Each iterator\n[1, 2, 3].each do |num|\n  puts num\nend"
+        },
+        {
+          "title": "Methods",
+          "level": "Beginner",
+          "type": "Functions",
+          "description": "Methods are reusable blocks of code that perform a specific task. They can accept parameters and return values.",
+          "example": "# Method definition and invocation\ndef greet(name)\n  \"Hello, #{name}!\"\nend\n\nputs greet('Alice')"
+        },
+        {
+          "title": "Blocks and Yield",
+          "level": "Intermediate",
+          "type": "Functions",
+          "description": "Blocks are chunks of code enclosed between `do...end` or curly braces `{}`. They can be passed to methods and executed with the `yield` keyword.",
+          "example": "# Using yield in a method\ndef perform_task\n  puts 'Task started'\n  yield if block_given?\n  puts 'Task finished'\nend\n\nperform_task { puts 'Performing the task' }"
+        },
+        {
+          "title": "Modules",
+          "level": "Intermediate",
+          "type": "Modules",
+          "description": "Modules are collections of methods and constants. They are used for namespacing and mixins.",
+          "example": "# Module example\nmodule Greetings\n  def hello(name)\n    \"Hello, #{name}!\"\n  end\nend\n\nclass Person\n  include Greetings\nend\n\nperson = Person.new\nputs person.hello('Alice')"
+        },
+        {
+          "title": "Classes and Objects",
+          "level": "Beginner",
+          "type": "Object-Oriented Programming",
+          "description": "Classes are blueprints for creating objects. Objects are instances of classes with their own state and behavior.",
+          "example": "# Class and object example\nclass Dog\n  def initialize(name)\n    @name = name\n  end\n\n  def bark\n    puts \"#{@name} says woof!\"\n  end\nend\n\nmy_dog = Dog.new('Buddy')\nmy_dog.bark"
+        },
+        {
+          "title": "Inheritance",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Inheritance allows a class to inherit attributes and methods from another class using the `<` symbol.",
+          "example": "# Inheritance example\nclass Animal\n  def eat\n    puts 'Eating'\n  end\nend\n\nclass Cat < Animal\n  def meow\n    puts 'Meow'\n  end\nend\n\nmy_cat = Cat.new\nmy_cat.eat\nmy_cat.meow"
+        },
+        {
+          "title": "Mixins",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Mixins allow modules to be included in classes, adding methods without using inheritance.",
+          "example": "# Mixin example\nmodule Swimmable\n  def swim\n    puts 'Swimming'\n  end\nend\n\nclass Fish\n  include Swimmable\nend\n\nfish = Fish.new\nfish.swim"
+        },
+        {
+          "title": "Enumerables",
+          "level": "Intermediate",
+          "type": "Data Structures",
+          "description": "The Enumerable module provides a set of methods to traverse, search, sort, and manipulate collections.",
+          "example": "# Enumerable methods\nnumbers = [1, 2, 3, 4, 5]\nevens = numbers.select { |num| num.even? }\nputs evens.inspect"
+        },
+        {
+          "title": "Exception Handling",
+          "level": "Intermediate",
+          "type": "Error Handling",
+          "description": "Exception handling allows you to handle runtime errors using `begin`, `rescue`, `ensure`, and `raise`.",
+          "example": "# Exception handling\nbegin\n  result = 10 / 0\nrescue ZeroDivisionError => e\n  puts 'Cannot divide by zero'\nensure\n  puts 'Operation completed'\nend"
+        },
+        {
+          "title": "File Handling",
+          "level": "Intermediate",
+          "type": "File I/O",
+          "description": "Ruby provides methods to read from and write to files using the `File` class.",
+          "example": "# Writing to a file\nFile.open('example.txt', 'w') do |file|\n  file.puts 'Hello, World!'\nend\n\n# Reading from a file\ncontent = File.read('example.txt')\nputs content"
+        },
+        {
+          "title": "Regular Expressions",
+          "level": "Intermediate",
+          "type": "String Manipulation",
+          "description": "Regular expressions are patterns used to match character combinations in strings.",
+          "example": "# Regular expressions\ntext = 'The rain in Spain'\nif text =~ /rain/\n  puts 'Match found'\nelse\n  puts 'No match'\nend"
+        },
+        {
+          "title": "Metaprogramming",
+          "level": "Advanced",
+          "type": "Metaprogramming",
+          "description": "Metaprogramming is the practice of writing code that writes code, allowing for dynamic method creation and reflection.",
+          "example": "# Metaprogramming example\nclass Person\n  attr_accessor :name\nend\n\nperson = Person.new\nperson.name = 'Alice'\nputs person.name"
+        },
+        {
+          "title": "Procs and Lambdas",
+          "level": "Intermediate",
+          "type": "Functions",
+          "description": "Procs and lambdas are objects that encapsulate blocks of code, which can be stored in variables, passed to methods, or returned from methods.",
+          "example": "# Proc and lambda examples\nsquare = Proc.new { |x| x * x }\nputs square.call(5)  # Output: 25\n\nmultiply = lambda { |x, y| x * y }\nputs multiply.call(5, 3)  # Output: 15"
+        },
+        {
+          "title": "Enumerators",
+          "level": "Intermediate",
+          "type": "Iterators",
+          "description": "Enumerators are objects that can be used to iterate over collections in a controlled manner.",
+          "example": "# Enumerator example\nnumbers = [1, 2, 3, 4, 5]\nenumerator = numbers.each\nputs enumerator.next  # Output: 1\nputs enumerator.next  # Output: 2"
+        },
+        {
+          "title": "Singleton Methods and Classes",
+          "level": "Advanced",
+          "type": "Object-Oriented Programming",
+          "description": "Singleton methods are methods that are defined on a single object rather than on all instances of a class.",
+          "example": "# Singleton method example\nstr = 'Hello'\ndef str.shout\n  upcase + '!'\nend\n\nputs str.shout  # Output: HELLO!"
+        },
+        {
+          "title": "Method Missing",
+          "level": "Advanced",
+          "type": "Metaprogramming",
+          "description": "`method_missing` is a hook method that is called when an undefined method is invoked on an object.",
+          "example": "# method_missing example\nclass DynamicMethods\n  def method_missing(method_name, *args)\n    puts \"You called #{method_name} with #{args.inspect}\"\n  end\nend\n\ndm = DynamicMethods.new\ndm.unknown_method(1, 2, 3)"
+        },
+        {
+          "title": "DSL (Domain-Specific Language)",
+          "level": "Advanced",
+          "type": "Metaprogramming",
+          "description": "Ruby's syntax and metaprogramming capabilities make it suitable for creating internal DSLs.",
+          "example": "# Simple DSL example\nclass Config\n  def initialize(&block)\n    instance_eval(&block)\n  end\n\n  def set(key, value)\n    puts \"Setting #{key} to #{value}\"\n  end\nend\n\nConfig.new do\n  set :host, 'localhost'\n  set :port, 3000\nend"
+        },
+        {
+          "title": "Concurrency with Threads",
+          "level": "Advanced",
+          "type": "Concurrency",
+          "description": "Ruby provides support for concurrency using threads, allowing multiple sequences of code to run simultaneously.",
+          "example": "# Thread example\nthreads = []\n5.times do |i|\n  threads << Thread.new do\n    puts \"Thread #{i} started\"\n    sleep(rand(0.1..1.0))\n    puts \"Thread #{i} finished\"\n  end\nend\n\nthreads.each(&:join)"
+        },
+        {
+          "title": "Fiber and Coroutine",
+          "level": "Advanced",
+          "type": "Concurrency",
+          "description": "Fibers are lightweight concurrency primitives that allow you to pause and resume code blocks.",
+          "example": "# Fiber example\nfiber = Fiber.new do\n  puts 'Fiber started'\n  Fiber.yield\n  puts 'Fiber resumed'\nend\n\nfiber.resume\nputs 'Back to main'\nfiber.resume"
+        },
+        {
+          "title": "Garbage Collection and Memory Management",
+          "level": "Advanced",
+          "type": "Memory Management",
+          "description": "Ruby automatically manages memory allocation and garbage collection, but understanding it can help optimize performance.",
+          "example": "# Memory profiling example\nrequire 'objspace'\n\nstr = 'a' * 10_000_000\nObjectSpace.trace_object_allocations do\n  puts ObjectSpace.memsize_of(str)\nend"
+        },
+        {
+          "title": "Monkey Patching",
+          "level": "Advanced",
+          "type": "Metaprogramming",
+          "description": "Monkey patching refers to modifying or extending existing classes or modules at runtime.",
+          "example": "# Monkey patching example\nclass String\n  def shout\n    upcase + '!'\n  end\nend\n\nputs 'hello'.shout  # Output: HELLO!"
+        },
+        {
+          "title": "Refinements",
+          "level": "Advanced",
+          "type": "Metaprogramming",
+          "description": "Refinements provide a way to extend classes locally, avoiding global modifications that monkey patching can cause.",
+          "example": "# Refinement example\nmodule StringExtensions\n  refine String do\n    def shout\n      upcase + '!'\n    end\n  end\nend\n\nusing StringExtensions\nputs 'hello'.shout  # Output: HELLO!"
+        },
+        {
+          "title": "Networking with Sockets",
+          "level": "Advanced",
+          "type": "Networking",
+          "description": "Ruby provides socket programming capabilities for network communication.",
+          "example": "# Simple TCP server\nrequire 'socket'\n\nserver = TCPServer.new(2345)\nloop do\n  client = server.accept\n  client.puts 'Hello from server'\n  client.close\nend"
+        },
+        {
+          "title": "Testing with RSpec",
+          "level": "Intermediate",
+          "type": "Testing",
+          "description": "RSpec is a popular testing framework for Ruby, focusing on behavior-driven development (BDD).",
+          "example": "# RSpec test example\n# In spec/calculator_spec.rb\nrequire 'rspec'\n\nclass Calculator\n  def add(a, b)\n    a + b\n  end\nend\n\ndescribe Calculator do\n  it 'adds two numbers' do\n    calc = Calculator.new\n    expect(calc.add(2, 3)).to eq(5)\n  end\nend\n\n# Run the test using: rspec spec/calculator_spec.rb"
+        },
+        {
+          "title": "Ruby on Rails Basics",
+          "level": "Intermediate",
+          "type": "Web Development",
+          "description": "Ruby on Rails is a server-side web application framework written in Ruby. It follows the MVC pattern and emphasizes convention over configuration.",
+          "example": "# Generating a new Rails application\n# Run in terminal:\nrails new myapp\n\n# This will create a new Rails project structure."
+        },
+        {
+          "title": "Gems and Bundler",
+          "level": "Intermediate",
+          "type": "Package Management",
+          "description": "Gems are packages of Ruby code that can be installed and managed using Bundler.",
+          "example": "# Installing a gem\n# In Gemfile\ngem 'nokogiri'\n\n# Run in terminal:\nbundle install\n\n# Using the gem\nrequire 'nokogiri'\n\nhtml = '<html><body><h1>Hello</h1></body></html>'\ndoc = Nokogiri::HTML(html)\nputs doc.at_css('h1').text  # Output: Hello"
+        },
+        {
+          "title": "Command-Line Interfaces with Thor",
+          "level": "Advanced",
+          "type": "CLI Development",
+          "description": "Thor is a toolkit for building powerful command-line interfaces in Ruby.",
+          "example": "# Thor CLI example\nrequire 'thor'\n\nclass MyCLI < Thor\n  desc 'greet NAME', 'Prints a greeting'\n  def greet(name)\n    puts \"Hello, #{name}!\"\n  end\nend\n\nMyCLI.start(ARGV)\n\n# Save as cli.rb and run: ruby cli.rb greet Alice"
+        },
+        {
+          "title": "Asynchronous Programming with EventMachine",
+          "level": "Advanced",
+          "type": "Concurrency",
+          "description": "EventMachine is a Ruby library for event-driven I/O, enabling asynchronous programming.",
+          "example": "# EventMachine example\nrequire 'eventmachine'\n\nEM.run do\n  EM.add_periodic_timer(1) do\n    puts 'Tick...'\n  end\n\n  EM.add_timer(5) do\n    puts 'Stopping EM loop'\n    EM.stop\n  end\nend"
+        },
+        {
+          "title": "Advanced Regular Expressions",
+          "level": "Advanced",
+          "type": "String Manipulation",
+          "description": "Advanced usage of regular expressions, including lookaheads, lookbehinds, and complex pattern matching.",
+          "example": "# Advanced regex example\ntext = 'Price: $123.45'\nif text =~ /(?<=\\$)\\d+\\.\\d{2}/\n  puts 'Price found'\nelse\n  puts 'No price found'\nend"
+        },
+        {
+          "title": "C Extensions in Ruby",
+          "level": "Advanced",
+          "type": "Extensions",
+          "description": "Writing C extensions to improve performance-critical parts of Ruby code.",
+          "example": "# C extension outline\n# extconf.rb\nrequire 'mkmf'\ncreate_makefile('my_extension')\n\n# my_extension.c\n#include \"ruby.h\"\n\nvoid Init_my_extension() {\n  // C code goes here\n}\n\n# Build and use the extension\n# ruby extconf.rb\n# make"
+        },
+        {
+          "title": "Ruby's Object Model and Eigenclasses",
+          "level": "Advanced",
+          "type": "Object-Oriented Programming",
+          "description": "Understanding Ruby's object model, including singleton classes (eigenclasses) and method lookup paths.",
+          "example": "# Eigenclass example\nclass MyClass\nend\n\nobj = MyClass.new\nclass << obj\n  def singleton_method\n    'I am a singleton method'\n  end\nend\n\nputs obj.singleton_method"
+        },
+        {
+          "title": "Using IRB and Pry",
+          "level": "Intermediate",
+          "type": "Tools",
+          "description": "Interactive Ruby Shells (IRB and Pry) for experimenting with Ruby code and debugging.",
+          "example": "# Using Pry\nrequire 'pry'\n\ndef calculate(a, b)\n  binding.pry\n  a + b\nend\n\ncalculate(2, 3)\n\n# This will open a Pry session at the binding.pry line."
+        },
+        {
+          "title": "Memory Profiling and Optimization",
+          "level": "Advanced",
+          "type": "Performance",
+          "description": "Techniques for profiling memory usage and optimizing Ruby applications.",
+          "example": "# Using memory_profiler gem\nrequire 'memory_profiler'\n\nreport = MemoryProfiler.report do\n  # Code to profile\n  arr = (1..100_000).to_a\nend\n\nreport.pretty_print"
+        },
+        {
+          "title": "Working with JSON and XML",
+          "level": "Intermediate",
+          "type": "Data Formats",
+          "description": "Parsing and generating JSON and XML data using Ruby's standard libraries and gems.",
+          "example": "# JSON example\nrequire 'json'\n\nhash = { name: 'Alice', age: 30 }\njson_str = hash.to_json\nputs json_str\n\nparsed_hash = JSON.parse(json_str)\nputs parsed_hash['name']"
+        },
+        {
+          "title": "Internationalization and Localization",
+          "level": "Intermediate",
+          "type": "Best Practices",
+          "description": "Implementing i18n and l10n in Ruby applications using libraries like `i18n`.",
+          "example": "# Using i18n gem\nrequire 'i18n'\n\nI18n.load_path << 'config/locales/en.yml'\nI18n.locale = :en\nputs I18n.t('greeting')\n\n# en.yml\n# en:\n#   greeting: 'Hello, World!'"
+        },
+        {
+          "title": "Encoding and Unicode Handling",
+          "level": "Intermediate",
+          "type": "Basics",
+          "description": "Working with different encodings and ensuring proper handling of Unicode characters.",
+          "example": "# Encoding example\nstr = 'こんにちは'\nputs str.encoding\nputs str.bytesize"
+        },
+        {
+          "title": "Ruby's Standard Library Overview",
+          "level": "Beginner",
+          "type": "Libraries",
+          "description": "An overview of useful modules in Ruby's standard library, such as `Net::HTTP`, `CSV`, `OpenURI`, etc.",
+          "example": "# Using Net::HTTP\nrequire 'net/http'\n\nuri = URI('http://www.example.com')\nresponse = Net::HTTP.get(uri)\nputs response"
+        },
+        {
+          "title": "Date and Time Manipulation",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Working with dates and times using Ruby's `Date` and `Time` classes.",
+          "example": "# Date and Time example\nrequire 'date'\n\ntoday = Date.today\nputs today\n\nnow = Time.now\nputs now.strftime('%Y-%m-%d %H:%M:%S')"
+        },
+        {
+          "title": "YAML Processing",
+          "level": "Intermediate",
+          "type": "Data Formats",
+          "description": "Parsing and generating YAML data using Ruby's `YAML` module.",
+          "example": "# YAML example\nrequire 'yaml'\n\nhash = { name: 'Alice', age: 30 }\nyaml_str = hash.to_yaml\nputs yaml_str\n\nparsed_hash = YAML.load(yaml_str)\nputs parsed_hash['name']"
+        },
+        {
+          "title": "Advanced Metaprogramming Techniques",
+          "level": "Advanced",
+          "type": "Metaprogramming",
+          "description": "Using `define_method`, `class_eval`, `method_added`, and other hooks for advanced metaprogramming.",
+          "example": "# define_method example\nclass DynamicMethods\n  %w[foo bar baz].each do |method_name|\n    define_method(method_name) do\n      puts \"Called #{method_name}\"\n    end\n  end\nend\n\nobj = DynamicMethods.new\nobj.foo\nobj.bar"
+        },
+        {
+          "title": "Ruby's Method Lookup Path",
+          "level": "Advanced",
+          "type": "Object-Oriented Programming",
+          "description": "Understanding how Ruby resolves method calls, including the role of ancestors and included modules.",
+          "example": "# Method lookup example\nclass A\n  def greet\n    puts 'Hello from A'\n  end\nend\n\nmodule B\n  def greet\n    puts 'Hello from B'\n  end\nend\n\nclass C < A\n  include B\nend\n\nC.new.greet  # Output: 'Hello from B'"
+        },
+        {
+          "title": "Advanced Enumerable Methods",
+          "level": "Intermediate",
+          "type": "Data Structures",
+          "description": "Using advanced methods like `group_by`, `partition`, `zip`, and `reduce`.",
+          "example": "# group_by example\nnames = ['Alice', 'Bob', 'Charlie', 'David']\ngroups = names.group_by { |name| name.length }\nputs groups.inspect"
+        },
+        {
+          "title": "Using OpenStruct and Struct",
+          "level": "Intermediate",
+          "type": "Data Structures",
+          "description": "Creating simple data objects using `Struct` and `OpenStruct`.",
+          "example": "# OpenStruct example\nrequire 'ostruct'\n\nperson = OpenStruct.new(name: 'Alice', age: 30)\nputs person.name\n\n# Struct example\nPerson = Struct.new(:name, :age)\nperson = Person.new('Bob', 25)\nputs person.age"
+        },
+        {
+          "title": "Functional Programming in Ruby",
+          "level": "Advanced",
+          "type": "Functional Programming",
+          "description": "Using higher-order functions, immutability, and other functional programming concepts.",
+          "example": "# Functional programming example\nnumbers = [1, 2, 3, 4, 5]\nsquares = numbers.map { |n| n ** 2 }\neven_squares = squares.select(&:even?)\nputs even_squares.inspect"
+        },
+        {
+          "title": "Using Ruby with Databases",
+          "level": "Intermediate",
+          "type": "Data Access",
+          "description": "Interacting with databases using libraries like `ActiveRecord` and `Sequel` outside of Rails.",
+          "example": "# ActiveRecord example\nrequire 'active_record'\n\nActiveRecord::Base.establish_connection(\n  adapter: 'sqlite3',\n  database: 'db.sqlite3'\n)\n\nclass User < ActiveRecord::Base\nend\n\nusers = User.all\nusers.each { |user| puts user.name }"
+        },
+        {
+          "title": "Testing with MiniTest",
+          "level": "Intermediate",
+          "type": "Testing",
+          "description": "Using MiniTest for unit testing Ruby applications.",
+          "example": "# MiniTest example\nrequire 'minitest/autorun'\n\nclass Calculator\n  def add(a, b)\n    a + b\n  end\nend\n\nclass TestCalculator < Minitest::Test\n  def test_add\n    calc = Calculator.new\n    assert_equal 5, calc.add(2, 3)\n  end\nend"
+        },
+        {
+          "title": "Using Rack for Web Applications",
+          "level": "Advanced",
+          "type": "Web Development",
+          "description": "Building simple web applications using Rack, the Ruby webserver interface.",
+          "example": "# Rack application\nrequire 'rack'\n\napp = Proc.new do |env|\n  ['200', { 'Content-Type' => 'text/html' }, ['Hello, Rack!']]\nend\n\nRack::Handler::WEBrick.run app, Port: 8080"
+        },
+        {
+          "title": "Refactoring Techniques in Ruby",
+          "level": "Intermediate",
+          "type": "Best Practices",
+          "description": "Improving code quality through refactoring, including extracting methods, removing duplication, and code smells.",
+          "example": "# Refactoring example\n# Before refactoring\ndef calculate_total(items)\n  total = 0\n  items.each do |item|\n    total += item.price * item.quantity\n  end\n  total\nend\n\n# After refactoring\ndef calculate_total(items)\n  items.sum { |item| item.price * item.quantity }\nend"
+        },
+        {
+          "title": "Ruby Best Practices and Style Guides",
+          "level": "Beginner",
+          "type": "Best Practices",
+          "description": "Following community standards for writing clean, maintainable Ruby code, such as the Ruby Style Guide.",
+          "example": "# Example of good style\n# Use snake_case for method names\ndef calculate_total(price, quantity)\n  price * quantity\nend"
+        },
+        {
+          "title": "Ruby's Garbage Collector Tuning",
+          "level": "Advanced",
+          "type": "Performance",
+          "description": "Adjusting the garbage collector settings for performance optimization.",
+          "example": "# GC tuning example\nGC::Profiler.enable\n# Run code to profile\nGC.start\nGC::Profiler.report"
+        },
+        {
+          "title": "Advanced Thread Synchronization",
+          "level": "Advanced",
+          "type": "Concurrency",
+          "description": "Using mutexes, condition variables, and other synchronization primitives to manage threads.",
+          "example": "# Mutex example\nmutex = Mutex.new\ncounter = 0\nthreads = 10.times.map do\n  Thread.new do\n    mutex.synchronize do\n      counter += 1\n    end\n  end\nend\nthreads.each(&:join)\nputs counter  # Output: 10"
+        },
+        {
+          "title": "Profiling and Benchmarking Ruby Code",
+          "level": "Advanced",
+          "type": "Performance",
+          "description": "Measuring code performance using the `Benchmark` module and profiling tools.",
+          "example": "# Benchmark example\nrequire 'benchmark'\n\ntime = Benchmark.measure do\n  sum = 0\n  1_000_000.times { sum += 1 }\nend\n\nputs time"
+        },
+        {
+          "title": "ObjectSpace and Reflection",
+          "level": "Advanced",
+          "type": "Metaprogramming",
+          "description": "Using `ObjectSpace` for introspection and reflection on Ruby objects.",
+          "example": "# ObjectSpace example\ncount = ObjectSpace.each_object(String).count\nputs \"Number of String objects: #{count}\""
+        },
+        {
+          "title": "Tail Call Optimization",
+          "level": "Advanced",
+          "type": "Performance",
+          "description": "Understanding tail call optimization in Ruby and how to leverage it for recursive methods.",
+          "example": "# Tail-recursive method\ndef factorial(n, acc = 1)\n  return acc if n <= 1\n  factorial(n - 1, n * acc)\nend\n\nputs factorial(5)  # Output: 120"
+        },
+        {
+          "title": "Writing Ruby Gems",
+          "level": "Advanced",
+          "type": "Package Management",
+          "description": "Creating and publishing your own Ruby gems.",
+          "example": "# gemspec file\nGem::Specification.new do |spec|\n  spec.name          = 'my_gem'\n  spec.version       = '0.1.0'\n  spec.summary       = 'A sample gem'\n  spec.files         = Dir['lib/**/*.rb']\n  spec.author        = 'Your Name'\n  spec.email         = 'you@example.com'\n  spec.homepage      = 'https://example.com/my_gem'\nend"
+        },
+        {
+          "title": "Packaging and Distributing Ruby Applications",
+          "level": "Advanced",
+          "type": "Deployment",
+          "description": "Methods for packaging Ruby applications for distribution, including using `Ruby Packer` or creating executables.",
+          "example": "# Using OCRA for Windows executables\n# Install OCRA\ngem install ocra\n\n# Create executable\nocra my_script.rb\n\n# This will generate a my_script.exe file."
+        }
+      ]
+    }
+  }
+}

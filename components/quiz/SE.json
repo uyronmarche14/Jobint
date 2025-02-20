@@ -1,0 +1,624 @@
+{
+  "categories": [
+    {
+      "name": "Software Engineering",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What does SDLC stand for in software engineering?",
+          "options": [
+            "Software Development Life Cycle",
+            "System Design and Learning Course",
+            "Software Design Lifecycle",
+            "System Development Life Course"
+          ],
+          "answer": "Software Development Life Cycle",
+          "difficulty": "Easy",
+          "explanation": "SDLC stands for Software Development Life Cycle, which outlines the process for developing software."
+        },
+        {
+          "id": 2,
+          "question": "Which of the following is a phase in the Agile methodology?",
+          "options": ["Waterfall", "Sprint", "V-Model", "Spiral"],
+          "answer": "Sprint",
+          "difficulty": "Easy",
+          "explanation": "Sprint is a fundamental phase in Agile methodology, representing a set period during which specific work must be completed."
+        },
+        {
+          "id": 3,
+          "question": "Which software development methodology emphasizes customer collaboration and flexibility?",
+          "options": ["Waterfall", "Agile", "V-Model", "Spiral"],
+          "answer": "Agile",
+          "difficulty": "Easy",
+          "explanation": "Agile methodology focuses on customer collaboration, flexibility, and iterative development."
+        },
+        {
+          "id": 4,
+          "question": "What is 'technical debt'?",
+          "options": [
+            "The cost of acquiring new technology",
+            "Short-term solutions that may lead to future issues",
+            "Investments in technical training for employees",
+            "The amount of time spent on debugging"
+          ],
+          "answer": "Short-term solutions that may lead to future issues",
+          "difficulty": "Medium",
+          "explanation": "Technical debt refers to the future cost incurred when quick and easy solutions are chosen over better approaches."
+        },
+        {
+          "id": 5,
+          "question": "In version control systems, what does 'commit' refer to?",
+          "options": [
+            "Merging two branches",
+            "Reverting to a previous state",
+            "Saving changes to the repository",
+            "Creating a new branch"
+          ],
+          "answer": "Saving changes to the repository",
+          "difficulty": "Easy",
+          "explanation": "A commit is the action of saving changes to the version control repository."
+        },
+        {
+          "id": 6,
+          "question": "Which of the following is NOT a type of software testing?",
+          "options": [
+            "Unit Testing",
+            "Integration Testing",
+            "Regression Testing",
+            "Compilation Testing"
+          ],
+          "answer": "Compilation Testing",
+          "difficulty": "Medium",
+          "explanation": "Compilation Testing is not a standard type of software testing. The others are common testing types."
+        },
+        {
+          "id": 7,
+          "question": "Which software development methodology uses incremental releases with flexible requirements?",
+          "options": ["Waterfall", "Agile", "V-Model", "Spiral"],
+          "answer": "Agile",
+          "difficulty": "Easy",
+          "explanation": "Agile methodology uses incremental releases with flexible requirements to accommodate changes."
+        },
+        {
+          "id": 8,
+          "question": "What is the primary benefit of using Agile over Waterfall?",
+          "options": [
+            "Higher documentation requirements",
+            "Rigid structure",
+            "Flexibility to changes",
+            "Longer development cycles"
+          ],
+          "answer": "Flexibility to changes",
+          "difficulty": "Medium",
+          "explanation": "Agile allows for flexibility and adaptability to changes, unlike the rigid structure of Waterfall."
+        },
+        {
+          "id": 9,
+          "question": "Which phase comes after 'Requirements' in the Waterfall model?",
+          "options": ["Design", "Implementation", "Testing", "Maintenance"],
+          "answer": "Design",
+          "difficulty": "Easy",
+          "explanation": "In the Waterfall model, the sequence is Requirements → Design → Implementation → Testing → Maintenance."
+        },
+        {
+          "id": 10,
+          "question": "What is 'sprint' in Agile methodology?",
+          "options": [
+            "A long-term project plan",
+            "A short, time-boxed period to complete a set of tasks",
+            "A phase for writing documentation",
+            "A review meeting at the end of the project"
+          ],
+          "answer": "A short, time-boxed period to complete a set of tasks",
+          "difficulty": "Medium",
+          "explanation": "A sprint is a short, time-boxed period in Agile to complete a specific set of tasks."
+        },
+        {
+          "id": 11,
+          "question": "Which design pattern ensures a class has only one instance?",
+          "options": [
+            "Factory Pattern",
+            "Singleton Pattern",
+            "Observer Pattern",
+            "Decorator Pattern"
+          ],
+          "answer": "Singleton Pattern",
+          "difficulty": "Medium",
+          "explanation": "The Singleton Pattern restricts the instantiation of a class to one single instance."
+        },
+        {
+          "id": 12,
+          "question": "What is the purpose of a 'design pattern' in software engineering?",
+          "options": [
+            "To provide a reusable solution to a common problem",
+            "To enforce coding standards",
+            "To design the user interface",
+            "To optimize database queries"
+          ],
+          "answer": "To provide a reusable solution to a common problem",
+          "difficulty": "Easy",
+          "explanation": "Design patterns offer standardized solutions to recurring design problems in software development."
+        },
+        {
+          "id": 13,
+          "question": "Which of the following is a key principle of the SOLID design principles?",
+          "options": [
+            "Single Responsibility",
+            "Secure Coding",
+            "Scalability",
+            "Simplicity"
+          ],
+          "answer": "Single Responsibility",
+          "difficulty": "Medium",
+          "explanation": "Single Responsibility is one of the SOLID principles, stating that a class should have only one reason to change."
+        },
+        {
+          "id": 14,
+          "question": "What does SOLID stand for?",
+          "options": [
+            "Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion",
+            "Simple, Open, Lightweight, Independent, Dependency",
+            "Single Responsibility, Open, Liskov, Interface, Dependency",
+            "Simple Responsibility, Open/Closed, Linked Substitution, Interface Separation, Dependency Inversion"
+          ],
+          "answer": "Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion",
+          "difficulty": "Hard",
+          "explanation": "SOLID is an acronym for Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion principles."
+        },
+        {
+          "id": 15,
+          "question": "Which design pattern provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation?",
+          "options": [
+            "Iterator Pattern",
+            "Observer Pattern",
+            "Factory Pattern",
+            "Strategy Pattern"
+          ],
+          "answer": "Iterator Pattern",
+          "difficulty": "Medium",
+          "explanation": "The Iterator Pattern allows sequential access to elements without exposing the underlying structure."
+        },
+        {
+          "id": 16,
+          "question": "Which principle states that software entities should be open for extension but closed for modification?",
+          "options": [
+            "Single Responsibility Principle",
+            "Open/Closed Principle",
+            "Liskov Substitution Principle",
+            "Interface Segregation Principle"
+          ],
+          "answer": "Open/Closed Principle",
+          "difficulty": "Hard",
+          "explanation": "The Open/Closed Principle states that software entities should be open for extension but closed for modification."
+        },
+        {
+          "id": 17,
+          "question": "Which design pattern defines a one-to-many dependency between objects?",
+          "options": [
+            "Singleton Pattern",
+            "Observer Pattern",
+            "Factory Pattern",
+            "Decorator Pattern"
+          ],
+          "answer": "Observer Pattern",
+          "difficulty": "Medium",
+          "explanation": "Observer Pattern defines a one-to-many dependency between objects."
+        },
+        {
+          "id": 18,
+          "question": "What is the main advantage of using design patterns?",
+          "options": [
+            "They improve code readability and reusability",
+            "They enforce coding standards",
+            "They reduce the need for testing",
+            "They increase system performance"
+          ],
+          "answer": "They improve code readability and reusability",
+          "difficulty": "Easy",
+          "explanation": "Design patterns improve code readability and reusability by providing standard solutions to common problems."
+        },
+        {
+          "id": 19,
+          "question": "Which design pattern allows adding new functionality to an existing object without altering its structure?",
+          "options": [
+            "Adapter Pattern",
+            "Decorator Pattern",
+            "Factory Pattern",
+            "Strategy Pattern"
+          ],
+          "answer": "Decorator Pattern",
+          "difficulty": "Medium",
+          "explanation": "Decorator Pattern allows adding new functionality to an existing object without changing its structure."
+        },
+        {
+          "id": 20,
+          "question": "Which design principle encourages keeping interfaces small and focused?",
+          "options": [
+            "Interface Segregation Principle",
+            "Single Responsibility Principle",
+            "Dependency Inversion Principle",
+            "Open/Closed Principle"
+          ],
+          "answer": "Interface Segregation Principle",
+          "difficulty": "Hard",
+          "explanation": "Interface Segregation Principle encourages keeping interfaces small and focused."
+        },
+        {
+          "id": 21,
+          "question": "What is the main purpose of unit testing?",
+          "options": [
+            "To test the integration between components",
+            "To test individual components in isolation",
+            "To test the entire system",
+            "To test the user interface"
+          ],
+          "answer": "To test individual components in isolation",
+          "difficulty": "Easy",
+          "explanation": "Unit testing focuses on testing individual components or units in isolation."
+        },
+        {
+          "id": 22,
+          "question": "Which type of testing verifies that new code does not adversely affect existing functionality?",
+          "options": [
+            "Unit Testing",
+            "Integration Testing",
+            "Regression Testing",
+            "Acceptance Testing"
+          ],
+          "answer": "Regression Testing",
+          "difficulty": "Medium",
+          "explanation": "Regression Testing ensures that new code changes do not negatively impact existing functionality."
+        },
+        {
+          "id": 23,
+          "question": "What is 'mocking' in unit testing?",
+          "options": [
+            "Creating fake objects to simulate real dependencies",
+            "Testing the user interface",
+            "Running tests on the production environment",
+            "Automating the deployment process"
+          ],
+          "answer": "Creating fake objects to simulate real dependencies",
+          "difficulty": "Medium",
+          "explanation": "Mocking involves creating fake objects that mimic the behavior of real dependencies, allowing isolated testing of components."
+        },
+        {
+          "id": 24,
+          "question": "Which testing technique involves testing the entire system as a whole?",
+          "options": [
+            "Unit Testing",
+            "Integration Testing",
+            "System Testing",
+            "Acceptance Testing"
+          ],
+          "answer": "System Testing",
+          "difficulty": "Medium",
+          "explanation": "System Testing involves testing the entire system as a whole to ensure it meets the specified requirements."
+        },
+        {
+          "id": 25,
+          "question": "What is the main goal of test-driven development (TDD)?",
+          "options": [
+            "To write tests after writing the code",
+            "To write tests before writing the code",
+            "To skip writing tests for faster development",
+            "To use automated testing tools exclusively"
+          ],
+          "answer": "To write tests before writing the code",
+          "difficulty": "Medium",
+          "explanation": "TDD involves writing automated tests before writing the actual code, ensuring that the code meets the test criteria."
+        },
+        {
+          "id": 26,
+          "question": "What is 'continuous deployment'?",
+          "options": [
+            "Automatically deploying every change that passes the tests to production",
+            "Manually deploying code after several stages of testing",
+            "Deploying code only once after development is complete",
+            "Deploying code to a staging environment"
+          ],
+          "answer": "Automatically deploying every change that passes the tests to production",
+          "difficulty": "Hard",
+          "explanation": "Continuous Deployment automates the release of code changes to production as soon as they pass automated tests."
+        },
+        {
+          "id": 27,
+          "question": "Which of the following is a key benefit of automated testing?",
+          "options": [
+            "Requires no maintenance",
+            "Eliminates the need for manual testers",
+            "Increases test coverage and efficiency",
+            "Reduces the need for writing test cases"
+          ],
+          "answer": "Increases test coverage and efficiency",
+          "difficulty": "Easy",
+          "explanation": "Automated testing can run tests more quickly and cover more scenarios than manual testing, increasing overall efficiency and coverage."
+        },
+        {
+          "id": 28,
+          "question": "What is 'code coverage'?",
+          "options": [
+            "The percentage of code executed by tests",
+            "The number of tests written for a project",
+            "The time spent on testing",
+            "The types of tests performed"
+          ],
+          "answer": "The percentage of code executed by tests",
+          "difficulty": "Medium",
+          "explanation": "Code coverage measures the extent to which the source code is executed when the test suite runs."
+        },
+        {
+          "id": 29,
+          "question": "Which testing type verifies that the system meets the business requirements?",
+          "options": [
+            "Unit Testing",
+            "Integration Testing",
+            "System Testing",
+            "Acceptance Testing"
+          ],
+          "answer": "Acceptance Testing",
+          "difficulty": "Medium",
+          "explanation": "Acceptance Testing verifies that the system meets the business requirements and is ready for deployment."
+        },
+        {
+          "id": 30,
+          "question": "What is 'exploratory testing'?",
+          "options": [
+            "Testing based on predefined test cases",
+            "Testing without any planning or documentation",
+            "Testing the performance under load",
+            "Automated testing of the user interface"
+          ],
+          "answer": "Testing without any planning or documentation",
+          "difficulty": "Hard",
+          "explanation": "Exploratory testing involves testing without predefined test cases, relying on the tester's intuition and experience."
+        },
+        {
+          "id": 31,
+          "question": "What is the main advantage of using version control systems?",
+          "options": [
+            "Improved application performance",
+            "Easier collaboration among developers",
+            "Enhanced user interface design",
+            "Automated code generation"
+          ],
+          "answer": "Easier collaboration among developers",
+          "difficulty": "Easy",
+          "explanation": "Version control systems facilitate collaboration by allowing multiple developers to work on the same codebase simultaneously."
+        },
+        {
+          "id": 32,
+          "question": "What does 'branching' mean in version control systems like Git?",
+          "options": [
+            "Creating a copy of the entire repository",
+            "Creating a separate line of development",
+            "Merging changes from different developers",
+            "Reverting to a previous state"
+          ],
+          "answer": "Creating a separate line of development",
+          "difficulty": "Medium",
+          "explanation": "Branching allows developers to create separate lines of development for features, bug fixes, or experiments without affecting the main codebase."
+        },
+        {
+          "id": 33,
+          "question": "What is 'merge conflict' in Git?",
+          "options": [
+            "A situation where two branches are identical",
+            "A situation where changes in two branches cannot be automatically reconciled",
+            "A command to combine branches",
+            "A situation where one branch is deleted"
+          ],
+          "answer": "A situation where changes in two branches cannot be automatically reconciled",
+          "difficulty": "Medium",
+          "explanation": "A merge conflict occurs when changes in two branches conflict and Git cannot automatically resolve them."
+        },
+        {
+          "id": 34,
+          "question": "Which Git command is used to create a new branch?",
+          "options": ["git checkout", "git merge", "git branch", "git commit"],
+          "answer": "git branch",
+          "difficulty": "Easy",
+          "explanation": "The 'git branch' command is used to create a new branch in Git."
+        },
+        {
+          "id": 35,
+          "question": "What is 'continuous delivery'?",
+          "options": [
+            "Automatically deploying every change to production",
+            "Keeping the codebase in a deployable state at all times",
+            "Releasing software updates annually",
+            "Manual deployment after testing"
+          ],
+          "answer": "Keeping the codebase in a deployable state at all times",
+          "difficulty": "Hard",
+          "explanation": "Continuous Delivery ensures that the codebase is always in a state that can be deployed to production, allowing for frequent releases."
+        },
+        {
+          "id": 36,
+          "question": "Which of the following is an example of a static code analysis tool?",
+          "options": ["Selenium", "Jenkins", "SonarQube", "Postman"],
+          "answer": "SonarQube",
+          "difficulty": "Medium",
+          "explanation": "SonarQube is a static code analysis tool used to inspect code quality and detect bugs, vulnerabilities, and code smells."
+        },
+        {
+          "id": 37,
+          "question": "Which of the following is a common use of the Git command 'merge'?",
+          "options": [
+            "Creating a new repository",
+            "Combining changes from different branches",
+            "Deleting a branch",
+            "Reverting to a previous commit"
+          ],
+          "answer": "Combining changes from different branches",
+          "difficulty": "Easy",
+          "explanation": "The 'merge' command in Git is used to combine changes from different branches into a single branch."
+        },
+        {
+          "id": 38,
+          "question": "What is 'pull request' in GitHub?",
+          "options": [
+            "A request to pull code from a repository",
+            "A request to merge code into a repository",
+            "A request to delete a repository",
+            "A request to create a new branch"
+          ],
+          "answer": "A request to merge code into a repository",
+          "difficulty": "Medium",
+          "explanation": "A pull request is a request to merge code changes from one branch or fork into another branch in the repository."
+        },
+        {
+          "id": 39,
+          "question": "What is 'continuous testing'?",
+          "options": [
+            "Testing software only at the end of development",
+            "Automating the execution of tests as part of the CI/CD pipeline",
+            "Manual testing conducted continuously throughout the project",
+            "Running tests in production environments only"
+          ],
+          "answer": "Automating the execution of tests as part of the CI/CD pipeline",
+          "difficulty": "Hard",
+          "explanation": "Continuous Testing involves automating the execution of tests to provide immediate feedback within the CI/CD pipeline."
+        },
+        {
+          "id": 40,
+          "question": "Which tool is commonly used for continuous integration in software projects?",
+          "options": ["JIRA", "Docker", "Jenkins", "Kubernetes"],
+          "answer": "Jenkins",
+          "difficulty": "Easy",
+          "explanation": "Jenkins is a widely used tool for continuous integration, automating the building, testing, and deployment of software projects."
+        },
+        {
+          "id": 41,
+          "question": "What is 'software architecture'?",
+          "options": [
+            "The user interface design",
+            "The high-level structure of a software system, including components and their interactions",
+            "The code documentation",
+            "The database schema design"
+          ],
+          "answer": "The high-level structure of a software system, including components and their interactions",
+          "difficulty": "Easy",
+          "explanation": "Software architecture defines the overall structure of a system, specifying how components interact and work together."
+        },
+        {
+          "id": 42,
+          "question": "Which of the following is a key characteristic of a monolithic architecture?",
+          "options": [
+            "Independent deployable services",
+            "Single unified codebase",
+            "Use of microservices",
+            "High scalability"
+          ],
+          "answer": "Single unified codebase",
+          "difficulty": "Medium",
+          "explanation": "Monolithic architecture consists of a single unified codebase where all components are interconnected and interdependent."
+        },
+        {
+          "id": 43,
+          "question": "What is 'microservices architecture'?",
+          "options": [
+            "A single, tightly integrated system",
+            "An architecture where the application is divided into small, independent services",
+            "An architecture focusing solely on the user interface",
+            "A monolithic structure with multiple layers"
+          ],
+          "answer": "An architecture where the application is divided into small, independent services",
+          "difficulty": "Medium",
+          "explanation": "Microservices architecture divides an application into small, independent services that can be developed, deployed, and scaled separately."
+        },
+        {
+          "id": 44,
+          "question": "What is 'scalability' in the context of software systems?",
+          "options": [
+            "The ability to maintain code quality over time",
+            "The ability to handle increased load by adding resources",
+            "The ease of deploying software updates",
+            "The flexibility to change software requirements"
+          ],
+          "answer": "The ability to handle increased load by adding resources",
+          "difficulty": "Medium",
+          "explanation": "Scalability refers to a system's capacity to handle growth, such as increased users or transactions, by adding resources."
+        },
+        {
+          "id": 45,
+          "question": "Which software architecture style uses a single codebase for the entire application?",
+          "options": [
+            "Microservices",
+            "Monolithic",
+            "Event-Driven",
+            "Service-Oriented"
+          ],
+          "answer": "Monolithic",
+          "difficulty": "Easy",
+          "explanation": "Monolithic architecture uses a single codebase for the entire application, with all components interconnected."
+        },
+        {
+          "id": 46,
+          "question": "What is 'domain-driven design'?",
+          "options": [
+            "Focusing on technical aspects of software development",
+            "Modeling software based on the business domain and its logic",
+            "Designing the user interface first",
+            "Optimizing database performance"
+          ],
+          "answer": "Modeling software based on the business domain and its logic",
+          "difficulty": "Hard",
+          "explanation": "Domain-Driven Design focuses on creating a rich domain model based on the business domain and its rules."
+        },
+        {
+          "id": 47,
+          "question": "What is 'event-driven architecture'?",
+          "options": [
+            "An architecture that relies on events to trigger and communicate between decoupled services",
+            "An architecture focused on user interface events",
+            "An architecture that doesn't use events",
+            "An architecture with tightly coupled components"
+          ],
+          "answer": "An architecture that relies on events to trigger and communicate between decoupled services",
+          "difficulty": "Medium",
+          "explanation": "Event-driven architecture relies on events to trigger and communicate between decoupled services, promoting scalability and flexibility."
+        },
+        {
+          "id": 48,
+          "question": "What is 'dependency management' in software projects?",
+          "options": [
+            "Tracking project deadlines",
+            "Managing external libraries and their versions",
+            "Organizing team responsibilities",
+            "Allocating system resources"
+          ],
+          "answer": "Managing external libraries and their versions",
+          "difficulty": "Medium",
+          "explanation": "Dependency management involves handling external libraries, frameworks, and their versions to ensure compatibility and stability in a project."
+        },
+        {
+          "id": 49,
+          "question": "What is 'software layering'?",
+          "options": [
+            "Organizing software into hierarchical layers with specific responsibilities",
+            "Creating multiple copies of the same codebase",
+            "Designing the user interface without considering other layers",
+            "Avoiding separation of concerns in the software design"
+          ],
+          "answer": "Organizing software into hierarchical layers with specific responsibilities",
+          "difficulty": "Hard",
+          "explanation": "Software layering involves organizing the software into hierarchical layers, each with specific responsibilities, enhancing modularity and maintainability."
+        },
+        {
+          "id": 50,
+          "question": "Which architectural pattern separates the data access logic from the business logic?",
+          "options": [
+            "Model-View-Controller",
+            "Layered Architecture",
+            "Microservices",
+            "Event-Driven Architecture"
+          ],
+          "answer": "Layered Architecture",
+          "difficulty": "Medium",
+          "explanation": "Layered Architecture separates concerns by organizing software into layers, such as data access, business logic, and presentation layers."
+        }
+      ]
+    }
+  ]
+}

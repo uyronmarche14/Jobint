@@ -1,0 +1,452 @@
+[
+  {
+    "question_id": "Q001",
+    "question_text": "What is a database?",
+    "question_type": "Basic",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A001",
+        "answer_quality": "High",
+        "answer_text": "A database is an organized collection of data that is stored and managed electronically. It allows for efficient data retrieval, insertion, updating, and deletion. Typically, data in a database is organized into tables with rows and columns, where each table represents an entity, and rows represent records. For example, a customer database might have tables for customer information, orders, and transactions."
+      }
+    ]
+  },
+  {
+    "question_id": "Q002",
+    "question_text": "Explain ACID properties in a database.",
+    "question_type": "Basic",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A002",
+        "answer_quality": "High",
+        "answer_text": "The acronym ACID stands for Atomicity, Consistency, Isolation, and Durability. ACID properties are essential for ensuring database transactions are reliable and consistent.\n\n- **Atomicity**: Ensures that all parts of a transaction are completed; if one part fails, the entire transaction fails. For example, all items in a customer's order must be added to the database, or none at all.\n- **Consistency**: Ensures that the database remains in a valid state before and after a transaction. For example, a bank transfer should never result in money disappearing from both accounts.\n- **Isolation**: Ensures that concurrent transactions do not interfere with each other. For instance, two users withdrawing money from an ATM do not affect each other’s transactions.\n- **Durability**: Ensures that once a transaction is committed, its effects are permanent, even in the case of a crash. For example, after a power outage, the bank’s system still shows the correct account balance."
+      }
+    ]
+  },
+  {
+    "question_id": "Q003",
+    "question_text": "What are database indexes, and why are they used?",
+    "question_type": "Basic",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A003",
+        "answer_quality": "High",
+        "answer_text": "Indexes are database objects that enhance the speed of data retrieval operations. They function by creating a quick lookup mechanism for data based on one or more columns in a table, much like an index in a book helps you find information quickly. Namely, indexes reduce the amount of disk I/O needed to access data, thereby boosting overall database performance."
+      }
+    ]
+  },
+  {
+    "question_id": "Q004",
+    "question_text": "What is normalization, and why is it important in a database?",
+    "question_type": "Basic",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A004",
+        "answer_quality": "High",
+        "answer_text": "Normalization is the process of organizing data within a database to reduce redundancy and ensure data integrity. It involves breaking down a table into smaller, more manageable tables and defining relationships between them. This process ensures that data is stored efficiently and consistently across the database. For example, instead of storing customer data in multiple tables, normalization would involve creating one customer table and referencing it using keys in other tables, reducing duplicate data."
+      }
+    ]
+  },
+  {
+    "question_id": "Q005",
+    "question_text": "What is a foreign key in a database?",
+    "question_type": "Basic",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A005",
+        "answer_quality": "High",
+        "answer_text": "A foreign key is a field in one table that refers to the primary key in another table, creating a relationship between the two tables. It ensures referential integrity, meaning that the data in the foreign key field must match the values in the primary key it references. For example, in a table of orders, a foreign key might link each order to a specific customer from the customer table, ensuring that the order is associated with a valid customer."
+      }
+    ]
+  },
+  {
+    "question_id": "Q006",
+    "question_text": "How do you optimize a slow-running query?",
+    "question_type": "Intermediate",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A006",
+        "answer_quality": "High",
+        "answer_text": "To optimize a slow-running query, I would first analyze the query execution plan to identify any bottlenecks or areas causing delays. If the query is performing a full table scan, adding appropriate indexes to the columns used in the WHERE clause or JOIN operations can significantly improve performance. I also consider rewriting the query to simplify it or break it down into smaller parts if possible. Additionally, I check for other factors, such as the proper use of joins, avoiding unnecessary columns in the SELECT statement, and ensuring that the statistics on the tables are up-to-date."
+      }
+    ]
+  },
+  {
+    "question_id": "Q007",
+    "question_text": "How would you handle database deadlocks?",
+    "question_type": "Intermediate",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A007",
+        "answer_quality": "High",
+        "answer_text": "To handle database deadlocks, I would first identify the root cause by reviewing database logs and deadlock graphs. Once identified, I ensure that all transactions access resources in a consistent order to reduce the chance of circular waits. Keeping transactions short and reducing lock durations can minimize deadlocks. I might also adjust the transaction isolation level when full isolation isn't necessary. Implementing a deadlock retry mechanism in the application logic can help handle deadlocks gracefully."
+      }
+    ]
+  },
+  {
+    "question_id": "Q008",
+    "question_text": "What is database partitioning and when would you use it?",
+    "question_type": "Intermediate",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A008",
+        "answer_quality": "High",
+        "answer_text": "Database partitioning involves dividing a large table into smaller, more manageable pieces called partitions. Each partition is stored separately and can be queried individually, which can significantly improve performance and manageability, especially for very large datasets. Partitioning is particularly useful when dealing with large volumes of data that are frequently accessed based on specific criteria, such as date ranges or geographic regions."
+      }
+    ]
+  },
+  {
+    "question_id": "Q009",
+    "question_text": "What is database replication, and when would you use it?",
+    "question_type": "Intermediate",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A009",
+        "answer_quality": "High",
+        "answer_text": "Database replication involves copying and maintaining database objects across multiple servers to ensure data redundancy and high availability. It can be synchronous or asynchronous. Replication is particularly useful in scenarios where uptime is critical, such as for e-commerce platforms, where users expect the database to always be available, even during maintenance or hardware failures."
+      }
+    ]
+  },
+  {
+    "question_id": "Q010",
+    "question_text": "What are database views, and what are their benefits?",
+    "question_type": "Intermediate",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A010",
+        "answer_quality": "High",
+        "answer_text": "A database view is a virtual table based on a query's result. It doesn't store data itself but displays data retrieved from one or more underlying tables. Views simplify complex queries by allowing users to select from a single view rather than writing a complicated SQL query. Views also enhance security by restricting user access to specific data fields without giving them access to the underlying tables."
+      }
+    ]
+  },
+  {
+    "question_id": "Q011",
+    "question_text": "What methods would you use to ensure database scalability?",
+    "question_type": "Advanced",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A011",
+        "answer_quality": "High",
+        "answer_text": "To ensure database scalability, I would use a combination of vertical and horizontal scaling strategies, along with optimizing database design and architecture. Vertical scaling involves adding more resources to the existing server, while horizontal scaling (sharding) distributes the database across multiple servers. Replication can distribute read workloads, and caching mechanisms can reduce database load. Efficient indexing and query optimization also contribute to scalability."
+      }
+    ]
+  },
+  {
+    "question_id": "Q012",
+    "question_text": "What are the differences between OLTP and OLAP databases, and how do you optimize each?",
+    "question_type": "Advanced",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A012",
+        "answer_quality": "High",
+        "answer_text": "OLTP (Online Transaction Processing) systems are designed for managing transactional data with fast query processing and high concurrency. Optimization involves normalization, indexing, and efficient transaction management. OLAP (Online Analytical Processing) systems are optimized for complex queries and data analysis, handling large volumes of read-heavy queries. Optimization includes denormalization, partitioning, and specialized indexing like bitmap indexes."
+      }
+    ]
+  },
+  {
+    "question_id": "Q013",
+    "question_text": "Explain the different types of database replication and their use cases.",
+    "question_type": "Advanced",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A013",
+        "answer_quality": "High",
+        "answer_text": "The different types of replication include:\n\n- **Master-Slave Replication**: One database handles all write operations (master), and read operations can be distributed to one or more replicas (slaves). Useful when reads outnumber writes.\n- **Master-Master Replication**: Two or more databases handle both read and write operations, replicating changes to each other. Suitable for distributed systems needing writable nodes in multiple locations.\n- **Snapshot Replication**: Copies data at a specific point in time. Used when data changes infrequently or periodic full copies suffice.\n- **Transactional Replication**: Continuously replicates data as transactions occur, ideal for high availability and real-time consistency."
+      }
+    ]
+  },
+  {
+    "question_id": "Q014",
+    "question_text": "What are stored procedures, and how do they improve database performance?",
+    "question_type": "Advanced",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A014",
+        "answer_quality": "High",
+        "answer_text": "A stored procedure is a precompiled set of SQL statements that can be executed as a unit. Stored procedures improve performance by reducing the amount of data sent between the database and the application, as multiple queries can be executed with a single call. They also enhance security by encapsulating the database logic and allow for code reusability."
+      }
+    ]
+  },
+  {
+    "question_id": "Q015",
+    "question_text": "What is database sharding, and when would you implement it?",
+    "question_type": "Advanced",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance", "E-commerce"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A015",
+        "answer_quality": "High",
+        "answer_text": "Database sharding is a horizontal partitioning strategy where a large database is split into smaller, more manageable pieces called shards. Each shard is stored on a separate server, allowing for greater scalability and performance in distributed systems. Sharding is typically used when dealing with large datasets that require high transaction volumes and need to handle millions of users."
+      }
+    ]
+  },
+  {
+    "question_id": "Q016",
+    "question_text": "How would you optimize a SQL query?",
+    "question_type": "SQL",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A016",
+        "answer_quality": "High",
+        "answer_text": "First, I would analyze the query execution plan to identify any performance bottlenecks. Indexing is a primary method for improving query performance, so I would ensure that the necessary indexes are in place for columns used in the WHERE clause, JOIN conditions, and ORDER BY clauses. I would avoid using SELECT * and specify only the needed columns. Additionally, I might rewrite complex queries into simpler subqueries or use temporary tables to break down the query."
+      }
+    ]
+  },
+  {
+    "question_id": "Q017",
+    "question_text": "Explain the difference between WHERE and HAVING clauses.",
+    "question_type": "SQL",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A017",
+        "answer_quality": "High",
+        "answer_text": "The WHERE clause filters rows before any grouping occurs and applies to individual rows in the table. The HAVING clause filters groups of rows after the GROUP BY clause has been applied and is used to set conditions on aggregate functions like COUNT, SUM, AVG."
+      }
+    ]
+  },
+  {
+    "question_id": "Q018",
+    "question_text": "What are the differences between INNER JOIN, LEFT JOIN, and RIGHT JOIN in SQL?",
+    "question_type": "SQL",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A018",
+        "answer_quality": "High",
+        "answer_text": "An INNER JOIN returns only the rows with a match between the two tables based on the join condition. A LEFT JOIN returns all the rows from the left table and the matched rows from the right table; if there is no match, NULL values are returned for the right table's columns. A RIGHT JOIN returns all the rows from the right table and the matched rows from the left table, filling in NULLs where there is no match."
+      }
+    ]
+  },
+  {
+    "question_id": "Q019",
+    "question_text": "What is the difference between a clustered and non-clustered index in SQL?",
+    "question_type": "SQL",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A019",
+        "answer_quality": "High",
+        "answer_text": "A clustered index determines the physical order of the data in the table and can only be applied to one column per table. When you query by a clustered index, the database can directly locate the data. A non-clustered index creates a separate structure that stores pointers to the physical data, allowing for multiple non-clustered indexes per table. Non-clustered indexes are useful for columns frequently used in search queries but do not affect the table's physical storage order."
+      }
+    ]
+  },
+  {
+    "question_id": "Q020",
+    "question_text": "How would you handle a deadlock situation in SQL Server?",
+    "question_type": "SQL",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A020",
+        "answer_quality": "High",
+        "answer_text": "To handle a deadlock in SQL Server, I would first identify and capture the deadlock events using SQL Server Profiler or enabling trace flags. Then, I would analyze the deadlock graph to understand the involved transactions and resources. Solutions include optimizing queries to access resources in the same order, reducing transaction scope, implementing deadlock retry logic, and using query hints like NOLOCK or ROWLOCK."
+      }
+    ]
+  },
+  {
+    "question_id": "Q021",
+    "question_text": "How do you ensure high availability for databases in the cloud?",
+    "question_type": "Cloud",
+    "roles": ["Database Administrator", "Cloud Engineer"],
+    "industries": ["Tech", "Finance", "E-commerce"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A021",
+        "answer_quality": "High",
+        "answer_text": "I utilize the cloud provider's managed database services that offer built-in high availability features like multi-AZ deployments, automatic failover, and backup solutions. For example, in AWS, setting up an RDS instance with Multi-AZ deployment ensures data is replicated across different Availability Zones. I also implement replication and clustering, configure automated backups, and monitor the database with alerting mechanisms."
+      }
+    ]
+  },
+  {
+    "question_id": "Q022",
+    "question_text": "What are some best practices for migrating on-premises databases to the cloud?",
+    "question_type": "Cloud",
+    "roles": ["Database Administrator", "Cloud Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A022",
+        "answer_quality": "High",
+        "answer_text": "Best practices include thorough assessment and planning, choosing the appropriate cloud service, and data migration strategy. Use tools like AWS DMS for minimal downtime. Conduct testing in a staging environment, plan for a minimal downtime cutover during low-usage periods, and validate data integrity post-migration."
+      }
+    ]
+  },
+  {
+    "question_id": "Q023",
+    "question_text": "How would you handle security in cloud-based databases?",
+    "question_type": "Cloud",
+    "roles": ["Database Administrator", "Security Engineer"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A023",
+        "answer_quality": "High",
+        "answer_text": "Key measures include enabling encryption at rest and in transit, implementing access control with IAM roles and policies, utilizing network security features like VPCs and security groups, monitoring and auditing database activities, and ensuring compliance with relevant regulations by configuring data protection settings and performing regular security audits."
+      }
+    ]
+  },
+  {
+    "question_id": "Q024",
+    "question_text": "What are the key differences between managing an on-premises database versus a cloud-based database?",
+    "question_type": "Cloud",
+    "roles": ["Database Administrator", "Cloud Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A024",
+        "answer_quality": "High",
+        "answer_text": "Managing on-premises databases requires handling hardware procurement, software installation, and regular maintenance like backups and patching. Cloud-based databases leverage the cloud provider’s infrastructure, offering scalability, built-in high availability, and automated backups. Cloud databases allow for easy resource scaling without investing in physical hardware."
+      }
+    ]
+  },
+  {
+    "question_id": "Q025",
+    "question_text": "How do you monitor and optimize the cost of cloud database services?",
+    "question_type": "Cloud",
+    "roles": ["Database Administrator", "Cloud Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A025",
+        "answer_quality": "High",
+        "answer_text": "I monitor usage patterns and resource consumption using cloud provider’s monitoring tools. I identify underutilized instances and consider rightsizing them. Leveraging features like auto-scaling and using Reserved Instances or Savings Plans for long-term workloads helps optimize costs. Regularly reviewing storage usage and cleaning up unused data also reduces expenses."
+      }
+    ]
+  },
+  {
+    "question_id": "Q026",
+    "question_text": "Describe a situation where you had to troubleshoot a critical database issue.",
+    "question_type": "Behavioral",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A026",
+        "answer_quality": "High",
+        "answer_text": "In a previous role, our production database experienced severe performance degradation impacting the customer-facing application. I immediately notified stakeholders and accessed the database to identify long-running queries using monitoring tools. I found a query causing a deadlock due to a missing index. Implementing the index improved performance, and I further optimized queries and scheduled maintenance to prevent future issues."
+      }
+    ]
+  },
+  {
+    "question_id": "Q027",
+    "question_text": "How do you prioritize and manage multiple database projects simultaneously?",
+    "question_type": "Behavioral",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A027",
+        "answer_quality": "High",
+        "answer_text": "I start by understanding the priorities and deadlines of each project, using project management tools to organize tasks. I prioritize based on impact, risks, and dependencies, allocating dedicated time slots for each project. Regular communication with stakeholders ensures transparency, and I build buffer time into my schedule to handle unforeseen issues."
+      }
+    ]
+  },
+  {
+    "question_id": "Q028",
+    "question_text": "How do you stay updated with the latest database technologies and trends?",
+    "question_type": "Behavioral",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A028",
+        "answer_quality": "High",
+        "answer_text": "I follow industry blogs, publications, and forums, and participate in webinars and online courses. Attending conferences and local meetups helps me learn from experts and exchange knowledge with peers. I also experiment with new tools and techniques in test environments to evaluate their potential benefits."
+      }
+    ]
+  },
+  {
+    "question_id": "Q029",
+    "question_text": "Can you describe a time when you had to manage a high-pressure situation during a database outage? What was your approach?",
+    "question_type": "Behavioral",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A029",
+        "answer_quality": "High",
+        "answer_text": "During a critical e-commerce sale event, the database went down due to a traffic spike. I communicated the issue to stakeholders and quickly analyzed logs to identify that the connection pool was exhausted. I increased the pool size and implemented load balancing across read replicas, restoring the database. Post-resolution, I conducted a root cause analysis to prevent future occurrences."
+      }
+    ]
+  },
+  {
+    "question_id": "Q030",
+    "question_text": "How do you approach communicating complex technical issues to non-technical stakeholders?",
+    "question_type": "Behavioral",
+    "roles": ["Database Administrator"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A030",
+        "answer_quality": "High",
+        "answer_text": "I focus on presenting the issue in understandable terms, emphasizing the business impact. I avoid technical jargon and use visual aids like charts to illustrate concepts. This approach ensures that non-technical team members grasp the situation, facilitating better decision-making."
+      }
+    ]
+  }
+]

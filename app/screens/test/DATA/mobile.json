@@ -1,0 +1,572 @@
+[
+  {
+    "question_id": "Q001",
+    "question_text": "How many apps have you developed?",
+    "question_type": "Technical",
+    "roles": ["Mobile App Developer", "App Development Agency"],
+    "industries": ["Tech", "E-commerce", "Finance", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A001",
+        "answer_quality": "High",
+        "answer_text": "We have developed over 50 high-quality mobile applications across various industries, focusing on delivering robust and user-friendly solutions."
+      }
+    ]
+  },
+  {
+    "question_id": "Q002",
+    "question_text": "What apps can I download from the App Store or Google Play?",
+    "question_type": "Technical",
+    "roles": ["Mobile App Developer", "App Development Agency"],
+    "industries": ["Tech", "E-commerce", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A002",
+        "answer_quality": "High",
+        "answer_text": "You can download 'HealthPlus' and 'ShopEase' from both the App Store and Google Play to see examples of our work."
+      }
+    ]
+  },
+  {
+    "question_id": "Q003",
+    "question_text": "Can I talk to the client for whom you developed the app?",
+    "question_type": "Behavioral",
+    "roles": ["Mobile App Developer", "App Development Agency"],
+    "industries": ["All"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A003",
+        "answer_quality": "High",
+        "answer_text": "Absolutely, with our client's permission, we can provide contact information so you can discuss their experience working with us."
+      }
+    ]
+  },
+  {
+    "question_id": "Q004",
+    "question_text": "What programming languages do you work with to develop native apps?",
+    "question_type": "Technical",
+    "roles": ["Mobile App Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A004",
+        "answer_quality": "High",
+        "answer_text": "We use Swift and Objective-C for iOS development, and Kotlin and Java for Android development to create high-performance native apps."
+      }
+    ]
+  },
+  {
+    "question_id": "Q005",
+    "question_text": "Do you have experience in developing cross-platform apps?",
+    "question_type": "Technical",
+    "roles": ["Mobile App Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A005",
+        "answer_quality": "High",
+        "answer_text": "Yes, we have extensive experience using frameworks like Flutter and React Native to build cross-platform apps efficiently."
+      }
+    ]
+  },
+  {
+    "question_id": "Q006",
+    "question_text": "Is it a good idea to use a cross-platform development framework for my app?",
+    "question_type": "Technical",
+    "roles": ["Mobile App Developer"],
+    "industries": ["Tech", "Startups"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A006",
+        "answer_quality": "High",
+        "answer_text": "Using a cross-platform framework can reduce development time and cost while reaching a wider audience quickly. It's ideal for apps that require a uniform experience across platforms."
+      }
+    ]
+  },
+  {
+    "question_id": "Q007",
+    "question_text": "Will my app work as designed on iOS or Android?",
+    "question_type": "Technical",
+    "roles": ["Mobile App Developer"],
+    "industries": ["All"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A007",
+        "answer_quality": "High",
+        "answer_text": "Yes, we ensure that the app is fully compatible with both iOS and Android, adhering to each platform's design guidelines for optimal performance."
+      }
+    ]
+  },
+  {
+    "question_id": "Q008",
+    "question_text": "What if I don’t have the requirements for my app?",
+    "question_type": "Technical",
+    "roles": ["Mobile App Developer", "Business Analyst"],
+    "industries": ["All"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A008",
+        "answer_quality": "High",
+        "answer_text": "Our team can assist you in defining the app requirements through workshops and consultations to capture your vision effectively."
+      }
+    ]
+  },
+  {
+    "question_id": "Q009",
+    "question_text": "What is your app back-end development expertise?",
+    "question_type": "Technical",
+    "roles": ["Full-Stack Developer"],
+    "industries": ["All"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A009",
+        "answer_quality": "High",
+        "answer_text": "We specialize in building robust back-end systems using Node.js, Python, and cloud services like AWS and Firebase to ensure seamless app functionality."
+      }
+    ]
+  },
+  {
+    "question_id": "Q010",
+    "question_text": "Have you worked on similar apps?",
+    "question_type": "Technical",
+    "roles": ["Mobile App Developer"],
+    "industries": ["Depends on Client's Industry"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A010",
+        "answer_quality": "High",
+        "answer_text": "Yes, we have developed apps in the same domain and can share relevant case studies to demonstrate our expertise."
+      }
+    ]
+  },
+  {
+    "question_id": "Q011",
+    "question_text": "What is your mobile development capacity?",
+    "question_type": "Technical",
+    "roles": ["Mobile App Development Agency"],
+    "industries": ["All"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A011",
+        "answer_quality": "High",
+        "answer_text": "We have a team of 20 mobile developers capable of handling multiple projects simultaneously, ensuring timely delivery."
+      }
+    ]
+  },
+  {
+    "question_id": "Q012",
+    "question_text": "How can you ensure my app’s accessibility?",
+    "question_type": "Technical",
+    "roles": ["Mobile App Developer", "UI/UX Designer"],
+    "industries": ["All"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A012",
+        "answer_quality": "High",
+        "answer_text": "We follow accessibility guidelines like WCAG and implement features such as voice assistance, scalable text, and high-contrast modes to make the app usable for all."
+      }
+    ]
+  },
+  {
+    "question_id": "Q013",
+    "question_text": "What hardware did you have the chance to use in apps?",
+    "question_type": "Technical",
+    "roles": ["Mobile App Developer"],
+    "industries": ["IoT", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A013",
+        "answer_quality": "High",
+        "answer_text": "We have integrated hardware features like GPS, NFC, Bluetooth, accelerometers, and biometric sensors into our apps to enhance functionality."
+      }
+    ]
+  },
+  {
+    "question_id": "Q014",
+    "question_text": "What monetization strategies do you suggest for my app?",
+    "question_type": "Strategic",
+    "roles": ["Mobile App Developer", "Business Analyst"],
+    "industries": ["All"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A014",
+        "answer_quality": "High",
+        "answer_text": "Depending on your target audience, we recommend strategies like in-app purchases, subscription models, or ad-based revenue to maximize profitability."
+      }
+    ]
+  },
+  {
+    "question_id": "Q015",
+    "question_text": "Have you worked with any mobile ad frameworks?",
+    "question_type": "Technical",
+    "roles": ["Mobile App Developer"],
+    "industries": ["Advertising", "Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A015",
+        "answer_quality": "High",
+        "answer_text": "Yes, we have experience with Google AdMob, Facebook Audience Network, and Apple Advertising to integrate ads seamlessly into apps."
+      }
+    ]
+  },
+  {
+    "question_id": "Q016",
+    "question_text": "What OS versions and device models should my app support?",
+    "question_type": "Technical",
+    "roles": ["Mobile App Developer"],
+    "industries": ["All"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A016",
+        "answer_quality": "High",
+        "answer_text": "We recommend supporting iOS 14 and above, and Android 9.0 (Pie) and above, covering the majority of active devices."
+      }
+    ]
+  },
+  {
+    "question_id": "Q017",
+    "question_text": "What mobile analytics do you advise to build into my app?",
+    "question_type": "Technical",
+    "roles": ["Mobile App Developer", "Data Analyst"],
+    "industries": ["All"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A017",
+        "answer_quality": "High",
+        "answer_text": "We suggest integrating tools like Firebase Analytics or Flurry to track user engagement, retention, and app performance."
+      }
+    ]
+  },
+  {
+    "question_id": "Q018",
+    "question_text": "Can you build my app in pair with smart devices?",
+    "question_type": "Technical",
+    "roles": ["Mobile App Developer"],
+    "industries": ["IoT", "Wearables"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A018",
+        "answer_quality": "High",
+        "answer_text": "Yes, we have experience developing apps that integrate with smart devices like wearables, IoT gadgets, and home automation systems."
+      }
+    ]
+  },
+  {
+    "question_id": "Q019",
+    "question_text": "Are you experienced with payment integrations?",
+    "question_type": "Technical",
+    "roles": ["Mobile App Developer"],
+    "industries": ["E-commerce", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A019",
+        "answer_quality": "High",
+        "answer_text": "Yes, we've integrated payment gateways like Stripe, PayPal, and in-app purchases for both iOS and Android platforms."
+      }
+    ]
+  },
+  {
+    "question_id": "Q020",
+    "question_text": "What are the best UI/UX practices recommended by Google and Apple you follow?",
+    "question_type": "Technical",
+    "roles": ["UI/UX Designer"],
+    "industries": ["All"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A020",
+        "answer_quality": "High",
+        "answer_text": "We adhere to Apple's Human Interface Guidelines and Google's Material Design principles to create intuitive and consistent user experiences."
+      }
+    ]
+  },
+  {
+    "question_id": "Q021",
+    "question_text": "How do you ensure my app’s security?",
+    "question_type": "Technical",
+    "roles": ["Mobile App Developer", "Security Specialist"],
+    "industries": ["Finance", "Healthcare"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A021",
+        "answer_quality": "High",
+        "answer_text": "We implement security measures like data encryption, secure authentication, and regular code audits to protect against vulnerabilities."
+      }
+    ]
+  },
+  {
+    "question_id": "Q022",
+    "question_text": "Do you test the app’s impact on the device performance?",
+    "question_type": "Technical",
+    "roles": ["QA Engineer"],
+    "industries": ["All"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A022",
+        "answer_quality": "High",
+        "answer_text": "Yes, we conduct performance testing to optimize battery usage, memory consumption, and ensure the app runs smoothly on all devices."
+      }
+    ]
+  },
+  {
+    "question_id": "Q023",
+    "question_text": "Have you used any extended functionality provided by OSs?",
+    "question_type": "Technical",
+    "roles": ["Mobile App Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A023",
+        "answer_quality": "High",
+        "answer_text": "Yes, we've utilized features like Siri shortcuts, widgets, ARKit for iOS, and Android's App Widgets and Google Assistant integration."
+      }
+    ]
+  },
+  {
+    "question_id": "Q024",
+    "question_text": "Can you work out a fixed quote?",
+    "question_type": "Business",
+    "roles": ["Project Manager"],
+    "industries": ["All"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A024",
+        "answer_quality": "High",
+        "answer_text": "Yes, after understanding your detailed requirements, we can provide a fixed-price quote for the project."
+      }
+    ]
+  },
+  {
+    "question_id": "Q025",
+    "question_text": "What is your hourly rate?",
+    "question_type": "Business",
+    "roles": ["Project Manager"],
+    "industries": ["All"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A025",
+        "answer_quality": "High",
+        "answer_text": "Our hourly rate ranges from $50 to $100, depending on the project's complexity and required expertise."
+      }
+    ]
+  },
+  {
+    "question_id": "Q026",
+    "question_text": "What do you need from me to provide a quote?",
+    "question_type": "Business",
+    "roles": ["Project Manager", "Business Analyst"],
+    "industries": ["All"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A026",
+        "answer_quality": "High",
+        "answer_text": "We need detailed project requirements, including features, design preferences, and any specific technologies you wish to use."
+      }
+    ]
+  },
+  {
+    "question_id": "Q027",
+    "question_text": "Do you provide a roadmap?",
+    "question_type": "Business",
+    "roles": ["Project Manager"],
+    "industries": ["All"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A027",
+        "answer_quality": "High",
+        "answer_text": "Yes, we create a detailed project roadmap with timelines and milestones to keep the development process transparent."
+      }
+    ]
+  },
+  {
+    "question_id": "Q028",
+    "question_text": "Who owns the source code during development?",
+    "question_type": "Business",
+    "roles": ["Project Manager"],
+    "industries": ["All"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A028",
+        "answer_quality": "High",
+        "answer_text": "You will own the source code upon completion and full payment for the project, as specified in our contract."
+      }
+    ]
+  },
+  {
+    "question_id": "Q029",
+    "question_text": "Who’s on your mobile app development team?",
+    "question_type": "Business",
+    "roles": ["Project Manager"],
+    "industries": ["All"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A029",
+        "answer_quality": "High",
+        "answer_text": "Our team includes mobile developers, UI/UX designers, QA testers, a project manager, and a business analyst."
+      }
+    ]
+  },
+  {
+    "question_id": "Q030",
+    "question_text": "Waterfall or Agile?",
+    "question_type": "Business",
+    "roles": ["Project Manager"],
+    "industries": ["All"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A030",
+        "answer_quality": "High",
+        "answer_text": "We prefer Agile methodology for its flexibility and iterative approach but can adapt to Waterfall if it suits your project better."
+      }
+    ]
+  },
+  {
+    "question_id": "Q031",
+    "question_text": "What is your QA process? What do I need to be able to test?",
+    "question_type": "Technical",
+    "roles": ["QA Engineer"],
+    "industries": ["All"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A031",
+        "answer_quality": "High",
+        "answer_text": "Our QA process includes unit testing, integration testing, and user acceptance testing. We'll provide you with test builds and instructions to facilitate your testing."
+      }
+    ]
+  },
+  {
+    "question_id": "Q032",
+    "question_text": "What has been the biggest issue on a mobile app project?",
+    "question_type": "Behavioral",
+    "roles": ["Mobile App Developer"],
+    "industries": ["All"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A032",
+        "answer_quality": "High",
+        "answer_text": "One challenge was integrating with a third-party API that had limited documentation. We overcame it by collaborating closely with their support team and extensive testing."
+      }
+    ]
+  },
+  {
+    "question_id": "Q033",
+    "question_text": "Do you provide app maintenance and support?",
+    "question_type": "Business",
+    "roles": ["Project Manager"],
+    "industries": ["All"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A033",
+        "answer_quality": "High",
+        "answer_text": "Yes, we offer ongoing maintenance and support packages to keep your app updated and running smoothly."
+      }
+    ]
+  },
+  {
+    "question_id": "Q034",
+    "question_text": "Do you have an ASO expertise?",
+    "question_type": "Technical",
+    "roles": ["Marketing Specialist"],
+    "industries": ["All"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A034",
+        "answer_quality": "High",
+        "answer_text": "Yes, we have App Store Optimization experts who can help improve your app's visibility and ranking in app stores."
+      }
+    ]
+  },
+  {
+    "question_id": "Q035",
+    "question_text": "Once I accept the app, is there a guarantee period for bug fixing?",
+    "question_type": "Business",
+    "roles": ["Project Manager"],
+    "industries": ["All"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A035",
+        "answer_quality": "High",
+        "answer_text": "Yes, we offer a 30-day warranty period after launch during which we fix any bugs free of charge."
+      }
+    ]
+  },
+  {
+    "question_id": "Q036",
+    "question_text": "What do you expect of me on the project for us to succeed?",
+    "question_type": "Behavioral",
+    "roles": ["Client"],
+    "industries": ["All"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A036",
+        "answer_quality": "High",
+        "answer_text": "We expect timely feedback, clear communication, and active collaboration to ensure the project aligns with your vision."
+      }
+    ]
+  },
+  {
+    "question_id": "Q037",
+    "question_text": "Do you have any mobile-related open-source contributions?",
+    "question_type": "Technical",
+    "roles": ["Mobile App Developer"],
+    "industries": ["Tech Community"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A037",
+        "answer_quality": "High",
+        "answer_text": "Yes, our developers contribute to open-source projects on GitHub, and we've published libraries used by other mobile app developers."
+      }
+    ]
+  },
+  {
+    "question_id": "Q038",
+    "question_text": "When can you start?",
+    "question_type": "Business",
+    "roles": ["Project Manager"],
+    "industries": ["All"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A038",
+        "answer_quality": "High",
+        "answer_text": "We can begin the project within two weeks after finalizing the requirements and signing the contract."
+      }
+    ]
+  }
+]

@@ -1,0 +1,2733 @@
+[
+  {
+    "id": 1,
+    "title": "Two Sum",
+    "difficulty": "Easy",
+    "topics": ["Array", "Hash Table"],
+    "companies": [],
+    "description": "Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`.\n\nNote: You may assume that each input would have exactly one solution, and you may not use the same element twice.\n\n**Example:**\n\n```python\nInput: nums = [2, 7, 11, 15], target = 9\nOutput: [0, 1]\nExplanation: Because nums[0] + nums[1] == 9\n```\n\nA simple approach is to check every possible pair of numbers using two nested loops:\n\n```python\nfor i in range(len(nums)):\n    for j in range(i + 1, len(nums)):\n        if nums[i] + nums[j] == target:\n            # Found the pair\n            return [i, j]\n```\n\nHowever, this method has a time complexity of O(n²), which is inefficient for large arrays.",
+    "hints": [
+      "Hint 1: Consider using a hash map to store the numbers you've seen so far.",
+      "Hint 2: Think about how to check for the complement of the current number efficiently.",
+      "Hint 3: Be careful not to use the same element twice."
+    ],
+    "problem_solver": {
+      "approach": "To solve this problem efficiently, you can use a hash map to keep track of the numbers you have seen so far and their indices. As you iterate through the array, for each number, you calculate its complement (the number needed to reach the target). If the complement exists in the hash map, you have found the two numbers that add up to the target.",
+      "steps": [
+        "Initialize an empty hash map to store numbers and their indices.",
+        "Loop through the array `nums`.",
+        "For each element `nums[i]`, calculate its complement: `complement = target - nums[i]`.",
+        "Check if `complement` is in the hash map:",
+        "- If yes, return the pair of indices `[hash_map[complement], i]`.",
+        "- If no, add `nums[i]` and its index `i` to the hash map.",
+        "If no solution is found, return an error message."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Which of the following approaches will efficiently find the indices of the two numbers that add up to the target value in an array?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Using two nested loops to check every pair of numbers.",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Sorting the array and using the two-pointer technique.",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "Using a hash map to store numbers and their indices for quick lookup.",
+          "is_correct": true
+        },
+        {
+          "option": "D",
+          "text": "Applying a recursive function to generate all possible pairs.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses a hash map to keep track of numbers and their indices as you iterate through the array. For each number, you calculate its complement with respect to the target. If the complement is already in the hash map, you have found the two numbers that add up to the target. Here's how you can implement it:",
+      "code": "def two_sum(nums, target):\n    num_map = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in num_map:\n            return [num_map[complement], i]\n        num_map[num] = i"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Add Two Numbers",
+    "difficulty": "Medium",
+    "topics": ["Linked List", "Math"],
+    "companies": [],
+    "description": "You are given two non-empty linked lists representing two non-negative integers. The digits are stored in **reverse order**, and each node contains a single digit. Add the two numbers and return the sum as a linked list.\n\n**Example:**\n\n```python\nInput: (2 -> 4 -> 3) + (5 -> 6 -> 4)\nOutput: 7 -> 0 -> 8\nExplanation: 342 + 465 = 807\n```\n\nTo solve this problem, you can traverse both linked lists simultaneously, adding the corresponding digits along with any carry from the previous addition. Here's how you might start:\n\n```python\ncarry = 0\nwhile l1 or l2:\n    val1 = l1.val if l1 else 0\n    val2 = l2.val if l2 else 0\n    total = val1 + val2 + carry\n    carry = total // 10\n    # Create a new node with the digit value of (total % 10)\n    # Move to the next nodes in l1 and l2\n```",
+    "hints": [
+      "Hint 1: Use a dummy head node to simplify the code.",
+      "Hint 2: Keep track of the carry for sums exceeding 9.",
+      "Hint 3: Continue the loop until both lists and the carry are exhausted."
+    ],
+    "problem_solver": {
+      "approach": "To solve this problem, we can simulate the addition process similar to how we add numbers on paper. We'll iterate through both linked lists node by node, adding corresponding digits along with any carry from the previous step.",
+      "steps": [
+        "Initialize a dummy head node to simplify the result list manipulation.",
+        "Set a pointer `current` to the dummy head.",
+        "Initialize a variable `carry` to 0.",
+        "Loop through both linked lists until both are exhausted and there is no carry:",
+        "- Extract the values `val1` and `val2` from the current nodes (use 0 if the node is null).",
+        "- Calculate the sum: `total = val1 + val2 + carry`.",
+        "- Update the carry: `carry = total // 10`.",
+        "- Create a new node with value `total % 10` and attach it to `current.next`.",
+        "- Move `current` to `current.next`.",
+        "- Move to the next nodes in `l1` and `l2` if they are not null.",
+        "Return `dummy_head.next` as the head of the new linked list."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What is the primary reason for using a dummy head node in linked list problems?",
+      "options": [
+        {
+          "option": "A",
+          "text": "To handle edge cases and simplify code.",
+          "is_correct": true
+        },
+        {
+          "option": "B",
+          "text": "To store the carry-over value.",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "To keep track of the list length.",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "To reverse the linked list.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution involves iterating through both linked lists while keeping track of the carry. At each node, you sum the values and the carry, create a new node for the result, and move to the next nodes. Here's the implementation:",
+      "code": "def add_two_numbers(l1, l2):\n    dummy_head = ListNode(0)\n    current = dummy_head\n    carry = 0\n    while l1 or l2 or carry:\n        val1 = l1.val if l1 else 0\n        val2 = l2.val if l2 else 0\n        total = val1 + val2 + carry\n        carry = total // 10\n        current.next = ListNode(total % 10)\n        current = current.next\n        if l1:\n            l1 = l1.next\n        if l2:\n            l2 = l2.next\n    return dummy_head.next"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Longest Substring Without Repeating Characters",
+    "difficulty": "Medium",
+    "topics": ["Hash Table", "String", "Sliding Window"],
+    "companies": [],
+    "description": "Given a string `s`, find the length of the longest substring without repeating characters.\n\n**Example:**\n\n```python\nInput: s = \"abcabcbb\"\nOutput: 3\nExplanation: The answer is \"abc\", with the length of 3.\n```\n\nA straightforward way is to check all possible substrings and find the longest one without repeating characters. However, this approach is not efficient.\n\nA better approach is to use a sliding window to keep track of the current substring without duplicates:\n\n```python\nchar_set = set()\nleft = 0\nmax_length = 0\nfor right in range(len(s)):\n    while s[right] in char_set:\n        char_set.remove(s[left])\n        left += 1\n    char_set.add(s[right])\n    max_length = max(max_length, right - left + 1)\n```",
+    "hints": [
+      "Hint 1: Use a sliding window to track the current substring.",
+      "Hint 2: Utilize a set to keep track of characters in the current window.",
+      "Hint 3: Move the left pointer to shrink the window when a duplicate is found."
+    ],
+    "problem_solver": {
+      "approach": "We can use the sliding window technique to maintain a window of non-repeating characters. The window expands by moving the right pointer, and when a duplicate character is found, we move the left pointer to shrink the window.",
+      "steps": [
+        "Initialize a set `char_set` to store unique characters.",
+        "Initialize two pointers `left` and `right` at 0.",
+        "Initialize a variable `max_length` to keep track of the maximum length found.",
+        "Iterate over the string with the right pointer:",
+        "- If `s[right]` is not in `char_set`, add it and update `max_length`.",
+        "- If `s[right]` is in `char_set`, remove `s[left]` from the set and increment `left`.",
+        "Continue this process until the end of the string.",
+        "Return `max_length` as the length of the longest substring without repeating characters."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Which data structure is most suitable for checking duplicates in the sliding window approach?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Array",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Stack",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "Set",
+          "is_correct": true
+        },
+        {
+          "option": "D",
+          "text": "Queue",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses a sliding window and a set to keep track of unique characters. When a duplicate character is encountered, the window is adjusted by moving the left pointer until the duplicate is removed. This ensures that the substring remains without repeating characters. Here's how you can implement it:",
+      "code": "def length_of_longest_substring(s):\n    char_set = set()\n    left = 0\n    max_length = 0\n    for right in range(len(s)):\n        while s[right] in char_set:\n            char_set.remove(s[left])\n            left += 1\n        char_set.add(s[right])\n        max_length = max(max_length, right - left + 1)\n    return max_length"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Median of Two Sorted Arrays",
+    "difficulty": "Hard",
+    "topics": ["Array", "Binary Search", "Divide and Conquer"],
+    "companies": [],
+    "description": "Given two sorted arrays `nums1` and `nums2` of sizes `m` and `n` respectively, return the median of the two sorted arrays.\n\n**Example:**\n\n```python\nInput: nums1 = [1, 3], nums2 = [2]\nOutput: 2.0\nExplanation: Merged array = [1, 2, 3], median is 2.\n```\n\nOne naive approach is to merge both arrays and then find the median of the merged array. Here's how you might start:\n\n```python\nmerged = nums1 + nums2\nmerged.sort()\n# Find the median of the merged array\n```\n\nHowever, this approach has a time complexity of O((m+n) log (m+n)), which doesn't meet the O(log (m+n)) requirement.",
+    "hints": [
+      "Hint 1: Use binary search on the smaller array to partition the arrays.",
+      "Hint 2: Ensure the partitions are such that all elements on the left are less than or equal to those on the right.",
+      "Hint 3: Handle edge cases where partitions are at the extremes of the arrays."
+    ],
+    "problem_solver": {
+      "approach": "We can use a binary search approach to partition the two arrays such that the left halves and right halves satisfy the conditions for finding the median. The key is to partition the arrays so that the total number of elements on the left equals the number on the right.",
+      "steps": [
+        "Ensure `nums1` is the smaller array. If not, swap `nums1` and `nums2`.",
+        "Initialize pointers for binary search on `nums1`.",
+        "Perform binary search to find the correct partition:",
+        "- Calculate `i` as the partition index for `nums1`.",
+        "- Calculate `j` as the partition index for `nums2`.",
+        "- Check if the partitions are valid:",
+        "  - If `nums1[i]` is less than `nums2[j-1]`, adjust `i` to the right.",
+        "  - If `nums1[i-1]` is greater than `nums2[j]`, adjust `i` to the left.",
+        "- Else, correct partition is found.",
+        "Calculate the median based on the max of left elements and min of right elements.",
+        "Return the median."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What is the time complexity of the optimal solution for finding the median of two sorted arrays?",
+      "options": [
+        {
+          "option": "A",
+          "text": "O(n)",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "O(log (m + n))",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "O(log min(m, n))",
+          "is_correct": true
+        },
+        {
+          "option": "D",
+          "text": "O((m + n) log (m + n))",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution involves using binary search to partition the two arrays. By carefully choosing the partition, we can find the median in O(log(min(m, n))) time. The key is to partition the arrays such that the maximum element on the left is less than or equal to the minimum element on the right. Here's the implementation:",
+      "code": "def find_median_sorted_arrays(nums1, nums2):\n    if len(nums1) > len(nums2):\n        nums1, nums2 = nums2, nums1\n    m, n = len(nums1), len(nums2)\n    imin, imax, half_len = 0, m, (m + n + 1) // 2\n    while imin <= imax:\n        i = (imin + imax) // 2\n        j = half_len - i\n        if i < m and nums2[j-1] > nums1[i]:\n            imin = i + 1\n        elif i > 0 and nums1[i-1] > nums2[j]:\n            imax = i - 1\n        else:\n            if i == 0: max_of_left = nums2[j-1]\n            elif j == 0: max_of_left = nums1[i-1]\n            else: max_of_left = max(nums1[i-1], nums2[j-1])\n            if (m + n) % 2 == 1:\n                return max_of_left\n            if i == m: min_of_right = nums2[j]\n            elif j == n: min_of_right = nums1[i]\n            else: min_of_right = min(nums1[i], nums2[j])\n            return (max_of_left + min_of_right) / 2.0"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Longest Palindromic Substring",
+    "difficulty": "Medium",
+    "topics": ["String", "Dynamic Programming"],
+    "companies": [],
+    "description": "Given a string `s`, return the longest palindromic substring in `s`.\n\n**Example:**\n\n```python\nInput: s = \"babad\"\nOutput: \"bab\"\nExplanation: \"aba\" is also a valid answer.\n```\n\nTo solve this problem, you can consider each character in the string as the center of a palindrome and expand around it:\n\n```python\ndef expand_from_center(s, left, right):\n    while left >= 0 and right < len(s) and s[left] == s[right]:\n        left -= 1\n        right += 1\n    return s[left + 1:right]\n```\n\nYou need to check for both odd and even length palindromes.",
+    "hints": [
+      "Hint 1: A palindrome reads the same forwards and backwards.",
+      "Hint 2: Consider expanding around each character and its center.",
+      "Hint 3: Remember to check for both odd and even length palindromes."
+    ],
+    "problem_solver": {
+      "approach": "We can expand around each character (and between characters) to find all possible palindromic substrings. By comparing and updating the maximum length found, we can identify the longest palindrome in the string.",
+      "steps": [
+        "Initialize variables to track the start and end indices of the longest palindrome.",
+        "Iterate through the string, treating each character as the center of a palindrome.",
+        "For each index `i`, expand around center for both odd and even lengths:",
+        "- For odd length palindromes, set `left = i`, `right = i`.",
+        "- For even length palindromes, set `left = i`, `right = i + 1`.",
+        "Expand while `s[left] == s[right]` and indices are within bounds.",
+        "Update the maximum length and start/end indices if a longer palindrome is found.",
+        "Return the substring from `start` to `end`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Which technique is commonly used to solve the Longest Palindromic Substring problem efficiently?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Dynamic Programming only",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Expanding around centers",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "Manacher's Algorithm",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "Recursion",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution expands around each character (and between characters) to find all possible palindromic substrings. By comparing and updating the maximum length found, we can identify the longest palindrome in the string. Here's how you can implement it:",
+      "code": "def longest_palindrome(s):\n    if not s:\n        return ''\n    start, end = 0, 0\n    for i in range(len(s)):\n        len1 = expand_from_center(s, i, i)\n        len2 = expand_from_center(s, i, i + 1)\n        max_len = max(len1, len2)\n        if max_len > end - start:\n            start = i - (max_len - 1) // 2\n            end = i + max_len // 2\n    return s[start:end+1]\n\ndef expand_from_center(s, left, right):\n    while left >= 0 and right < len(s) and s[left] == s[right]:\n        left -= 1\n        right += 1\n    return right - left - 1"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Reverse Linked List",
+    "difficulty": "Easy",
+    "topics": ["Linked List"],
+    "companies": [],
+    "description": "Given the head of a singly linked list, reverse the list and return the new head.\n\n**Example:**\n\n```python\nInput: 1 -> 2 -> 3 -> 4 -> 5\nOutput: 5 -> 4 -> 3 -> 2 -> 1\n```\n\nTo reverse the linked list, you can iterate through the list and reverse the `next` pointers.",
+    "hints": [
+      "Hint 1: Use iterative traversal to reverse the pointers.",
+      "Hint 2: Keep track of the previous node to reverse the links.",
+      "Hint 3: Be careful with the order of operations to avoid losing references."
+    ],
+    "problem_solver": {
+      "approach": "We can reverse the linked list by iterating through it and reversing the `next` pointers at each node. By keeping track of the previous node, we can adjust the links accordingly.",
+      "steps": [
+        "Initialize three pointers: `prev` as `None`, `current` as `head`, and `next_node`.",
+        "While `current` is not `None`:",
+        "- Store `current.next` in `next_node`.",
+        "- Set `current.next` to `prev`.",
+        "- Move `prev` to `current`.",
+        "- Move `current` to `next_node`.",
+        "At the end, `prev` will be the new head of the reversed list.",
+        "Return `prev` as the new head."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Which method reverses a singly linked list in-place?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Iterative reversal by changing `next` pointers.",
+          "is_correct": true
+        },
+        {
+          "option": "B",
+          "text": "Using a stack to reverse node values.",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "Recursively rebuilding the list.",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "Creating a new list in reverse order.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution reverses the linked list by iteratively updating the `next` pointers of each node. By using three pointers (`prev`, `current`, and `next_node`), we can reverse the direction of the list in a single pass. Here's the implementation:",
+      "code": "def reverse_list(head):\n    prev = None\n    current = head\n    while current:\n        next_node = current.next\n        current.next = prev\n        prev = current\n        current = next_node\n    return prev"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Merge Two Sorted Lists",
+    "difficulty": "Easy",
+    "topics": ["Linked List"],
+    "companies": [],
+    "description": "Given two sorted linked lists `l1` and `l2`, merge them into one sorted linked list and return it.\n\n**Example:**\n\n```python\nInput: l1 = 1 -> 2 -> 4, l2 = 1 -> 3 -> 4\nOutput: 1 -> 1 -> 2 -> 3 -> 4 -> 4\n```\n\nTo merge the two lists, you can compare the nodes one by one and attach the smaller one to the merged list.",
+    "hints": [
+      "Hint 1: Use a dummy node to simplify edge cases.",
+      "Hint 2: Compare the current nodes of both lists to decide which one to attach.",
+      "Hint 3: Don't forget to attach the remaining nodes after one list is exhausted."
+    ],
+    "problem_solver": {
+      "approach": "We can merge the two lists by maintaining a pointer to the current node of the merged list and choosing the smaller node from the heads of `l1` and `l2` each time.",
+      "steps": [
+        "Initialize a dummy node to serve as the head of the merged list.",
+        "Set a pointer `current` to the dummy node.",
+        "While both `l1` and `l2` are not null:",
+        "- Compare `l1.val` and `l2.val`.",
+        "- Attach the node with the smaller value to `current.next`.",
+        "- Move the pointer (`l1` or `l2`) forward.",
+        "- Move `current` to `current.next`.",
+        "After the loop, attach the remaining nodes from `l1` or `l2` to `current.next`.",
+        "Return `dummy.next` as the head of the merged list."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What is the time complexity of merging two sorted linked lists?",
+      "options": [
+        {
+          "option": "A",
+          "text": "O(1)",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "O(n)",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "O(log n)",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "O(n log n)",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution merges the two lists by repeatedly comparing the nodes and attaching the smaller one to the merged list. A dummy node is used to simplify the list manipulation. Here's how you can implement it:",
+      "code": "def merge_two_lists(l1, l2):\n    dummy = ListNode(0)\n    current = dummy\n    while l1 and l2:\n        if l1.val < l2.val:\n            current.next = l1\n            l1 = l1.next\n        else:\n            current.next = l2\n            l2 = l2.next\n        current = current.next\n    current.next = l1 if l1 else l2\n    return dummy.next"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Valid Parentheses",
+    "difficulty": "Easy",
+    "topics": ["Stack", "String"],
+    "companies": [],
+    "description": "Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.\n\nAn input string is valid if:\n1. Open brackets are closed by the same type of brackets.\n2. Open brackets are closed in the correct order.\n\n**Example:**\n\n```python\nInput: s = \"()[]{}\"\nOutput: True\n```\n\nYou can use a stack to keep track of opening brackets. When you encounter a closing bracket, check if it matches the last opened one.",
+    "hints": [
+      "Hint 1: Use a stack data structure to keep track of opening brackets.",
+      "Hint 2: Use a mapping of closing brackets to their corresponding opening brackets.",
+      "Hint 3: Ensure the stack is empty at the end for a valid string."
+    ],
+    "problem_solver": {
+      "approach": "We can use a stack to keep track of the opening brackets. When we encounter a closing bracket, we check if it matches the last opening bracket on the stack.",
+      "steps": [
+        "Create a stack to store opening brackets.",
+        "Create a mapping of closing brackets to their corresponding opening brackets.",
+        "Iterate through each character in the string:",
+        "- If the character is an opening bracket, push it onto the stack.",
+        "- If the character is a closing bracket:",
+        "-- If the stack is empty or the top element does not match, return False.",
+        "-- Pop the top element from the stack.",
+        "After the iteration, if the stack is empty, return True; otherwise, return False."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Which data structure is most suitable for checking balanced parentheses?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Queue",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Stack",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "Linked List",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "Hash Table",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses a stack to match opening and closing brackets. When a closing bracket is encountered, the algorithm checks if it corresponds to the most recent opening bracket. If all brackets are matched correctly and the stack is empty at the end, the string is valid. Here's the implementation:",
+      "code": "def is_valid(s):\n    stack = []\n    mapping = {')': '(', '}': '{', ']': '['}\n    for char in s:\n        if char in mapping:\n            top_element = stack.pop() if stack else '#'\n            if mapping[char] != top_element:\n                return False\n        else:\n            stack.append(char)\n    return not stack"
+    }
+  },
+  {
+    "id": 9,
+    "title": "Climbing Stairs",
+    "difficulty": "Easy",
+    "topics": ["Dynamic Programming"],
+    "companies": [],
+    "description": "You are climbing a staircase. It takes `n` steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?\n\n**Example:**\n\n```python\nInput: n = 3\nOutput: 3\nExplanation: Three ways to climb to the top are:\n1. 1 step + 1 step + 1 step\n2. 1 step + 2 steps\n3. 2 steps + 1 step\n```\n\nThis problem can be approached using dynamic programming.",
+    "hints": [
+      "Hint 1: Think of the problem in terms of the Fibonacci sequence.",
+      "Hint 2: Use dynamic programming to avoid redundant calculations.",
+      "Hint 3: Optimize space by only keeping track of the last two results."
+    ],
+    "problem_solver": {
+      "approach": "We can recognize that the number of ways to climb to step `n` is the sum of ways to reach step `n-1` and step `n-2`. This is similar to the Fibonacci sequence.",
+      "steps": [
+        "If `n` is less than or equal to 2, return `n`.",
+        "Initialize two variables `first` and `second` to 1 and 2.",
+        "Iterate from 3 to `n`:",
+        "- Set `third` as `first + second`.",
+        "- Update `first` to `second` and `second` to `third`.",
+        "After the loop, `second` contains the number of ways to reach step `n`.",
+        "Return `second`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Which mathematical sequence is directly related to solving the Climbing Stairs problem?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Arithmetic Sequence",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Geometric Sequence",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "Fibonacci Sequence",
+          "is_correct": true
+        },
+        {
+          "option": "D",
+          "text": "Harmonic Sequence",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses dynamic programming by recognizing that the number of ways to reach step `n` is the sum of ways to reach steps `n-1` and `n-2`. By iteratively calculating and updating the number of ways, we can efficiently solve the problem. Here's the implementation:",
+      "code": "def climb_stairs(n):\n    if n <= 2:\n        return n\n    first, second = 1, 2\n    for _ in range(3, n + 1):\n        first, second = second, first + second\n    return second"
+    }
+  },
+  {
+    "id": 10,
+    "title": "Merge Intervals",
+    "difficulty": "Medium",
+    "topics": ["Array", "Sorting"],
+    "companies": [],
+    "description": "Given a collection of intervals, merge all overlapping intervals.\n\n**Example:**\n\n```python\nInput: intervals = [[1,3],[2,6],[8,10],[15,18]]\nOutput: [[1,6],[8,10],[15,18]]\nExplanation: Intervals [1,3] and [2,6] overlap and are merged into [1,6].\n```\n\nTo solve this problem, first sort the intervals based on their start times.",
+    "hints": [
+      "Hint 1: Sorting the intervals helps to compare overlapping intervals easily.",
+      "Hint 2: Compare the current interval with the last merged interval.",
+      "Hint 3: Update the end time of the last interval if they overlap."
+    ],
+    "problem_solver": {
+      "approach": "By sorting the intervals based on the start time, we can easily merge overlapping intervals by comparing the current interval with the last interval in the merged list.",
+      "steps": [
+        "If the list of intervals is empty, return an empty list.",
+        "Sort the intervals based on their start times.",
+        "Initialize a list `merged` with the first interval.",
+        "Iterate over the sorted intervals starting from the second interval:",
+        "- If the current interval's start time is less than or equal to the end time of the last interval in `merged`, update the end time of the last interval to the maximum of both end times.",
+        "- Else, append the current interval to `merged`.",
+        "Return the `merged` list."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What is the time complexity of the optimal solution for merging intervals?",
+      "options": [
+        {
+          "option": "A",
+          "text": "O(n)",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "O(n log n)",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "O(n^2)",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "O(log n)",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution involves first sorting the intervals and then iteratively merging overlapping intervals. By keeping track of the last interval in the merged list, we can efficiently determine if an overlap occurs and act accordingly. Here's the implementation:",
+      "code": "def merge(intervals):\n    if not intervals:\n        return []\n    intervals.sort(key=lambda x: x[0])\n    merged = [intervals[0]]\n    for current in intervals[1:]:\n        last = merged[-1]\n        if current[0] <= last[1]:\n            last[1] = max(last[1], current[1])\n        else:\n            merged.append(current)\n    return merged"
+    }
+  },
+  {
+    "id": 11,
+    "title": "Maximum Subarray",
+    "difficulty": "Easy",
+    "topics": ["Array", "Dynamic Programming"],
+    "companies": [],
+    "description": "Given an integer array `nums`, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.\n\n**Example:**\n\n```python\nInput: nums = [-2,1,-3,4,-1,2,1,-5,4]\nOutput: 6\nExplanation: [4,-1,2,1] has the largest sum = 6.\n```\n\nA naive approach is to calculate the sum of all possible subarrays, but this is inefficient. A better method is Kadane's algorithm.",
+    "hints": [
+      "Hint 1: Use Kadane's algorithm for an efficient solution.",
+      "Hint 2: Decide whether to include the current element in the existing subarray or start a new subarray.",
+      "Hint 3: Keep updating the maximum sum found so far."
+    ],
+    "problem_solver": {
+      "approach": "Kadane's algorithm allows us to find the maximum subarray sum in O(n) time by iteratively determining at each position whether to continue with the current subarray or start a new one.",
+      "steps": [
+        "Initialize `current_sum` and `max_sum` with the first element of the array.",
+        "Iterate over the array starting from the second element:",
+        "- Update `current_sum` to be the maximum of the current element and `current_sum + current element`.",
+        "- Update `max_sum` to be the maximum of `max_sum` and `current_sum`.",
+        "After the iteration, `max_sum` contains the largest sum of any contiguous subarray.",
+        "Return `max_sum`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Which algorithm is commonly used to find the maximum subarray sum efficiently?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Dijkstra's Algorithm",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Kadane's Algorithm",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "Bellman-Ford Algorithm",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "Floyd-Warshall Algorithm",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses Kadane's algorithm, which efficiently computes the maximum subarray sum in O(n) time. By iteratively updating the `current_sum` and `max_sum`, we can find the largest sum of any contiguous subarray. Here's the implementation:",
+      "code": "def max_subarray(nums):\n    current_sum = max_sum = nums[0]\n    for num in nums[1:]:\n        current_sum = max(num, current_sum + num)\n        max_sum = max(max_sum, current_sum)\n    return max_sum"
+    }
+  },
+  {
+    "id": 12,
+    "title": "Implement Queue using Stacks",
+    "difficulty": "Easy",
+    "topics": ["Stack", "Design"],
+    "companies": [],
+    "description": "Implement a first-in-first-out (FIFO) queue using only two stacks. The implemented queue should support all the functions of a normal queue (`push`, `pop`, `peek`, and `empty`).\n\n**Example:**\n\n```python\nInput:\nqueue = MyQueue()\nqueue.push(1)\nqueue.push(2)\nqueue.peek()  # returns 1\nqueue.pop()   # returns 1\nqueue.empty() # returns False\n```\n\nTo simulate a queue using stacks, you can use two stacks.",
+    "hints": [
+      "Hint 1: Use two stacks to simulate the queue operations.",
+      "Hint 2: Transfer elements from `in_stack` to `out_stack` when needed.",
+      "Hint 3: Ensure that the elements are in the correct order for FIFO."
+    ],
+    "problem_solver": {
+      "approach": "We can use two stacks, `in_stack` for enqueue operations and `out_stack` for dequeue operations. When `out_stack` is empty, we transfer all elements from `in_stack` to `out_stack`.",
+      "steps": [
+        "Initialize two stacks: `in_stack` and `out_stack`.",
+        "For `push(x)`, push `x` onto `in_stack`.",
+        "For `pop()`, if `out_stack` is empty, transfer all elements from `in_stack` to `out_stack`, then pop from `out_stack`.",
+        "For `peek()`, if `out_stack` is empty, transfer all elements from `in_stack` to `out_stack`, then return the top of `out_stack`.",
+        "For `empty()`, return True if both `in_stack` and `out_stack` are empty."
+      ]
+    },
+    "multiple_choice": {
+      "question": "How many stacks are needed at minimum to implement a queue?",
+      "options": [
+        {
+          "option": "A",
+          "text": "One",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Two",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "Three",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "Four",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses two stacks to implement the queue. The `in_stack` is used for enqueue operations, and the `out_stack` is used for dequeue operations. When `out_stack` is empty, elements are transferred from `in_stack`, reversing their order to maintain FIFO behavior. Here's the implementation:",
+      "code": "class MyQueue:\n    def __init__(self):\n        self.in_stack = []\n        self.out_stack = []\n    \n    def push(self, x):\n        self.in_stack.append(x)\n    \n    def pop(self):\n        self.peek()\n        return self.out_stack.pop()\n    \n    def peek(self):\n        if not self.out_stack:\n            while self.in_stack:\n                self.out_stack.append(self.in_stack.pop())\n        return self.out_stack[-1]\n    \n    def empty(self):\n        return not self.in_stack and not self.out_stack"
+    }
+  },
+  {
+    "id": 13,
+    "title": "Valid Anagram",
+    "difficulty": "Easy",
+    "topics": ["Hash Table", "String", "Sorting"],
+    "companies": [],
+    "description": "Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `false` otherwise.\n\n**Example:**\n\n```python\nInput: s = \"anagram\", t = \"nagaram\"\nOutput: True\n```\n\nAn anagram is a word or phrase formed by rearranging the letters of a different word or phrase.",
+    "hints": [
+      "Hint 1: Anagrams have the same character counts.",
+      "Hint 2: Use a hash map to count character frequencies.",
+      "Hint 3: Compare the character counts between the two strings."
+    ],
+    "problem_solver": {
+      "approach": "We can determine if two strings are anagrams by comparing the frequency of each character in both strings. If the frequencies match for all characters, the strings are anagrams.",
+      "steps": [
+        "Check if the lengths of `s` and `t` are different. If so, return `False`.",
+        "Initialize a hash map (dictionary) to count character frequencies in `s`.",
+        "Iterate over each character in `s` and increment its count in the hash map.",
+        "Iterate over each character in `t` and decrement its count in the hash map.",
+        "If at any point a character count becomes negative or a character is not found, return `False`.",
+        "After processing, check if all counts are zero.",
+        "If all counts are zero, return `True`; otherwise, return `False`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Which method efficiently checks if two strings are anagrams?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Sorting both strings and comparing them.",
+          "is_correct": true
+        },
+        {
+          "option": "B",
+          "text": "Using a stack to store characters.",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "Comparing the lengths of the strings only.",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "Checking for matching prefixes and suffixes.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses a hash map to count the frequency of each character in the first string and then decrements the counts based on the second string. If all counts return to zero, the strings are anagrams. Here's the implementation:",
+      "code": "def is_anagram(s, t):\n    if len(s) != len(t):\n        return False\n    count = {}\n    for char in s:\n        count[char] = count.get(char, 0) + 1\n    for char in t:\n        if char not in count or count[char] == 0:\n            return False\n        count[char] -= 1\n    return True"
+    }
+  },
+  {
+    "id": 14,
+    "title": "Single Number",
+    "difficulty": "Easy",
+    "topics": ["Hash Table", "Bit Manipulation"],
+    "companies": [],
+    "description": "Given a non-empty array of integers `nums`, every element appears twice except for one. Find that single one.\n\n**Example:**\n\n```python\nInput: nums = [2,2,1]\nOutput: 1\n```\n\nYour algorithm should have a linear runtime complexity. Could you implement it without using extra memory?",
+    "hints": [
+      "Hint 1: Use the XOR bitwise operation.",
+      "Hint 2: XOR of a number with itself is zero.",
+      "Hint 3: XOR of a number with zero is the number itself."
+    ],
+    "problem_solver": {
+      "approach": "We can use the XOR operation to find the single number. Since XOR of two identical numbers is zero, XORing all numbers will leave us with the single number.",
+      "steps": [
+        "Initialize a variable `result` to zero.",
+        "Iterate through each number in `nums`:",
+        "- Perform `result = result XOR num`.",
+        "After the iteration, `result` will hold the single number.",
+        "Return `result`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Which property of the XOR operation is utilized in finding the single number?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Commutative Property",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Associative Property",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "XOR of a number with itself is zero",
+          "is_correct": true
+        },
+        {
+          "option": "D",
+          "text": "Distributive Property",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution leverages the properties of the XOR operation. Since XOR of two identical numbers is zero and XOR is associative and commutative, all paired numbers will cancel out, leaving the single number. Here's the implementation:",
+      "code": "def single_number(nums):\n    result = 0\n    for num in nums:\n        result ^= num\n    return result"
+    }
+  },
+  {
+    "id": 15,
+    "title": "Intersection of Two Arrays II",
+    "difficulty": "Easy",
+    "topics": ["Hash Table", "Two Pointers", "Binary Search", "Sorting"],
+    "companies": [],
+    "description": "Given two integer arrays `nums1` and `nums2`, return an array of their intersection. Each element in the result should appear as many times as it shows in both arrays.\n\n**Example:**\n\n```python\nInput: nums1 = [1,2,2,1], nums2 = [2,2]\nOutput: [2,2]\n```\n\nConstraints:\n- Both arrays are not necessarily sorted.",
+    "hints": [
+      "Hint 1: Use a hash map to store counts of elements in one array.",
+      "Hint 2: Iterate through the second array to find common elements.",
+      "Hint 3: Decrement the count in the hash map after adding to the result."
+    ],
+    "problem_solver": {
+      "approach": "We can use a hash map to count the occurrences of each element in `nums1`. Then, we iterate through `nums2` and collect elements that are also in the hash map.",
+      "steps": [
+        "Initialize a hash map (Counter) to count occurrences in `nums1`.",
+        "Iterate over `nums2`:",
+        "- If the element is in the hash map and the count is greater than zero:",
+        "-- Append the element to the result list.",
+        "-- Decrement the count in the hash map.",
+        "Return the result list."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Which data structure is most efficient for counting occurrences of elements?",
+      "options": [
+        {
+          "option": "A",
+          "text": "List",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Dictionary (Hash Map)",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "Set",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "Tuple",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses a hash map (specifically, a `Counter` from the `collections` module) to count the occurrences of each element in `nums1`. By iterating through `nums2` and checking the counts, we can find the intersection efficiently. Here's the implementation:",
+      "code": "def intersect(nums1, nums2):\n    from collections import Counter\n    counts = Counter(nums1)\n    result = []\n    for num in nums2:\n        if counts.get(num, 0) > 0:\n            result.append(num)\n            counts[num] -= 1\n    return result"
+    }
+  },
+  {
+    "id": 16,
+    "title": "Plus One",
+    "difficulty": "Easy",
+    "topics": ["Array", "Math"],
+    "companies": [],
+    "description": "Given a non-empty array of decimal digits representing a non-negative integer, increment one to the integer.\n\nThe digits are stored such that the most significant digit is at the head of the list.\n\n**Example:**\n\n```python\nInput: digits = [1,2,3]\nOutput: [1,2,4]\nExplanation: The integer 123 + 1 = 124\n```\n\nConstraints:\n- The array contains only digits 0-9.",
+    "hints": [
+      "Hint 1: Handle the addition from the least significant digit.",
+      "Hint 2: Be careful with carry-over when a digit is 9.",
+      "Hint 3: If all digits are 9, you'll need to add an extra digit at the beginning."
+    ],
+    "problem_solver": {
+      "approach": "We can simulate the addition by starting from the end of the array. We need to handle the carry-over, especially when the digit is 9.",
+      "steps": [
+        "Iterate over the digits array from the end to the beginning:",
+        "- If the current digit is less than 9:",
+        "-- Increment the digit by one.",
+        "-- Return the array as no further carry is needed.",
+        "- Else, set the current digit to 0 (since 9 + 1 = 10).",
+        "If all digits were 9, we need to add a new digit at the beginning:",
+        "- Insert 1 at the start of the array.",
+        "Return the updated array."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What is the main challenge when implementing the Plus One problem?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Handling negative numbers",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Managing carry-over when digits are 9",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "Converting the array to an integer",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "Sorting the digits in ascending order",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution iterates from the end of the array towards the beginning, handling the addition and carry-over. If all digits are 9, the result is a new array with an additional digit at the front. Here's the implementation:",
+      "code": "def plus_one(digits):\n    n = len(digits)\n    for i in range(n - 1, -1, -1):\n        if digits[i] < 9:\n            digits[i] += 1\n            return digits\n        digits[i] = 0\n    return [1] + digits"
+    }
+  },
+  {
+    "id": 17,
+    "title": "Move Zeroes",
+    "difficulty": "Easy",
+    "topics": ["Array", "Two Pointers"],
+    "companies": [],
+    "description": "Given an integer array `nums`, move all 0's to the end while maintaining the relative order of the non-zero elements.\n\n**Example:**\n\n```python\nInput: nums = [0,1,0,3,12]\nOutput: [1,3,12,0,0]\n```\n\nConstraints:\n- You must do this in-place without making a copy of the array.",
+    "hints": [
+      "Hint 1: Use two pointers to manage the positions of non-zero elements.",
+      "Hint 2: Overwrite elements in the array to avoid extra space.",
+      "Hint 3: Fill the rest of the array with zeros after all non-zero elements are moved."
+    ],
+    "problem_solver": {
+      "approach": "We can use a two-pointer approach where one pointer keeps track of the position to insert the next non-zero element.",
+      "steps": [
+        "Initialize a variable `last_non_zero_found_at` to 0.",
+        "Iterate over the array with index `current`:",
+        "- If `nums[current]` is not zero:",
+        "-- Assign `nums[last_non_zero_found_at] = nums[current]`.",
+        "-- Increment `last_non_zero_found_at`.",
+        "After the iteration, fill the remaining positions with zeros:",
+        "- From `last_non_zero_found_at` to the end of the array, set `nums[i] = 0`.",
+        "The array is modified in-place."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Which algorithmic technique is used to solve the Move Zeroes problem efficiently?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Divide and Conquer",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Dynamic Programming",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "Two Pointers",
+          "is_correct": true
+        },
+        {
+          "option": "D",
+          "text": "Backtracking",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses a two-pointer approach. By moving non-zero elements forward and filling the remaining positions with zeros, we maintain the relative order without using extra space. Here's the implementation:",
+      "code": "def move_zeroes(nums):\n    last_non_zero_found_at = 0\n    for current in range(len(nums)):\n        if nums[current] != 0:\n            nums[last_non_zero_found_at] = nums[current]\n            last_non_zero_found_at += 1\n    for i in range(last_non_zero_found_at, len(nums)):\n        nums[i] = 0"
+    }
+  },
+  {
+    "id": 18,
+    "title": "Maximum Product Subarray",
+    "difficulty": "Medium",
+    "topics": ["Array", "Dynamic Programming"],
+    "companies": [],
+    "description": "Given an integer array `nums`, find the contiguous subarray within an array (containing at least one number) which has the largest product.\n\n**Example:**\n\n```python\nInput: nums = [2,3,-2,4]\nOutput: 6\nExplanation: [2,3] has the largest product 6.\n```\n\nConstraints:\n- The array may contain negative numbers.",
+    "hints": [
+      "Hint 1: Keep track of both maximum and minimum products because a negative number can turn a small number into a big one.",
+      "Hint 2: Update the maximum and minimum products at each step.",
+      "Hint 3: Be careful when the current number is negative."
+    ],
+    "problem_solver": {
+      "approach": "We need to keep track of the maximum and minimum products up to the current position because a negative number can change the sign.",
+      "steps": [
+        "Initialize `max_prod`, `min_prod`, and `result` with the first element.",
+        "Iterate over the array starting from the second element:",
+        "- If the current number is negative, swap `max_prod` and `min_prod`.",
+        "- Update `max_prod` as the maximum of `num` and `max_prod * num`.",
+        "- Update `min_prod` as the minimum of `num` and `min_prod * num`.",
+        "- Update `result` as the maximum of `result` and `max_prod`.",
+        "After the iteration, `result` contains the maximum product.",
+        "Return `result`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Why do we need to keep track of the minimum product in the Maximum Product Subarray problem?",
+      "options": [
+        {
+          "option": "A",
+          "text": "To handle division operations",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Because a negative number can make a small product large",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "To optimize space complexity",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "To sort the array efficiently",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution maintains two variables to track the maximum and minimum products at each position. This is necessary because a negative number can flip the sign of the products. By updating these variables, we can find the maximum product subarray. Here's the implementation:",
+      "code": "def max_product(nums):\n    if not nums:\n        return 0\n    max_prod = min_prod = result = nums[0]\n    for num in nums[1:]:\n        if num < 0:\n            max_prod, min_prod = min_prod, max_prod\n        max_prod = max(num, max_prod * num)\n        min_prod = min(num, min_prod * num)\n        result = max(result, max_prod)\n    return result"
+    }
+  },
+  {
+    "id": 19,
+    "title": "Contains Duplicate",
+    "difficulty": "Easy",
+    "topics": ["Array", "Hash Table"],
+    "companies": [],
+    "description": "Given an integer array `nums`, return `true` if any value appears at least twice in the array, and return `false` if every element is distinct.\n\n**Example:**\n\n```python\nInput: nums = [1,2,3,1]\nOutput: True\n```\n\nConstraints:\n- The array may contain negative numbers.",
+    "hints": [
+      "Hint 1: A set can help you keep track of unique elements.",
+      "Hint 2: Check for the presence of an element before adding it to the set.",
+      "Hint 3: Return early if a duplicate is found."
+    ],
+    "problem_solver": {
+      "approach": "We can use a set to keep track of the elements we've seen so far. If we encounter an element already in the set, we can return `True` immediately.",
+      "steps": [
+        "Initialize an empty set `seen`.",
+        "Iterate over each element `num` in `nums`:",
+        "- If `num` is in `seen`, return `True`.",
+        "- Else, add `num` to `seen`.",
+        "After the iteration, return `False` as no duplicates were found."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What is the time complexity of checking for duplicates using a set?",
+      "options": [
+        {
+          "option": "A",
+          "text": "O(n log n)",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "O(n)",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "O(1)",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "O(n^2)",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses a set to track the elements we've encountered. Sets in Python have O(1) lookup time, making this approach efficient. Here's the implementation:",
+      "code": "def contains_duplicate(nums):\n    seen = set()\n    for num in nums:\n        if num in seen:\n            return True\n        seen.add(num)\n    return False"
+    }
+  },
+  {
+    "id": 20,
+    "title": "Binary Tree Inorder Traversal",
+    "difficulty": "Easy",
+    "topics": ["Tree", "Stack", "Depth-First Search"],
+    "companies": [],
+    "description": "Given the root of a binary tree, return the inorder traversal of its nodes' values.\n\n**Example:**\n\n```python\nInput: root = [1,null,2,3]\nOutput: [1,3,2]\n```\n\nConstraints:\n- The number of nodes in the tree is in the range [0, 100].",
+    "hints": [
+      "Hint 1: Use a recursive helper function.",
+      "Hint 2: Follow the left-root-right order for inorder traversal.",
+      "Hint 3: Alternatively, you can use an iterative approach with a stack."
+    ],
+    "problem_solver": {
+      "approach": "We can perform an inorder traversal recursively by visiting the left subtree, then the current node, and finally the right subtree.",
+      "steps": [
+        "Define a helper function `inorder(node)`:",
+        "- If `node` is not `None`:",
+        "-- Call `inorder(node.left)`.",
+        "-- Append `node.val` to the result list.",
+        "-- Call `inorder(node.right)`.",
+        "Initialize an empty list `res` to store the traversal.",
+        "Call `inorder(root)`.",
+        "Return `res`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "In inorder traversal of a binary tree, which order are the nodes visited?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Root, Left, Right",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Left, Root, Right",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "Right, Root, Left",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "Root, Right, Left",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses recursion to perform an inorder traversal. By visiting the left child, then the current node, and finally the right child, we collect the node values in the correct order. Here's the implementation:",
+      "code": "def inorder_traversal(root):\n    res = []\n    def inorder(node):\n        if node:\n            inorder(node.left)\n            res.append(node.val)\n            inorder(node.right)\n    inorder(root)\n    return res"
+    }
+  },
+  {
+    "id": 21,
+    "title": "Kth Largest Element in an Array",
+    "difficulty": "Medium",
+    "topics": ["Heap", "Divide and Conquer", "Quickselect"],
+    "companies": [],
+    "description": "Find the **k**th largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.\n\n**Example:**\n\n```python\nInput: nums = [3,2,1,5,6,4], k = 2\nOutput: 5\n```\n\nConstraints:\n- You may assume k is always valid, 1 ≤ k ≤ array's length.",
+    "hints": [
+      "Hint 1: Use a heap data structure for a more efficient solution.",
+      "Hint 2: A min-heap can keep track of the k largest elements.",
+      "Hint 3: Consider using the `heapq` module in Python."
+    ],
+    "problem_solver": {
+      "approach": "We can use a min-heap to keep track of the k largest elements. By maintaining a heap of size k, the smallest element in the heap is the kth largest in the array.",
+      "steps": [
+        "Initialize a min-heap with the first k elements of `nums`.",
+        "Use `heapq.heapify` to convert the list into a heap.",
+        "Iterate over the remaining elements in `nums` starting from index k:",
+        "- If the current element is greater than the root of the heap (`heap[0]`):",
+        "-- Replace the root with the current element using `heapq.heappushpop`.",
+        "After the iteration, the root of the heap (`heap[0]`) is the kth largest element.",
+        "Return `heap[0]`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What is the time complexity of finding the kth largest element using a min-heap?",
+      "options": [
+        {
+          "option": "A",
+          "text": "O(n log k)",
+          "is_correct": true
+        },
+        {
+          "option": "B",
+          "text": "O(n log n)",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "O(k log n)",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "O(n)",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses a min-heap to keep track of the k largest elements. By iterating through the array and maintaining a heap of size k, we ensure that the heap always contains the k largest elements, and the smallest among them is at the root of the heap. Here's the implementation using the `heapq` module:",
+      "code": "import heapq\n\ndef find_kth_largest(nums, k):\n    heap = nums[:k]\n    heapq.heapify(heap)\n    for num in nums[k:]:\n        if num > heap[0]:\n            heapq.heappushpop(heap, num)\n    return heap[0]"
+    }
+  },
+  {
+    "id": 22,
+    "title": "House Robber",
+    "difficulty": "Medium",
+    "topics": ["Dynamic Programming"],
+    "companies": [],
+    "description": "You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. Adjacent houses have security systems connected, so robbing two adjacent houses will trigger the alarm.\n\nGiven an integer array `nums` representing the amount of money of each house, return the maximum amount of money you can rob without alerting the police.\n\n**Example:**\n\n```python\nInput: nums = [1,2,3,1]\nOutput: 4\nExplanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).\nTotal amount you can rob = 1 + 3 = 4.\n```\n\nConstraints:\n- 1 <= nums.length <= 100\n- 0 <= nums[i] <= 400",
+    "hints": [
+      "Hint 1: Use dynamic programming to keep track of the maximum amounts.",
+      "Hint 2: At each house, decide whether to rob it or not based on previous decisions.",
+      "Hint 3: Optimize space by using two variables instead of a DP array."
+    ],
+    "problem_solver": {
+      "approach": "We can use dynamic programming to decide whether to rob a house or skip it. At each house, we consider the maximum amount we can rob up to that point.",
+      "steps": [
+        "Initialize two variables `prev_max` and `curr_max` to 0.",
+        "Iterate over each amount `num` in `nums`:",
+        "- Temporarily store `curr_max` in `temp`.",
+        "- Update `curr_max` to be the maximum of `prev_max + num` and `curr_max`.",
+        "- Update `prev_max` to `temp`.",
+        "After the iteration, `curr_max` contains the maximum amount that can be robbed.",
+        "Return `curr_max`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "In the House Robber problem, why can't adjacent houses be robbed?",
+      "options": [
+        {
+          "option": "A",
+          "text": "They have security systems connected.",
+          "is_correct": true
+        },
+        {
+          "option": "B",
+          "text": "They have guard dogs.",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "They are too far apart.",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "They have no valuables.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses dynamic programming. At each house, we have two choices: rob it or skip it. If we rob it, we add its value to the amount from two houses back. If we skip it, we take the maximum amount from the previous house. We can optimize space by keeping track of only two variables. Here's the implementation:",
+      "code": "def rob(nums):\n    prev_max = curr_max = 0\n    for num in nums:\n        temp = curr_max\n        curr_max = max(prev_max + num, curr_max)\n        prev_max = temp\n    return curr_max"
+    }
+  },
+  {
+    "id": 23,
+    "title": "Lowest Common Ancestor of a Binary Search Tree",
+    "difficulty": "Easy",
+    "topics": ["Tree", "Depth-First Search"],
+    "companies": [],
+    "description": "Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.\n\n**Example:**\n\n```python\nGiven the following BST:\n        6\n       / \\\n      2   8\n     / \\ / \\\n    0  4 7  9\n      / \\\n     3   5\n\nInput: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8\nOutput: 6\nExplanation: The LCA of nodes 2 and 8 is 6.\n```\n\nConstraints:\n- All nodes' values are unique.",
+    "hints": [
+      "Hint 1: Utilize the properties of a BST.",
+      "Hint 2: Compare the values of p and q with the current node.",
+      "Hint 3: The split point where p and q diverge is the LCA."
+    ],
+    "problem_solver": {
+      "approach": "We can leverage the BST properties to find the LCA. If both p and q are less than the current node, LCA lies in the left subtree. If both are greater, LCA lies in the right subtree.",
+      "steps": [
+        "Initialize `current` node as `root`.",
+        "While `current` is not `None`:",
+        "- If `p.val` and `q.val` are both less than `current.val`, move `current` to `current.left`.",
+        "- Else if `p.val` and `q.val` are both greater than `current.val`, move `current` to `current.right`.",
+        "- Else, we have found the split point; return `current` as the LCA.",
+        "If the loop ends, return `None`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Which property of a BST is essential in finding the LCA efficiently?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Left child is always less than the parent node.",
+          "is_correct": true
+        },
+        {
+          "option": "B",
+          "text": "Tree is always balanced.",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "Each node has at most two children.",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "Nodes can have duplicate values.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution leverages the properties of a BST. Starting from the root, we compare the values of p and q with the current node. When p and q are on different sides of the current node, or one of them equals the current node, we have found the LCA. Here's the implementation:",
+      "code": "def lowest_common_ancestor(root, p, q):\n    while root:\n        if p.val > root.val and q.val > root.val:\n            root = root.right\n        elif p.val < root.val and q.val < root.val:\n            root = root.left\n        else:\n            return root"
+    }
+  },
+  {
+    "id": 24,
+    "title": "Merge k Sorted Lists",
+    "difficulty": "Hard",
+    "topics": ["Linked List", "Divide and Conquer", "Heap"],
+    "companies": [],
+    "description": "Merge `k` sorted linked lists and return it as one sorted list. Analyze and describe its complexity.\n\n**Example:**\n\n```python\nInput: lists = [[1,4,5],[1,3,4],[2,6]]\nOutput: [1,1,2,3,4,4,5,6]\n```\n\nConstraints:\n- All linked lists are sorted in ascending order.",
+    "hints": [
+      "Hint 1: Use a min-heap to find the smallest node among the lists.",
+      "Hint 2: Keep pushing the next node of the extracted node into the heap.",
+      "Hint 3: Time complexity should be O(N log k), where N is the total number of nodes."
+    ],
+    "problem_solver": {
+      "approach": "We can use a min-heap to efficiently merge k sorted lists by always selecting the smallest current node among the heads of the lists.",
+      "steps": [
+        "Initialize a min-heap.",
+        "Push the head node of each list into the heap.",
+        "While the heap is not empty:",
+        "- Pop the smallest node from the heap.",
+        "- Add the popped node to the merged list.",
+        "- If the popped node has a next node, push it into the heap.",
+        "Return the head of the merged list."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What is the time complexity of merging k sorted lists using a min-heap?",
+      "options": [
+        {
+          "option": "A",
+          "text": "O(N log k)",
+          "is_correct": true
+        },
+        {
+          "option": "B",
+          "text": "O(k log N)",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "O(N)",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "O(N log N)",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses a min-heap to efficiently find the smallest node among the heads of all lists. By repeatedly extracting the minimum node and adding its next node to the heap, we can merge all lists in O(N log k) time. Here's the implementation using the `heapq` module:",
+      "code": "import heapq\n\ndef merge_k_lists(lists):\n    ListNode.__lt__ = lambda self, other: self.val < other.val\n    heap = []\n    for l in lists:\n        if l:\n            heapq.heappush(heap, l)\n    dummy = ListNode(0)\n    current = dummy\n    while heap:\n        node = heapq.heappop(heap)\n        current.next = node\n        current = current.next\n        if node.next:\n            heapq.heappush(heap, node.next)\n    return dummy.next"
+    }
+  },
+  {
+    "id": 25,
+    "title": "Implement Trie (Prefix Tree)",
+    "difficulty": "Medium",
+    "topics": ["Design", "Trie"],
+    "companies": [],
+    "description": "Implement a trie with `insert`, `search`, and `startsWith` methods.\n\n**Example:**\n\n```python\nTrie trie = new Trie();\ntrie.insert(\"apple\");\ntrie.search(\"apple\");   # returns True\ntrie.search(\"app\");     # returns False\ntrie.startsWith(\"app\"); # returns True\ntrie.insert(\"app\");\ntrie.search(\"app\");     # returns True\n```\n\nConstraints:\n- All inputs are consist of lowercase letters `a-z`.",
+    "hints": [
+      "Hint 1: Each node should contain a dictionary of child nodes.",
+      "Hint 2: Use a boolean flag to indicate the end of a word.",
+      "Hint 3: For `startsWith`, you only need to check if the prefix exists."
+    ],
+    "problem_solver": {
+      "approach": "We can implement the trie using nested dictionaries or a class with child nodes. Each node represents a character and has links to its children.",
+      "steps": [
+        "Define a `TrieNode` class with `children` and `is_end_of_word` attributes.",
+        "In the `Trie` class, initialize the `root` as an instance of `TrieNode`.",
+        "Implement the `insert` method:",
+        "- Iterate over each character in the word.",
+        "- For each character, add it to the current node's `children` if not present.",
+        "- Move to the child node.",
+        "- After the last character, mark `is_end_of_word` as `True`.",
+        "Implement the `search` method:",
+        "- Traverse the trie following the characters of the word.",
+        "- If the traversal ends and `is_end_of_word` is `True`, return `True`.",
+        "- Else, return `False`.",
+        "Implement the `startsWith` method:",
+        "- Traverse the trie following the characters of the prefix.",
+        "- If traversal is successful, return `True`.",
+        "- Else, return `False`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What is the main purpose of a trie (prefix tree)?",
+      "options": [
+        {
+          "option": "A",
+          "text": "To store numerical data efficiently",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "To store strings for fast prefix lookups",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "To implement sorting algorithms",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "To manage heap data structures",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution is to implement the trie using a nested dictionary structure. Each node is represented as a dictionary with keys as characters and values as child nodes. A special boolean flag is used to mark the end of a word. Here's the implementation:",
+      "code": "class TrieNode:\n    def __init__(self):\n        self.children = {}\n        self.is_end_of_word = False\n\nclass Trie:\n    def __init__(self):\n        self.root = TrieNode()\n\n    def insert(self, word):\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                node.children[char] = TrieNode()\n            node = node.children[char]\n        node.is_end_of_word = True\n\n    def search(self, word):\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return node.is_end_of_word\n\n    def startsWith(self, prefix):\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return True"
+    }
+  },
+
+  {
+    "id": 26,
+    "title": "Product of Array Except Self",
+    "difficulty": "Medium",
+    "topics": ["Array", "Prefix Sum"],
+    "companies": [],
+    "description": "Given an array `nums` of `n` integers where `n > 1`, return an array `output` such that `output[i]` is equal to the product of all the elements of `nums` except `nums[i]`.\n\n**Example:**\n\n```python\nInput: nums = [1,2,3,4]\nOutput: [24,12,8,6]\n```\n\nConstraint: It's guaranteed that the product of the elements of any prefix or suffix of the array (including the whole array) fits in a 32-bit integer.\n\nNote: Solve it without division and in O(n).\n\nAn approach is to calculate the product of all elements to the left and right of each index.",
+    "hints": [
+      "Hint 1: Use two arrays to keep track of the left and right products.",
+      "Hint 2: Optimize space by reusing the output array.",
+      "Hint 3: First pass for left products, second pass for right products."
+    ],
+    "problem_solver": {
+      "approach": "We can solve this problem by calculating the prefix product and suffix product for each element. By multiplying these two products for each index, we get the desired output.",
+      "steps": [
+        "Initialize an output array `output` with length equal to `nums` and all elements as 1.",
+        "Calculate the prefix products:",
+        "- Initialize a variable `left` to 1.",
+        "- Loop from index 0 to n-1:",
+        "-- Set `output[i]` to `left`.",
+        "-- Update `left` as `left * nums[i]`.",
+        "Calculate the suffix products and multiply with prefix products:",
+        "- Initialize a variable `right` to 1.",
+        "- Loop from index n-1 to 0:",
+        "-- Multiply `output[i]` by `right`.",
+        "-- Update `right` as `right * nums[i]`.",
+        "Return the `output` array."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Why can't we use division to solve the Product of Array Except Self problem?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Because division is too slow.",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Because of the possibility of division by zero.",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "Because it's not allowed by the problem constraints.",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "Because it leads to floating-point precision errors.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution involves calculating the prefix and suffix products for each element. By first filling the output array with the prefix products and then multiplying it with the suffix products in reverse order, we achieve O(n) time and O(1) extra space (excluding the output array). Here's the implementation:",
+      "code": "def product_except_self(nums):\n    length = len(nums)\n    output = [1] * length\n    left = 1\n    for i in range(length):\n        output[i] = left\n        left *= nums[i]\n    right = 1\n    for i in range(length - 1, -1, -1):\n        output[i] *= right\n        right *= nums[i]\n    return output"
+    }
+  },
+  {
+    "id": 27,
+    "title": "Longest Consecutive Sequence",
+    "difficulty": "Hard",
+    "topics": ["Array", "Union Find", "Hash Table"],
+    "companies": [],
+    "description": "Given an unsorted array of integers `nums`, find the length of the longest consecutive elements sequence.\n\n**Example:**\n\n```python\nInput: nums = [100, 4, 200, 1, 3, 2]\nOutput: 4\nExplanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.\n```\n\nYour algorithm should run in O(n) time.\n\nAn approach is to use a set for quick lookups and iterate through the array, only starting sequences from numbers that are not following another number.",
+    "hints": [
+      "Hint 1: Use a set to achieve O(1) lookups.",
+      "Hint 2: Only start counting when the previous number is not in the set.",
+      "Hint 3: Keep track of the current streak length."
+    ],
+    "problem_solver": {
+      "approach": "We can use a set to store all numbers and then iterate through the array. For each number, if it's the start of a sequence (i.e., num - 1 is not in the set), we can iterate forward to find the length of the sequence.",
+      "steps": [
+        "Convert the array `nums` into a set `num_set` for O(1) lookups.",
+        "Initialize a variable `longest_streak` to 0.",
+        "Iterate over each number `num` in `num_set`:",
+        "- If `num - 1` is not in `num_set`, it's the start of a sequence.",
+        "-- Initialize `current_num` to `num` and `current_streak` to 1.",
+        "-- While `current_num + 1` is in `num_set`, increment `current_num` and `current_streak`.",
+        "-- Update `longest_streak` if `current_streak` is greater.",
+        "Return `longest_streak`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Which data structure is used to achieve O(n) time complexity in the Longest Consecutive Sequence problem?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Array",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Set",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "Stack",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "Queue",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses a set to store the numbers for O(1) lookups. For each number, if it is the start of a sequence (i.e., `num - 1` is not in the set), we iterate forward to find the length of the sequence. Here's the implementation:",
+      "code": "def longest_consecutive(nums):\n    num_set = set(nums)\n    longest_streak = 0\n    for num in num_set:\n        if num - 1 not in num_set:\n            current_num = num\n            current_streak = 1\n            while current_num + 1 in num_set:\n                current_num += 1\n                current_streak += 1\n            longest_streak = max(longest_streak, current_streak)\n    return longest_streak"
+    }
+  },
+  {
+    "id": 28,
+    "title": "Find Peak Element",
+    "difficulty": "Medium",
+    "topics": ["Array", "Binary Search"],
+    "companies": [],
+    "description": "A peak element is an element that is strictly greater than its neighbors. Given an integer array `nums`, find a peak element, and return its index. You may imagine that `nums[-1] = nums[n] = -∞`.\n\n**Example:**\n\n```python\nInput: nums = [1,2,1,3,5,6,4]\nOutput: 5\nExplanation: Your function can return either index number 1 where the peak element is 2, or index number 5 where the peak element is 6.\n```\n\nAn approach is to use binary search to find a peak element in O(log n) time.",
+    "hints": [
+      "Hint 1: Use a modified binary search.",
+      "Hint 2: Compare middle element with its neighbors.",
+      "Hint 3: The side which has a higher neighbor has at least one peak."
+    ],
+    "problem_solver": {
+      "approach": "We can use binary search to find a peak by comparing the middle element with its next element. If the middle element is less than the next one, a peak must exist on the right side. Otherwise, it exists on the left side.",
+      "steps": [
+        "Initialize two pointers `left` to 0 and `right` to `len(nums) - 1`.",
+        "While `left` is less than `right`:",
+        "- Calculate `mid` as `(left + right) // 2`.",
+        "- If `nums[mid] < nums[mid + 1]`, set `left = mid + 1`.",
+        "- Else, set `right = mid`.",
+        "Return `left` as the index of a peak element."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Why can we use binary search to find a peak element in the array?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Because the array is sorted.",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Because there is always a peak element in a subarray.",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "Because the array has distinct elements.",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "Because the array is rotated.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses binary search. At each step, compare the middle element with its next element. If the middle element is less than the next one, a peak must exist on the right side. Otherwise, it exists on the left side. Here's the implementation:",
+      "code": "def find_peak_element(nums):\n    left, right = 0, len(nums) - 1\n    while left < right:\n        mid = (left + right) // 2\n        if nums[mid] < nums[mid + 1]:\n            left = mid + 1\n        else:\n            right = mid\n    return left"
+    }
+  },
+  {
+    "id": 29,
+    "title": "Search in Rotated Sorted Array",
+    "difficulty": "Medium",
+    "topics": ["Array", "Binary Search"],
+    "companies": [],
+    "description": "There is an integer array `nums` sorted in ascending order (with distinct values). Prior to being passed to your function, `nums` is possibly rotated at an unknown pivot index. Given the array `nums` and an integer `target`, return the index of `target` if it is in `nums`, or `-1` if it is not in `nums`.\n\n**Example:**\n\n```python\nInput: nums = [4,5,6,7,0,1,2], target = 0\nOutput: 4\n```\n\nThe problem requires a modified binary search to achieve O(log n) time.",
+    "hints": [
+      "Hint 1: Use binary search with modifications.",
+      "Hint 2: Determine which side is properly sorted.",
+      "Hint 3: Decide which half to discard based on the target's value."
+    ],
+    "problem_solver": {
+      "approach": "We can modify binary search to handle the rotated array. By checking which part is sorted, we can decide which side to search next.",
+      "steps": [
+        "Initialize `left` to 0 and `right` to `len(nums) - 1`.",
+        "While `left` <= `right`:",
+        "- Calculate `mid` as `(left + right) // 2`.",
+        "- If `nums[mid]` == `target`, return `mid`.",
+        "- If `nums[left]` <= `nums[mid]`, the left half is sorted:",
+        "-- If `nums[left]` <= `target` < `nums[mid]`, set `right = mid - 1`.",
+        "-- Else, set `left = mid + 1`.",
+        "- Else, the right half is sorted:",
+        "-- If `nums[mid]` < `target` <= `nums[right]`, set `left = mid + 1`.",
+        "-- Else, set `right = mid - 1`.",
+        "If the loop ends, return `-1`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "In the modified binary search for a rotated sorted array, why do we need to check which half is sorted?",
+      "options": [
+        {
+          "option": "A",
+          "text": "To find the pivot point.",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "To decide where to apply standard binary search.",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "To sort the array first.",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "To handle duplicate elements.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution modifies binary search to handle the rotated array. At each step, determine which half is sorted, and whether the target lies within that half. Adjust the search boundaries accordingly. Here's the implementation:",
+      "code": "def search(nums, target):\n    left, right = 0, len(nums) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if nums[mid] == target:\n            return mid\n        if nums[left] <= nums[mid]:\n            if nums[left] <= target < nums[mid]:\n                right = mid - 1\n            else:\n                left = mid + 1\n        else:\n            if nums[mid] < target <= nums[right]:\n                left = mid + 1\n            else:\n                right = mid - 1\n    return -1"
+    }
+  },
+  {
+    "id": 30,
+    "title": "Decode Ways",
+    "difficulty": "Medium",
+    "topics": ["String", "Dynamic Programming"],
+    "companies": [],
+    "description": "A message containing letters from A-Z is being encoded to numbers using the following mapping: 'A' -> 1, 'B' -> 2, ..., 'Z' -> 26.\n\nGiven a non-empty string containing only digits, determine the total number of ways to decode it.\n\n**Example:**\n\n```python\nInput: s = \"226\"\nOutput: 3\nExplanation: It could be decoded as \"BZ\" (2 26), \"VF\" (22 6), or \"BBF\" (2 2 6).\n```\n\nAn approach is to use dynamic programming to keep track of the number of ways to decode up to each position.",
+    "hints": [
+      "Hint 1: Use dynamic programming to store subproblem results.",
+      "Hint 2: At each position, consider one-digit and two-digit decoding options.",
+      "Hint 3: Handle cases where digits are '0'."
+    ],
+    "problem_solver": {
+      "approach": "We can use dynamic programming to keep track of the number of ways to decode the string up to each position, considering both single-digit and two-digit possibilities.",
+      "steps": [
+        "If the string `s` is empty or starts with '0', return 0.",
+        "Initialize a DP array `dp` of length `n + 1`, where `n` is the length of `s`.",
+        "- Set `dp[0] = dp[1] = 1`.",
+        "Iterate over the string from index 2 to `n`:",
+        "- If `s[i - 1]` is not '0', add `dp[i - 1]` to `dp[i]`.",
+        "- If `s[i - 2:i]` forms a valid number between 10 and 26, add `dp[i - 2]` to `dp[i]`.",
+        "Return `dp[n]`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Why is dynamic programming suitable for the Decode Ways problem?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Because the problem has overlapping subproblems.",
+          "is_correct": true
+        },
+        {
+          "option": "B",
+          "text": "Because the input size is very small.",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "Because recursion is too slow.",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "Because it requires sorting.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses dynamic programming. We iterate through the string and for each character, we consider if it can form a valid one-digit or two-digit number. We accumulate the number of ways accordingly. Here's the implementation:",
+      "code": "def num_decodings(s):\n    if not s or s[0] == '0':\n        return 0\n    n = len(s)\n    dp = [0] * (n + 1)\n    dp[0] = dp[1] = 1\n    for i in range(2, n + 1):\n        if s[i - 1] != '0':\n            dp[i] += dp[i - 1]\n        if '10' <= s[i - 2:i] <= '26':\n            dp[i] += dp[i - 2]\n    return dp[n]"
+    }
+  },
+  {
+    "id": 31,
+    "title": "Reverse Integer",
+    "difficulty": "Medium",
+    "topics": ["Math"],
+    "companies": [],
+    "description": "Given a 32-bit signed integer `x`, reverse digits of `x`. If reversing `x` causes the value to go outside the signed 32-bit integer range [-2³¹, 2³¹ - 1], then return 0.\n\n**Example:**\n\n```python\nInput: x = 123\nOutput: 321\n```\n\nNote that the environment does not allow you to store 64-bit integers.",
+    "hints": [
+      "Hint 1: Be careful of integer overflow.",
+      "Hint 2: Use modulo and division to extract and build the reversed number.",
+      "Hint 3: Check for overflow before adding the next digit."
+    ],
+    "problem_solver": {
+      "approach": "We can reverse the integer digit by digit, ensuring we check for overflow at each step before appending the next digit.",
+      "steps": [
+        "Initialize constants for `INT_MAX` and `INT_MIN`.",
+        "Initialize a variable `res` to 0.",
+        "Determine the sign of `x` and work with its absolute value.",
+        "While `x` is not zero:",
+        "- Extract the last digit using `x % 10`.",
+        "- Reduce `x` by dividing by 10.",
+        "- Check for overflow before updating `res`.",
+        "- Update `res = res * 10 + digit`.",
+        "Return `res` multiplied by the sign."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Why do we need to check for overflow when reversing an integer?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Because reversed numbers are always larger.",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Because the reversed number may exceed the 32-bit integer range.",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "Because the input may be negative.",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "Because of floating-point precision errors.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution involves reversing the integer digit by digit. At each step, check if appending the next digit will cause an overflow. If it does, return 0. Here's the implementation:",
+      "code": "def reverse(x):\n    INT_MAX = 2**31 - 1\n    INT_MIN = -2**31\n    res = 0\n    sign = -1 if x < 0 else 1\n    x = abs(x)\n    while x != 0:\n        pop = x % 10\n        x //= 10\n        if res > INT_MAX // 10 or (res == INT_MAX // 10 and pop > 7):\n            return 0\n        res = res * 10 + pop\n    return res * sign"
+    }
+  },
+  {
+    "id": 32,
+    "title": "First Unique Character in a String",
+    "difficulty": "Easy",
+    "topics": ["Hash Table", "String"],
+    "companies": [],
+    "description": "Given a string `s`, find the first non-repeating character in it and return its index. If it does not exist, return -1.\n\n**Example:**\n\n```python\nInput: s = \"leetcode\"\nOutput: 0\n```\n\nAn approach is to use a hash map to store the frequency of each character and then iterate through the string to find the first character with a frequency of 1.",
+    "hints": [
+      "Hint 1: Use a hash map to count character frequencies.",
+      "Hint 2: Iterate through the string to find the first unique character.",
+      "Hint 3: Return the index when you find the unique character."
+    ],
+    "problem_solver": {
+      "approach": "We can use a hash map to store the count of each character, then iterate through the string to find the first character with a count of 1.",
+      "steps": [
+        "Initialize a hash map `count` using `collections.Counter` to store character frequencies.",
+        "Iterate over the string `s` with index `idx` and character `char`:",
+        "- If `count[char]` is 1, return `idx`.",
+        "If no unique character is found, return `-1`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What is the time complexity of finding the first unique character using a hash map?",
+      "options": [
+        {
+          "option": "A",
+          "text": "O(n^2)",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "O(n)",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "O(log n)",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "O(1)",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses a hash map to count the occurrences of each character. Then, we iterate through the string to find the first character with a count of 1. Here's the implementation:",
+      "code": "def first_uniq_char(s):\n    from collections import Counter\n    count = Counter(s)\n    for idx, char in enumerate(s):\n        if count[char] == 1:\n            return idx\n    return -1"
+    }
+  },
+  {
+    "id": 33,
+    "title": "Implement Stack using Queues",
+    "difficulty": "Easy",
+    "topics": ["Stack", "Design", "Queue"],
+    "companies": [],
+    "description": "Implement a last-in-first-out (LIFO) stack using only two queues. The implemented stack should support all the functions of a normal stack (`push`, `pop`, `top`, and `empty`).\n\n**Example:**\n\n```python\nInput:\nstack = MyStack()\nstack.push(1)\nstack.push(2)\nstack.top()   # returns 2\nstack.pop()    # returns 2\nstack.empty() # returns False\n```\n\nAn approach is to use two queues to simulate the stack behavior.",
+    "hints": [
+      "Hint 1: Use one queue for the main storage.",
+      "Hint 2: To implement `pop` and `top`, rotate the elements to access the last pushed element.",
+      "Hint 3: Keep the queue in reverse order of insertion."
+    ],
+    "problem_solver": {
+      "approach": "We can use one queue and adjust the order of elements after each `push` operation to ensure that the most recently added element is always at the front.",
+      "steps": [
+        "Initialize a queue `queue`.",
+        "For `push(x)`, add `x` to the queue, then rotate the queue to move `x` to the front.",
+        "- For `_` in range `len(queue) - 1`, perform `queue.append(queue.popleft())`.",
+        "For `pop()`, remove and return the front element of the queue.",
+        "For `top()`, return the front element of the queue without removing it.",
+        "For `empty()`, return `True` if the queue is empty, else `False`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "How can we implement a stack using a single queue?",
+      "options": [
+        {
+          "option": "A",
+          "text": "By reversing the queue after each operation.",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "By rotating the queue after each push to move the new element to the front.",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "By using recursion.",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "By using a priority queue.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses one queue. For the `push` operation, after adding the new element, rotate the queue to bring the new element to the front. This way, `pop` and `top` operations can be performed in O(1) time. Here's the implementation:",
+      "code": "class MyStack:\n    def __init__(self):\n        from collections import deque\n        self.queue = deque()\n\n    def push(self, x):\n        self.queue.append(x)\n        for _ in range(len(self.queue) - 1):\n            self.queue.append(self.queue.popleft())\n\n    def pop(self):\n        return self.queue.popleft()\n\n    def top(self):\n        return self.queue[0]\n\n    def empty(self):\n        return not self.queue"
+    }
+  },
+  {
+    "id": 34,
+    "title": "Valid Palindrome",
+    "difficulty": "Easy",
+    "topics": ["Two Pointers", "String"],
+    "companies": [],
+    "description": "Given a string `s`, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.\n\n**Example:**\n\n```python\nInput: s = \"A man, a plan, a canal: Panama\"\nOutput: True\n```\n\nAn approach is to use two pointers from the beginning and end of the string, moving towards the center, and comparing characters.",
+    "hints": [
+      "Hint 1: Use two pointers starting from both ends.",
+      "Hint 2: Skip non-alphanumeric characters.",
+      "Hint 3: Compare characters in lower case."
+    ],
+    "problem_solver": {
+      "approach": "We can use two pointers moving towards each other, skipping non-alphanumeric characters and comparing the remaining characters in lower case.",
+      "steps": [
+        "Initialize two pointers `left` at 0 and `right` at `len(s) - 1`.",
+        "While `left` < `right`:",
+        "- Move `left` forward if `s[left]` is not alphanumeric.",
+        "- Move `right` backward if `s[right]` is not alphanumeric.",
+        "- If both `s[left]` and `s[right]` are alphanumeric:",
+        "-- Compare `s[left].lower()` and `s[right].lower()`.",
+        "--- If they are not equal, return `False`.",
+        "-- Move `left` forward and `right` backward.",
+        "Return `True` after the loop."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Which characters are considered when checking for a valid palindrome in this problem?",
+      "options": [
+        {
+          "option": "A",
+          "text": "All characters, including symbols and spaces.",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Only letters and digits.",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "Only letters.",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "Only lowercase letters.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses two pointers moving towards each other. We skip non-alphanumeric characters and compare the lowercased characters. If all pairs match, the string is a palindrome. Here's the implementation:",
+      "code": "def is_palindrome(s):\n    left, right = 0, len(s) - 1\n    while left < right:\n        while left < right and not s[left].isalnum():\n            left += 1\n        while left < right and not s[right].isalnum():\n            right -= 1\n        if s[left].lower() != s[right].lower():\n            return False\n        left += 1\n        right -= 1\n    return True"
+    }
+  },
+  {
+    "id": 35,
+    "title": "Implement strStr()",
+    "difficulty": "Easy",
+    "topics": ["String", "Two Pointers"],
+    "companies": [],
+    "description": "Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.\n\n**Example:**\n\n```python\nInput: haystack = \"hello\", needle = \"ll\"\nOutput: 2\n```\n\nAn approach is to use the built-in `find` method, but the problem requires implementing it manually, possibly using substring comparison.",
+    "hints": [
+      "Hint 1: Use a loop to iterate through haystack.",
+      "Hint 2: Compare substrings of haystack with needle.",
+      "Hint 3: Be careful with the length of haystack and needle."
+    ],
+    "problem_solver": {
+      "approach": "We can iterate through haystack up to the point where the remaining substring is at least as long as needle. At each position, compare the substring with needle.",
+      "steps": [
+        "If `needle` is empty, return 0.",
+        "Loop over `haystack` from index 0 to `len(haystack) - len(needle) + 1`:",
+        "- Compare `haystack[i:i+len(needle)]` with `needle`.",
+        "- If they are equal, return `i`.",
+        "If no match is found, return `-1`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What is the time complexity of implementing `strStr()` by comparing substrings?",
+      "options": [
+        {
+          "option": "A",
+          "text": "O(n^2)",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "O(n*m)",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "O(n)",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "O(m)",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution iterates through haystack up to the point where the remaining substring is at least as long as needle. At each position, compare the substring with needle. Here's the implementation:",
+      "code": "def str_str(haystack, needle):\n    if not needle:\n        return 0\n    for i in range(len(haystack) - len(needle) + 1):\n        if haystack[i:i+len(needle)] == needle:\n            return i\n    return -1"
+    }
+  },
+  {
+    "id": 36,
+    "title": "Majority Element",
+    "difficulty": "Easy",
+    "topics": ["Array", "Hash Table", "Divide and Conquer", "Bit Manipulation"],
+    "companies": [],
+    "description": "Given an array `nums` of size `n`, return the majority element. The majority element is the element that appears more than ⎣n/2⎦ times.\n\n**Example:**\n\n```python\nInput: nums = [3,2,3]\nOutput: 3\n```\n\nAn approach is to use a hash map to count occurrences, but there's a more efficient algorithm called the Boyer-Moore Voting Algorithm.",
+    "hints": [
+      "Hint 1: Use the Boyer-Moore Voting Algorithm.",
+      "Hint 2: Maintain a count and a candidate.",
+      "Hint 3: The majority element will be the candidate after one pass."
+    ],
+    "problem_solver": {
+      "approach": "The Boyer-Moore Voting Algorithm works by maintaining a count and a candidate. We iterate through the array and adjust the count based on whether the current element is the candidate.",
+      "steps": [
+        "Initialize `count` to 0 and `candidate` to `None`.",
+        "Iterate over each element `num` in `nums`:",
+        "- If `count` is 0, set `candidate` to `num`.",
+        "- If `num` is equal to `candidate`, increment `count`.",
+        "- Else, decrement `count`.",
+        "After the iteration, `candidate` is the majority element.",
+        "Return `candidate`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What is the time complexity of the Boyer-Moore Voting Algorithm?",
+      "options": [
+        {
+          "option": "A",
+          "text": "O(n^2)",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "O(n log n)",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "O(n)",
+          "is_correct": true
+        },
+        {
+          "option": "D",
+          "text": "O(log n)",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The Boyer-Moore Voting Algorithm works by maintaining a count and a candidate. We iterate through the array and adjust the count based on whether the current element is the candidate. Here's the implementation:",
+      "code": "def majority_element(nums):\n    count = 0\n    candidate = None\n    for num in nums:\n        if count == 0:\n            candidate = num\n        count += (1 if num == candidate else -1)\n    return candidate"
+    }
+  },
+
+  {
+    "id": 37,
+    "title": "Symmetric Tree",
+    "difficulty": "Easy",
+    "topics": ["Tree", "Depth-First Search", "Breadth-First Search"],
+    "companies": [],
+    "description": "Given a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).\n\n**Example:**\n\n```python\nInput: root = [1,2,2,3,4,4,3]\nOutput: True\n```\n\nAn approach is to use recursion to compare the left and right subtrees.",
+    "hints": [
+      "Hint 1: Write a helper function to compare two nodes.",
+      "Hint 2: Check if the left subtree is a mirror of the right subtree.",
+      "Hint 3: Consider both recursive and iterative approaches."
+    ],
+    "problem_solver": {
+      "approach": "We can use a recursive helper function that checks if two subtrees are mirrors of each other. This involves comparing the current nodes and recursively checking the left and right subtrees.",
+      "steps": [
+        "Define a helper function `is_mirror(t1, t2)` that returns `True` if trees `t1` and `t2` are mirrors.",
+        "In `is_mirror(t1, t2)`:",
+        "- If both `t1` and `t2` are `None`, return `True`.",
+        "- If only one of them is `None`, return `False`.",
+        "- Check if `t1.val` equals `t2.val`.",
+        "- Recursively check if `t1.left` is a mirror of `t2.right` and `t1.right` is a mirror of `t2.left`.",
+        "Call `is_mirror(root, root)` to determine if the tree is symmetric.",
+        "Return the result of the helper function."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Which traversal method is commonly used to check if a binary tree is symmetric?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Inorder Traversal",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Preorder Traversal",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "Postorder Traversal",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "None of the above; use a helper function to compare subtrees",
+          "is_correct": true
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses a recursive helper function to compare the left and right subtrees for symmetry. By ensuring that for every node in the left subtree, there is a corresponding node in the right subtree with the same value and mirrored children, we can determine if the tree is symmetric. Here's the implementation:",
+      "code": "def is_symmetric(root):\n    def is_mirror(t1, t2):\n        if not t1 and not t2:\n            return True\n        if not t1 or not t2:\n            return False\n        return (t1.val == t2.val and\n                is_mirror(t1.left, t2.right) and\n                is_mirror(t1.right, t2.left))\n    return is_mirror(root, root)"
+    }
+  },
+  {
+    "id": 38,
+    "title": "Happy Number",
+    "difficulty": "Easy",
+    "topics": ["Math", "Hash Table", "Two Pointers"],
+    "companies": [],
+    "description": "Write an algorithm to determine if a number `n` is happy. A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1. If it loops endlessly in a cycle that does not include 1, it's not a happy number.\n\n**Example:**\n\n```python\nInput: n = 19\nOutput: True\nExplanation:\n1² + 9² = 82\n8² + 2² = 68\n6² + 8² = 100\n1² + 0² + 0² = 1\n```\n\nAn approach is to use a set to detect cycles.",
+    "hints": [
+      "Hint 1: Use a set to keep track of seen numbers.",
+      "Hint 2: Implement a function to calculate the sum of squares of digits.",
+      "Hint 3: Loop until n becomes 1 or a cycle is detected."
+    ],
+    "problem_solver": {
+      "approach": "The optimal solution uses a set to store numbers that have been seen during the process. If a number repeats, it indicates a cycle, and the number is not happy.",
+      "steps": [
+        "Define a helper function `get_next(number)` that returns the sum of the squares of its digits.",
+        "Initialize an empty set `seen` to keep track of numbers encountered.",
+        "Loop while `n` is not 1 and `n` is not in `seen`:",
+        "- Add `n` to `seen`.",
+        "- Update `n` to `get_next(n)`.",
+        "After the loop, return `n == 1`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What indicates that a number is not a happy number?",
+      "options": [
+        {
+          "option": "A",
+          "text": "If the number becomes negative.",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "If the number repeats in the process.",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "If the number exceeds 1000.",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "If the number is even.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses a set to track the numbers encountered during the process. If a number repeats, it means there's a cycle, and the number is not happy. If the process reaches 1, the number is happy. Here's the implementation:",
+      "code": "def is_happy(n):\n    def get_next(number):\n        total_sum = 0\n        while number > 0:\n            digit = number % 10\n            total_sum += digit ** 2\n            number //= 10\n        return total_sum\n    seen = set()\n    while n != 1 and n not in seen:\n        seen.add(n)\n        n = get_next(n)\n    return n == 1"
+    }
+  },
+  {
+    "id": 39,
+    "title": "Remove Nth Node From End of List",
+    "difficulty": "Medium",
+    "topics": ["Linked List", "Two Pointers"],
+    "companies": [],
+    "description": "Given the head of a linked list, remove the nth node from the end of the list and return its head.\n\n**Example:**\n\n```python\nInput: head = [1,2,3,4,5], n = 2\nOutput: [1,2,3,5]\n```\n\nAn approach is to use two pointers spaced `n` nodes apart.",
+    "hints": [
+      "Hint 1: Use a dummy node to simplify edge cases.",
+      "Hint 2: Use two pointers, advance the first one by n nodes.",
+      "Hint 3: Move both pointers until the first one reaches the end."
+    ],
+    "problem_solver": {
+      "approach": "Use two pointers where the first pointer is moved n steps ahead of the second. Then move both pointers together until the first pointer reaches the end, ensuring the second pointer is at the node before the one to remove.",
+      "steps": [
+        "Create a dummy node and set `dummy.next = head`.",
+        "Initialize two pointers `first` and `second` to the dummy node.",
+        "Move `first` ahead by `n + 1` steps.",
+        "Move both `first` and `second` until `first` reaches the end of the list.",
+        "Set `second.next` to `second.next.next` to remove the target node.",
+        "Return `dummy.next` as the new head of the list."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Why is a dummy node used in the Remove Nth Node From End of List problem?",
+      "options": [
+        {
+          "option": "A",
+          "text": "To store the length of the list.",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "To simplify edge cases such as removing the head node.",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "To enable faster traversal of the list.",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "To store intermediate nodes.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses a dummy node and two pointers to efficiently remove the nth node from the end. By spacing the first pointer n+1 steps ahead, the second pointer will be just before the target node when the first pointer reaches the end. Here's the implementation:",
+      "code": "def remove_nth_from_end(head, n):\n    dummy = ListNode(0)\n    dummy.next = head\n    first = second = dummy\n    for _ in range(n + 1):\n        first = first.next\n    while first:\n        first = first.next\n        second = second.next\n    second.next = second.next.next\n    return dummy.next"
+    }
+  },
+  {
+    "id": 40,
+    "title": "Merge Sorted Array",
+    "difficulty": "Easy",
+    "topics": ["Array", "Two Pointers"],
+    "companies": [],
+    "description": "Given two sorted integer arrays `nums1` and `nums2`, merge `nums2` into `nums1` as one sorted array. The number of elements initialized in `nums1` and `nums2` are `m` and `n` respectively. You may assume that `nums1` has enough space to hold additional elements from `nums2`.\n\n**Example:**\n\n```python\nInput: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3\nOutput: [1,2,2,3,5,6]\n```\n\nAn approach is to merge from the end to avoid overwriting elements in `nums1`.",
+    "hints": [
+      "Hint 1: Use three pointers starting from the end.",
+      "Hint 2: Compare elements from the end of `nums1` and `nums2`.",
+      "Hint 3: Fill `nums1` from the back."
+    ],
+    "problem_solver": {
+      "approach": "Start merging from the end of both arrays by comparing the largest elements and placing them at the end of `nums1`. This prevents overwriting elements in `nums1` that haven't been checked yet.",
+      "steps": [
+        "Initialize three pointers: `i = m - 1`, `j = n - 1`, and `k = m + n - 1`.",
+        "While `i >= 0` and `j >= 0`:",
+        "- If `nums1[i] > nums2[j]`, set `nums1[k] = nums1[i]` and decrement `i`.",
+        "- Else, set `nums1[k] = nums2[j]` and decrement `j`.",
+        "- Decrement `k`.",
+        "After the loop, if there are remaining elements in `nums2`, copy them to `nums1`.",
+        "No need to copy remaining elements from `nums1` as they are already in place.",
+        "Return `nums1`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Why do we merge the arrays from the end in the Merge Sorted Array problem?",
+      "options": [
+        {
+          "option": "A",
+          "text": "To ensure the smallest elements are placed first.",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "To avoid overwriting elements in `nums1` that haven't been compared yet.",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "Because it's more efficient to start from the end.",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "To utilize stack properties.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution merges the arrays from the end using three pointers. By placing the largest elements first, we avoid overwriting elements in `nums1` that are yet to be compared. Here's the implementation:",
+      "code": "def merge(nums1, m, nums2, n):\n    i = m - 1\n    j = n - 1\n    k = m + n - 1\n    while i >= 0 and j >= 0:\n        if nums1[i] > nums2[j]:\n            nums1[k] = nums1[i]\n            i -= 1\n        else:\n            nums1[k] = nums2[j]\n            j -= 1\n        k -= 1\n    while j >= 0:\n        nums1[k] = nums2[j]\n        j -= 1\n        k -= 1"
+    }
+  },
+  {
+    "id": 41,
+    "title": "Binary Search",
+    "difficulty": "Easy",
+    "topics": ["Binary Search"],
+    "companies": [],
+    "description": "Given a sorted (in ascending order) integer array `nums` of `n` elements and a `target` value, write a function to search `target` in `nums`. If `target` exists, then return its index, otherwise return -1.\n\n**Example:**\n\n```python\nInput: nums = [-1,0,3,5,9,12], target = 9\nOutput: 4\n```\n\nAn approach is to use the standard binary search algorithm.",
+    "hints": [
+      "Hint 1: Use binary search.",
+      "Hint 2: Initialize left and right pointers.",
+      "Hint 3: Adjust pointers based on comparisons."
+    ],
+    "problem_solver": {
+      "approach": "Implement the binary search algorithm by repeatedly dividing the search interval in half. Compare the target with the middle element to decide which half to continue searching.",
+      "steps": [
+        "Initialize `left` to 0 and `right` to `len(nums) - 1`.",
+        "While `left` <= `right`:",
+        "- Calculate `mid` as `(left + right) // 2`.",
+        "- If `nums[mid]` equals `target`, return `mid`.",
+        "- If `nums[mid]` is less than `target`, set `left = mid + 1`.",
+        "- Else, set `right = mid - 1`.",
+        "If the loop ends without finding the target, return `-1`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What is the time complexity of the Binary Search algorithm?",
+      "options": [
+        {
+          "option": "A",
+          "text": "O(n)",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "O(n log n)",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "O(log n)",
+          "is_correct": true
+        },
+        {
+          "option": "D",
+          "text": "O(1)",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses the binary search algorithm, which efficiently finds the target by repeatedly dividing the search interval in half. Here's the implementation:",
+      "code": "def search(nums, target):\n    left, right = 0, len(nums) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if nums[mid] == target:\n            return mid\n        elif nums[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1"
+    }
+  },
+  {
+    "id": 42,
+    "title": "Maximum Depth of Binary Tree",
+    "difficulty": "Easy",
+    "topics": ["Tree", "Depth-First Search", "Breadth-First Search"],
+    "companies": [],
+    "description": "Given the root of a binary tree, return its maximum depth. A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.\n\n**Example:**\n\n```python\nInput: root = [3,9,20,null,null,15,7]\nOutput: 3\n```\n\nAn approach is to use recursion to traverse the tree and find the maximum depth.",
+    "hints": [
+      "Hint 1: Use recursion to explore each node.",
+      "Hint 2: The maximum depth is the max of left and right subtrees plus one.",
+      "Hint 3: Handle the base case when the node is null."
+    ],
+    "problem_solver": {
+      "approach": "Use a recursive function to traverse the tree, computing the depth of left and right subtrees and returning the greater depth plus one.",
+      "steps": [
+        "Define a function `max_depth(node)` that returns the maximum depth of the tree rooted at `node`.",
+        "If `node` is `None`, return 0.",
+        "Recursively call `max_depth` on `node.left` to get the left depth.",
+        "Recursively call `max_depth` on `node.right` to get the right depth.",
+        "Return the maximum of left and right depths plus one.",
+        "Call `max_depth(root)` and return its result."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What traversal method can be used to find the maximum depth of a binary tree?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Inorder Traversal",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Preorder Traversal",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "Postorder Traversal",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "Any of the above; depth can be calculated regardless of traversal order",
+          "is_correct": true
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses recursion to traverse the tree and compute the maximum depth by taking the maximum of the left and right subtree depths and adding one for the current node. Here's the implementation:",
+      "code": "def max_depth(root):\n    if not root:\n        return 0\n    left_depth = max_depth(root.left)\n    right_depth = max_depth(root.right)\n    return max(left_depth, right_depth) + 1"
+    }
+  },
+  {
+    "id": 43,
+    "title": "Diameter of Binary Tree",
+    "difficulty": "Easy",
+    "topics": ["Tree", "Depth-First Search"],
+    "companies": [],
+    "description": "Given the root of a binary tree, return the length of the diameter of the tree. The diameter of a binary tree is the length of the longest path between any two nodes in a tree.\n\n**Example:**\n\n```python\nInput: root = [1,2,3,4,5]\nOutput: 3\nExplanation: The longest path is [4,2,1,3] or [5,2,1,3], and the length is 3.\n```\n\nAn approach is to use recursion to calculate the height of subtrees and update the diameter at each node.",
+    "hints": [
+      "Hint 1: Use recursion to calculate the height of each subtree.",
+      "Hint 2: At each node, the diameter can be the sum of left and right heights.",
+      "Hint 3: Keep track of the maximum diameter found so far."
+    ],
+    "problem_solver": {
+      "approach": "Use a recursive function to compute the height of each subtree while updating the diameter. The diameter at any node is the sum of the heights of its left and right subtrees.",
+      "steps": [
+        "Initialize a variable `diameter` to 0.",
+        "Define a recursive function `height(node)` that returns the height of the tree rooted at `node`:",
+        "- If `node` is `None`, return 0.",
+        "- Recursively calculate the height of the left subtree: `left = height(node.left)`.",
+        "- Recursively calculate the height of the right subtree: `right = height(node.right)`.",
+        "- Update `diameter` as the maximum of `diameter` and `left + right`.",
+        "- Return `max(left, right) + 1` as the height of the current node.",
+        "Call `height(root)` to start the recursion.",
+        "Return the value of `diameter`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What does the diameter of a binary tree represent?",
+      "options": [
+        {
+          "option": "A",
+          "text": "The maximum depth of the tree.",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "The length of the longest path between any two nodes.",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "The number of leaf nodes in the tree.",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "The number of internal nodes in the tree.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses recursion to compute the height of each subtree while updating the diameter. The diameter at any node is the sum of the heights of its left and right subtrees. Here's the implementation:",
+      "code": "def diameter_of_binary_tree(root):\n    diameter = 0\n    def height(node):\n        nonlocal diameter\n        if not node:\n            return 0\n        left = height(node.left)\n        right = height(node.right)\n        diameter = max(diameter, left + right)\n        return max(left, right) + 1\n    height(root)\n    return diameter"
+    }
+  },
+  {
+    "id": 44,
+    "title": "Path Sum",
+    "difficulty": "Easy",
+    "topics": ["Tree", "Depth-First Search", "Breadth-First Search"],
+    "companies": [],
+    "description": "Given the root of a binary tree and an integer `targetSum`, return `true` if the tree has a root-to-leaf path such that adding up all the values along the path equals `targetSum`.\n\n**Example:**\n\n```python\nInput: root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22\nOutput: True\n```\n\nAn approach is to use recursion to traverse the tree and subtract node values from the target sum.",
+    "hints": [
+      "Hint 1: Use recursion to explore each path.",
+      "Hint 2: Subtract the node's value from the target sum.",
+      "Hint 3: Check if at a leaf node, the remaining sum equals zero."
+    ],
+    "problem_solver": {
+      "approach": "Use a recursive function to traverse the tree. At each node, subtract its value from `targetSum` and check if any of the subtrees can fulfill the remaining sum.",
+      "steps": [
+        "If the root is `None`, return `False`.",
+        "If the root is a leaf node (no left and right children), check if `targetSum - root.val` equals 0.",
+        "Recursively call the function on the left and right subtrees with the updated sum (`targetSum - root.val`).",
+        "Return `True` if any of the recursive calls return `True`.",
+        "Otherwise, return `False`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What constitutes a leaf node in a binary tree?",
+      "options": [
+        {
+          "option": "A",
+          "text": "A node with only one child.",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "A node with two children.",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "A node with no children.",
+          "is_correct": true
+        },
+        {
+          "option": "D",
+          "text": "Any node that is not the root.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses recursion to traverse the tree and check if any root-to-leaf path sums up to the target. By subtracting the current node's value from the target and exploring both subtrees, we can determine if such a path exists. Here's the implementation:",
+      "code": "def has_path_sum(root, targetSum):\n    if not root:\n        return False\n    if not root.left and not root.right:\n        return targetSum == root.val\n    return (has_path_sum(root.left, targetSum - root.val) or\n            has_path_sum(root.right, targetSum - root.val))"
+    }
+  },
+  {
+    "id": 45,
+    "title": "Count Primes",
+    "difficulty": "Medium",
+    "topics": ["Math", "Hash Table", "Sieve of Eratosthenes"],
+    "companies": [],
+    "description": "Count the number of prime numbers less than a non-negative number `n`.\n\n**Example:**\n\n```python\nInput: n = 10\nOutput: 4\nExplanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.\n```\n\nAn approach is to use the Sieve of Eratosthenes algorithm.",
+    "hints": [
+      "Hint 1: Use the Sieve of Eratosthenes to efficiently find all primes below `n`.",
+      "Hint 2: Create a boolean array to mark non-prime numbers.",
+      "Hint 3: Iterate up to the square root of `n` to mark multiples."
+    ],
+    "problem_solver": {
+      "approach": "Implement the Sieve of Eratosthenes by marking multiples of each prime starting from 2. Count the numbers that remain unmarked as primes.",
+      "steps": [
+        "If `n` <= 2, return 0 as there are no primes less than 2.",
+        "Initialize a boolean array `is_prime` of size `n` and set all entries to `True`.",
+        "Set `is_prime[0]` and `is_prime[1]` to `False` as 0 and 1 are not primes.",
+        "Iterate over numbers from 2 to `sqrt(n)`:",
+        "- If `is_prime[i]` is `True`, iterate through multiples of `i` starting from `i*i` and set `is_prime[j]` to `False`.",
+        "After marking, count the number of `True` values in `is_prime`.",
+        "Return the count as the number of primes less than `n`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What is the time complexity of the Sieve of Eratosthenes algorithm for counting primes?",
+      "options": [
+        {
+          "option": "A",
+          "text": "O(n)",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "O(n log n)",
+          "is_correct": false
+        },
+        {
+          "option": "C",
+          "text": "O(n log log n)",
+          "is_correct": true
+        },
+        {
+          "option": "D",
+          "text": "O(n^2)",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses the Sieve of Eratosthenes to efficiently find all prime numbers less than `n`. By iteratively marking the multiples of each prime, we can identify primes in O(n log log n) time. Here's the implementation:",
+      "code": "def count_primes(n):\n    if n < 2:\n        return 0\n    is_prime = [True] * n\n    is_prime[0] = is_prime[1] = False\n    for i in range(2, int(n ** 0.5) + 1):\n        if is_prime[i]:\n            is_prime[i*i:n:i] = [False] * len(range(i*i, n, i))\n    return sum(is_prime)"
+    }
+  },
+  {
+    "id": 46,
+    "title": "Flood Fill",
+    "difficulty": "Easy",
+    "topics": ["Graph", "Depth-First Search", "Breadth-First Search"],
+    "companies": [],
+    "description": "An image is represented by a 2D array of integers, each integer representing the pixel value of the image. Given a coordinate `(sr, sc)` and a color `newColor`, perform a flood fill starting from the pixel `(sr, sc)`.\n\n**Example:**\n\n```python\nInput: image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, newColor = 2\nOutput: [[2,2,2],[2,2,0],[2,0,1]]\n```\n\nAn approach is to use DFS to traverse connected pixels with the same color.",
+    "hints": [
+      "Hint 1: Use recursion or a stack for DFS.",
+      "Hint 2: Check boundaries to avoid index errors.",
+      "Hint 3: Only change the color of pixels matching the original color."
+    ],
+    "problem_solver": {
+      "approach": "Use DFS to recursively change the color of the starting pixel and its connected neighbors that have the same original color.",
+      "steps": [
+        "Determine the original color of the starting pixel `(sr, sc)`.",
+        "If the original color is the same as `newColor`, return the image as no changes are needed.",
+        "Define a recursive function `dfs(r, c)`:",
+        "- Check if `(r, c)` is within the image boundaries and matches the original color.",
+        "- Change the color of `(r, c)` to `newColor`.",
+        "- Recursively call `dfs` on the neighboring pixels: up, down, left, right.",
+        "Call `dfs(sr, sc)` to start the flood fill.",
+        "Return the modified image."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Which traversal method can be used to implement the Flood Fill algorithm?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Inorder Traversal",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Depth-First Search (DFS)",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "Breadth-First Search (BFS)",
+          "is_correct": true
+        },
+        {
+          "option": "D",
+          "text": "Preorder Traversal",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses DFS to traverse and change the color of connected pixels that match the original color. By recursively visiting each valid neighbor, we ensure all connected areas are filled correctly. Here's the implementation:",
+      "code": "def flood_fill(image, sr, sc, newColor):\n    original_color = image[sr][sc]\n    if original_color == newColor:\n        return image\n    def dfs(r, c):\n        if (0 <= r < len(image) and 0 <= c < len(image[0]) and\n                image[r][c] == original_color):\n            image[r][c] = newColor\n            dfs(r + 1, c)\n            dfs(r - 1, c)\n            dfs(r, c + 1)\n            dfs(r, c - 1)\n    dfs(sr, sc)\n    return image"
+    }
+  },
+  {
+    "id": 47,
+    "title": "Contains Duplicate",
+    "difficulty": "Easy",
+    "topics": ["Array", "Hash Table"],
+    "companies": [],
+    "description": "Given an integer array `nums`, return `true` if any value appears at least twice in the array, and return `false` if every element is distinct.\n\n**Example:**\n\n```python\nInput: nums = [1,2,3,1]\nOutput: True\n```\n\nAn approach is to use a hash set to track seen elements.",
+    "hints": [
+      "Hint 1: Use a hash set to store seen elements.",
+      "Hint 2: Iterate through the array and check for duplicates.",
+      "Hint 3: Return early if a duplicate is found."
+    ],
+    "problem_solver": {
+      "approach": "Use a hash set to keep track of elements that have been seen. Iterate through the array, and for each element, check if it is already in the set. If it is, return `True`. Otherwise, add it to the set.",
+      "steps": [
+        "Initialize an empty set `seen`.",
+        "Iterate through each number `num` in `nums`:",
+        "- If `num` is in `seen`, return `True`.",
+        "- Otherwise, add `num` to `seen`.",
+        "After the iteration, return `False` as no duplicates were found."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What data structure is most efficient for checking duplicates in the Contains Duplicate problem?",
+      "options": [
+        {
+          "option": "A",
+          "text": "List",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Hash Set",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "Stack",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "Queue",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses a hash set to track seen elements. By iterating through the array and checking if each element is already in the set, we can efficiently determine if there are any duplicates. Here's the implementation:",
+      "code": "def contains_duplicate(nums):\n    seen = set()\n    for num in nums:\n        if num in seen:\n            return True\n        seen.add(num)\n    return False"
+    }
+  },
+  {
+    "id": 48,
+    "title": "Binary Tree Inorder Traversal",
+    "difficulty": "Medium",
+    "topics": ["Tree", "Stack", "Depth-First Search"],
+    "companies": [],
+    "description": "Given the root of a binary tree, return the inorder traversal of its nodes' values.\n\n**Example:**\n\n```python\nInput: root = [1,null,2,3]\nOutput: [1,3,2]\n```\n\nAn approach is to use an iterative method with a stack to traverse the tree.",
+    "hints": [
+      "Hint 1: Use a stack to simulate the recursion.",
+      "Hint 2: Traverse to the leftmost node, pushing nodes onto the stack.",
+      "Hint 3: Pop from the stack and visit the node, then traverse the right subtree."
+    ],
+    "problem_solver": {
+      "approach": "Use an iterative approach with a stack to perform the inorder traversal. Traverse as far left as possible, push nodes onto the stack, visit nodes by popping from the stack, and then traverse the right subtree.",
+      "steps": [
+        "Initialize an empty list `res` to store the traversal and an empty stack.",
+        "Set `current` to the root node.",
+        "While `current` is not `None` or the stack is not empty:",
+        "- While `current` is not `None`:",
+        "-- Push `current` onto the stack.",
+        "-- Move `current` to `current.left`.",
+        "- Pop the top node from the stack and assign it to `current`.",
+        "- Append `current.val` to `res`.",
+        "- Move `current` to `current.right`.",
+        "Return the list `res`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "Which data structure is used in the iterative approach for inorder traversal of a binary tree?",
+      "options": [
+        {
+          "option": "A",
+          "text": "Queue",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "Stack",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "Hash Set",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "Heap",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses an iterative approach with a stack to perform inorder traversal. By traversing to the leftmost node, pushing nodes onto the stack, visiting nodes by popping from the stack, and then traversing the right subtree, we can achieve the correct inorder sequence. Here's the implementation:",
+      "code": "def inorder_traversal(root):\n    res = []\n    stack = []\n    current = root\n    while current or stack:\n        while current:\n            stack.append(current)\n            current = current.left\n        current = stack.pop()\n        res.append(current.val)\n        current = current.right\n    return res"
+    }
+  },
+  {
+    "id": 49,
+    "title": "Diameter of Binary Tree",
+    "difficulty": "Easy",
+    "topics": ["Tree", "Depth-First Search"],
+    "companies": [],
+    "description": "Given the root of a binary tree, return the length of the diameter of the tree. The diameter of a binary tree is the length of the longest path between any two nodes in a tree.\n\n**Example:**\n\n```python\nInput: root = [1,2,3,4,5]\nOutput: 3\nExplanation: The longest path is [4,2,1,3] or [5,2,1,3], and the length is 3.\n```\n\nAn approach is to use recursion to calculate the height of subtrees and update the diameter at each node.",
+    "hints": [
+      "Hint 1: Use recursion to calculate the height of each subtree.",
+      "Hint 2: At each node, the diameter can be the sum of left and right heights.",
+      "Hint 3: Keep track of the maximum diameter found so far."
+    ],
+    "problem_solver": {
+      "approach": "Use a recursive function to compute the height of each subtree while updating the diameter. The diameter at any node is the sum of the heights of its left and right subtrees.",
+      "steps": [
+        "Initialize a variable `diameter` to 0.",
+        "Define a recursive function `height(node)` that returns the height of the tree rooted at `node`:",
+        "- If `node` is `None`, return 0.",
+        "- Recursively calculate the height of the left subtree: `left = height(node.left)`.",
+        "- Recursively calculate the height of the right subtree: `right = height(node.right)`.",
+        "- Update `diameter` as the maximum of `diameter` and `left + right`.",
+        "- Return `max(left, right) + 1` as the height of the current node.",
+        "Call `height(root)` to start the recursion.",
+        "Return the value of `diameter`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What does the diameter of a binary tree represent?",
+      "options": [
+        {
+          "option": "A",
+          "text": "The maximum depth of the tree.",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "The length of the longest path between any two nodes.",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "The number of leaf nodes in the tree.",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "The number of internal nodes in the tree.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses recursion to compute the height of each subtree while updating the diameter. The diameter at any node is the sum of the heights of its left and right subtrees. Here's the implementation:",
+      "code": "def diameter_of_binary_tree(root):\n    diameter = 0\n    def height(node):\n        nonlocal diameter\n        if not node:\n            return 0\n        left = height(node.left)\n        right = height(node.right)\n        diameter = max(diameter, left + right)\n        return max(left, right) + 1\n    height(root)\n    return diameter"
+    }
+  },
+  {
+    "id": 50,
+    "title": "Diameter of Binary Tree",
+    "difficulty": "Easy",
+    "topics": ["Tree", "Depth-First Search"],
+    "companies": [],
+    "description": "Given the root of a binary tree, return the length of the diameter of the tree. The diameter of a binary tree is the length of the longest path between any two nodes in a tree.\n\n**Example:**\n\n```python\nInput: root = [1,2,3,4,5]\nOutput: 3\nExplanation: The longest path is [4,2,1,3] or [5,2,1,3], and the length is 3.\n```\n\nAn approach is to use recursion to calculate the height of subtrees and update the diameter at each node.",
+    "hints": [
+      "Hint 1: Use recursion to calculate the height of each subtree.",
+      "Hint 2: At each node, the diameter can be the sum of left and right heights.",
+      "Hint 3: Keep track of the maximum diameter found so far."
+    ],
+    "problem_solver": {
+      "approach": "Use a recursive function to compute the height of each subtree while updating the diameter. The diameter at any node is the sum of the heights of its left and right subtrees.",
+      "steps": [
+        "Initialize a variable `diameter` to 0.",
+        "Define a recursive function `height(node)` that returns the height of the tree rooted at `node`:",
+        "- If `node` is `None`, return 0.",
+        "- Recursively calculate the height of the left subtree: `left = height(node.left)`.",
+        "- Recursively calculate the height of the right subtree: `right = height(node.right)`.",
+        "- Update `diameter` as the maximum of `diameter` and `left + right`.",
+        "- Return `max(left, right) + 1` as the height of the current node.",
+        "Call `height(root)` to start the recursion.",
+        "Return the value of `diameter`."
+      ]
+    },
+    "multiple_choice": {
+      "question": "What does the diameter of a binary tree represent?",
+      "options": [
+        {
+          "option": "A",
+          "text": "The maximum depth of the tree.",
+          "is_correct": false
+        },
+        {
+          "option": "B",
+          "text": "The length of the longest path between any two nodes.",
+          "is_correct": true
+        },
+        {
+          "option": "C",
+          "text": "The number of leaf nodes in the tree.",
+          "is_correct": false
+        },
+        {
+          "option": "D",
+          "text": "The number of internal nodes in the tree.",
+          "is_correct": false
+        }
+      ]
+    },
+    "solution": {
+      "text": "The optimal solution uses recursion to compute the height of each subtree while updating the diameter. The diameter at any node is the sum of the heights of its left and right subtrees. Here's the implementation:",
+      "code": "def diameter_of_binary_tree(root):\n    diameter = 0\n    def height(node):\n        nonlocal diameter\n        if not node:\n            return 0\n        left = height(node.left)\n        right = height(node.right)\n        diameter = max(diameter, left + right)\n        return max(left, right) + 1\n    height(root)\n    return diameter"
+    }
+  }
+]

@@ -1,0 +1,659 @@
+{
+  "categories": [
+    {
+      "name": "Machine Learning",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is machine learning?",
+          "options": [
+            "A field of computer science focused on building physical robots",
+            "A discipline of mathematics focused on pure algebraic structures",
+            "A subset of AI that enables systems to learn from data without being explicitly programmed",
+            "A methodology for database management and indexing"
+          ],
+          "answer": "A subset of AI that enables systems to learn from data without being explicitly programmed",
+          "difficulty": "Easy",
+          "explanation": "Machine learning is a subset of AI where models learn patterns from data rather than being explicitly coded with rules."
+        },
+        {
+          "id": 2,
+          "question": "Which of the following is a type of machine learning?",
+          "options": [
+            "Supervised Learning",
+            "Interpreted Learning",
+            "Translated Learning",
+            "Conceptual Learning"
+          ],
+          "answer": "Supervised Learning",
+          "difficulty": "Easy",
+          "explanation": "Supervised learning uses labeled data to train models."
+        },
+        {
+          "id": 3,
+          "question": "What differentiates supervised from unsupervised learning?",
+          "options": [
+            "Supervised uses labeled data, while unsupervised uses unlabeled data",
+            "Supervised uses unlabeled data, while unsupervised uses labeled data",
+            "Both use only unlabeled data",
+            "There is no difference"
+          ],
+          "answer": "Supervised uses labeled data, while unsupervised uses unlabeled data",
+          "difficulty": "Medium",
+          "explanation": "In supervised learning, the model learns from labeled examples. In unsupervised learning, the model uncovers patterns from unlabeled data."
+        },
+        {
+          "id": 4,
+          "question": "Which of the following is a supervised learning task?",
+          "options": [
+            "Clustering customers by their purchasing behavior",
+            "Finding topics in a set of unlabeled documents",
+            "Predicting house prices based on historical labeled data",
+            "Detecting anomalies without any labeled examples"
+          ],
+          "answer": "Predicting house prices based on historical labeled data",
+          "difficulty": "Easy",
+          "explanation": "Predicting house prices is a regression task with known target values, making it a supervised learning problem."
+        },
+        {
+          "id": 5,
+          "question": "What is a 'feature' in machine learning?",
+          "options": [
+            "A parameter of the learning algorithm",
+            "An individual measurable property of the data",
+            "A synonym for the model’s output",
+            "A step in data preprocessing"
+          ],
+          "answer": "An individual measurable property of the data",
+          "difficulty": "Medium",
+          "explanation": "Features are input variables used by the model to make predictions."
+        },
+        {
+          "id": 6,
+          "question": "Which algorithm is commonly used for classification tasks?",
+          "options": [
+            "Linear Regression",
+            "Support Vector Machine (SVM)",
+            "K-Means Clustering",
+            "Principal Component Analysis"
+          ],
+          "answer": "Support Vector Machine (SVM)",
+          "difficulty": "Medium",
+          "explanation": "SVM is often used for classification due to its ability to find optimal separating hyperplanes."
+        },
+        {
+          "id": 7,
+          "question": "What is overfitting in machine learning?",
+          "options": [
+            "When a model performs poorly on both training and test sets",
+            "When a model fits the training data too closely and fails to generalize",
+            "When a model cannot fit the training data at all",
+            "When a model has fewer parameters than necessary"
+          ],
+          "answer": "When a model fits the training data too closely and fails to generalize",
+          "difficulty": "Medium",
+          "explanation": "Overfitting occurs when a model learns noise and details specific to the training data, harming its performance on new data."
+        },
+        {
+          "id": 8,
+          "question": "Which technique can help prevent overfitting?",
+          "options": [
+            "Using a larger model",
+            "Reducing the training data size",
+            "Implementing regularization (e.g., L2, dropout)",
+            "Not splitting data into train and test sets"
+          ],
+          "answer": "Implementing regularization (e.g., L2, dropout)",
+          "difficulty": "Medium",
+          "explanation": "Regularization techniques help the model generalize better by penalizing complex models."
+        },
+        {
+          "id": 9,
+          "question": "What is a 'neural network'?",
+          "options": [
+            "A statistical method for hypothesis testing",
+            "A set of digital circuits performing logic operations",
+            "A computational model inspired by the structure of the brain’s neurons",
+            "A set of if-else rules"
+          ],
+          "answer": "A computational model inspired by the structure of the brain’s neurons",
+          "difficulty": "Easy",
+          "explanation": "Neural networks are composed of layers of interconnected nodes (neurons) that learn complex patterns."
+        },
+        {
+          "id": 10,
+          "question": "What is reinforcement learning?",
+          "options": [
+            "A type of supervised learning with labeled data",
+            "An approach where an agent learns by interacting with an environment and maximizing rewards",
+            "A form of unsupervised learning that clusters data",
+            "A method of data preprocessing"
+          ],
+          "answer": "An approach where an agent learns by interacting with an environment and maximizing rewards",
+          "difficulty": "Hard",
+          "explanation": "Reinforcement learning involves an agent making decisions, receiving rewards, and improving its policy over time."
+        },
+        {
+          "id": 11,
+          "question": "Which metric is commonly used to evaluate classification performance?",
+          "options": [
+            "Mean Squared Error",
+            "Accuracy",
+            "R-squared",
+            "Silhouette Score"
+          ],
+          "answer": "Accuracy",
+          "difficulty": "Easy",
+          "explanation": "Accuracy is the ratio of correctly predicted instances to total instances, commonly used for classification evaluation."
+        },
+        {
+          "id": 12,
+          "question": "Which of the following is a regression task?",
+          "options": [
+            "Identifying if an email is spam or not",
+            "Predicting tomorrow’s temperature in degrees Celsius",
+            "Classifying images as cat or dog",
+            "Clustering customers into groups"
+          ],
+          "answer": "Predicting tomorrow’s temperature in degrees Celsius",
+          "difficulty": "Easy",
+          "explanation": "Regression involves predicting continuous values, such as temperature."
+        },
+        {
+          "id": 13,
+          "question": "How does logistic regression differ from linear regression?",
+          "options": [
+            "Logistic regression predicts continuous values, while linear regression predicts probabilities",
+            "Logistic regression predicts categorical outcomes, while linear regression predicts continuous values",
+            "They are identical models",
+            "Linear regression is for classification and logistic regression is for regression"
+          ],
+          "answer": "Logistic regression predicts categorical outcomes, while linear regression predicts continuous values",
+          "difficulty": "Medium",
+          "explanation": "Logistic regression outputs probabilities for classification, whereas linear regression outputs continuous values."
+        },
+        {
+          "id": 14,
+          "question": "What is gradient descent?",
+          "options": [
+            "A method for measuring the performance of a model",
+            "An algorithm that adjusts parameters to minimize a cost function",
+            "A technique for dimensionality reduction",
+            "A method for feature selection"
+          ],
+          "answer": "An algorithm that adjusts parameters to minimize a cost function",
+          "difficulty": "Medium",
+          "explanation": "Gradient descent updates model parameters in the direction that reduces the cost function."
+        },
+        {
+          "id": 15,
+          "question": "What is a confusion matrix?",
+          "options": [
+            "A matrix used in dimensionality reduction",
+            "A table that shows the frequency of predictions versus actual classes",
+            "A method for training neural networks",
+            "A feature engineering technique"
+          ],
+          "answer": "A table that shows the frequency of predictions versus actual classes",
+          "difficulty": "Medium",
+          "explanation": "A confusion matrix summarizes classification results by showing the counts of correct and incorrect predictions."
+        },
+        {
+          "id": 16,
+          "question": "What is cross-validation?",
+          "options": [
+            "A method to visualize a model’s decisions",
+            "A technique to reduce overfitting by splitting data into multiple train/test subsets",
+            "A method for creating more complex models",
+            "A data cleaning process"
+          ],
+          "answer": "A technique to reduce overfitting by splitting data into multiple train/test subsets",
+          "difficulty": "Medium",
+          "explanation": "Cross-validation improves generalization estimates by using multiple train/validation splits."
+        },
+        {
+          "id": 17,
+          "question": "In training neural networks, what's the difference between an epoch, a batch, and an iteration?",
+          "options": [
+            "They are all the same thing",
+            "Epoch: one full pass over the dataset, Batch: a subset of data, Iteration: one update step",
+            "Epoch: a subset of data, Batch: one full pass, Iteration: a random sample",
+            "Iteration and batch are the same, epoch is different"
+          ],
+          "answer": "Epoch: one full pass over the dataset, Batch: a subset of data, Iteration: one update step",
+          "difficulty": "Hard",
+          "explanation": "An epoch is a complete pass through the training set, a batch is a subset of the data, and an iteration is a single parameter update."
+        },
+        {
+          "id": 18,
+          "question": "How does a validation set differ from a test set?",
+          "options": [
+            "They do not differ; both are the same",
+            "A validation set is used to tune hyperparameters, while a test set is used to evaluate the final model",
+            "A test set is used for tuning hyperparameters, while a validation set is the final evaluation",
+            "Both are used only for training"
+          ],
+          "answer": "A validation set is used to tune hyperparameters, while a test set is used to evaluate the final model",
+          "difficulty": "Medium",
+          "explanation": "A validation set guides model selection and tuning, and the test set is for final performance measurement."
+        },
+        {
+          "id": 19,
+          "question": "What is the difference between a parameter and a hyperparameter?",
+          "options": [
+            "Parameters are set by the model during training; hyperparameters are set by the user before training",
+            "Parameters are always integers; hyperparameters are floats",
+            "Hyperparameters are learned during training; parameters are fixed",
+            "They are synonymous"
+          ],
+          "answer": "Parameters are set by the model during training; hyperparameters are set by the user before training",
+          "difficulty": "Medium",
+          "explanation": "Model parameters are learned from data, while hyperparameters are predefined settings chosen by the user."
+        },
+        {
+          "id": 20,
+          "question": "What is ensemble learning?",
+          "options": [
+            "Using a single model to solve all problems",
+            "Combining multiple models to improve performance",
+            "A technique to visualize data",
+            "A method for regularization"
+          ],
+          "answer": "Combining multiple models to improve performance",
+          "difficulty": "Medium",
+          "explanation": "Ensemble methods aggregate predictions from multiple models to reduce variance and improve accuracy."
+        },
+        {
+          "id": 21,
+          "question": "What is a Random Forest?",
+          "options": [
+            "A single decision tree",
+            "An ensemble of decision trees trained on random subsets of data and features",
+            "A method for dimensionality reduction",
+            "A clustering algorithm"
+          ],
+          "answer": "An ensemble of decision trees trained on random subsets of data and features",
+          "difficulty": "Easy",
+          "explanation": "Random Forests are ensembles of decision trees that improve generalization by averaging multiple trees."
+        },
+        {
+          "id": 22,
+          "question": "What is boosting?",
+          "options": [
+            "A method for scaling features",
+            "A technique for data augmentation",
+            "An ensemble technique that trains models sequentially to correct the errors of previous models",
+            "A process for cleaning data"
+          ],
+          "answer": "An ensemble technique that trains models sequentially to correct the errors of previous models",
+          "difficulty": "Medium",
+          "explanation": "Boosting builds strong models by iteratively learning from the mistakes of previous models."
+        },
+        {
+          "id": 23,
+          "question": "What is Gradient Boosting?",
+          "options": [
+            "An unsupervised learning algorithm",
+            "A boosting method that uses gradients of the loss function to build new models",
+            "A way to perform gradient descent on the entire dataset",
+            "A clustering algorithm"
+          ],
+          "answer": "A boosting method that uses gradients of the loss function to build new models",
+          "difficulty": "Medium",
+          "explanation": "Gradient Boosting builds new models that optimize the residual errors by following the gradient of the loss."
+        },
+        {
+          "id": 24,
+          "question": "What is Principal Component Analysis (PCA)?",
+          "options": [
+            "A supervised learning algorithm",
+            "A method for feature extraction and dimensionality reduction",
+            "A clustering technique",
+            "A reinforcement learning algorithm"
+          ],
+          "answer": "A method for feature extraction and dimensionality reduction",
+          "difficulty": "Medium",
+          "explanation": "PCA transforms data into a lower-dimensional space capturing the maximum variance."
+        },
+        {
+          "id": 25,
+          "question": "How does PCA differ from LDA (Linear Discriminant Analysis)?",
+          "options": [
+            "PCA is supervised, LDA is unsupervised",
+            "PCA is unsupervised, LDA is supervised",
+            "Both are supervised methods",
+            "Both are unsupervised methods"
+          ],
+          "answer": "PCA is unsupervised, LDA is supervised",
+          "difficulty": "Hard",
+          "explanation": "PCA focuses on variance in the data without labels, while LDA aims to maximize class separability using labels."
+        },
+        {
+          "id": 26,
+          "question": "How does reinforcement learning differ from supervised learning?",
+          "options": [
+            "Reinforcement learning uses labeled data; supervised does not",
+            "Supervised learning has a reward signal; reinforcement does not",
+            "Reinforcement learning uses reward signals from environment interactions, supervised relies on labeled data",
+            "They are identical approaches"
+          ],
+          "answer": "Reinforcement learning uses reward signals from environment interactions, supervised relies on labeled data",
+          "difficulty": "Medium",
+          "explanation": "RL agents learn from trial-and-error feedback, whereas supervised learning requires labeled examples."
+        },
+        {
+          "id": 27,
+          "question": "What is semi-supervised learning?",
+          "options": [
+            "Learning from fully labeled datasets only",
+            "Learning without any labels at all",
+            "Learning from a combination of labeled and unlabeled data",
+            "A method for reinforcement learning"
+          ],
+          "answer": "Learning from a combination of labeled and unlabeled data",
+          "difficulty": "Medium",
+          "explanation": "Semi-supervised learning leverages a small amount of labeled data and a large amount of unlabeled data."
+        },
+        {
+          "id": 28,
+          "question": "What is a ROC curve?",
+          "options": [
+            "A plot of accuracy over training iterations",
+            "A graph showing the trade-off between true positive rate and false positive rate",
+            "A method for feature selection",
+            "A technique for dimensionality reduction"
+          ],
+          "answer": "A graph showing the trade-off between true positive rate and false positive rate",
+          "difficulty": "Medium",
+          "explanation": "The ROC curve shows how sensitivity and specificity vary with different classification thresholds."
+        },
+        {
+          "id": 29,
+          "question": "What is AUC (Area Under the Curve)?",
+          "options": [
+            "The integral of model loss over time",
+            "The area under the ROC curve, measuring classification quality",
+            "A dimension reduction technique",
+            "A parameter tuning method"
+          ],
+          "answer": "The area under the ROC curve, measuring classification quality",
+          "difficulty": "Medium",
+          "explanation": "AUC summarizes the ROC curve into a single number representing the model’s ability to rank predictions."
+        },
+        {
+          "id": 30,
+          "question": "What is the difference between precision and recall?",
+          "options": [
+            "Precision measures how many of the predicted positives are correct, recall measures how many of the actual positives are found",
+            "They are identical metrics",
+            "Recall measures false positives only, precision measures true positives only",
+            "Precision and recall both measure overall accuracy"
+          ],
+          "answer": "Precision measures how many of the predicted positives are correct, recall measures how many of the actual positives are found",
+          "difficulty": "Medium",
+          "explanation": "Precision = TP/(TP+FP), Recall = TP/(TP+FN). They address different aspects of classification performance."
+        },
+        {
+          "id": 31,
+          "question": "What is the F1-score?",
+          "options": [
+            "A measure of regression error",
+            "The harmonic mean of precision and recall",
+            "A metric for unsupervised clustering",
+            "An acronym for 'First metric'"
+          ],
+          "answer": "The harmonic mean of precision and recall",
+          "difficulty": "Medium",
+          "explanation": "F1-score balances precision and recall, making it useful when you want a single measure of performance."
+        },
+        {
+          "id": 32,
+          "question": "What is the K-Nearest Neighbors (KNN) algorithm?",
+          "options": [
+            "A supervised method that classifies based on the majority label of nearest data points",
+            "An unsupervised method for clustering",
+            "A reinforcement learning strategy",
+            "A technique for dimensionality reduction"
+          ],
+          "answer": "A supervised method that classifies based on the majority label of nearest data points",
+          "difficulty": "Easy",
+          "explanation": "KNN predicts the label of a new point by looking at the labels of its k closest neighbors."
+        },
+        {
+          "id": 33,
+          "question": "What is a decision tree?",
+          "options": [
+            "A linear model for regression",
+            "A tree-structured model that splits data by features to make predictions",
+            "A clustering method",
+            "A neural network architecture"
+          ],
+          "answer": "A tree-structured model that splits data by features to make predictions",
+          "difficulty": "Easy",
+          "explanation": "Decision trees iteratively split data into branches based on feature values, leading to a prediction at the leaves."
+        },
+        {
+          "id": 34,
+          "question": "What is Gini impurity?",
+          "options": [
+            "A metric to measure how disorganized a dataset is in decision trees",
+            "A parameter in neural networks",
+            "A measure of linear correlation",
+            "A technique for dimensionality reduction"
+          ],
+          "answer": "A metric to measure how disorganized a dataset is in decision trees",
+          "difficulty": "Medium",
+          "explanation": "Gini impurity measures the probability of misclassifying a random instance if it were labeled according to the current split."
+        },
+        {
+          "id": 35,
+          "question": "What is regularization?",
+          "options": [
+            "A process that simplifies models to prevent overfitting",
+            "A way to increase model complexity",
+            "A technique for data augmentation",
+            "A clustering algorithm"
+          ],
+          "answer": "A process that simplifies models to prevent overfitting",
+          "difficulty": "Medium",
+          "explanation": "Regularization adds constraints or penalties on the model parameters to avoid overfitting."
+        },
+        {
+          "id": 36,
+          "question": "How does L1 regularization differ from L2 regularization?",
+          "options": [
+            "L1 encourages sparse solutions by using absolute values, L2 uses squared terms",
+            "They are identical methods",
+            "L2 encourages sparse solutions, L1 does not",
+            "L1 and L2 are only applicable in clustering"
+          ],
+          "answer": "L1 encourages sparse solutions by using absolute values, L2 uses squared terms",
+          "difficulty": "Hard",
+          "explanation": "L1 regularization (Lasso) encourages sparsity, while L2 (Ridge) shrinks parameters smoothly."
+        },
+        {
+          "id": 37,
+          "question": "What is dropout in neural networks?",
+          "options": [
+            "A method to stop training early",
+            "A form of regularization that randomly ignores some neurons during training",
+            "A technique to remove outliers",
+            "A way to speed up gradient descent"
+          ],
+          "answer": "A form of regularization that randomly ignores some neurons during training",
+          "difficulty": "Medium",
+          "explanation": "Dropout helps prevent overfitting by making the network less reliant on specific neurons."
+        },
+        {
+          "id": 38,
+          "question": "What is the main difference between CNNs (Convolutional Neural Networks) and RNNs (Recurrent Neural Networks)?",
+          "options": [
+            "CNNs process sequential data, RNNs process grid-like data",
+            "RNNs process image data, CNNs process text data",
+            "CNNs are good for spatial data (e.g., images), RNNs are good for sequential data (e.g., time series)",
+            "They are identical architectures"
+          ],
+          "answer": "CNNs are good for spatial data (e.g., images), RNNs are good for sequential data (e.g., time series)",
+          "difficulty": "Medium",
+          "explanation": "CNNs specialize in handling spatial structures (images), while RNNs handle temporal sequences (text, time-series)."
+        },
+        {
+          "id": 39,
+          "question": "What is transfer learning?",
+          "options": [
+            "Training a model from scratch on a large dataset",
+            "Using a pre-trained model and adapting it to a new, related task",
+            "An unsupervised learning technique",
+            "A reinforcement learning strategy"
+          ],
+          "answer": "Using a pre-trained model and adapting it to a new, related task",
+          "difficulty": "Medium",
+          "explanation": "Transfer learning leverages knowledge from one task to improve learning in another, related task."
+        },
+        {
+          "id": 40,
+          "question": "How does underfitting differ from overfitting?",
+          "options": [
+            "Underfitting: good training performance but poor generalization; Overfitting: poor training performance",
+            "Underfitting: poor training and test performance; Overfitting: good training performance but poor test performance",
+            "They are the same phenomenon",
+            "Underfitting only occurs in neural networks"
+          ],
+          "answer": "Underfitting: poor training and test performance; Overfitting: good training performance but poor test performance",
+          "difficulty": "Medium",
+          "explanation": "Underfitting means the model doesn’t learn enough even on training data. Overfitting means it learns patterns that don’t generalize."
+        },
+        {
+          "id": 41,
+          "question": "What is data augmentation?",
+          "options": [
+            "Adding more training data by artificially modifying existing samples",
+            "Removing noisy data",
+            "Splitting data into train and test sets",
+            "Normalizing feature scales"
+          ],
+          "answer": "Adding more training data by artificially modifying existing samples",
+          "difficulty": "Medium",
+          "explanation": "Data augmentation artificially increases the diversity of the dataset to improve model generalization."
+        },
+        {
+          "id": 42,
+          "question": "What is a generative model?",
+          "options": [
+            "A model that discriminates between classes",
+            "A model that learns the joint probability of features and labels and can generate new samples",
+            "A method for dimensionality reduction",
+            "A reinforcement learning agent"
+          ],
+          "answer": "A model that learns the joint probability of features and labels and can generate new samples",
+          "difficulty": "Hard",
+          "explanation": "Generative models learn the underlying distribution of data, allowing them to produce new, similar examples."
+        },
+        {
+          "id": 43,
+          "question": "Which of these is an unsupervised clustering technique?",
+          "options": [
+            "Logistic Regression",
+            "K-Means",
+            "Random Forest",
+            "Gradient Boosting"
+          ],
+          "answer": "K-Means",
+          "difficulty": "Easy",
+          "explanation": "K-Means is a classic unsupervised algorithm for partitioning data into K clusters."
+        },
+        {
+          "id": 44,
+          "question": "How does hierarchical clustering differ from K-Means?",
+          "options": [
+            "Hierarchical clustering requires specifying the number of clusters in advance, K-Means does not",
+            "K-Means builds a hierarchy of clusters, hierarchical clustering does not",
+            "Hierarchical clustering builds a hierarchy of clusters, K-Means does not",
+            "They are identical methods"
+          ],
+          "answer": "Hierarchical clustering builds a hierarchy of clusters, K-Means does not",
+          "difficulty": "Medium",
+          "explanation": "Hierarchical clustering creates a cluster tree. K-Means partitions data into a fixed number of clusters."
+        },
+        {
+          "id": 45,
+          "question": "What is t-SNE used for?",
+          "options": [
+            "Classification",
+            "Dimensionality reduction and visualization of high-dimensional data",
+            "Clustering with centroids",
+            "Hyperparameter tuning"
+          ],
+          "answer": "Dimensionality reduction and visualization of high-dimensional data",
+          "difficulty": "Medium",
+          "explanation": "t-SNE is a technique that projects high-dimensional data into a lower-dimensional space for visualization."
+        },
+        {
+          "id": 46,
+          "question": "What is the difference between model-based and instance-based learning?",
+          "options": [
+            "Model-based learning uses a general model from training data; instance-based learning memorizes the training instances",
+            "They are identical",
+            "Instance-based learning creates a general model, while model-based memorizes instances",
+            "Model-based learning relies on external databases, instance-based does not"
+          ],
+          "answer": "Model-based learning uses a general model from training data; instance-based learning memorizes the training instances",
+          "difficulty": "Medium",
+          "explanation": "Model-based approaches derive a model summarizing the data, while instance-based approaches rely on specific instances."
+        },
+        {
+          "id": 47,
+          "question": "What is a Gaussian Mixture Model (GMM)?",
+          "options": [
+            "A supervised learning model for classification",
+            "An unsupervised model that assumes data is generated from a mixture of Gaussian distributions",
+            "A linear regression method",
+            "A reinforcement learning policy"
+          ],
+          "answer": "An unsupervised model that assumes data is generated from a mixture of Gaussian distributions",
+          "difficulty": "Hard",
+          "explanation": "GMMs represent data as a mixture of multiple Gaussian distributions, suitable for clustering and density estimation."
+        },
+        {
+          "id": 48,
+          "question": "What are word embeddings?",
+          "options": [
+            "Random strings used as inputs to text models",
+            "Fixed representations of words as dense vectors capturing semantic meaning",
+            "A type of dimensionality reduction only for images",
+            "Hard-coded rules for NLP"
+          ],
+          "answer": "Fixed representations of words as dense vectors capturing semantic meaning",
+          "difficulty": "Medium",
+          "explanation": "Word embeddings map words to high-dimensional vectors that capture semantic relationships."
+        },
+        {
+          "id": 49,
+          "question": "What is a language model?",
+          "options": [
+            "A model that generates natural language or predicts the next word",
+            "A model that classifies images",
+            "A model that only works on numeric data",
+            "A reinforcement learning policy"
+          ],
+          "answer": "A model that generates natural language or predicts the next word",
+          "difficulty": "Medium",
+          "explanation": "Language models predict the probability of word sequences, enabling tasks like text generation."
+        },
+        {
+          "id": 50,
+          "question": "What is a Transformer in the context of deep learning?",
+          "options": [
+            "A convolution-based model for images",
+            "A neural network architecture that uses self-attention to handle sequences",
+            "A reinforcement learning algorithm",
+            "A simple linear model for regression"
+          ],
+          "answer": "A neural network architecture that uses self-attention to handle sequences",
+          "difficulty": "Hard",
+          "explanation": "Transformers rely on self-attention mechanisms, making them well-suited for processing sequences without recurrent structures."
+        }
+      ]
+    }
+  ]
+}

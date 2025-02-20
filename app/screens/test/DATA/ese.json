@@ -1,0 +1,557 @@
+[
+  {
+    "question_id": "Q001",
+    "question_text": "What is the startup code?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Firmware Developer"],
+    "industries": ["Electronics", "Automotive", "Aerospace"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A001",
+        "answer_quality": "High",
+        "answer_text": "The startup code is a piece of code that initializes the system before the main function executes. It sets up the environment for the application to run by initializing memory segments, setting up the stack, and configuring the hardware. It's often written in assembly language."
+      }
+    ]
+  },
+  {
+    "question_id": "Q002",
+    "question_text": "What is a Semaphore?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "RTOS Developer"],
+    "industries": ["Electronics", "Telecommunications"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A002",
+        "answer_quality": "High",
+        "answer_text": "A semaphore is a synchronization mechanism used to control access to a common resource in concurrent programming. It is a non-negative integer variable that can be shared between threads or processes to solve critical section problems and ensure proper synchronization."
+      }
+    ]
+  },
+  {
+    "question_id": "Q003",
+    "question_text": "What are the two types of Semaphore?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "RTOS Developer"],
+    "industries": ["Electronics", "Telecommunications"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A003",
+        "answer_quality": "High",
+        "answer_text": "The two types of semaphores are:\n\n1. **Binary Semaphore**: Can have only two values, 0 or 1, and is used for mutual exclusion, similar to a mutex.\n2. **Counting Semaphore**: Can have a value ranging over an unrestricted domain and is used to control access to a resource that has a limited number of instances."
+      }
+    ]
+  },
+  {
+    "question_id": "Q004",
+    "question_text": "What is the full form of ISR?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Firmware Developer"],
+    "industries": ["Electronics", "Automotive"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A004",
+        "answer_quality": "High",
+        "answer_text": "ISR stands for **Interrupt Service Routine**. It is a special function in embedded systems that gets executed in response to an interrupt signal. ISRs are used to handle events like input/output operations or hardware timers."
+      }
+    ]
+  },
+  {
+    "question_id": "Q005",
+    "question_text": "When do we use a volatile keyword?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Firmware Developer"],
+    "industries": ["Electronics", "Automotive"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A005",
+        "answer_quality": "High",
+        "answer_text": "The `volatile` keyword is used in variable declarations to prevent the compiler from optimizing code that accesses the variable. It tells the compiler that the value of the variable may change at any time without any action being taken by the code, such as when a variable is modified by an interrupt service routine or hardware."
+      }
+    ]
+  },
+  {
+    "question_id": "Q006",
+    "question_text": "What are the advantages of an Embedded system?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer"],
+    "industries": ["Electronics", "Consumer Electronics"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A006",
+        "answer_quality": "High",
+        "answer_text": "Advantages of embedded systems include:\n\n- **Reliability**: Designed for specific tasks, they are highly reliable.\n- **Small Size and Low Cost**: They are compact and cost-effective.\n- **Efficiency**: Fast operation with low power consumption.\n- **Mass Production**: Easy to produce in large quantities.\n- **Improved Product Quality**: Enhances the functionality and quality of products."
+      }
+    ]
+  },
+  {
+    "question_id": "Q007",
+    "question_text": "What are the disadvantages of Embedded Systems?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer"],
+    "industries": ["Electronics", "Consumer Electronics"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A007",
+        "answer_quality": "High",
+        "answer_text": "Disadvantages of embedded systems include:\n\n- **Difficulty in Maintenance**: They are often designed as use-and-throw devices, making maintenance challenging.\n- **Limited Upgradability**: Hard to update or improve technology once deployed.\n- **Resource Constraints**: Limited processing power and memory.\n- **Backup Challenges**: Difficult to backup embedded files."
+      }
+    ]
+  },
+  {
+    "question_id": "Q008",
+    "question_text": "What is an embedded system?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer"],
+    "industries": ["Electronics", "Automotive", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A008",
+        "answer_quality": "High",
+        "answer_text": "An embedded system is a combination of hardware and software designed to perform a specific function or a set of functions within a larger system. It can be a complete system in itself or a component of a larger system, integrating both computational and mechanical processes."
+      }
+    ]
+  },
+  {
+    "question_id": "Q009",
+    "question_text": "List the components of an embedded system.",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer"],
+    "industries": ["Electronics", "Automotive"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A009",
+        "answer_quality": "High",
+        "answer_text": "An embedded system typically consists of three main components:\n\n1. **Hardware**: Includes the processor, memory, timers/counters, communication ports, input/output interfaces.\n2. **Software**: The program code that runs on the hardware to perform specific tasks.\n3. **Operating System**: Optional, used to manage hardware resources and provide services to application software.\n\nFurther subdivisions include:\n\n- **Processor**\n- **Memory**\n- **Timers/Counters**\n- **Communication Ports**\n- **Input Devices**\n- **Output Devices**"
+      }
+    ]
+  },
+  {
+    "question_id": "Q010",
+    "question_text": "State the difference between a thread and a process.",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Software Engineer"],
+    "industries": ["Tech", "Electronics"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A010",
+        "answer_quality": "High",
+        "answer_text": "A **process** is an independent program in execution, running in its own memory space. A **thread** is a lightweight process that exists within a process and shares the same memory space. Threads allow concurrent operations within a process, sharing resources like code and data, but each has its own registers and stack."
+      }
+    ]
+  },
+  {
+    "question_id": "Q011",
+    "question_text": "What is interrupt latency?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Firmware Developer"],
+    "industries": ["Electronics", "Automotive"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A011",
+        "answer_quality": "High",
+        "answer_text": "Interrupt latency is the time delay between the generation of an interrupt by a device and the servicing of the interrupt by the processor. It includes the time taken to recognize the interrupt, save the current state, and execute the Interrupt Service Routine (ISR). Minimizing interrupt latency is crucial for real-time systems."
+      }
+    ]
+  },
+  {
+    "question_id": "Q012",
+    "question_text": "When does a segmentation fault occur?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Software Engineer"],
+    "industries": ["Tech", "Electronics"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A012",
+        "answer_quality": "High",
+        "answer_text": "A segmentation fault occurs when a program attempts to access a memory location that it's not allowed to access or attempts to access memory in a way that is not allowed (e.g., writing to read-only memory). This usually leads to a program crash and is often caused by dereferencing null or uninitialized pointers."
+      }
+    ]
+  },
+  {
+    "question_id": "Q013",
+    "question_text": "Can a variable be both volatile and const?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Firmware Developer"],
+    "industries": ["Electronics"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A013",
+        "answer_quality": "High",
+        "answer_text": "Yes, a variable can be declared as both `volatile` and `const`. The `volatile` keyword tells the compiler that the variable can be changed unexpectedly (e.g., by hardware or an ISR), while `const` means the program should not modify the variable. This combination is useful for read-only hardware registers that may change independently of the program flow."
+      }
+    ]
+  },
+  {
+    "question_id": "Q014",
+    "question_text": "What is RISC architecture?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Processor Designer"],
+    "industries": ["Electronics", "Computing"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A014",
+        "answer_quality": "High",
+        "answer_text": "RISC stands for **Reduced Instruction Set Computer**. It is a type of microprocessor architecture that utilizes a small, highly optimized set of instructions, rather than a more specialized set of instructions often found in other types of architectures. RISC processors aim to execute instructions at a higher speed by using simpler instructions."
+      }
+    ]
+  },
+  {
+    "question_id": "Q015",
+    "question_text": "What is a reentrant function?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Software Engineer"],
+    "industries": ["Tech", "Electronics"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A015",
+        "answer_quality": "High",
+        "answer_text": "A reentrant function is a function that can be interrupted in the middle of its execution and safely called again ('re-entered') before its previous executions are complete. This is possible because it does not rely on shared or static data, and does not modify data that is shared with other instances of the function."
+      }
+    ]
+  },
+  {
+    "question_id": "Q016",
+    "question_text": "Which loop is better in terms of performance: counting up or counting down to zero?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Software Engineer"],
+    "industries": ["Tech", "Electronics"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A016",
+        "answer_quality": "High",
+        "answer_text": "Counting down to zero is generally better in terms of performance. This is because comparing a variable to zero can be more efficient than comparing it to a non-zero value, especially in assembly language or machine code, where the zero value can utilize specific processor instructions for loop termination."
+      }
+    ]
+  },
+  {
+    "question_id": "Q017",
+    "question_text": "What is the watchdog timer?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Firmware Developer"],
+    "industries": ["Electronics", "Automotive", "Aerospace"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A017",
+        "answer_quality": "High",
+        "answer_text": "A watchdog timer is a hardware or software timer that resets the system or takes corrective action if the main program fails to operate within a predefined time. It's used to detect and recover from malfunctions, ensuring that the system can handle anomalies and continue operating safely."
+      }
+    ]
+  },
+  {
+    "question_id": "Q018",
+    "question_text": "What is a null pointer?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Software Engineer"],
+    "industries": ["Tech", "Electronics"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A018",
+        "answer_quality": "High",
+        "answer_text": "A null pointer is a pointer that doesn't point to any valid memory location. In C and C++, it's typically represented by the value `NULL`. It's used to indicate that the pointer is not intended to reference any object or function."
+      }
+    ]
+  },
+  {
+    "question_id": "Q019",
+    "question_text": "What is the syntax for a null pointer?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A019",
+        "answer_quality": "High",
+        "answer_text": "The syntax for declaring a null pointer is:\n\n```c\nDataType *pointerName = NULL;\n```\n\nFor example:\n\n```c\nint *ptr = NULL;\n```"
+      }
+    ]
+  },
+  {
+    "question_id": "Q020",
+    "question_text": "What does 'const int x;' mean?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A020",
+        "answer_quality": "High",
+        "answer_text": "The declaration `const int x;` means that `x` is an integer constant. Its value cannot be changed once it's initialized. If not initialized, it must be assigned a value at the time of declaration."
+      }
+    ]
+  },
+  {
+    "question_id": "Q021",
+    "question_text": "Which statement is faster: ++i or i+1?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A021",
+        "answer_quality": "High",
+        "answer_text": "The `++i` statement is generally faster than `i + 1` because `++i` increments the value of `i` in place using a single machine instruction. In contrast, `i + 1` calculates a new value but does not store it back into `i` unless explicitly assigned, potentially requiring additional instructions."
+      }
+    ]
+  },
+  {
+    "question_id": "Q022",
+    "question_text": "How can errors leading to segmentation faults be avoided?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A022",
+        "answer_quality": "High",
+        "answer_text": "To avoid segmentation faults:\n\n- **Properly Initialize Pointers**: Ensure all pointers are initialized before use.\n- **Minimize Pointer Usage**: Use pointers only when necessary.\n- **Check Pointer Validity**: Always check if a pointer is `NULL` before dereferencing.\n- **Use Debugging Tools**: Utilize tools like Valgrind to detect memory access errors.\n- **Avoid Out-of-Bounds Access**: Ensure array indices are within valid ranges."
+      }
+    ]
+  },
+  {
+    "question_id": "Q023",
+    "question_text": "Can printf() be used inside an ISR?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Firmware Developer"],
+    "industries": ["Electronics"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A023",
+        "answer_quality": "High",
+        "answer_text": "No, using `printf()` inside an Interrupt Service Routine (ISR) is not recommended. `printf()` is not reentrant and is not guaranteed to be thread-safe or interrupt-safe. It can lead to unpredictable behavior and increased interrupt latency."
+      }
+    ]
+  },
+  {
+    "question_id": "Q024",
+    "question_text": "Can we pass or return a value or a parameter to an ISR?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Firmware Developer"],
+    "industries": ["Electronics"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A024",
+        "answer_quality": "High",
+        "answer_text": "No, ISRs cannot accept parameters or return values. They are special functions that are called by the hardware interrupt mechanism, not by the software code, and therefore do not support passing or returning data in the conventional way."
+      }
+    ]
+  },
+  {
+    "question_id": "Q025",
+    "question_text": "Why does interrupt latency happen?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "RTOS Developer"],
+    "industries": ["Electronics"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A025",
+        "answer_quality": "High",
+        "answer_text": "Interrupt latency occurs due to:\n\n- **Signal Synchronization**: It may take several CPU cycles for an interrupt signal to be synchronized with the processor's clock.\n- **Instruction Execution**: The CPU may need to complete the current instruction before responding to an interrupt.\n- **Pipeline Flushing**: In pipelined processors, the pipeline may need to be flushed, adding to the delay.\n- **Interrupt Handling Overhead**: Saving the current context and loading the ISR adds time."
+      }
+    ]
+  },
+  {
+    "question_id": "Q026",
+    "question_text": "How can you reduce interrupt latency?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "RTOS Developer"],
+    "industries": ["Electronics"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A026",
+        "answer_quality": "High",
+        "answer_text": "Interrupt latency can be reduced by:\n\n- **Writing Short ISRs**: Keeping ISRs as brief as possible.\n- **Prioritizing Interrupts**: Assigning higher priority to critical interrupts.\n- **Disabling Interrupts Sparingly**: Avoiding disabling interrupts unless absolutely necessary.\n- **Optimizing Code**: Using efficient coding practices to minimize instruction cycles.\n- **Using Fast Interrupt Requests (FIRQs)**: If supported, to reduce overhead."
+      }
+    ]
+  },
+  {
+    "question_id": "Q027",
+    "question_text": "How can you prevent a character pointer from pointing to a different address?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A027",
+        "answer_quality": "High",
+        "answer_text": "To prevent a character pointer from pointing to a different address, you can declare it as a constant pointer. The syntax is:\n\n```c\nchar * const ptr;\n```\n\nThis means that `ptr` is a constant pointer to a character, so while the character it points to can change, the pointer itself cannot point to a different address."
+      }
+    ]
+  },
+  {
+    "question_id": "Q028",
+    "question_text": "What is a memory leak?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A028",
+        "answer_quality": "High",
+        "answer_text": "A memory leak occurs when a program allocates memory but fails to release it back to the system after it's no longer needed. This reduces the amount of available memory for other applications and can lead to decreased performance or system crashes over time."
+      }
+    ]
+  },
+  {
+    "question_id": "Q029",
+    "question_text": "What are the common errors in an Embedded System?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Test Engineer"],
+    "industries": ["Electronics", "Automotive"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A029",
+        "answer_quality": "High",
+        "answer_text": "Common errors in embedded systems include:\n\n- **Data Connection Malfunctions**: Errors in data transmission between components.\n- **Address Line Malfunctions**: Incorrect addressing of memory locations.\n- **Inaccessible Memory Locations**: Attempts to access unavailable or protected memory.\n- **Faulty Control Signals**: Incorrect control signals causing improper hardware operation.\n- **Faults in Memory Devices**: Defective RAM or ROM causing data corruption."
+      }
+    ]
+  },
+  {
+    "question_id": "Q030",
+    "question_text": "How can you avoid a memory leak?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A030",
+        "answer_quality": "High",
+        "answer_text": "Memory leaks can be avoided by:\n\n- **Properly Releasing Memory**: Always freeing dynamically allocated memory using `free()` in C or `delete` in C++ when it's no longer needed.\n- **Using Smart Pointers**: In languages that support them, smart pointers automatically manage memory.\n- **Regular Testing**: Use memory analysis tools to detect leaks during development.\n- **Avoiding Unnecessary Allocation**: Allocate memory only when necessary."
+      }
+    ]
+  },
+  {
+    "question_id": "Q031",
+    "question_text": "List some live examples of embedded systems use.",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer"],
+    "industries": ["Electronics", "Automotive", "Consumer Electronics"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A031",
+        "answer_quality": "High",
+        "answer_text": "Examples of embedded systems include:\n\n- **Automotive Systems**: Engine control units, airbag systems, and anti-lock braking systems.\n- **Consumer Electronics**: Smartphones, digital cameras, and smart TVs.\n- **Home Automation**: Smart thermostats, security systems, and lighting controls.\n- **Industrial Machines**: Robotics, process controllers, and automated assembly lines.\n- **Medical Devices**: Pacemakers, infusion pumps, and medical imaging systems."
+      }
+    ]
+  },
+  {
+    "question_id": "Q032",
+    "question_text": "Explain a Microcontroller.",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Hardware Engineer"],
+    "industries": ["Electronics"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A032",
+        "answer_quality": "High",
+        "answer_text": "A microcontroller is a compact integrated circuit designed to govern a specific operation in an embedded system. It typically includes a processor (CPU), memory (RAM and ROM), and input/output peripherals on a single chip, allowing it to control devices or processes."
+      }
+    ]
+  },
+  {
+    "question_id": "Q033",
+    "question_text": "How can you swap two variables?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A033",
+        "answer_quality": "High",
+        "answer_text": "Two variables can be swapped using:\n\n- **Using a Temporary Variable**:\n  ```c\n  int temp = a;\n  a = b;\n  b = temp;\n  ```\n- **Using Arithmetic Operators**:\n  ```c\n  a = a + b;\n  b = a - b;\n  a = a - b;\n  ```\n- **Using Bitwise XOR Operator**:\n  ```c\n  a = a ^ b;\n  b = a ^ b;\n  a = a ^ b;\n  ```"
+      }
+    ]
+  },
+  {
+    "question_id": "Q034",
+    "question_text": "Explain Automotive Embedded System.",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Automotive Engineer"],
+    "industries": ["Automotive"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A034",
+        "answer_quality": "High",
+        "answer_text": "An automotive embedded system is a microcontroller-based system designed to control electrical and mechanical functions in a vehicle. Examples include engine control units, infotainment systems, and advanced driver-assistance systems (ADAS). These systems enhance vehicle performance, safety, and user experience."
+      }
+    ]
+  },
+  {
+    "question_id": "Q035",
+    "question_text": "What is Embedded C?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Firmware Developer"],
+    "industries": ["Electronics"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A035",
+        "answer_quality": "High",
+        "answer_text": "Embedded C is an extension of the C programming language for developing microcontroller-based applications. It includes features specific to embedded systems, such as fixed-point arithmetic, I/O register mapping, and addressing hardware-specific constraints."
+      }
+    ]
+  },
+  {
+    "question_id": "Q036",
+    "question_text": "List the four levels of testing in Embedded Systems.",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Test Engineer"],
+    "industries": ["Electronics", "Automotive"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A036",
+        "answer_quality": "High",
+        "answer_text": "The four levels of testing in embedded systems are:\n\n1. **Unit Testing**: Testing individual components or functions.\n2. **Integration Testing**: Testing the interaction between integrated units or components.\n3. **System Testing**: Testing the complete integrated system to evaluate compliance with requirements.\n4. **User Acceptance Testing**: Testing conducted with the end-user to ensure the system meets their needs and expectations."
+      }
+    ]
+  },
+  {
+    "question_id": "Q037",
+    "question_text": "What are the different types of buses used by Embedded Systems?",
+    "question_type": "Technical",
+    "roles": ["Embedded Systems Engineer", "Hardware Engineer"],
+    "industries": ["Electronics"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A037",
+        "answer_quality": "High",
+        "answer_text": "Different types of buses used in embedded systems include:\n\n- **Memory Bus**: Connects the processor to memory modules, handling data transfer between them.\n- **Multiplexed Bus**: Shares the same lines for address and data signals, reducing pin count but requiring multiplexing techniques.\n- **Demultiplexed Bus**: Separates address and data lines, allowing simultaneous transmission but increasing pin count.\n- **Input/Output Bus**: Facilitates communication between the processor and peripheral devices, possibly using protocols like I2C, SPI, or CAN bus."
+      }
+    ]
+  }
+]

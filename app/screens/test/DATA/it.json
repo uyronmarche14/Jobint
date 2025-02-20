@@ -1,0 +1,677 @@
+[
+  {
+    "question_id": "Q001",
+    "question_text": "Tell us about yourself.",
+    "question_type": "Behavioral",
+    "roles": ["Project Manager"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A001",
+        "answer_quality": "High",
+        "answer_text": "Currently, I am a Project Manager with over 6 years of experience managing software development projects. In my previous role at XYZ Company, I led a team of 10 developers and successfully delivered multiple projects on time and within budget. My strengths include Agile methodologies, risk management, and effective communication. I'm excited to bring my expertise to your team and contribute to impactful projects."
+      }
+    ]
+  },
+  {
+    "question_id": "Q002",
+    "question_text": "Can you briefly tell us about the last project you worked on?",
+    "question_type": "Behavioral",
+    "roles": ["Project Manager"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A002",
+        "answer_quality": "High",
+        "answer_text": "In my last project, I managed a team of 8 to develop a mobile application for a financial services client. The goal was to enhance user engagement by integrating new features. We faced challenges with tight deadlines and coordinating between remote team members. By implementing Agile practices and effective communication strategies, we delivered the project on time, resulting in a 20% increase in user retention for the client."
+      }
+    ]
+  },
+  {
+    "question_id": "Q003",
+    "question_text": "Tell us about an incident where something went wrong in your project while you were managing it.",
+    "question_type": "Behavioral",
+    "roles": ["Project Manager"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A003",
+        "answer_quality": "High",
+        "answer_text": "During a critical phase of a healthcare software implementation, we encountered unexpected regulatory changes that affected our project scope. I quickly assembled the team to assess the impact, communicated transparently with stakeholders, and adjusted our plan to accommodate the new requirements. This proactive approach minimized delays and ensured compliance, ultimately leading to a successful project delivery."
+      }
+    ]
+  },
+  {
+    "question_id": "Q004",
+    "question_text": "Tell us about your most successful project.",
+    "question_type": "Behavioral",
+    "roles": ["Project Manager"],
+    "industries": ["E-commerce"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A004",
+        "answer_quality": "High",
+        "answer_text": "I led a project to develop an e-commerce platform that increased online sales by 50%. Managing a cross-functional team of 12, we implemented innovative features that enhanced user experience. We completed the project ahead of schedule and under budget, which was recognized by senior management as a significant achievement."
+      }
+    ]
+  },
+  {
+    "question_id": "Q005",
+    "question_text": "Do you have any experience with budget management?",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Finance", "Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A005",
+        "answer_quality": "High",
+        "answer_text": "Yes, I have managed budgets ranging from $500,000 to $2 million. In my last role, I used tools like Microsoft Project and Excel to track expenses and forecast costs. By closely monitoring the budget and identifying cost-saving opportunities, I was able to reduce project expenses by 10% without compromising quality."
+      }
+    ]
+  },
+  {
+    "question_id": "Q006",
+    "question_text": "What is a project plan?",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Tech", "Construction"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A006",
+        "answer_quality": "High",
+        "answer_text": "A project plan is a formal document that outlines how a project will be executed, monitored, and controlled. It includes details such as scope, schedule, budget, resources, communication strategies, risk management plans, and milestones. The project plan serves as a roadmap for the team and stakeholders, ensuring everyone is aligned with the project objectives."
+      }
+    ]
+  },
+  {
+    "question_id": "Q007",
+    "question_text": "How do you facilitate an environment of collaboration on your team?",
+    "question_type": "Behavioral",
+    "roles": ["Project Manager"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A007",
+        "answer_quality": "High",
+        "answer_text": "I encourage open communication by holding regular team meetings and using collaboration tools like Slack and Trello. I foster a supportive environment where team members feel comfortable sharing ideas and feedback. Team-building activities and clear communication structures also help strengthen collaboration."
+      }
+    ]
+  },
+  {
+    "question_id": "Q008",
+    "question_text": "How do you define an ideal project?",
+    "question_type": "Behavioral",
+    "roles": ["Project Manager"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A008",
+        "answer_quality": "High",
+        "answer_text": "An ideal project is one that challenges me professionally and allows me to work with a collaborative team. I prefer projects with clear objectives, reasonable deadlines, and the opportunity to innovate. Working on projects that have a positive impact and align with my skills motivates me to excel."
+      }
+    ]
+  },
+  {
+    "question_id": "Q009",
+    "question_text": "Work from home has become the new normal in the post-COVID-19 world. How well are you prepared to manage a remote team?",
+    "question_type": "Behavioral",
+    "roles": ["Project Manager"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A009",
+        "answer_quality": "High",
+        "answer_text": "I am well-prepared to manage remote teams. I utilize digital tools like Zoom, Microsoft Teams, and Asana to facilitate communication and collaboration. I establish clear expectations, hold regular virtual meetings, and ensure that team members stay connected and engaged despite the physical distance."
+      }
+    ]
+  },
+  {
+    "question_id": "Q010",
+    "question_text": "How do you determine the prioritization of tasks in any project?",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Tech", "Construction"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A010",
+        "answer_quality": "High",
+        "answer_text": "I prioritize tasks based on project goals, deadlines, dependencies, and resource availability. I often use the Critical Path Method to identify essential tasks that directly impact the project's timeline. Balancing stakeholder needs and potential risks also plays a key role in task prioritization."
+      }
+    ]
+  },
+  {
+    "question_id": "Q011",
+    "question_text": "What is the most desired skill that is required to become a successful project manager, according to your experience? Please give us a couple of examples regarding your past projects.",
+    "question_type": "Behavioral",
+    "roles": ["Project Manager"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A011",
+        "answer_quality": "High",
+        "answer_text": "Effective communication is the most critical skill. For example, in a cross-departmental project, clear communication helped align all teams towards common objectives, leading to successful project completion. In another project, transparent communication with stakeholders built trust and facilitated quicker decision-making."
+      }
+    ]
+  },
+  {
+    "question_id": "Q012",
+    "question_text": "Tell us about the most challenging projects you have managed so far? What were the steps you have taken to tackle the challenges?",
+    "question_type": "Behavioral",
+    "roles": ["Project Manager"],
+    "industries": ["Healthcare"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A012",
+        "answer_quality": "High",
+        "answer_text": "Managing a project with unexpected funding cuts was challenging. I reassessed the project scope, prioritized critical tasks, and reallocated resources efficiently. Transparent communication with the team and stakeholders was essential. We adjusted our approach and still delivered the core objectives successfully."
+      }
+    ]
+  },
+  {
+    "question_id": "Q013",
+    "question_text": "Suppose the project has gone off the rails. What steps would you take to get it back on track?",
+    "question_type": "Behavioral",
+    "roles": ["Project Manager"],
+    "industries": ["Finance", "Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A013",
+        "answer_quality": "High",
+        "answer_text": "First, I would analyze the root causes of the deviation. Then, I'd develop a corrective action plan, which might include reallocating resources, adjusting timelines, or redefining project scope. Communicating the plan to the team and stakeholders ensures alignment and facilitates getting the project back on track."
+      }
+    ]
+  },
+  {
+    "question_id": "Q014",
+    "question_text": "Which was one of the biggest mistakes you have committed in your past projects? How has it impacted your approach to work?",
+    "question_type": "Behavioral",
+    "roles": ["Project Manager"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A014",
+        "answer_quality": "High",
+        "answer_text": "I once underestimated the time required for the testing phase, leading to a tight schedule. This taught me the importance of thorough planning and including buffer time. Now, I ensure all project phases are adequately estimated and contingencies are in place."
+      }
+    ]
+  },
+  {
+    "question_id": "Q015",
+    "question_text": "Can you tell us an example of a failed project? Have you had any such experiences?",
+    "question_type": "Behavioral",
+    "roles": ["Project Manager"],
+    "industries": ["Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A015",
+        "answer_quality": "High",
+        "answer_text": "Yes, I was involved in a project that was canceled due to a strategic shift in the company. While disappointing, it taught me the importance of aligning projects with organizational goals and being adaptable. I now place greater emphasis on risk management and stakeholder alignment."
+      }
+    ]
+  },
+  {
+    "question_id": "Q016",
+    "question_text": "Suppose the customer is not happy about the quality of the project outcomes. How do you handle the situation? What is your way of handling an unhappy stakeholder?",
+    "question_type": "Behavioral",
+    "roles": ["Project Manager"],
+    "industries": ["E-commerce", "Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A016",
+        "answer_quality": "High",
+        "answer_text": "I would listen to the customer's concerns to fully understand the issues. Then, I'd assess what went wrong and develop a plan to address the problems. Communicating openly about the steps we'll take to improve ensures the customer feels heard and valued."
+      }
+    ]
+  },
+  {
+    "question_id": "Q017",
+    "question_text": "What is your strategy to deal with internal conflicts among the team members?",
+    "question_type": "Behavioral",
+    "roles": ["Project Manager"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A017",
+        "answer_quality": "High",
+        "answer_text": "I address conflicts by first speaking to the parties involved individually to understand their perspectives. Then, I facilitate a meeting to discuss the issues openly and work towards a mutually beneficial solution. My goal is to resolve conflicts constructively to maintain a positive team dynamic."
+      }
+    ]
+  },
+  {
+    "question_id": "Q018",
+    "question_text": "Define processes and process groups in a project management framework.",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Construction", "Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A018",
+        "answer_quality": "High",
+        "answer_text": "Processes are specific activities performed to achieve project objectives, such as scheduling or budgeting. Process groups are collections of these processes categorized by their stage in the project lifecycle: Initiating, Planning, Executing, Monitoring & Controlling, and Closing."
+      }
+    ]
+  },
+  {
+    "question_id": "Q019",
+    "question_text": "Can you explain the differences between risk and issues? What are the major types of risks that may be encountered in a project?",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Finance", "Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A019",
+        "answer_quality": "High",
+        "answer_text": "Risks are potential future events that may impact the project, while issues are current problems affecting the project. Major types of risks include market risk, schedule risk, cost risk, resource risk, technology risk, and external risks like regulatory changes."
+      }
+    ]
+  },
+  {
+    "question_id": "Q020",
+    "question_text": "Explain the concept of RAID in project management.",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A020",
+        "answer_quality": "High",
+        "answer_text": "RAID stands for Risks, Actions, Issues, and Decisions. It's a tool used to track these critical aspects of a project in an organized manner. Maintaining a RAID log helps in monitoring potential risks, keeping track of actions to be taken, resolving issues promptly, and documenting key decisions."
+      }
+    ]
+  },
+  {
+    "question_id": "Q021",
+    "question_text": "What are the techniques you may use to define the scope of a project?",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Construction", "Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A021",
+        "answer_quality": "High",
+        "answer_text": "Techniques include product breakdown, requirements analysis, systems engineering, value engineering, and alternatives analysis. These methods help in understanding what needs to be delivered and the work required, ensuring all stakeholders have a clear understanding of the project scope."
+      }
+    ]
+  },
+  {
+    "question_id": "Q022",
+    "question_text": "Describe the team forming process you follow in project management.",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A022",
+        "answer_quality": "High",
+        "answer_text": "I follow Tuckman's stages of team development: Forming, Storming, Norming, Performing, and Adjourning. This involves assembling the team, navigating initial conflicts, establishing norms, achieving peak performance, and finally disbanding after project completion."
+      }
+    ]
+  },
+  {
+    "question_id": "Q023",
+    "question_text": "What do you know about the triple constraint triangle of project management?",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Construction", "Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A023",
+        "answer_quality": "High",
+        "answer_text": "The triple constraint triangle refers to the three primary constraints: Time, Scope, and Cost. These are interdependent; changing one affects the others. Balancing these constraints is crucial for project success."
+      }
+    ]
+  },
+  {
+    "question_id": "Q024",
+    "question_text": "How will you avoid gold plating?",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A024",
+        "answer_quality": "High",
+        "answer_text": "To avoid gold plating, I ensure strict adherence to the project's scope baseline. I discourage adding features that are not part of the agreed requirements. Regular scope reviews and a formal change control process help prevent unauthorized changes."
+      }
+    ]
+  },
+  {
+    "question_id": "Q025",
+    "question_text": "When would you escalate an issue?",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Healthcare", "Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A025",
+        "answer_quality": "High",
+        "answer_text": "I escalate an issue when it poses a significant risk to the project's success, such as causing delays or budget overruns, and cannot be resolved at my level. Escalation is appropriate when higher authority intervention is needed to make decisions or allocate resources."
+      }
+    ]
+  },
+  {
+    "question_id": "Q026",
+    "question_text": "What’s your leadership style?",
+    "question_type": "Behavioral",
+    "roles": ["Project Manager"],
+    "industries": ["Finance", "Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A026",
+        "answer_quality": "High",
+        "answer_text": "I adopt a transformational leadership style, aiming to inspire and motivate my team. I believe in open communication, collaboration, and empowering team members to take ownership of their work. I adjust my approach based on the project's needs and the team's dynamics."
+      }
+    ]
+  },
+  {
+    "question_id": "Q027",
+    "question_text": "What project management software do you prefer?",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Tech", "Construction"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A027",
+        "answer_quality": "High",
+        "answer_text": "I prefer using Microsoft Project for detailed scheduling and resource management. For Agile projects, I use Jira or Trello to manage backlogs and sprints. These tools provide robust features for planning, tracking, and collaboration."
+      }
+    ]
+  },
+  {
+    "question_id": "Q028",
+    "question_text": "What’s the difference between project monitoring and controlling?",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Finance", "Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A028",
+        "answer_quality": "High",
+        "answer_text": "Monitoring involves tracking project progress against the plan to identify variances. Controlling involves taking corrective actions based on monitoring data to address those variances. Essentially, monitoring is about observation, while controlling is about intervention."
+      }
+    ]
+  },
+  {
+    "question_id": "Q029",
+    "question_text": "How will you implement Earned Value Management? What is EVM and its use?",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Construction", "Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A029",
+        "answer_quality": "High",
+        "answer_text": "Earned Value Management (EVM) is a technique that integrates scope, time, and cost data to assess project performance. To implement EVM, I'd establish a baseline plan and track actual performance data. Calculating key metrics like Cost Performance Index (CPI) and Schedule Performance Index (SPI) helps forecast future performance and make informed decisions."
+      }
+    ]
+  },
+  {
+    "question_id": "Q030",
+    "question_text": "What is stakeholder analysis and Power-Interest Grid used for?",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Healthcare", "Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A030",
+        "answer_quality": "High",
+        "answer_text": "Stakeholder analysis involves identifying all stakeholders and assessing their influence and interest. The Power-Interest Grid categorizes stakeholders based on their level of power and interest, helping to develop appropriate engagement strategies for each group."
+      }
+    ]
+  },
+  {
+    "question_id": "Q031",
+    "question_text": "What is the difference between Program, Project, and Portfolio?",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Finance", "Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A031",
+        "answer_quality": "High",
+        "answer_text": "A Project is a temporary endeavor to create a unique product or service. A Program is a group of related projects managed in a coordinated way. A Portfolio is a collection of projects and programs aligned with strategic business objectives."
+      }
+    ]
+  },
+  {
+    "question_id": "Q032",
+    "question_text": "Explain Ishikawa/ Fishbone diagrams.",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Manufacturing", "Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A032",
+        "answer_quality": "High",
+        "answer_text": "An Ishikawa or Fishbone diagram is a root cause analysis tool used to identify potential causes of a specific problem. It helps teams delve deeper into issues by categorizing causes into areas like methods, materials, machinery, and manpower."
+      }
+    ]
+  },
+  {
+    "question_id": "Q033",
+    "question_text": "What is the process of calculating the three-point estimating method?",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Construction", "Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A033",
+        "answer_quality": "High",
+        "answer_text": "The three-point estimating method uses Optimistic (O), Most Likely (M), and Pessimistic (P) estimates to calculate an average. The formulas are:\n\n- Triangular Distribution: E = (O + M + P) / 3\n- PERT Distribution: E = (O + 4M + P) / 6\n\nThis method accounts for uncertainty and provides a more realistic estimate."
+      }
+    ]
+  },
+  {
+    "question_id": "Q034",
+    "question_text": "What is Work Breakdown Structure (WBS)?",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Construction", "Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A034",
+        "answer_quality": "High",
+        "answer_text": "A Work Breakdown Structure (WBS) is a hierarchical decomposition of the project's total scope into smaller, more manageable components. It helps in organizing and defining the total work scope, making planning and control easier."
+      }
+    ]
+  },
+  {
+    "question_id": "Q035",
+    "question_text": "What is the Pareto principle analysis?",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Manufacturing", "Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A035",
+        "answer_quality": "High",
+        "answer_text": "The Pareto Principle, or 80/20 rule, states that roughly 80% of effects come from 20% of causes. In project management, Pareto analysis helps prioritize work by identifying the few key causes that are responsible for most problems."
+      }
+    ]
+  },
+  {
+    "question_id": "Q036",
+    "question_text": "What are the motivation theories and formal techniques to keep a team motivated?",
+    "question_type": "Technical",
+    "roles": ["Project Manager"],
+    "industries": ["Finance", "Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A036",
+        "answer_quality": "High",
+        "answer_text": "Motivation theories include Maslow's Hierarchy of Needs, Herzberg's Two-Factor Theory, McGregor's Theory X and Theory Y, and Vroom's Expectancy Theory. Techniques to keep a team motivated involve recognizing achievements, providing growth opportunities, fostering a positive work environment, and involving team members in decision-making."
+      }
+    ]
+  },
+  {
+    "question_id": "Q037",
+    "question_text": "What are the three key challenges for our industry today, and how can these be tackled effectively?",
+    "question_type": "Domain Knowledge",
+    "roles": ["Project Manager"],
+    "industries": ["Company-specific"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A037",
+        "answer_quality": "High",
+        "answer_text": "Three key challenges include rapid technological changes, regulatory compliance, and talent acquisition. Tackling these requires continuous learning and innovation, establishing robust compliance frameworks, and developing strong employer branding to attract top talent."
+      }
+    ]
+  },
+  {
+    "question_id": "Q038",
+    "question_text": "What were the communication challenges on your last project?",
+    "question_type": "Communication",
+    "roles": ["Project Manager"],
+    "industries": ["Finance", "Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A038",
+        "answer_quality": "High",
+        "answer_text": "Managing a team across different time zones was challenging. I implemented a combination of asynchronous communication tools and scheduled meetings during overlapping hours. Clear documentation and updates were essential to keep everyone informed."
+      }
+    ]
+  },
+  {
+    "question_id": "Q039",
+    "question_text": "What is your communication style with your team?",
+    "question_type": "Communication",
+    "roles": ["Project Manager"],
+    "industries": ["Healthcare", "Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A039",
+        "answer_quality": "High",
+        "answer_text": "I practice open and transparent communication. I encourage team members to share ideas and concerns, and I adjust my communication methods based on the audience to ensure clarity. Regular meetings and updates help keep everyone aligned."
+      }
+    ]
+  },
+  {
+    "question_id": "Q040",
+    "question_text": "How do you communicate bad news?",
+    "question_type": "Consistency and Integrity",
+    "roles": ["Project Manager"],
+    "industries": ["Finance", "Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A040",
+        "answer_quality": "High",
+        "answer_text": "I communicate bad news promptly and honestly, providing all relevant information and context. I focus on facts, explain the impact, and discuss potential solutions. Being empathetic and maintaining trust is crucial in such situations."
+      }
+    ]
+  },
+  {
+    "question_id": "Q041",
+    "question_text": "How have you handled disgruntled employees?",
+    "question_type": "Consistency and Integrity",
+    "roles": ["Project Manager"],
+    "industries": ["Healthcare", "Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A041",
+        "answer_quality": "High",
+        "answer_text": "I address disgruntled employees by listening to their concerns to understand the root cause. I show empathy and work with them to find a resolution. It's important to ensure they feel valued and heard, which can improve morale and productivity."
+      }
+    ]
+  },
+  {
+    "question_id": "Q042",
+    "question_text": "What are some examples of times you’ve kept your promise even when that might have been difficult?",
+    "question_type": "Consistency and Integrity",
+    "roles": ["Project Manager"],
+    "industries": ["Finance", "Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A042",
+        "answer_quality": "High",
+        "answer_text": "I once committed to delivering a feature by a specific date, but unforeseen challenges arose. Despite the difficulties, I coordinated with the team to put in extra effort and resources, ensuring we met the deadline without compromising quality."
+      }
+    ]
+  },
+  {
+    "question_id": "Q043",
+    "question_text": "How do you ensure you and your team deliver or exceed customer expectations?",
+    "question_type": "Customer Orientation",
+    "roles": ["Project Manager"],
+    "industries": ["E-commerce", "Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A043",
+        "answer_quality": "High",
+        "answer_text": "I start by thoroughly understanding the customer's needs and setting realistic expectations. Regular communication and involving the customer in key decisions help ensure alignment. I encourage the team to strive for excellence and proactively address any issues."
+      }
+    ]
+  },
+  {
+    "question_id": "Q044",
+    "question_text": "What are some best practices you’ve used to develop excellent customer relationships?",
+    "question_type": "Customer Orientation",
+    "roles": ["Project Manager"],
+    "industries": ["Finance", "Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A044",
+        "answer_quality": "High",
+        "answer_text": "Best practices include active listening, timely and transparent communication, delivering on promises, and going the extra mile to meet customer needs. Building trust through consistent actions is key to excellent customer relationships."
+      }
+    ]
+  },
+  {
+    "question_id": "Q045",
+    "question_text": "How do you go about managing the performance of your team?",
+    "question_type": "Developing Others",
+    "roles": ["Project Manager"],
+    "industries": ["Healthcare", "Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A045",
+        "answer_quality": "High",
+        "answer_text": "I set clear performance goals and provide regular feedback. I support my team through coaching and professional development opportunities. Recognizing achievements and addressing performance issues promptly helps maintain high performance."
+      }
+    ]
+  }
+]

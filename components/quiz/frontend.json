@@ -1,0 +1,659 @@
+{
+  "categories": [
+    {
+      "name": "Frontend Development",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is frontend development?",
+          "options": [
+            "The process of optimizing database queries",
+            "The practice of creating the user-facing part of websites and web applications",
+            "A method for backend API development",
+            "A design approach focused solely on server configurations"
+          ],
+          "answer": "The practice of creating the user-facing part of websites and web applications",
+          "difficulty": "Easy",
+          "explanation": "Frontend development involves building the client-side interface that users see and interact with in a web browser."
+        },
+        {
+          "id": 2,
+          "question": "Which three core technologies form the foundation of most frontend development?",
+          "options": [
+            "HTML, CSS, and JavaScript",
+            "Python, Java, and C++",
+            "PHP, SQL, and Ruby",
+            "Go, Rust, and Docker"
+          ],
+          "answer": "HTML, CSS, and JavaScript",
+          "difficulty": "Easy",
+          "explanation": "HTML structures content, CSS styles it, and JavaScript adds interactivity, forming the backbone of web frontends."
+        },
+        {
+          "id": 3,
+          "question": "What is HTML?",
+          "options": [
+            "A programming language for server-side logic",
+            "A markup language used to structure web content",
+            "A database query language",
+            "A styling framework"
+          ],
+          "answer": "A markup language used to structure web content",
+          "difficulty": "Easy",
+          "explanation": "HTML (HyperText Markup Language) defines the structure and meaning of web content with elements and tags."
+        },
+        {
+          "id": 4,
+          "question": "What is CSS?",
+          "options": [
+            "A scripting language for creating animations",
+            "A language used to style and format the layout of web pages",
+            "A backend framework for building APIs",
+            "A database query language"
+          ],
+          "answer": "A language used to style and format the layout of web pages",
+          "difficulty": "Easy",
+          "explanation": "CSS (Cascading Style Sheets) controls the presentation of HTML elements, including colors, fonts, and layout."
+        },
+        {
+          "id": 5,
+          "question": "What is JavaScript?",
+          "options": [
+            "A markup language like HTML",
+            "A styling framework",
+            "A programming language that runs in the browser to add interactivity",
+            "A version control system"
+          ],
+          "answer": "A programming language that runs in the browser to add interactivity",
+          "difficulty": "Easy",
+          "explanation": "JavaScript enables dynamic behavior on web pages, handling user interactions and manipulating the DOM."
+        },
+        {
+          "id": 6,
+          "question": "What is the Document Object Model (DOM)?",
+          "options": [
+            "A server-side data model",
+            "An API that represents the structure of a web page as a tree of objects",
+            "A CSS styling framework",
+            "A backend caching mechanism"
+          ],
+          "answer": "An API that represents the structure of a web page as a tree of objects",
+          "difficulty": "Medium",
+          "explanation": "The DOM lets JavaScript interact with HTML elements and attributes, enabling dynamic updates and interactivity."
+        },
+        {
+          "id": 7,
+          "question": "What is responsive web design?",
+          "options": [
+            "Designing web pages that require manual resizing by the user",
+            "A technique to ensure web content adapts smoothly to different screen sizes and devices",
+            "A server-side optimization method",
+            "A method for writing backend APIs"
+          ],
+          "answer": "A technique to ensure web content adapts smoothly to different screen sizes and devices",
+          "difficulty": "Easy",
+          "explanation": "Responsive design uses fluid layouts, flexible images, and CSS media queries to create a good user experience on any device."
+        },
+        {
+          "id": 8,
+          "question": "What is a CSS framework?",
+          "options": [
+            "A backend development tool",
+            "A collection of prewritten CSS rules to speed up UI design",
+            "A database migration tool",
+            "A cloud hosting service"
+          ],
+          "answer": "A collection of prewritten CSS rules to speed up UI design",
+          "difficulty": "Easy",
+          "explanation": "CSS frameworks like Bootstrap or Tailwind provide standardized, reusable styles and layouts for faster frontend development."
+        },
+        {
+          "id": 9,
+          "question": "What is a CSS preprocessor?",
+          "options": [
+            "A tool that removes all CSS from a project",
+            "A tool that extends CSS with variables, functions, and nested rules, compiled into regular CSS",
+            "A database query optimizer",
+            "A method for server-side rendering"
+          ],
+          "answer": "A tool that extends CSS with variables, functions, and nested rules, compiled into regular CSS",
+          "difficulty": "Medium",
+          "explanation": "Preprocessors like SASS or LESS add programming-like features to CSS, making stylesheets more maintainable."
+        },
+        {
+          "id": 10,
+          "question": "What is a frontend framework or library?",
+          "options": [
+            "A backend server library",
+            "A collection of tools and patterns that simplify building complex user interfaces",
+            "A database management system",
+            "A version control platform"
+          ],
+          "answer": "A collection of tools and patterns that simplify building complex user interfaces",
+          "difficulty": "Easy",
+          "explanation": "Frontend frameworks/libraries like React, Angular, or Vue provide reusable components and structures for building UIs."
+        },
+        {
+          "id": 11,
+          "question": "What is React?",
+          "options": [
+            "A CSS framework",
+            "A JavaScript library for building user interfaces, focusing on component-based architecture",
+            "A backend framework for Node.js",
+            "A database query language"
+          ],
+          "answer": "A JavaScript library for building user interfaces, focusing on component-based architecture",
+          "difficulty": "Easy",
+          "explanation": "React uses a virtual DOM and components to efficiently update and render UIs."
+        },
+        {
+          "id": 12,
+          "question": "What is Angular?",
+          "options": [
+            "A CSS preprocessor",
+            "A TypeScript-based frontend framework by Google",
+            "A tool for image optimization",
+            "A markdown parser"
+          ],
+          "answer": "A TypeScript-based frontend framework by Google",
+          "difficulty": "Easy",
+          "explanation": "Angular is a full-featured framework that provides a robust structure for building complex, scalable web applications."
+        },
+        {
+          "id": 13,
+          "question": "What is Vue.js?",
+          "options": [
+            "A backend API framework",
+            "A progressive JavaScript framework for building user interfaces",
+            "A database manager",
+            "A CSS layout engine"
+          ],
+          "answer": "A progressive JavaScript framework for building user interfaces",
+          "difficulty": "Easy",
+          "explanation": "Vue.js focuses on incrementally adoptable architecture, making it easy to integrate into projects or build complex SPAs."
+        },
+        {
+          "id": 14,
+          "question": "What is a Single Page Application (SPA)?",
+          "options": [
+            "A website that consists of only one HTML file and no JavaScript",
+            "An application that loads a single HTML page and dynamically updates it, without full page reloads",
+            "A backend-only application",
+            "A method for version controlling code"
+          ],
+          "answer": "An application that loads a single HTML page and dynamically updates it, without full page reloads",
+          "difficulty": "Medium",
+          "explanation": "SPAs improve user experience by using AJAX and the browser’s history API to update the page content without reloading."
+        },
+        {
+          "id": 15,
+          "question": "What is the box model in CSS?",
+          "options": [
+            "A JavaScript data structure",
+            "A conceptual design model for HTML elements as boxes with content, padding, borders, and margins",
+            "A backend caching mechanism",
+            "A CSS framework"
+          ],
+          "answer": "A conceptual design model for HTML elements as boxes with content, padding, borders, and margins",
+          "difficulty": "Medium",
+          "explanation": "The box model helps understand how elements occupy space and how their sizes and spaces are computed in layouts."
+        },
+        {
+          "id": 16,
+          "question": "What are CSS selectors?",
+          "options": [
+            "A method for rendering server-side code",
+            "Patterns used to select the HTML elements to style",
+            "A database querying syntax",
+            "A JavaScript looping construct"
+          ],
+          "answer": "Patterns used to select the HTML elements to style",
+          "difficulty": "Easy",
+          "explanation": "CSS selectors target elements by their tag, class, ID, attributes, or state to apply styling rules."
+        },
+        {
+          "id": 17,
+          "question": "What is the difference between class and ID selectors in CSS?",
+          "options": [
+            "IDs are for multiple elements; classes are for single elements",
+            "IDs are unique and used once per page, classes can be applied to multiple elements",
+            "There is no difference",
+            "Classes are always preceded by '#' and IDs by '.'"
+          ],
+          "answer": "IDs are unique and used once per page, classes can be applied to multiple elements",
+          "difficulty": "Medium",
+          "explanation": "An ID should be unique in a document, while classes can be reused for styling multiple similar elements."
+        },
+        {
+          "id": 18,
+          "question": "What is an event in JavaScript?",
+          "options": [
+            "A CSS property",
+            "An action or occurrence detected by the browser, such as a click or key press, to which you can respond with code",
+            "A type of database transaction",
+            "A method of code deployment"
+          ],
+          "answer": "An action or occurrence detected by the browser, such as a click or key press, to which you can respond with code",
+          "difficulty": "Easy",
+          "explanation": "Events enable interactive pages by triggering JavaScript functions when users interact with the UI."
+        },
+        {
+          "id": 19,
+          "question": "What are media queries?",
+          "options": [
+            "Queries to fetch images from the server",
+            "CSS rules that apply styles based on device characteristics like width or orientation",
+            "A JavaScript debugging technique",
+            "A HTML5 semantic element"
+          ],
+          "answer": "CSS rules that apply styles based on device characteristics like width or orientation",
+          "difficulty": "Medium",
+          "explanation": "Media queries support responsive design by adjusting layouts and styles for different screen sizes."
+        },
+        {
+          "id": 20,
+          "question": "What is the purpose of the 'async' attribute in a script tag?",
+          "options": [
+            "To load scripts synchronously",
+            "To load scripts in the background without blocking page rendering",
+            "To disable script execution",
+            "To handle errors in CSS loading"
+          ],
+          "answer": "To load scripts in the background without blocking page rendering",
+          "difficulty": "Hard",
+          "explanation": "Using 'async' allows the browser to download JavaScript files while the page continues to load, improving performance."
+        },
+        {
+          "id": 21,
+          "question": "What is AJAX?",
+          "options": [
+            "A database management tool",
+            "A technique using JavaScript and XML/JSON to fetch data asynchronously without page reloads",
+            "A CSS framework",
+            "A backend templating engine"
+          ],
+          "answer": "A technique using JavaScript and XML/JSON to fetch data asynchronously without page reloads",
+          "difficulty": "Easy",
+          "explanation": "AJAX (Asynchronous JavaScript and XML) enhances user experience by updating the UI dynamically as data loads in the background."
+        },
+        {
+          "id": 22,
+          "question": "What is Webpack?",
+          "options": [
+            "A CSS library",
+            "A module bundler for JavaScript applications",
+            "A database query tool",
+            "A cloud hosting service"
+          ],
+          "answer": "A module bundler for JavaScript applications",
+          "difficulty": "Medium",
+          "explanation": "Webpack bundles code and assets, managing dependencies and optimizing the output for production."
+        },
+        {
+          "id": 23,
+          "question": "What is Babel?",
+          "options": [
+            "A CSS preprocessor",
+            "A JavaScript compiler that converts modern JS code into backward-compatible versions",
+            "A testing framework",
+            "A cloud deployment tool"
+          ],
+          "answer": "A JavaScript compiler that converts modern JS code into backward-compatible versions",
+          "difficulty": "Medium",
+          "explanation": "Babel allows developers to use the latest JavaScript features without worrying about browser compatibility."
+        },
+        {
+          "id": 24,
+          "question": "What is TypeScript?",
+          "options": [
+            "A database language",
+            "A superset of JavaScript that adds static typing and other features",
+            "A CSS preprocessor",
+            "A backend framework for Java"
+          ],
+          "answer": "A superset of JavaScript that adds static typing and other features",
+          "difficulty": "Easy",
+          "explanation": "TypeScript helps catch errors during development and makes large JavaScript codebases more maintainable."
+        },
+        {
+          "id": 25,
+          "question": "What is a CSS reset or normalize file?",
+          "options": [
+            "A file that removes all HTML styles",
+            "A set of styles that make browsers render elements more consistently by resetting or normalizing default styles",
+            "A method for compiling CSS",
+            "A tool for database migrations"
+          ],
+          "answer": "A set of styles that make browsers render elements more consistently by resetting or normalizing default styles",
+          "difficulty": "Medium",
+          "explanation": "CSS resets or normalize.css reduce cross-browser inconsistencies, ensuring a more predictable styling baseline."
+        },
+        {
+          "id": 26,
+          "question": "What is progressive enhancement?",
+          "options": [
+            "A method of continuously refactoring backend code",
+            "A strategy where core content and functionality are accessible to all, while enhanced features are available to browsers that support them",
+            "A process for database optimization",
+            "A CI/CD pipeline for frontend"
+          ],
+          "answer": "A strategy where core content and functionality are accessible to all, while enhanced features are available to browsers that support them",
+          "difficulty": "Medium",
+          "explanation": "Progressive enhancement ensures that basic functionality works for everyone, regardless of browser capabilities."
+        },
+        {
+          "id": 27,
+          "question": "What is graceful degradation?",
+          "options": [
+            "Designing a site that only works on modern browsers",
+            "Starting with a complex, modern experience and ensuring it degrades nicely on older or less capable browsers",
+            "A method for minifying JavaScript",
+            "A debugging technique"
+          ],
+          "answer": "Starting with a complex, modern experience and ensuring it degrades nicely on older or less capable browsers",
+          "difficulty": "Medium",
+          "explanation": "Graceful degradation is the opposite approach of progressive enhancement, focusing first on modern experiences."
+        },
+        {
+          "id": 28,
+          "question": "What is the purpose of a polyfill?",
+          "options": [
+            "To change the color of text",
+            "To provide fallback code for browser features that do not support a certain API or functionality",
+            "To optimize database queries",
+            "To create complex server-side logic"
+          ],
+          "answer": "To provide fallback code for browser features that do not support a certain API or functionality",
+          "difficulty": "Hard",
+          "explanation": "Polyfills enable older browsers to run modern JavaScript features by including scripts that emulate those features."
+        },
+        {
+          "id": 29,
+          "question": "What is ARIA in web accessibility?",
+          "options": [
+            "A CSS property",
+            "A set of attributes designed to make web content more accessible to people with disabilities",
+            "A database indexing strategy",
+            "A JavaScript testing library"
+          ],
+          "answer": "A set of attributes designed to make web content more accessible to people with disabilities",
+          "difficulty": "Medium",
+          "explanation": "WAI-ARIA attributes help screen readers and assistive technologies better interpret and interact with web content."
+        },
+        {
+          "id": 30,
+          "question": "What is a CSS sprite?",
+          "options": [
+            "An image format",
+            "A technique to reduce HTTP requests by combining multiple images into a single file",
+            "A JavaScript framework",
+            "A font optimization method"
+          ],
+          "answer": "A technique to reduce HTTP requests by combining multiple images into a single file",
+          "difficulty": "Hard",
+          "explanation": "CSS sprites improve performance by loading one image and using background-position to show different parts as needed."
+        },
+        {
+          "id": 31,
+          "question": "What is lazy loading?",
+          "options": [
+            "Always loading all images and data upfront",
+            "Deferring the loading of non-critical resources (like images off-screen) until needed",
+            "A method of caching data locally",
+            "A testing strategy"
+          ],
+          "answer": "Deferring the loading of non-critical resources (like images off-screen) until needed",
+          "difficulty": "Medium",
+          "explanation": "Lazy loading improves performance by not loading content until the user actually needs to view it."
+        },
+        {
+          "id": 32,
+          "question": "What is the difference between inline, inline-block, and block-level elements in CSS?",
+          "options": [
+            "They are all the same",
+            "Inline elements don't start on a new line, block elements do, and inline-block elements are inline but can have a set width and height",
+            "Block elements never use width and height",
+            "Inline-block elements break the layout"
+          ],
+          "answer": "Inline elements don't start on a new line, block elements do, and inline-block elements are inline but can have a set width and height",
+          "difficulty": "Medium",
+          "explanation": "This difference affects how elements are rendered and how other elements flow around them."
+        },
+        {
+          "id": 33,
+          "question": "What is the CSS box-sizing property?",
+          "options": [
+            "A property that sets the font size",
+            "A property that defines how the width and height of an element are calculated (content-box or border-box)",
+            "A property that controls layout of text",
+            "A JavaScript function"
+          ],
+          "answer": "A property that defines how the width and height of an element are calculated (content-box or border-box)",
+          "difficulty": "Medium",
+          "explanation": "With box-sizing: border-box, an element’s declared width and height include padding and borders, simplifying layouts."
+        },
+        {
+          "id": 34,
+          "question": "What is a CSS transition?",
+          "options": [
+            "A method to replace HTML",
+            "An effect that smoothly changes a property’s value over a given duration",
+            "A debugging tool",
+            "A server-side rendering technique"
+          ],
+          "answer": "An effect that smoothly changes a property’s value over a given duration",
+          "difficulty": "Easy",
+          "explanation": "Transitions allow animations of CSS property changes when triggered by user interactions or state changes."
+        },
+        {
+          "id": 35,
+          "question": "What is a CSS animation?",
+          "options": [
+            "A single-step color change",
+            "A sequence of changes to a CSS property defined with keyframes over time",
+            "A server log parser",
+            "A method to store data in the browser"
+          ],
+          "answer": "A sequence of changes to a CSS property defined with keyframes over time",
+          "difficulty": "Medium",
+          "explanation": "CSS animations use keyframes to define stages of an animation, allowing complex transitions without JavaScript."
+        },
+        {
+          "id": 36,
+          "question": "What is Web Accessibility?",
+          "options": [
+            "Optimizing page speed",
+            "Ensuring websites and tools can be used by people with disabilities",
+            "A feature for storing credentials",
+            "A method for encrypting traffic"
+          ],
+          "answer": "Ensuring websites and tools can be used by people with disabilities",
+          "difficulty": "Easy",
+          "explanation": "Accessibility involves designing and developing websites so people with disabilities can perceive, understand, navigate, and interact effectively."
+        },
+        {
+          "id": 37,
+          "question": "What is a Progressive Web App (PWA)?",
+          "options": [
+            "A native mobile application",
+            "A web app that uses modern capabilities (like service workers) to provide an app-like experience, offline support, and installability",
+            "A backend caching strategy",
+            "A testing framework"
+          ],
+          "answer": "A web app that uses modern capabilities (like service workers) to provide an app-like experience, offline support, and installability",
+          "difficulty": "Medium",
+          "explanation": "PWAs bridge the gap between web and native apps, enhancing performance and user engagement."
+        },
+        {
+          "id": 38,
+          "question": "What is a Service Worker?",
+          "options": [
+            "A CSS selector",
+            "A script that runs in the background of a web page, enabling features like offline caching and push notifications",
+            "A server-side rendering engine",
+            "A TypeScript compiler"
+          ],
+          "answer": "A script that runs in the background of a web page, enabling features like offline caching and push notifications",
+          "difficulty": "Hard",
+          "explanation": "Service workers can intercept network requests, cache resources, and deliver offline experiences in PWAs."
+        },
+        {
+          "id": 39,
+          "question": "What is Cross-Origin Resource Sharing (CORS)?",
+          "options": [
+            "A JavaScript testing library",
+            "A security mechanism that controls how resources can be fetched from domains other than the one serving the page",
+            "A CSS property",
+            "A database encryption method"
+          ],
+          "answer": "A security mechanism that controls how resources can be fetched from domains other than the one serving the page",
+          "difficulty": "Medium",
+          "explanation": "CORS prevents unauthorized cross-origin requests, protecting users from malicious websites trying to access private data."
+        },
+        {
+          "id": 40,
+          "question": "What is the difference between '=='' and '===' in JavaScript?",
+          "options": [
+            "'==' checks both value and type, '===' checks only type",
+            "'==' is used for arrays, '===' for strings",
+            "'==' converts types before comparing, '===' compares without type conversion",
+            "There is no difference"
+          ],
+          "answer": "'==' converts types before comparing, '===' compares without type conversion",
+          "difficulty": "Medium",
+          "explanation": "The triple equals operator (===) checks both type and value equality, ensuring more predictable comparisons."
+        },
+        {
+          "id": 41,
+          "question": "What is localStorage?",
+          "options": [
+            "A server-side storage solution",
+            "A JavaScript feature that stores key-value data in the browser with no expiration",
+            "A CSS framework",
+            "A database querying technique"
+          ],
+          "answer": "A JavaScript feature that stores key-value data in the browser with no expiration",
+          "difficulty": "Easy",
+          "explanation": "localStorage persists data even after the browser is closed, unlike sessionStorage which clears on tab close."
+        },
+        {
+          "id": 42,
+          "question": "What is the Shadow DOM?",
+          "options": [
+            "A CSS property for shadows",
+            "A separate, encapsulated DOM subtree that can style and script elements without affecting the main document",
+            "A database indexing technique",
+            "A JavaScript debugging tool"
+          ],
+          "answer": "A separate, encapsulated DOM subtree that can style and script elements without affecting the main document",
+          "difficulty": "Hard",
+          "explanation": "Shadow DOM is used in Web Components to isolate component styles and markup from the rest of the page."
+        },
+        {
+          "id": 43,
+          "question": "What are Web Components?",
+          "options": [
+            "Server-side components",
+            "A set of web platform APIs for creating reusable custom elements with their own encapsulated functionality and styling",
+            "A CSS preprocessor feature",
+            "A backend framework"
+          ],
+          "answer": "A set of web platform APIs for creating reusable custom elements with their own encapsulated functionality and styling",
+          "difficulty": "Hard",
+          "explanation": "Web Components allow you to define custom, reusable HTML elements with encapsulated styles and logic."
+        },
+        {
+          "id": 44,
+          "question": "What is the purpose of a Content Delivery Network (CDN)?",
+          "options": [
+            "To store data in a local database",
+            "To serve static files (images, scripts, styles) from geographically distributed servers for faster load times",
+            "To compile TypeScript",
+            "To minify CSS and JS"
+          ],
+          "answer": "To serve static files (images, scripts, styles) from geographically distributed servers for faster load times",
+          "difficulty": "Easy",
+          "explanation": "CDNs improve performance and reduce latency by delivering static content from servers close to the user."
+        },
+        {
+          "id": 45,
+          "question": "What is Lighthouse?",
+          "options": [
+            "A database language",
+            "An open-source tool by Google to audit page performance, accessibility, SEO, and best practices",
+            "A JavaScript testing framework",
+            "A CSS library"
+          ],
+          "answer": "An open-source tool by Google to audit page performance, accessibility, SEO, and best practices",
+          "difficulty": "Medium",
+          "explanation": "Lighthouse provides insights and suggestions to improve the quality of web pages."
+        },
+        {
+          "id": 46,
+          "question": "What are CSS variables (Custom Properties)?",
+          "options": [
+            "Variables defined in JavaScript",
+            "Properties that allow reuse of values throughout a stylesheet and can be updated dynamically",
+            "A new CSS layout model",
+            "A method of database storage"
+          ],
+          "answer": "Properties that allow reuse of values throughout a stylesheet and can be updated dynamically",
+          "difficulty": "Medium",
+          "explanation": "CSS variables make it easier to maintain consistent designs and adapt themes on the fly."
+        },
+        {
+          "id": 47,
+          "question": "What is the difference between 'display: none' and 'visibility: hidden' in CSS?",
+          "options": [
+            "'display: none' removes the element from layout; 'visibility: hidden' hides it but leaves space",
+            "'display: none' makes element transparent; 'visibility: hidden' changes color to white",
+            "No difference between them",
+            "'visibility: hidden' removes the element from the DOM"
+          ],
+          "answer": "'display: none' removes the element from layout; 'visibility: hidden' hides it but leaves space",
+          "difficulty": "Medium",
+          "explanation": "display: none completely removes the element from the flow, visibility: hidden leaves an empty space."
+        },
+        {
+          "id": 48,
+          "question": "What is the purpose of 'defer' attribute in a script tag?",
+          "options": [
+            "To load the script synchronously",
+            "To ensure the script executes after the HTML is fully parsed but before DOMContentLoaded event",
+            "To disable the script",
+            "To execute the script immediately"
+          ],
+          "answer": "To ensure the script executes after the HTML is fully parsed but before DOMContentLoaded event",
+          "difficulty": "Hard",
+          "explanation": "Scripts with 'defer' don't block HTML parsing and run in the order they appear once the document is parsed."
+        },
+        {
+          "id": 49,
+          "question": "What is Cross-Browser Compatibility?",
+          "options": [
+            "Making sure the website uses only one browser",
+            "Ensuring a web application works as intended across different web browsers",
+            "A feature of a CSS framework",
+            "A method for server-side rendering"
+          ],
+          "answer": "Ensuring a web application works as intended across different web browsers",
+          "difficulty": "Easy",
+          "explanation": "Cross-browser compatibility is crucial so that users get a consistent experience regardless of their browser choice."
+        },
+        {
+          "id": 50,
+          "question": "What is Server-Side Rendering (SSR)?",
+          "options": [
+            "A method where the initial HTML of a page is generated on the server, improving load performance and SEO",
+            "A CSS preprocessor tool",
+            "A database caching strategy",
+            "A method for storing cookies"
+          ],
+          "answer": "A method where the initial HTML of a page is generated on the server, improving load performance and SEO",
+          "difficulty": "Medium",
+          "explanation": "SSR sends a fully rendered page from the server, resulting in better performance and SEO than client-only rendering."
+        }
+      ]
+    }
+  ]
+}

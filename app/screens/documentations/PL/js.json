@@ -1,0 +1,344 @@
+{
+  "languages": {
+    "JavaScript": {
+      "topics": [
+        {
+          "title": "Introduction to JavaScript",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "JavaScript is a versatile, high-level programming language primarily used to create interactive effects within web browsers. It's essential for front-end web development and can also be used on the server side with Node.js.",
+          "example": "```javascript\nconsole.log('Hello, World!');\n```"
+        },
+        {
+          "title": "Variables and Data Types",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Variables in JavaScript are containers for storing data values. JavaScript supports data types like numbers, strings, booleans, null, undefined, symbols, and objects.",
+          "example": "```javascript\n// Variable declaration\nlet age = 25;            // Number\nconst name = 'Alice';    // String\nvar isStudent = true;    // Boolean\n```"
+        },
+        {
+          "title": "Operators",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Operators are used to perform operations on variables and values. JavaScript supports arithmetic, assignment, comparison, logical, bitwise, and ternary operators.",
+          "example": "```javascript\n// Arithmetic Operators\nlet a = 10;\nlet b = 3;\nconsole.log(a + b);  // Addition\nconsole.log(a - b);  // Subtraction\nconsole.log(a * b);  // Multiplication\nconsole.log(a / b);  // Division\n```"
+        },
+        {
+          "title": "Strings",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Strings in JavaScript are used to store and manipulate text. They can be defined using single quotes, double quotes, or backticks for template literals.",
+          "example": "```javascript\nlet greeting = 'Hello, World!';\nconsole.log(greeting);\nconsole.log(greeting[0]);         // Accessing first character\nconsole.log(greeting.length);     // Length of the string\n```"
+        },
+        {
+          "title": "String Methods",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "JavaScript provides various built-in methods for strings, such as `toLowerCase()`, `toUpperCase()`, `substring()`, `split()`, and `replace()`.",
+          "example": "```javascript\nlet text = 'Hello, JavaScript!';\nconsole.log(text.toLowerCase());         // Convert to lowercase\nconsole.log(text.toUpperCase());         // Convert to uppercase\nconsole.log(text.replace('JavaScript', 'World'));\n```"
+        },
+        {
+          "title": "Template Literals",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Template literals allow for embedded expressions and multi-line strings using backticks (`).",
+          "example": "```javascript\nlet name = 'Alice';\nlet message = `Hello, ${name}!`;\nconsole.log(message);\n```"
+        },
+        {
+          "title": "Type Conversion",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Type conversion involves converting data from one type to another. JavaScript supports functions like `Number()`, `String()`, and `Boolean()` for explicit conversion.",
+          "example": "```javascript\nlet x = '5';\nlet y = Number(x) + 10;\nconsole.log(y);  // Output: 15\n```"
+        },
+        {
+          "title": "Arrays",
+          "level": "Beginner",
+          "type": "Data Structures",
+          "description": "Arrays are used to store multiple values in a single variable. They are ordered and can contain elements of different data types.",
+          "example": "```javascript\nlet fruits = ['apple', 'banana', 'cherry'];\nfruits.push('orange');\nconsole.log(fruits);\n```"
+        },
+        {
+          "title": "Array Methods",
+          "level": "Beginner",
+          "type": "Data Structures",
+          "description": "JavaScript arrays come with built-in methods like `push()`, `pop()`, `shift()`, `unshift()`, `slice()`, `splice()`, and `forEach()`.",
+          "example": "```javascript\nlet numbers = [5, 2, 9, 1];\nnumbers.sort();\nconsole.log(numbers);  // Output: [1, 2, 5, 9]\n```"
+        },
+        {
+          "title": "Objects",
+          "level": "Beginner",
+          "type": "Data Structures",
+          "description": "Objects are collections of key-value pairs. They can contain properties and methods.",
+          "example": "```javascript\nlet person = {\n    name: 'Alice',\n    age: 30,\n    greet: function() {\n        console.log('Hello');\n    }\n};\nconsole.log(person.name);\nperson.greet();\n```"
+        },
+        {
+          "title": "If Statements",
+          "level": "Beginner",
+          "type": "Control Flow",
+          "description": "If statements are used to perform different actions based on different conditions.",
+          "example": "```javascript\nlet x = 10;\nif (x > 5) {\n    console.log('x is greater than 5');\n} else if (x === 5) {\n    console.log('x is equal to 5');\n} else {\n    console.log('x is less than 5');\n}\n```"
+        },
+        {
+          "title": "Switch Statements",
+          "level": "Beginner",
+          "type": "Control Flow",
+          "description": "Switch statements are used to perform different actions based on different conditions, similar to if statements but more efficient in some cases.",
+          "example": "```javascript\nlet fruit = 'apple';\nswitch (fruit) {\n    case 'apple':\n        console.log('Apple is red.');\n        break;\n    case 'banana':\n        console.log('Banana is yellow.');\n        break;\n    default:\n        console.log('Unknown fruit.');\n}\n```"
+        },
+        {
+          "title": "For Loops",
+          "level": "Beginner",
+          "type": "Loops",
+          "description": "For loops are used to execute a block of code a specified number of times.",
+          "example": "```javascript\nfor (let i = 0; i < 5; i++) {\n    console.log(i);\n}\n\nlet fruits = ['apple', 'banana', 'cherry'];\nfor (let i = 0; i < fruits.length; i++) {\n    console.log(fruits[i]);\n}\n```"
+        },
+        {
+          "title": "While Loops",
+          "level": "Beginner",
+          "type": "Loops",
+          "description": "While loops execute a block of code as long as a specified condition is true.",
+          "example": "```javascript\nlet count = 0;\nwhile (count < 5) {\n    console.log(count);\n    count++;\n}\n```"
+        },
+        {
+          "title": "Do...While Loops",
+          "level": "Beginner",
+          "type": "Loops",
+          "description": "Do...while loops execute a block of code once, before checking if the condition is true, then repeat the loop as long as the condition is true.",
+          "example": "```javascript\nlet count = 0;\ndo {\n    console.log(count);\n    count++;\n} while (count < 5);\n```"
+        },
+        {
+          "title": "Functions",
+          "level": "Beginner",
+          "type": "Functions",
+          "description": "Functions are blocks of code designed to perform a particular task. They are executed when something invokes them.",
+          "example": "```javascript\nfunction greet(name) {\n    return `Hello, ${name}!`;\n}\n\nconsole.log(greet('Alice'));\n```"
+        },
+        {
+          "title": "Arrow Functions",
+          "level": "Beginner",
+          "type": "Functions",
+          "description": "Arrow functions provide a shorter syntax for writing function expressions. They are always anonymous.",
+          "example": "```javascript\nconst multiply = (x, y) => x * y;\nconsole.log(multiply(5, 3));\n```"
+        },
+        {
+          "title": "Function Scope",
+          "level": "Beginner",
+          "type": "Functions",
+          "description": "JavaScript has function scope and block scope. Variables declared inside a function are local to that function.",
+          "example": "```javascript\nfunction myFunction() {\n    let x = 10;  // Local variable\n    console.log(x);\n}\n\nlet x = 20;  // Global variable\nmyFunction();     // Output: 10\nconsole.log(x);   // Output: 20\n```"
+        },
+        {
+          "title": "Closures",
+          "level": "Intermediate",
+          "type": "Functions",
+          "description": "A closure is a function that has access to its own scope, the outer function's scope, and the global scope.",
+          "example": "```javascript\nfunction outerFunction() {\n    let outerVariable = 'I am outside!';\n    function innerFunction() {\n        console.log(outerVariable);\n    }\n    return innerFunction;\n}\n\nconst innerFunc = outerFunction();\ninnerFunc();  // Output: I am outside!\n```"
+        },
+        {
+          "title": "Promises",
+          "level": "Intermediate",
+          "type": "Asynchronous Programming",
+          "description": "Promises represent the eventual completion (or failure) of an asynchronous operation and its resulting value.",
+          "example": "```javascript\nlet promise = new Promise((resolve, reject) => {\n    let success = true;\n    if (success) {\n        resolve('Operation succeeded');\n    } else {\n        reject('Operation failed');\n    }\n});\n\npromise.then(result => {\n    console.log(result);\n}).catch(error => {\n    console.log(error);\n});\n```"
+        },
+        {
+          "title": "Async/Await",
+          "level": "Intermediate",
+          "type": "Asynchronous Programming",
+          "description": "Async functions enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.",
+          "example": "```javascript\nasync function fetchData() {\n    try {\n        let response = await fetch('https://api.example.com/data');\n        let data = await response.json();\n        console.log(data);\n    } catch (error) {\n        console.error('Error:', error);\n    }\n}\n\nfetchData();\n```"
+        },
+        {
+          "title": "Error Handling",
+          "level": "Intermediate",
+          "type": "Error Handling",
+          "description": "Error handling in JavaScript is done using `try`, `catch`, `finally`, and `throw` statements.",
+          "example": "```javascript\ntry {\n    // Code that may throw an error\n    let result = riskyOperation();\n} catch (error) {\n    console.error('An error occurred:', error.message);\n} finally {\n    console.log('Cleanup code can go here.');\n}\n```"
+        },
+        {
+          "title": "Regular Expressions",
+          "level": "Intermediate",
+          "type": "String Manipulation",
+          "description": "Regular expressions are patterns used to match character combinations in strings. They are used with methods like `test()`, `match()`, and `replace()`.",
+          "example": "```javascript\nlet text = 'The rain in Spain';\nlet pattern = /rain/;\nconsole.log(pattern.test(text));  // Output: true\n```"
+        },
+        {
+          "title": "ES6 Modules",
+          "level": "Intermediate",
+          "type": "Modules",
+          "description": "ES6 introduced a standardized module system. Modules allow you to import and export functions, objects, or primitive values from one module to another.",
+          "example": "```javascript\n// In a file named math.js\nexport function add(a, b) {\n    return a + b;\n}\n\n// In another file\nimport { add } from './math.js';\nconsole.log(add(2, 3));\n```"
+        },
+        {
+          "title": "Classes",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Classes are templates for creating objects. They encapsulate data with code to work on that data.",
+          "example": "```javascript\nclass Animal {\n    constructor(name) {\n        this.name = name;\n    }\n    speak() {\n        console.log(`${this.name} makes a noise.`);\n    }\n}\n\nclass Dog extends Animal {\n    speak() {\n        console.log(`${this.name} barks.`);\n    }\n}\n\nlet dog = new Dog('Rex');\ndog.speak();  // Output: Rex barks.\n```"
+        },
+        {
+          "title": "Prototypes",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Prototypes are the mechanism by which JavaScript objects inherit features from one another.",
+          "example": "```javascript\nfunction Person(firstName, lastName) {\n    this.firstName = firstName;\n    this.lastName = lastName;\n}\n\nPerson.prototype.fullName = function() {\n    return `${this.firstName} ${this.lastName}`;\n};\n\nlet person = new Person('John', 'Doe');\nconsole.log(person.fullName());\n```"
+        },
+        {
+          "title": "DOM Manipulation",
+          "level": "Intermediate",
+          "type": "Web APIs",
+          "description": "The Document Object Model (DOM) is a programming interface for HTML and XML documents. It allows scripts to update the content, structure, and style of a document.",
+          "example": "```javascript\n// Changing the text content of an element\nlet element = document.getElementById('myElement');\nelement.textContent = 'New Content';\n```"
+        },
+        {
+          "title": "Event Handling",
+          "level": "Intermediate",
+          "type": "Web APIs",
+          "description": "Event handling involves writing code that reacts to events triggered by the user or browser, such as clicks, key presses, or page loads.",
+          "example": "```javascript\ndocument.getElementById('myButton').addEventListener('click', function() {\n    alert('Button clicked!');\n});\n```"
+        },
+        {
+          "title": "JSON Handling",
+          "level": "Intermediate",
+          "type": "Data Formats",
+          "description": "JavaScript Object Notation (JSON) is a lightweight data-interchange format. JavaScript has built-in methods `JSON.stringify()` and `JSON.parse()` for working with JSON.",
+          "example": "```javascript\nlet person = { name: 'Alice', age: 30 };\nlet jsonString = JSON.stringify(person);\nconsole.log(jsonString);\n\nlet jsonObject = JSON.parse(jsonString);\nconsole.log(jsonObject.name);\n```"
+        },
+        {
+          "title": "Fetch API",
+          "level": "Intermediate",
+          "type": "Web APIs",
+          "description": "The Fetch API provides a modern interface for fetching resources (including across the network). It returns a Promise that resolves to the Response object.",
+          "example": "```javascript\nfetch('https://api.example.com/data')\n    .then(response => response.json())\n    .then(data => console.log(data))\n    .catch(error => console.error('Error:', error));\n```"
+        },
+        {
+          "title": "Local Storage",
+          "level": "Intermediate",
+          "type": "Web APIs",
+          "description": "Local Storage allows you to store data locally in the user's browser with no expiration date.",
+          "example": "```javascript\n// Store data\nlocalStorage.setItem('username', 'Alice');\n\n// Retrieve data\nlet user = localStorage.getItem('username');\nconsole.log(user);\n```"
+        },
+        {
+          "title": "Session Storage",
+          "level": "Intermediate",
+          "type": "Web APIs",
+          "description": "Session Storage is similar to Local Storage but data stored in session storage gets cleared when the page session ends.",
+          "example": "```javascript\n// Store data\nsessionStorage.setItem('sessionID', '12345');\n\n// Retrieve data\nlet session = sessionStorage.getItem('sessionID');\nconsole.log(session);\n```"
+        },
+        {
+          "title": "Web Workers",
+          "level": "Advanced",
+          "type": "Concurrency",
+          "description": "Web Workers allow you to run scripts in background threads, enabling parallel execution and improving performance for complex computations.",
+          "example": "```javascript\n// main.js\nlet worker = new Worker('worker.js');\nworker.postMessage('Start');\nworker.onmessage = function(event) {\n    console.log('Received from worker:', event.data);\n};\n\n// worker.js\nonmessage = function(event) {\n    // Perform computations\n    postMessage('Done');\n};\n```"
+        },
+        {
+          "title": "Service Workers",
+          "level": "Advanced",
+          "type": "Web APIs",
+          "description": "Service Workers act as a proxy between your web app and the network, allowing for features like offline support and background sync.",
+          "example": "```javascript\n// Registering a service worker\nif ('serviceWorker' in navigator) {\n    navigator.serviceWorker.register('/service-worker.js')\n        .then(function(registration) {\n            console.log('Service Worker registered with scope:', registration.scope);\n        })\n        .catch(function(error) {\n            console.log('Service Worker registration failed:', error);\n        });\n}\n```"
+        },
+        {
+          "title": "Object-Oriented Programming Principles",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Understanding the main principles of OOP: Encapsulation, Abstraction, Inheritance, and Polymorphism in JavaScript.",
+          "example": "```javascript\n// Encapsulation using closures\nfunction Person(name) {\n    let _name = name;  // Private variable\n    this.getName = function() {\n        return _name;\n    };\n}\n\nlet person = new Person('Alice');\nconsole.log(person.getName());\n```"
+        },
+        {
+          "title": "Design Patterns",
+          "level": "Advanced",
+          "type": "Software Design",
+          "description": "Design patterns are typical solutions to common problems in software design. Examples include Singleton, Observer, Factory, and Module patterns.",
+          "example": "```javascript\n// Module Pattern\nlet myModule = (function() {\n    let privateVariable = 'Hello World';\n    function privateMethod() {\n        console.log(privateVariable);\n    }\n    return {\n        publicMethod: privateMethod\n    };\n})();\n\nmyModule.publicMethod();  // Output: Hello World\n```"
+        },
+        {
+          "title": "Error Handling with Try...Catch",
+          "level": "Intermediate",
+          "type": "Error Handling",
+          "description": "Use `try...catch` blocks to handle exceptions and prevent the program from crashing.",
+          "example": "```javascript\ntry {\n    // Code that may throw an error\n    let result = riskyOperation();\n} catch (error) {\n    console.error('An error occurred:', error.message);\n} finally {\n    console.log('Cleanup code can go here.');\n}\n```"
+        },
+        {
+          "title": "Asynchronous Iteration",
+          "level": "Advanced",
+          "type": "Asynchronous Programming",
+          "description": "Asynchronous iterators and generators allow you to iterate over data sources that return promises.",
+          "example": "```javascript\nasync function* asyncGenerator() {\n    yield await Promise.resolve(1);\n    yield await Promise.resolve(2);\n    yield await Promise.resolve(3);\n}\n\n(async () => {\n    for await (let num of asyncGenerator()) {\n        console.log(num);\n    }\n})();\n```"
+        },
+        {
+          "title": "Event Loop",
+          "level": "Advanced",
+          "type": "Asynchronous Programming",
+          "description": "Understanding the JavaScript event loop is crucial for writing efficient asynchronous code. It explains how JavaScript handles multiple tasks concurrently.",
+          "example": "```javascript\nconsole.log('Start');\nsetTimeout(() => {\n    console.log('Timeout');\n}, 0);\nPromise.resolve().then(() => {\n    console.log('Promise');\n});\nconsole.log('End');\n// Output:\n// Start\n// End\n// Promise\n// Timeout\n```"
+        },
+        {
+          "title": "Modules and Bundlers",
+          "level": "Advanced",
+          "type": "Modules",
+          "description": "Learn how to use module bundlers like Webpack, Rollup, or Parcel to manage dependencies and bundle JavaScript modules for deployment.",
+          "example": "```javascript\n// Using Webpack to bundle modules\n// Install webpack:\n// npm install --save-dev webpack webpack-cli\n\n// Entry file (index.js)\nimport { add } from './math.js';\nconsole.log(add(2, 3));\n\n// Run webpack to bundle the modules\n```"
+        },
+        {
+          "title": "Testing with Jest",
+          "level": "Advanced",
+          "type": "Testing",
+          "description": "Jest is a delightful JavaScript Testing Framework with a focus on simplicity.",
+          "example": "```javascript\n// sum.js\nfunction sum(a, b) {\n    return a + b;\n}\nmodule.exports = sum;\n\n// sum.test.js\nconst sum = require('./sum');\ntest('adds 1 + 2 to equal 3', () => {\n    expect(sum(1, 2)).toBe(3);\n});\n\n// Run the test using jest\n```"
+        },
+        {
+          "title": "Linting with ESLint",
+          "level": "Intermediate",
+          "type": "Best Practices",
+          "description": "ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, making code more consistent and avoiding bugs.",
+          "example": "```javascript\n// Install ESLint\n// npm install eslint --save-dev\n\n// Initialize ESLint\n// npx eslint --init\n\n// Sample code that may produce a linting error\nlet unusedVariable;\n\nfunction greet(name) {\n    console.log('Hello, ' + name);\n}\n\ngreet('Alice');\n```"
+        },
+        {
+          "title": "Webpack Basics",
+          "level": "Advanced",
+          "type": "Build Tools",
+          "description": "Webpack is a static module bundler for modern JavaScript applications. It builds a dependency graph and emits one or more bundles.",
+          "example": "```javascript\n// webpack.config.js\nconst path = require('path');\n\nmodule.exports = {\n    entry: './src/index.js',\n    output: {\n        filename: 'bundle.js',\n        path: path.resolve(__dirname, 'dist')\n    }\n};\n\n// Run webpack to bundle your code\n```"
+        },
+        {
+          "title": "Transpiling with Babel",
+          "level": "Advanced",
+          "type": "Build Tools",
+          "description": "Babel is a JavaScript compiler that converts ECMAScript 2015+ code into a backwards-compatible version of JavaScript.",
+          "example": "```javascript\n// Install Babel\n// npm install --save-dev @babel/core @babel/cli @babel/preset-env\n\n// .babelrc configuration\n{\n    \"presets\": [\"@babel/preset-env\"]\n}\n\n// Transpile code\n// npx babel src --out-dir lib\n```"
+        },
+        {
+          "title": "Data Structures and Algorithms",
+          "level": "Advanced",
+          "type": "Algorithms",
+          "description": "Understanding data structures (like linked lists, trees, graphs) and algorithms (like sorting and searching) is crucial for writing efficient code.",
+          "example": "```javascript\n// Implementing a simple binary search algorithm\nfunction binarySearch(arr, target) {\n    let left = 0;\n    let right = arr.length - 1;\n    while (left <= right) {\n        let mid = Math.floor((left + right) / 2);\n        if (arr[mid] === target) {\n            return mid;\n        } else if (arr[mid] < target) {\n            left = mid + 1;\n        } else {\n            right = mid - 1;\n        }\n    }\n    return -1;\n}\n\nlet numbers = [1, 3, 5, 7, 9];\nconsole.log(binarySearch(numbers, 7));  // Output: 3\n```"
+        },
+        {
+          "title": "Functional Programming Concepts",
+          "level": "Advanced",
+          "type": "Functional Programming",
+          "description": "Functional programming is a programming paradigm where programs are constructed by applying and composing functions.",
+          "example": "```javascript\n// Using higher-order functions\nconst numbers = [1, 2, 3, 4, 5];\nconst doubled = numbers.map(num => num * 2);\nconst evenNumbers = numbers.filter(num => num % 2 === 0);\nconst sum = numbers.reduce((total, num) => total + num, 0);\nconsole.log(doubled);\nconsole.log(evenNumbers);\nconsole.log(sum);\n```"
+        },
+        {
+          "title": "Currying and Partial Application",
+          "level": "Advanced",
+          "type": "Functional Programming",
+          "description": "Currying is the process of transforming a function with multiple arguments into a sequence of functions each with a single argument.",
+          "example": "```javascript\nfunction curryAdd(a) {\n    return function(b) {\n        return a + b;\n    };\n}\n\nlet addFive = curryAdd(5);\nconsole.log(addFive(3));  // Output: 8\n```"
+        },
+        {
+          "title": "TypeScript Basics",
+          "level": "Advanced",
+          "type": "Type Systems",
+          "description": "TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. It adds optional static typing to the language.",
+          "example": "```typescript\n// Install TypeScript\n// npm install -g typescript\n\n// sample.ts\nfunction greet(name: string): string {\n    return `Hello, ${name}!`;\n}\n\nconsole.log(greet('Alice'));\n\n// Compile TypeScript to JavaScript\n// tsc sample.ts\n```"
+        }
+      ]
+    }
+  }
+}

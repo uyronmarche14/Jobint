@@ -1,0 +1,602 @@
+[
+  {
+    "question_id": "Q001",
+    "question_text": "What is Cryptography?",
+    "question_type": "Technical",
+    "roles": ["Cybersecurity Analyst", "Cryptographer", "Security Engineer"],
+    "industries": ["Tech", "Finance", "Government", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A001",
+        "answer_quality": "High",
+        "answer_text": "Cryptography is the practice and study of techniques for securing information and communication. It is used to protect data from unauthorized access by transforming readable data into an unreadable format using encryption algorithms."
+      }
+    ]
+  },
+  {
+    "question_id": "Q002",
+    "question_text": "What is the difference between Symmetric and Asymmetric encryption?",
+    "question_type": "Technical",
+    "roles": ["Cybersecurity Analyst", "Security Engineer", "Cryptographer"],
+    "industries": ["Tech", "Finance", "Government"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A002",
+        "answer_quality": "High",
+        "answer_text": "Symmetric encryption uses the same key for both encryption and decryption, making it faster but potentially less secure. Algorithms include DES, 3DES, AES, and RC4. Asymmetric encryption uses a pair of keys (public and private) for encryption and decryption, making it slower but more secure. Algorithms include Diffie-Hellman and RSA. Symmetric encryption is often used for bulk data transmission, while asymmetric encryption is used for securely exchanging secret keys."
+      }
+    ]
+  },
+  {
+    "question_id": "Q003",
+    "question_text": "What is the difference between IDS and IPS?",
+    "question_type": "Technical",
+    "roles": ["Network Security Engineer", "Security Analyst"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A003",
+        "answer_quality": "High",
+        "answer_text": "An IDS (Intrusion Detection System) monitors network traffic for suspicious activity and alerts administrators but does not take action to prevent it. An IPS (Intrusion Prevention System) not only detects intrusions but also takes actions to prevent them, such as blocking traffic from malicious IP addresses."
+      }
+    ]
+  },
+  {
+    "question_id": "Q004",
+    "question_text": "Explain the CIA triad.",
+    "question_type": "Conceptual",
+    "roles": ["Cybersecurity Analyst", "Information Security Manager"],
+    "industries": ["Tech", "Finance", "Healthcare", "Government"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A004",
+        "answer_quality": "High",
+        "answer_text": "The CIA triad stands for Confidentiality, Integrity, and Availability. It's a model designed to guide policies for information security within an organization. Confidentiality ensures that sensitive information is accessed only by authorized individuals. Integrity ensures that the data is accurate and unaltered by unauthorized users. Availability ensures that information and resources are available to authorized users when needed."
+      }
+    ]
+  },
+  {
+    "question_id": "Q005",
+    "question_text": "How is Encryption different from Hashing?",
+    "question_type": "Technical",
+    "roles": ["Security Engineer", "Cryptographer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A005",
+        "answer_quality": "High",
+        "answer_text": "Encryption transforms readable data into an unreadable format using algorithms and keys, and it can be decrypted back to the original data using the appropriate key. Hashing converts data into a fixed-size string of characters, which is typically a hash code, and it cannot be reversed back to the original data. Hashing is used for data verification, while encryption is used for data protection."
+      }
+    ]
+  },
+  {
+    "question_id": "Q006",
+    "question_text": "What is a Firewall and why is it used?",
+    "question_type": "Technical",
+    "roles": ["Network Security Engineer", "IT Administrator"],
+    "industries": ["Tech", "Finance", "Healthcare", "Government"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A006",
+        "answer_quality": "High",
+        "answer_text": "A firewall is a network security device that monitors and filters incoming and outgoing network traffic based on an organization's previously established security policies. It acts as a barrier between a trusted network and an untrusted network, such as the internet, to prevent unauthorized access and protect the system from viruses, malware, and other cyber threats."
+      }
+    ]
+  },
+  {
+    "question_id": "Q007",
+    "question_text": "What is the difference between Vulnerability Assessment and Penetration Testing?",
+    "question_type": "Technical",
+    "roles": ["Penetration Tester", "Security Analyst"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A007",
+        "answer_quality": "High",
+        "answer_text": "Vulnerability Assessment is the process of identifying and prioritizing vulnerabilities in a system. It aims to find as many vulnerabilities as possible. Penetration Testing involves simulating cyberattacks to exploit vulnerabilities in order to determine whether unauthorized access or other malicious activities are possible. The key difference is that vulnerability assessments identify vulnerabilities, while penetration testing attempts to exploit them."
+      }
+    ]
+  },
+  {
+    "question_id": "Q008",
+    "question_text": "What is a three-way handshake?",
+    "question_type": "Technical",
+    "roles": ["Network Engineer", "Security Analyst"],
+    "industries": ["Tech", "Telecommunications"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A008",
+        "answer_quality": "High",
+        "answer_text": "A three-way handshake is a method used in TCP/IP networks to establish a connection between a client and server. It involves three steps: the client sends a SYN (synchronize) packet to the server to request a connection, the server responds with a SYN-ACK (synchronize-acknowledge) packet to acknowledge the request, and the client sends an ACK (acknowledge) packet back to the server to confirm the connection."
+      }
+    ]
+  },
+  {
+    "question_id": "Q009",
+    "question_text": "What are the response codes that can be received from a Web Application?",
+    "question_type": "Technical",
+    "roles": ["Web Developer", "Security Analyst"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A009",
+        "answer_quality": "High",
+        "answer_text": "Web applications can return several HTTP response codes: 1xx (Informational responses), 2xx (Success), 3xx (Redirection), 4xx (Client-side errors), and 5xx (Server-side errors). These codes indicate the status of the HTTP request."
+      }
+    ]
+  },
+  {
+    "question_id": "Q010",
+    "question_text": "What is traceroute and why is it used?",
+    "question_type": "Technical",
+    "roles": ["Network Engineer", "IT Support Specialist"],
+    "industries": ["Tech", "Telecommunications"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A010",
+        "answer_quality": "High",
+        "answer_text": "Traceroute is a network diagnostic tool used to track the pathway taken by a packet on an IP network from source to destination. It lists all the routers (hops) that the packet passes through. It's commonly used to identify routing problems and pinpoint where data transmission is failing."
+      }
+    ]
+  },
+  {
+    "question_id": "Q011",
+    "question_text": "What is the difference between HIDS and NIDS?",
+    "question_type": "Technical",
+    "roles": ["Security Analyst", "Network Security Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A011",
+        "answer_quality": "High",
+        "answer_text": "HIDS (Host-based Intrusion Detection System) monitors and analyzes the internals of a computing system rather than network traffic. NIDS (Network-based Intrusion Detection System) monitors network traffic for suspicious activity on the entire network. The key difference is that HIDS is installed on individual hosts or devices, while NIDS is positioned within the network to monitor traffic."
+      }
+    ]
+  },
+  {
+    "question_id": "Q012",
+    "question_text": "What are the steps to set up a firewall?",
+    "question_type": "Technical",
+    "roles": ["Network Security Engineer", "IT Administrator"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A012",
+        "answer_quality": "High",
+        "answer_text": "Steps to set up a firewall include: 1) Change default administrator passwords. 2) Disable remote administration features if not needed. 3) Configure appropriate port forwarding for required applications. 4) Disable DHCP server on the firewall if there's already one on the network to avoid conflicts. 5) Enable logging for troubleshooting and monitoring. 6) Define and enforce security policies through firewall rules."
+      }
+    ]
+  },
+  {
+    "question_id": "Q013",
+    "question_text": "Explain SSL Encryption.",
+    "question_type": "Technical",
+    "roles": ["Security Engineer", "Web Developer"],
+    "industries": ["Tech", "E-commerce", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A013",
+        "answer_quality": "High",
+        "answer_text": "SSL (Secure Sockets Layer) is a standard security technology for establishing an encrypted link between a web server and a browser. This link ensures that all data passed between them remains private. SSL uses a handshake process to establish a secure connection, which involves exchanging certificates and keys to encrypt and decrypt data."
+      }
+    ]
+  },
+  {
+    "question_id": "Q014",
+    "question_text": "What steps will you take to secure a server?",
+    "question_type": "Technical",
+    "roles": ["System Administrator", "Security Engineer"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A014",
+        "answer_quality": "High",
+        "answer_text": "To secure a server, I would: 1) Set strong, unique passwords for all accounts. 2) Create non-root administrative users for daily operations. 3) Disable remote root/administrator access. 4) Configure firewall rules to limit access to necessary services. 5) Keep the server's operating system and software up to date with patches. 6) Install and configure security software like intrusion detection systems. 7) Regularly backup data and test recovery procedures."
+      }
+    ]
+  },
+  {
+    "question_id": "Q015",
+    "question_text": "Explain Data Leakage.",
+    "question_type": "Conceptual",
+    "roles": ["Security Analyst", "Data Protection Officer"],
+    "industries": ["Tech", "Finance", "Healthcare", "Government"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A015",
+        "answer_quality": "High",
+        "answer_text": "Data leakage refers to the unauthorized transmission of data from within an organization to an external destination or recipient. It can be intentional or unintentional and can occur through various means like emails, portable storage devices, or uploads. Preventing data leakage involves implementing Data Loss Prevention (DLP) tools, establishing strict access controls, and educating employees about data handling policies."
+      }
+    ]
+  },
+  {
+    "question_id": "Q016",
+    "question_text": "What are some of the common Cyberattacks?",
+    "question_type": "Conceptual",
+    "roles": ["Security Analyst", "Cybersecurity Consultant"],
+    "industries": ["All"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A016",
+        "answer_quality": "High",
+        "answer_text": "Common cyberattacks include Malware attacks, Phishing, Password attacks, Distributed Denial of Service (DDoS) attacks, Man-in-the-Middle attacks, Drive-by downloads, Malvertising, and Rogue software installations. Each of these attacks exploits different vulnerabilities to compromise systems and data."
+      }
+    ]
+  },
+  {
+    "question_id": "Q017",
+    "question_text": "What is a Brute Force Attack? How can you prevent it?",
+    "question_type": "Technical",
+    "roles": ["Security Engineer", "System Administrator"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A017",
+        "answer_quality": "High",
+        "answer_text": "A Brute Force Attack is a trial-and-error method used to decode encrypted data such as passwords or PINs by trying all possible combinations until the correct one is found. To prevent it, implement account lockout policies after a certain number of failed attempts, use CAPTCHAs to block automated attempts, enforce strong password policies, and use multi-factor authentication."
+      }
+    ]
+  },
+  {
+    "question_id": "Q018",
+    "question_text": "What is Port Scanning?",
+    "question_type": "Technical",
+    "roles": ["Network Security Engineer", "Penetration Tester"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A018",
+        "answer_quality": "High",
+        "answer_text": "Port Scanning is a technique used to identify open ports and services available on a networked computer. It involves sending packets to ports on a host and analyzing the responses to find vulnerabilities that can be exploited. Common port scanning techniques include Ping Scan, TCP Half-Open, TCP Connect, UDP Scan, and Stealth Scanning."
+      }
+    ]
+  },
+  {
+    "question_id": "Q019",
+    "question_text": "What are the different layers of the OSI model?",
+    "question_type": "Conceptual",
+    "roles": ["Network Engineer", "Security Analyst"],
+    "industries": ["Tech", "Telecommunications"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A019",
+        "answer_quality": "High",
+        "answer_text": "The OSI model consists of seven layers: 1) Physical Layer, which handles the transmission of raw bit streams over a physical medium. 2) Data Link Layer, which provides node-to-node data transfer and error detection. 3) Network Layer, which handles packet forwarding including routing through different routers. 4) Transport Layer, which provides end-to-end communication and error recovery. 5) Session Layer, which manages sessions between applications. 6) Presentation Layer, which translates data formats. 7) Application Layer, which provides network services to end-user applications."
+      }
+    ]
+  },
+  {
+    "question_id": "Q020",
+    "question_text": "What is a VPN?",
+    "question_type": "Technical",
+    "roles": ["Network Engineer", "Security Analyst"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A020",
+        "answer_quality": "High",
+        "answer_text": "A VPN (Virtual Private Network) creates a secure, encrypted connection over a less secure network, such as the internet. It allows users to send and receive data across shared or public networks as if their devices were directly connected to the private network, enhancing security and privacy."
+      }
+    ]
+  },
+  {
+    "question_id": "Q021",
+    "question_text": "What do you understand by Risk, Vulnerability, and Threat in a network?",
+    "question_type": "Conceptual",
+    "roles": ["Security Analyst", "Risk Manager"],
+    "industries": ["Tech", "Finance", "Government"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A021",
+        "answer_quality": "High",
+        "answer_text": "A Threat is any circumstance or event with the potential to cause harm to a system. A Vulnerability is a weakness or flaw in the system that can be exploited by a threat. Risk is the potential for loss or damage when a threat exploits a vulnerability. It is the intersection of assets, threats, and vulnerabilities."
+      }
+    ]
+  },
+  {
+    "question_id": "Q022",
+    "question_text": "How can identity theft be prevented?",
+    "question_type": "Conceptual",
+    "roles": ["Security Analyst", "Compliance Officer"],
+    "industries": ["Finance", "Healthcare", "Retail"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A022",
+        "answer_quality": "High",
+        "answer_text": "Identity theft can be prevented by: using strong, unique passwords; not sharing personal information on unsecured platforms; shopping from trusted websites; keeping browsers and systems updated; installing advanced anti-malware and anti-spyware tools; using security solutions for financial data; protecting social security numbers; and regularly monitoring financial statements."
+      }
+    ]
+  },
+  {
+    "question_id": "Q023",
+    "question_text": "What are black hat, white hat, and grey hat hackers?",
+    "question_type": "Conceptual",
+    "roles": ["Security Analyst", "Cybersecurity Consultant"],
+    "industries": ["Tech", "Finance", "Government"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A023",
+        "answer_quality": "High",
+        "answer_text": "Black hat hackers are individuals who use their technical skills to maliciously exploit vulnerabilities for personal gain. White hat hackers, or ethical hackers, use their skills to find and fix vulnerabilities to improve security. Grey hat hackers fall between the two; they may identify security flaws without permission and report them but do not exploit them for personal gain."
+      }
+    ]
+  },
+  {
+    "question_id": "Q024",
+    "question_text": "How often should you perform Patch management?",
+    "question_type": "Technical",
+    "roles": ["System Administrator", "Security Engineer"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A024",
+        "answer_quality": "High",
+        "answer_text": "Patch management should be performed as soon as patches are released, especially for critical vulnerabilities. For systems like Windows, patches should be applied within a month at the latest. Regular patch management cycles, such as monthly or bi-weekly updates, help ensure that systems are protected against known vulnerabilities."
+      }
+    ]
+  },
+  {
+    "question_id": "Q025",
+    "question_text": "How would you reset a password-protected BIOS configuration?",
+    "question_type": "Technical",
+    "roles": ["IT Support Specialist", "System Administrator"],
+    "industries": ["Tech", "Manufacturing"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A025",
+        "answer_quality": "High",
+        "answer_text": "To reset a password-protected BIOS configuration, you can remove the CMOS battery from the motherboard, which will reset the BIOS settings to default by clearing the stored configuration. Alternatively, you can use motherboard jumpers designated for BIOS reset or consult the motherboard manual for specific instructions."
+      }
+    ]
+  },
+  {
+    "question_id": "Q026",
+    "question_text": "Explain MITM attack and how to prevent it.",
+    "question_type": "Technical",
+    "roles": ["Security Analyst", "Network Security Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A026",
+        "answer_quality": "High",
+        "answer_text": "A Man-in-the-Middle (MITM) attack occurs when an attacker secretly intercepts and possibly alters the communication between two parties who believe they are directly communicating with each other. To prevent it, use strong encryption protocols like HTTPS, employ VPNs, implement mutual authentication, use secure Wi-Fi networks, and educate users about phishing attacks that could lead to MITM."
+      }
+    ]
+  },
+  {
+    "question_id": "Q027",
+    "question_text": "Explain DDOS attack and how to prevent it.",
+    "question_type": "Technical",
+    "roles": ["Security Engineer", "Network Administrator"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A027",
+        "answer_quality": "High",
+        "answer_text": "A Distributed Denial of Service (DDoS) attack overwhelms a target server, service, or network with a flood of internet traffic, rendering it inaccessible to legitimate users. Prevention strategies include using anti-DDoS services, configuring firewalls and routers to reject malicious traffic, employing load balancers, maintaining sufficient bandwidth, and using intrusion detection systems."
+      }
+    ]
+  },
+  {
+    "question_id": "Q028",
+    "question_text": "Explain XSS attack and how to prevent it.",
+    "question_type": "Technical",
+    "roles": ["Web Developer", "Security Analyst"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A028",
+        "answer_quality": "High",
+        "answer_text": "Cross-Site Scripting (XSS) is an attack where malicious scripts are injected into trusted websites. The attacker uses the website to deliver harmful scripts to other users. To prevent XSS attacks, validate and sanitize all user inputs, encode output data, use Content Security Policies, and employ anti-XSS libraries or frameworks."
+      }
+    ]
+  },
+  {
+    "question_id": "Q029",
+    "question_text": "What is an ARP and how does it work?",
+    "question_type": "Technical",
+    "roles": ["Network Engineer", "Security Analyst"],
+    "industries": ["Tech", "Telecommunications"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A029",
+        "answer_quality": "High",
+        "answer_text": "ARP (Address Resolution Protocol) is used to map an IP address to a physical machine address (MAC address) recognized in the local network. When a device wants to communicate with another device on the local network, it broadcasts an ARP request containing the target IP address. The device with that IP address responds with its MAC address, allowing direct communication."
+      }
+    ]
+  },
+  {
+    "question_id": "Q030",
+    "question_text": "What is port blocking within LAN?",
+    "question_type": "Technical",
+    "roles": ["Network Administrator", "Security Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A030",
+        "answer_quality": "High",
+        "answer_text": "Port blocking within a LAN involves restricting users from accessing certain network services by blocking specific TCP or UDP ports on the network's firewall or router. This helps to prevent unauthorized access and secure the network by limiting exposure to vulnerabilities associated with certain ports."
+      }
+    ]
+  },
+  {
+    "question_id": "Q031",
+    "question_text": "What protocols fall under the TCP/IP internet layer?",
+    "question_type": "Technical",
+    "roles": ["Network Engineer", "System Administrator"],
+    "industries": ["Tech", "Telecommunications"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A031",
+        "answer_quality": "High",
+        "answer_text": "Protocols that fall under the TCP/IP Internet Layer include IP (Internet Protocol), ARP (Address Resolution Protocol), and ICMP (Internet Control Message Protocol). These protocols are responsible for logical addressing and routing of packets across network boundaries."
+      }
+    ]
+  },
+  {
+    "question_id": "Q032",
+    "question_text": "What is a Botnet?",
+    "question_type": "Conceptual",
+    "roles": ["Security Analyst", "Malware Researcher"],
+    "industries": ["Tech", "Government"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A032",
+        "answer_quality": "High",
+        "answer_text": "A Botnet is a network of private computers infected with malicious software and controlled as a group without the owners' knowledge. Botnets are used to perform distributed denial-of-service attacks, send spam, steal data, and allow the attacker to access the device and its connection."
+      }
+    ]
+  },
+  {
+    "question_id": "Q033",
+    "question_text": "What are salted hashes?",
+    "question_type": "Technical",
+    "roles": ["Security Engineer", "Cryptographer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A033",
+        "answer_quality": "High",
+        "answer_text": "Salted hashes involve adding a random string (salt) to a password before hashing it. This makes each hash unique, even for identical passwords, and protects against precomputed hash attacks like rainbow tables. Salting enhances password security by increasing the complexity required to crack the hashes."
+      }
+    ]
+  },
+  {
+    "question_id": "Q034",
+    "question_text": "Explain SSL and TLS.",
+    "question_type": "Technical",
+    "roles": ["Security Engineer", "Web Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A034",
+        "answer_quality": "High",
+        "answer_text": "SSL (Secure Sockets Layer) and TLS (Transport Layer Security) are cryptographic protocols designed to provide secure communication over a computer network. SSL is the predecessor to TLS; TLS is an updated, more secure version. They use certificates and asymmetric cryptography to authenticate the counterparty and exchange symmetric keys for encryption."
+      }
+    ]
+  },
+  {
+    "question_id": "Q035",
+    "question_text": "What is data protection in transit vs data protection at rest?",
+    "question_type": "Conceptual",
+    "roles": ["Security Analyst", "Compliance Officer"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A035",
+        "answer_quality": "High",
+        "answer_text": "Data protection in transit refers to securing data as it moves across networks, typically through encryption protocols like SSL/TLS to prevent interception. Data protection at rest involves securing data stored on physical media, using encryption and access controls to prevent unauthorized access when data is not being transmitted."
+      }
+    ]
+  },
+  {
+    "question_id": "Q036",
+    "question_text": "What is 2FA and how can it be implemented for public websites?",
+    "question_type": "Technical",
+    "roles": ["Security Engineer", "Web Developer"],
+    "industries": ["Tech", "Finance", "E-commerce"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A036",
+        "answer_quality": "High",
+        "answer_text": "2FA (Two-Factor Authentication) adds an extra layer of security by requiring two forms of identification before granting access—typically something the user knows (password) and something the user has (security token or mobile device). It can be implemented on public websites by integrating authentication apps, sending verification codes via SMS or email, or using hardware tokens."
+      }
+    ]
+  },
+  {
+    "question_id": "Q037",
+    "question_text": "What is Cognitive Cybersecurity?",
+    "question_type": "Conceptual",
+    "roles": ["Security Analyst", "AI Specialist"],
+    "industries": ["Tech", "Government"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A037",
+        "answer_quality": "High",
+        "answer_text": "Cognitive Cybersecurity refers to the application of artificial intelligence technologies that mimic human thought processes to detect threats and protect systems. It uses data mining, machine learning, pattern recognition, and natural language processing to simulate human intelligence in identifying and responding to cyber threats more effectively."
+      }
+    ]
+  },
+  {
+    "question_id": "Q038",
+    "question_text": "What is the difference between VPN and VLAN?",
+    "question_type": "Technical",
+    "roles": ["Network Engineer", "Security Analyst"],
+    "industries": ["Tech", "Telecommunications"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A038",
+        "answer_quality": "High",
+        "answer_text": "A VPN (Virtual Private Network) provides a secure connection over a public network, allowing remote users to access a private network securely. A VLAN (Virtual Local Area Network) logically segments a physical network into separate broadcast domains for better management and security. VPN is used for secure remote access, while VLAN is used for network segmentation within the same physical network."
+      }
+    ]
+  },
+  {
+    "question_id": "Q039",
+    "question_text": "Explain Phishing and how to prevent it.",
+    "question_type": "Conceptual",
+    "roles": ["Security Analyst", "IT Support Specialist"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A039",
+        "answer_quality": "High",
+        "answer_text": "Phishing is a cyberattack that uses disguised emails or messages as a weapon. The goal is to trick the recipient into believing that the message is something they want or need and to disclose sensitive information. To prevent phishing, users should verify the source of emails, avoid clicking on suspicious links, use anti-phishing toolbars, keep browsers up to date, and educate themselves about phishing techniques."
+      }
+    ]
+  },
+  {
+    "question_id": "Q040",
+    "question_text": "Explain SQL Injection and how to prevent it.",
+    "question_type": "Technical",
+    "roles": ["Web Developer", "Security Analyst"],
+    "industries": ["Tech", "Finance", "E-commerce"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A040",
+        "answer_quality": "High",
+        "answer_text": "SQL Injection is a code injection technique that exploits vulnerabilities in an application's software by inserting malicious SQL statements into an entry field for execution. This can allow attackers to manipulate the application's database. To prevent it, use prepared statements with parameterized queries, validate and sanitize all user inputs, limit database permissions, and use stored procedures."
+      }
+    ]
+  }
+]

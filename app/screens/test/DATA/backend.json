@@ -1,0 +1,752 @@
+[
+  {
+    "question_id": "Q001",
+    "question_text": "What is the difference between a process and a thread?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Systems Engineer"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A001",
+        "answer_quality": "High",
+        "answer_text": "A process is an independent executing program with its own memory space, while a thread is a smaller execution unit that runs within a process and shares the same memory space. Processes are isolated from each other, whereas threads within the same process can communicate more easily but require synchronization mechanisms to prevent conflicts."
+      }
+    ]
+  },
+  {
+    "question_id": "Q002",
+    "question_text": "Explain the concept of RESTful APIs and their advantages.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "API Developer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A002",
+        "answer_quality": "High",
+        "answer_text": "RESTful APIs adhere to the REST architectural style, using standard HTTP methods like GET, POST, PUT, and DELETE to interact with resources identified by URIs. Advantages include statelessness, scalability, cacheability, and a uniform interface, making it easier for different clients to interact with the API."
+      }
+    ]
+  },
+  {
+    "question_id": "Q003",
+    "question_text": "What is a microservices architecture?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Software Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A003",
+        "answer_quality": "High",
+        "answer_text": "Microservices architecture structures an application as a collection of small, independent services that communicate over well-defined APIs. Each service focuses on a specific business capability, allowing for decentralized development, scalability, and easier maintenance."
+      }
+    ]
+  },
+  {
+    "question_id": "Q004",
+    "question_text": "What is a database transaction, and what are ACID properties?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Database Administrator"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A004",
+        "answer_quality": "High",
+        "answer_text": "A database transaction is a sequence of operations performed as a single logical unit of work. ACID properties ensure reliable processing of transactions: Atomicity (all or nothing), Consistency (data integrity), Isolation (transactions don't interfere), and Durability (changes persist after completion)."
+      }
+    ]
+  },
+  {
+    "question_id": "Q005",
+    "question_text": "Explain the difference between SQL and NoSQL databases.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Database Administrator"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A005",
+        "answer_quality": "High",
+        "answer_text": "SQL databases are relational and use structured query language for defining and manipulating data. They have a fixed schema and are suitable for complex queries. NoSQL databases are non-relational, have dynamic schemas, and are designed for distributed data stores with large data storage needs, offering flexibility and scalability."
+      }
+    ]
+  },
+  {
+    "question_id": "Q006",
+    "question_text": "What is indexing in databases, and why is it important?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Database Administrator"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A006",
+        "answer_quality": "High",
+        "answer_text": "Indexing in databases is a data structure technique to quickly locate and access data in a table. It improves the speed of data retrieval operations by reducing the number of disk accesses required, which is crucial for large databases."
+      }
+    ]
+  },
+  {
+    "question_id": "Q007",
+    "question_text": "Explain how caching works in web applications.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Performance Engineer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A007",
+        "answer_quality": "High",
+        "answer_text": "Caching stores copies of frequently accessed data in a faster storage system or location, reducing the time to retrieve data. In web applications, caching can occur at multiple levels, including database query results, server responses, or browser caching, improving performance and scalability."
+      }
+    ]
+  },
+  {
+    "question_id": "Q008",
+    "question_text": "What are the differences between TCP and UDP protocols?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Network Engineer"],
+    "industries": ["Tech", "Telecommunications"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A008",
+        "answer_quality": "High",
+        "answer_text": "TCP (Transmission Control Protocol) is connection-oriented, ensuring reliable data transmission with error checking and flow control. UDP (User Datagram Protocol) is connectionless, offering faster but less reliable communication without guaranteed delivery, suitable for applications like streaming where speed is crucial."
+      }
+    ]
+  },
+  {
+    "question_id": "Q009",
+    "question_text": "What is load balancing, and how does it improve performance?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "DevOps Engineer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A009",
+        "answer_quality": "High",
+        "answer_text": "Load balancing distributes network or application traffic across multiple servers to ensure no single server becomes a bottleneck. It improves performance by optimizing resource use, maximizing throughput, reducing response time, and increasing reliability through redundancy."
+      }
+    ]
+  },
+  {
+    "question_id": "Q010",
+    "question_text": "Explain the concept of middleware in Express.js.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Node.js Developer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A010",
+        "answer_quality": "High",
+        "answer_text": "In Express.js, middleware functions are functions that have access to the request and response objects and the next middleware function in the application's request-response cycle. They are used for tasks like logging, authentication, parsing, and error handling."
+      }
+    ]
+  },
+  {
+    "question_id": "Q011",
+    "question_text": "What is the CAP theorem in distributed systems?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Systems Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A011",
+        "answer_quality": "High",
+        "answer_text": "The CAP theorem states that a distributed system cannot simultaneously guarantee Consistency, Availability, and Partition Tolerance. In the presence of a network partition, a system must choose between consistency and availability, influencing how it handles data and requests."
+      }
+    ]
+  },
+  {
+    "question_id": "Q012",
+    "question_text": "Describe how you would implement authentication in a web application.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Security Engineer"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A012",
+        "answer_quality": "High",
+        "answer_text": "Authentication can be implemented using strategies like session-based authentication, where user credentials are validated and a session is maintained on the server, or token-based authentication using JWT (JSON Web Tokens), where a token is issued upon login and sent with each request. Security measures like hashing passwords and using SSL/TLS are essential."
+      }
+    ]
+  },
+  {
+    "question_id": "Q013",
+    "question_text": "What is the difference between synchronous and asynchronous programming?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Software Engineer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A013",
+        "answer_quality": "High",
+        "answer_text": "Synchronous programming executes tasks sequentially, blocking the execution until the current task is finished. Asynchronous programming allows tasks to run independently of the main execution flow, enabling non-blocking operations and improving performance, especially in I/O-bound applications."
+      }
+    ]
+  },
+  {
+    "question_id": "Q014",
+    "question_text": "Explain how garbage collection works in Java or C#.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A014",
+        "answer_quality": "High",
+        "answer_text": "Garbage collection in languages like Java or C# automatically frees memory by deleting objects that are no longer reachable in the application. It uses algorithms like Mark-and-Sweep to identify and dispose of unused objects, helping to prevent memory leaks without manual memory management."
+      }
+    ]
+  },
+  {
+    "question_id": "Q015",
+    "question_text": "What is the role of an API gateway in microservices architecture?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Architect"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A015",
+        "answer_quality": "High",
+        "answer_text": "An API gateway acts as a single entry point for client requests in a microservices architecture. It handles request routing, composition, protocol translation, authentication, and rate limiting. It simplifies client interactions by aggregating multiple service calls into a single API."
+      }
+    ]
+  },
+  {
+    "question_id": "Q016",
+    "question_text": "What are WebSockets, and how are they used in backend development?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Realtime Systems Developer"],
+    "industries": ["Tech", "Gaming"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A016",
+        "answer_quality": "High",
+        "answer_text": "WebSockets provide a full-duplex communication channel over a single TCP connection. They enable real-time data exchange between the client and server with lower overhead than HTTP polling. In backend development, WebSockets are used for applications requiring live updates, like chat applications or live feeds."
+      }
+    ]
+  },
+  {
+    "question_id": "Q017",
+    "question_text": "Explain the difference between optimistic and pessimistic locking.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Database Administrator"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A017",
+        "answer_quality": "High",
+        "answer_text": "Optimistic locking assumes that multiple transactions can complete without affecting each other and checks for conflicts before committing. Pessimistic locking locks the data when a transaction begins, preventing other transactions from modifying it until the lock is released. Optimistic locking is suitable for low-conflict scenarios, while pessimistic locking is used when conflicts are likely."
+      }
+    ]
+  },
+  {
+    "question_id": "Q018",
+    "question_text": "What is message queuing, and why is it used?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Systems Engineer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A018",
+        "answer_quality": "High",
+        "answer_text": "Message queuing allows applications to communicate asynchronously by sending messages to a queue. It's used to decouple processes, improve scalability, and handle tasks like job scheduling or event processing. Systems like RabbitMQ or Kafka implement message queuing."
+      }
+    ]
+  },
+  {
+    "question_id": "Q019",
+    "question_text": "How do you prevent SQL injection attacks?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Security Engineer"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A019",
+        "answer_quality": "High",
+        "answer_text": "Prevent SQL injection by using parameterized queries or prepared statements, which separate SQL logic from data inputs. Validating and sanitizing user inputs, using stored procedures, and implementing proper access controls also help mitigate SQL injection risks."
+      }
+    ]
+  },
+  {
+    "question_id": "Q020",
+    "question_text": "What is a CDN, and how does it benefit backend operations?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "DevOps Engineer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A020",
+        "answer_quality": "High",
+        "answer_text": "A Content Delivery Network (CDN) is a network of distributed servers that deliver web content to users based on their geographic location. It benefits backend operations by reducing server load, decreasing latency, improving availability, and enhancing user experience."
+      }
+    ]
+  },
+  {
+    "question_id": "Q021",
+    "question_text": "Explain the purpose of the SOLID principles in software design.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A021",
+        "answer_quality": "High",
+        "answer_text": "SOLID principles are a set of design guidelines to create more understandable, flexible, and maintainable software. They stand for Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion principles, each addressing different aspects of object-oriented design."
+      }
+    ]
+  },
+  {
+    "question_id": "Q022",
+    "question_text": "What is event-driven architecture, and when would you use it?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Systems Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A022",
+        "answer_quality": "High",
+        "answer_text": "Event-driven architecture is a design paradigm where components communicate by producing and consuming events. It's used in systems that require high scalability and decoupling, such as microservices, real-time data processing, or applications with asynchronous operations."
+      }
+    ]
+  },
+  {
+    "question_id": "Q023",
+    "question_text": "Describe the role of ORM (Object-Relational Mapping) in backend development.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Database Administrator"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A023",
+        "answer_quality": "High",
+        "answer_text": "ORM is a programming technique that allows developers to interact with a database using object-oriented programming languages. It maps database tables to classes, simplifying database operations by allowing CRUD operations without writing SQL queries directly. Examples include Hibernate for Java and Entity Framework for .NET."
+      }
+    ]
+  },
+  {
+    "question_id": "Q024",
+    "question_text": "What is the difference between horizontal and vertical scaling?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "DevOps Engineer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A024",
+        "answer_quality": "High",
+        "answer_text": "Horizontal scaling involves adding more machines or nodes to a system (scaling out), distributing the load across multiple servers. Vertical scaling means adding more resources (CPU, RAM) to an existing machine (scaling up). Horizontal scaling offers better fault tolerance and is more suitable for distributed systems."
+      }
+    ]
+  },
+  {
+    "question_id": "Q025",
+    "question_text": "Explain the concept of dependency injection and its benefits.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Software Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A025",
+        "answer_quality": "High",
+        "answer_text": "Dependency injection is a design pattern where an object's dependencies are supplied by an external entity rather than the object itself. Benefits include improved modularity, easier testing, and better separation of concerns, as it allows for loose coupling between components."
+      }
+    ]
+  },
+  {
+    "question_id": "Q026",
+    "question_text": "What are the differences between monolithic and microservices architectures?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Architect"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A026",
+        "answer_quality": "High",
+        "answer_text": "Monolithic architecture builds an application as a single unit, where all components are interconnected and interdependent. Microservices architecture breaks down the application into smaller, independent services that communicate over APIs. Microservices offer better scalability and flexibility but introduce complexity in communication and deployment."
+      }
+    ]
+  },
+  {
+    "question_id": "Q027",
+    "question_text": "What is SQL indexing, and how does it improve query performance?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Database Administrator"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A027",
+        "answer_quality": "High",
+        "answer_text": "SQL indexing creates a data structure that improves the speed of data retrieval operations on a database table. Indexes allow the database engine to find data faster without scanning the entire table, significantly improving query performance, especially on large datasets."
+      }
+    ]
+  },
+  {
+    "question_id": "Q028",
+    "question_text": "Explain the use of Docker and its benefits in backend development.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "DevOps Engineer"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A028",
+        "answer_quality": "High",
+        "answer_text": "Docker is a platform that uses containerization to package applications with their dependencies, ensuring consistency across different environments. Benefits include simplified deployment, scalability, resource isolation, and efficient use of system resources."
+      }
+    ]
+  },
+  {
+    "question_id": "Q029",
+    "question_text": "What is OAuth 2.0, and how is it used in backend services?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Security Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A029",
+        "answer_quality": "High",
+        "answer_text": "OAuth 2.0 is an authorization framework that enables applications to obtain limited access to user accounts on an HTTP service, delegating user authentication to the service that hosts the user account. It's used in backend services to handle secure authorization between clients and servers."
+      }
+    ]
+  },
+  {
+    "question_id": "Q030",
+    "question_text": "How do you handle error logging and monitoring in a backend application?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "DevOps Engineer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A030",
+        "answer_quality": "High",
+        "answer_text": "Error logging and monitoring can be handled using logging frameworks and monitoring tools. Logs should capture error details, stack traces, and contextual information. Tools like ELK Stack, Splunk, or cloud services can aggregate and analyze logs. Monitoring involves setting up alerts and dashboards to track application health and performance."
+      }
+    ]
+  },
+  {
+    "question_id": "Q031",
+    "question_text": "What are design patterns? Name and explain one commonly used in backend development.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A031",
+        "answer_quality": "High",
+        "answer_text": "Design patterns are typical solutions to common problems in software design. One example is the Singleton pattern, which ensures a class has only one instance and provides a global point of access to it. This is useful for managing shared resources like configuration settings or database connections."
+      }
+    ]
+  },
+  {
+    "question_id": "Q032",
+    "question_text": "Explain what a NoSQL database is and provide examples.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Database Administrator"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A032",
+        "answer_quality": "High",
+        "answer_text": "NoSQL databases are non-relational data storage systems that allow for flexible data models, including document, key-value, wide-column, and graph formats. They are designed for scalability and handling large volumes of data. Examples include MongoDB (document store), Redis (key-value store), and Cassandra (wide-column store)."
+      }
+    ]
+  },
+  {
+    "question_id": "Q033",
+    "question_text": "What is rate limiting, and why is it important in API development?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "API Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A033",
+        "answer_quality": "High",
+        "answer_text": "Rate limiting controls the number of requests a client can make to an API within a certain time frame. It's important for preventing abuse, ensuring fair resource usage, protecting against DDoS attacks, and maintaining the quality of service."
+      }
+    ]
+  },
+  {
+    "question_id": "Q034",
+    "question_text": "Describe how you would handle file uploads in a web application.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Full Stack Developer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A034",
+        "answer_quality": "High",
+        "answer_text": "File uploads can be handled by setting up an endpoint that accepts multipart/form-data. The server processes the uploaded file, validates it, and stores it securely, possibly in cloud storage like AWS S3. Security measures like limiting file size, validating file types, and scanning for malware are essential."
+      }
+    ]
+  },
+  {
+    "question_id": "Q035",
+    "question_text": "What is serverless architecture, and what are its benefits?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Cloud Engineer"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A035",
+        "answer_quality": "High",
+        "answer_text": "Serverless architecture allows developers to build and run applications without managing the underlying infrastructure. Functions are executed in response to events, and resources scale automatically. Benefits include reduced operational overhead, cost-efficiency, and scalability."
+      }
+    ]
+  },
+  {
+    "question_id": "Q036",
+    "question_text": "Explain the purpose of the MVC (Model-View-Controller) pattern in backend development.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A036",
+        "answer_quality": "High",
+        "answer_text": "The MVC pattern separates an application into three main components: Model (data and business logic), View (user interface), and Controller (handles input and updates Model and View). This separation improves modularity, makes the code more organized, and facilitates parallel development."
+      }
+    ]
+  },
+  {
+    "question_id": "Q037",
+    "question_text": "What are JWTs (JSON Web Tokens), and how are they used for authentication?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Security Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A037",
+        "answer_quality": "High",
+        "answer_text": "JWTs are an open standard for securely transmitting information as a JSON object. They are used for authentication by encoding user identity and claims, signed with a secret key or public/private key pair. Clients include the JWT in headers for each request, and the server verifies it to authenticate the user."
+      }
+    ]
+  },
+  {
+    "question_id": "Q038",
+    "question_text": "Describe how you would optimize database queries.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Database Administrator"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A038",
+        "answer_quality": "High",
+        "answer_text": "Optimizing database queries involves analyzing query execution plans, adding appropriate indexes, avoiding unnecessary columns in SELECT statements, reducing JOINs where possible, and denormalizing data if it improves performance. Caching frequent queries and partitioning large tables can also help."
+      }
+    ]
+  },
+  {
+    "question_id": "Q039",
+    "question_text": "What is a deadlock, and how do you prevent it?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Systems Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A039",
+        "answer_quality": "High",
+        "answer_text": "A deadlock occurs when two or more processes are blocked forever, each waiting for the other to release a resource. Preventing deadlocks involves avoiding circular wait conditions by imposing an ordering on resource acquisition, using timeouts, or implementing deadlock detection algorithms to recover from deadlocks."
+      }
+    ]
+  },
+  {
+    "question_id": "Q040",
+    "question_text": "Explain the concept of eventual consistency in distributed systems.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Systems Engineer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A040",
+        "answer_quality": "High",
+        "answer_text": "Eventual consistency is a consistency model used in distributed systems where updates to a data item will eventually propagate to all nodes, and all accesses will return the last updated value if no new updates are made. It's a trade-off to achieve higher availability and partition tolerance."
+      }
+    ]
+  },
+  {
+    "question_id": "Q041",
+    "question_text": "What is middleware in web development, and how is it used?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "API Developer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A041",
+        "answer_quality": "High",
+        "answer_text": "Middleware is software that lies between the client and server, acting as a bridge in web development. It processes incoming requests before they reach the application logic, handling tasks like authentication, logging, request parsing, and error handling."
+      }
+    ]
+  },
+  {
+    "question_id": "Q042",
+    "question_text": "How do you ensure the security of a backend application?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Security Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A042",
+        "answer_quality": "High",
+        "answer_text": "Ensuring security involves implementing authentication and authorization, input validation, encrypting sensitive data, using parameterized queries to prevent SQL injection, securing APIs, keeping software updated, and following security best practices and compliance standards."
+      }
+    ]
+  },
+  {
+    "question_id": "Q043",
+    "question_text": "What is gRPC, and how does it differ from REST?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "API Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A043",
+        "answer_quality": "High",
+        "answer_text": "gRPC is a high-performance, open-source RPC framework developed by Google. It uses Protocol Buffers for serialization and supports bi-directional streaming. Unlike REST, which uses text-based formats like JSON over HTTP, gRPC uses binary data over HTTP/2, offering better performance and efficiency."
+      }
+    ]
+  },
+  {
+    "question_id": "Q044",
+    "question_text": "Explain the importance of idempotency in RESTful APIs.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "API Developer"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A044",
+        "answer_quality": "High",
+        "answer_text": "Idempotency means that making multiple identical requests has the same effect as making a single request. In RESTful APIs, it's important for safe retries and ensuring consistent behavior, particularly for HTTP methods like PUT and DELETE, which should be idempotent."
+      }
+    ]
+  },
+  {
+    "question_id": "Q045",
+    "question_text": "What is the purpose of version control systems in backend development?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "DevOps Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A045",
+        "answer_quality": "High",
+        "answer_text": "Version control systems like Git track changes to code over time, allowing developers to collaborate, revert to previous versions, and manage code branches effectively. They are essential for coordinating work in teams, maintaining code history, and facilitating continuous integration and deployment."
+      }
+    ]
+  },
+  {
+    "question_id": "Q046",
+    "question_text": "Describe the use of Redis in backend applications.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Database Administrator"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A046",
+        "answer_quality": "High",
+        "answer_text": "Redis is an in-memory data structure store used as a database, cache, and message broker. In backend applications, it's used for caching frequently accessed data, session storage, real-time analytics, and implementing pub/sub messaging patterns to improve performance and scalability."
+      }
+    ]
+  },
+  {
+    "question_id": "Q047",
+    "question_text": "What is continuous integration and continuous deployment (CI/CD), and why is it important?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "DevOps Engineer"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A047",
+        "answer_quality": "High",
+        "answer_text": "CI/CD are practices that automate the integration and deployment of code changes. Continuous Integration involves frequent code integration and automated testing to detect issues early. Continuous Deployment automates the release process to production, enabling faster and more reliable software delivery."
+      }
+    ]
+  },
+  {
+    "question_id": "Q048",
+    "question_text": "Explain the concept of data partitioning and sharding in databases.",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Database Administrator"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A048",
+        "answer_quality": "High",
+        "answer_text": "Data partitioning, or sharding, involves dividing a database into smaller, more manageable pieces, called shards, distributed across multiple servers. This improves performance, scalability, and availability by distributing the load and enabling parallel processing."
+      }
+    ]
+  },
+  {
+    "question_id": "Q049",
+    "question_text": "What is the difference between SOAP and REST APIs?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "API Developer"],
+    "industries": ["Tech", "Government"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A049",
+        "answer_quality": "High",
+        "answer_text": "SOAP is a protocol that uses XML for message format and relies on WS-* standards, offering strict contracts and built-in error handling. REST is an architectural style that uses standard HTTP methods and supports multiple formats like JSON and XML. REST is generally simpler, more flexible, and better suited for web applications."
+      }
+    ]
+  },
+  {
+    "question_id": "Q050",
+    "question_text": "How do you implement pagination in an API?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "API Developer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A050",
+        "answer_quality": "High",
+        "answer_text": "Pagination can be implemented using query parameters like page number and page size. The API returns a subset of results based on these parameters. Techniques include offset-based pagination, where you skip a number of records, or cursor-based pagination, which uses a pointer to the last item fetched."
+      }
+    ]
+  }
+]

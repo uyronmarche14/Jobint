@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "480106939932",
+    "firebase_url": "https://jobinthelper-default-rtdb.firebaseio.com",
+    "project_id": "jobinthelper",
+    "storage_bucket": "jobinthelper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480106939932:android:797a1c8935bb8a03fbc1d9",
+        "android_client_info": {
+          "package_name": "com.anonymous.JOBINTHELPERR"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASp-KbH6OfDiFmGO2GnuaMjF0VBVo1--I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

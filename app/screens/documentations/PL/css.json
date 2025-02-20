@@ -1,0 +1,330 @@
+{
+  "languages": {
+    "CSS": {
+      "topics": [
+        {
+          "title": "Introduction to CSS",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. It controls the layout of multiple web pages all at once.",
+          "example": "/* Basic CSS syntax */\nh1 {\n  color: blue;\n  font-size: 24px;\n}"
+        },
+        {
+          "title": "Selectors",
+          "level": "Beginner",
+          "type": "Selectors",
+          "description": "Selectors are patterns used to select the elements you want to style. Common selectors include element, class, and ID selectors.",
+          "example": "/* Element selector */\np {\n  color: green;\n}\n\n/* Class selector */\n.class-name {\n  background-color: yellow;\n}\n\n/* ID selector */\n#unique-id {\n  border: 1px solid black;\n}"
+        },
+        {
+          "title": "Colors",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "CSS supports various ways to specify colors: named colors, HEX codes, RGB, RGBA, HSL, and HSLA.",
+          "example": "/* Named color */\nh1 {\n  color: red;\n}\n\n/* HEX color */\np {\n  color: #00ff00;\n}\n\n/* RGB color */\ndiv {\n  background-color: rgb(0, 0, 255);\n}\n\n/* RGBA color */\nspan {\n  color: rgba(255, 0, 0, 0.5);\n}"
+        },
+        {
+          "title": "Fonts and Text",
+          "level": "Beginner",
+          "type": "Text Formatting",
+          "description": "CSS allows you to style text using properties like `font-family`, `font-size`, `font-weight`, `text-align`, `text-decoration`, and more.",
+          "example": "p {\n  font-family: Arial, sans-serif;\n  font-size: 16px;\n  font-weight: bold;\n  text-align: center;\n  text-decoration: underline;\n}"
+        },
+        {
+          "title": "The Box Model",
+          "level": "Beginner",
+          "type": "Layout",
+          "description": "Every element in CSS is a rectangular box. The box model describes the size of these boxes and includes content, padding, border, and margin.",
+          "example": "div {\n  width: 200px;\n  padding: 10px;\n  border: 2px solid black;\n  margin: 15px;\n}"
+        },
+        {
+          "title": "Margin and Padding",
+          "level": "Beginner",
+          "type": "Layout",
+          "description": "Margins create space around elements, outside of any defined borders. Padding creates space around an element's content, inside of any defined borders.",
+          "example": "/* Margin example */\n.container {\n  margin-top: 20px;\n  margin-bottom: 20px;\n}\n\n/* Padding example */\n.content {\n  padding-left: 15px;\n  padding-right: 15px;\n}"
+        },
+        {
+          "title": "Backgrounds",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "CSS allows you to set background properties like `background-color`, `background-image`, `background-repeat`, and `background-size`.",
+          "example": "body {\n  background-color: #f0f0f0;\n  background-image: url('background.jpg');\n  background-repeat: no-repeat;\n  background-size: cover;\n}"
+        },
+        {
+          "title": "Borders",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "You can define borders around elements using properties like `border`, `border-width`, `border-style`, and `border-color`.",
+          "example": "img {\n  border: 5px solid #ccc;\n  border-radius: 10px;\n}"
+        },
+        {
+          "title": "Display Property",
+          "level": "Beginner",
+          "type": "Layout",
+          "description": "The `display` property specifies if/how an element is displayed. Common values are `block`, `inline`, `inline-block`, and `none`.",
+          "example": "/* Display examples */\n.block-element {\n  display: block;\n}\n\n.inline-element {\n  display: inline;\n}\n\n.hidden-element {\n  display: none;\n}"
+        },
+        {
+          "title": "Positioning",
+          "level": "Intermediate",
+          "type": "Layout",
+          "description": "CSS positioning allows you to position elements using properties like `position`, `top`, `bottom`, `left`, and `right`. Values for `position` include `static`, `relative`, `absolute`, `fixed`, and `sticky`.",
+          "example": "/* Relative positioning */\n.relative-box {\n  position: relative;\n  top: 20px;\n  left: 10px;\n}\n\n/* Absolute positioning */\n.absolute-box {\n  position: absolute;\n  top: 50px;\n  right: 0;\n}"
+        },
+        {
+          "title": "Floating Elements",
+          "level": "Intermediate",
+          "type": "Layout",
+          "description": "The `float` property is used to float elements to the left or right, allowing text and inline elements to wrap around it.",
+          "example": "img {\n  float: left;\n  margin-right: 10px;\n}\n\np {\n  overflow: hidden; /* To clear floats */\n}"
+        },
+        {
+          "title": "Flexbox",
+          "level": "Intermediate",
+          "type": "Layout",
+          "description": "Flexbox is a layout mode designed to accommodate different screen sizes and display devices. It makes it easier to design flexible responsive layout structures.",
+          "example": "/* Flex container */\n.container {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n}\n\n/* Flex items */\n.item {\n  flex: 1;\n  margin: 5px;\n}"
+        },
+        {
+          "title": "Grid Layout",
+          "level": "Intermediate",
+          "type": "Layout",
+          "description": "CSS Grid Layout provides a two-dimensional grid-based layout system, optimized for user interface design.",
+          "example": "/* Grid container */\n.grid-container {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-gap: 10px;\n}\n\n/* Grid items */\n.grid-item {\n  background-color: #ccc;\n  padding: 20px;\n}"
+        },
+        {
+          "title": "Media Queries",
+          "level": "Intermediate",
+          "type": "Responsive Design",
+          "description": "Media queries are used to apply different styles for different media types/devices, enabling responsive design.",
+          "example": "@media screen and (max-width: 600px) {\n  body {\n    background-color: lightblue;\n  }\n}\n\n@media screen and (min-width: 601px) {\n  body {\n    background-color: lightgreen;\n  }\n}"
+        },
+        {
+          "title": "Pseudo-classes and Pseudo-elements",
+          "level": "Intermediate",
+          "type": "Selectors",
+          "description": "Pseudo-classes and pseudo-elements allow you to style elements based on their state or to select parts of elements.",
+          "example": "/* Pseudo-classes */\na:hover {\n  color: red;\n}\n\n/* Pseudo-elements */\np::first-letter {\n  font-size: 2em;\n  color: blue;\n}"
+        },
+        {
+          "title": "Transitions",
+          "level": "Intermediate",
+          "type": "Animations",
+          "description": "CSS transitions allow you to change property values smoothly over a given duration.",
+          "example": "button {\n  background-color: blue;\n  transition: background-color 0.5s;\n}\n\nbutton:hover {\n  background-color: green;\n}"
+        },
+        {
+          "title": "Transforms",
+          "level": "Intermediate",
+          "type": "Animations",
+          "description": "CSS transforms allow you to rotate, scale, skew, or translate an element.",
+          "example": "div {\n  transform: rotate(45deg);\n}\n\nimg:hover {\n  transform: scale(1.2);\n}"
+        },
+        {
+          "title": "Animations",
+          "level": "Intermediate",
+          "type": "Animations",
+          "description": "CSS animations allow you to animate the values of CSS properties over time using keyframes.",
+          "example": "@keyframes slidein {\n  from {\n    margin-left: 100%;\n    width: 300%;\n  }\n  to {\n    margin-left: 0%;\n    width: 100%;\n  }\n}\n\ndiv {\n  animation: slidein 3s;\n}"
+        },
+        {
+          "title": "Variables (Custom Properties)",
+          "level": "Intermediate",
+          "type": "Basics",
+          "description": "CSS variables (custom properties) allow you to store values that can be reused throughout your stylesheet.",
+          "example": "/* Defining variables */\n:root {\n  --main-color: #3498db;\n  --padding: 10px;\n}\n\n/* Using variables */\ndiv {\n  background-color: var(--main-color);\n  padding: var(--padding);\n}"
+        },
+        {
+          "title": "Responsive Design",
+          "level": "Intermediate",
+          "type": "Responsive Design",
+          "description": "Responsive design ensures that web pages look good on all devices. Techniques include flexible grids, images, and media queries.",
+          "example": "/* Responsive image */\nimg {\n  max-width: 100%;\n  height: auto;\n}\n\n/* Responsive grid */\n@media screen and (max-width: 600px) {\n  .column {\n    width: 100%;\n  }\n}\n\n@media screen and (min-width: 601px) {\n  .column {\n    width: 50%;\n  }\n}"
+        },
+        {
+          "title": "Specificity and Inheritance",
+          "level": "Intermediate",
+          "type": "Basics",
+          "description": "Specificity determines which CSS rule is applied when multiple rules target the same element. Inheritance allows properties to be passed from parent to child elements.",
+          "example": "/* Specificity example */\n/* Inline styles have highest specificity */\n\n/* IDs override classes and elements */\n#unique {\n  color: red;\n}\n\n/* Classes override elements */\n.class-name {\n  color: blue;\n}\n\n/* Elements have lowest specificity */\np {\n  color: green;\n}"
+        },
+        {
+          "title": "CSS Resets and Normalization",
+          "level": "Intermediate",
+          "type": "Best Practices",
+          "description": "CSS resets and normalization help to reduce browser inconsistencies by providing a consistent baseline for styling.",
+          "example": "/* CSS Reset example */\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n/* Normalize.css is a popular CSS normalization library */"
+        },
+        {
+          "title": "SASS and SCSS",
+          "level": "Advanced",
+          "type": "Preprocessors",
+          "description": "SASS (Syntactically Awesome Style Sheets) is a CSS preprocessor that adds features like variables, nesting, mixins, and inheritance.",
+          "example": "/* SCSS syntax */\n$primary-color: #333;\n\nbody {\n  font: 100% $primary-color;\n  nav {\n    ul {\n      margin: 0;\n      padding: 0;\n      list-style: none;\n    }\n  }\n}"
+        },
+        {
+          "title": "CSS Methodologies (BEM, OOCSS, SMACSS)",
+          "level": "Advanced",
+          "type": "Best Practices",
+          "description": "CSS methodologies provide guidelines for writing maintainable and scalable CSS. BEM (Block Element Modifier) is a popular naming convention.",
+          "example": "/* BEM naming convention */\n.block {\n  /* Styles for the block */\n}\n\n.block__element {\n  /* Styles for elements within the block */\n}\n\n.block--modifier {\n  /* Styles for modified versions of the block */\n}"
+        },
+        {
+          "title": "CSS Frameworks (Bootstrap, Tailwind)",
+          "level": "Advanced",
+          "type": "Frameworks",
+          "description": "CSS frameworks provide pre-written CSS to help you quickly build responsive and modern websites.",
+          "example": "<!-- Using Bootstrap -->\n<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\">\n\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-6\">\n      <h1>Hello, world!</h1>\n    </div>\n  </div>\n</div>"
+        },
+        {
+          "title": "Advanced Selectors",
+          "level": "Advanced",
+          "type": "Selectors",
+          "description": "Advanced selectors include attribute selectors, combinators, and pseudo-classes like `:nth-child`, `:not`, and more.",
+          "example": "/* Attribute selector */\ninput[type=\"text\"] {\n  border: 1px solid #ccc;\n}\n\n/* Adjacent sibling combinator */\nh1 + p {\n  color: gray;\n}\n\n/* :nth-child pseudo-class */\nli:nth-child(odd) {\n  background-color: #f0f0f0;\n}"
+        },
+        {
+          "title": "SVG Styling",
+          "level": "Advanced",
+          "type": "Graphics",
+          "description": "CSS can be used to style SVG elements, allowing for scalable vector graphics to be styled like HTML elements.",
+          "example": "/* Styling SVG */\nsvg {\n  width: 100px;\n  height: 100px;\n}\n\nsvg circle {\n  fill: red;\n  stroke: black;\n  stroke-width: 2;\n}"
+        },
+        {
+          "title": "Responsive Typography",
+          "level": "Advanced",
+          "type": "Responsive Design",
+          "description": "Responsive typography scales font sizes and line heights to improve readability across devices.",
+          "example": "body {\n  font-size: calc(16px + 0.5vw);\n}\n\nh1 {\n  font-size: calc(24px + 1vw);\n}"
+        },
+        {
+          "title": "CSS Grid Advanced Features",
+          "level": "Advanced",
+          "type": "Layout",
+          "description": "Advanced CSS Grid techniques include named grid areas, auto-placement, and alignment.",
+          "example": "/* Named grid areas */\n.grid-container {\n  display: grid;\n  grid-template-areas:\n    'header header'\n    'nav main'\n    'footer footer';\n}\n\n.header {\n  grid-area: header;\n}\n\n.nav {\n  grid-area: nav;\n}\n\n.main {\n  grid-area: main;\n}"
+        },
+        {
+          "title": "CSS Custom Fonts",
+          "level": "Intermediate",
+          "type": "Fonts",
+          "description": "You can include custom fonts using the `@font-face` rule, allowing you to use fonts not installed on the user's system.",
+          "example": "@font-face {\n  font-family: 'OpenSans';\n  src: url('fonts/OpenSans-Regular.ttf');\n}\n\nbody {\n  font-family: 'OpenSans', sans-serif;\n}"
+        },
+        {
+          "title": "CSS Shorthand Properties",
+          "level": "Intermediate",
+          "type": "Basics",
+          "description": "Shorthand properties allow you to write more concise CSS by combining multiple properties into one.",
+          "example": "/* Margin shorthand */\ndiv {\n  margin: 10px 20px 15px 5px; /* top right bottom left */\n}\n\n/* Background shorthand */\nbody {\n  background: #fff url('bg.jpg') no-repeat center center / cover;\n}"
+        },
+        {
+          "title": "Combinators",
+          "level": "Intermediate",
+          "type": "Selectors",
+          "description": "Combinators combine selectors to target elements based on their relationship in the HTML structure. Types include descendant, child, adjacent sibling, and general sibling.",
+          "example": "/* Descendant combinator */\nul li {\n  /* Styles for all li elements inside a ul */\n}\n\n/* Child combinator */\nul > li {\n  /* Styles for direct children li of ul */\n}\n\n/* Adjacent sibling combinator */\nh2 + p {\n  /* Styles for p immediately following h2 */\n}\n\n/* General sibling combinator */\nh2 ~ p {\n  /* Styles for all p following h2 */\n}"
+        },
+        {
+          "title": "CSS Functions",
+          "level": "Advanced",
+          "type": "Basics",
+          "description": "CSS functions like `calc()`, `var()`, `url()`, `attr()` allow for dynamic values in CSS properties.",
+          "example": "/* Using calc() */\ndiv {\n  width: calc(100% - 50px);\n}\n\n/* Using attr() */\na::after {\n  content: ' (' attr(href) ')';\n}"
+        },
+        {
+          "title": "Filters",
+          "level": "Advanced",
+          "type": "Graphics",
+          "description": "CSS filters allow you to apply visual effects like blur, grayscale, or brightness to elements.",
+          "example": "img {\n  filter: grayscale(100%);\n}\n\nimg:hover {\n  filter: none;\n}"
+        },
+        {
+          "title": "Clip Path",
+          "level": "Advanced",
+          "type": "Graphics",
+          "description": "The `clip-path` property allows you to create complex shapes by clipping an element to a basic or complex shape.",
+          "example": "img {\n  clip-path: circle(50% at 50% 50%);\n}\n\ndiv {\n  clip-path: polygon(0 0, 100% 0, 50% 100%);\n}"
+        },
+        {
+          "title": "Object Fit and Position",
+          "level": "Intermediate",
+          "type": "Layout",
+          "description": "`object-fit` and `object-position` control how replaced elements like images or videos fit into their container.",
+          "example": "img {\n  width: 100%;\n  height: 300px;\n  object-fit: cover;\n  object-position: center;\n}"
+        },
+        {
+          "title": "Counters",
+          "level": "Advanced",
+          "type": "Content Generation",
+          "description": "CSS counters allow you to create and manipulate counters, which can be used for automatic numbering.",
+          "example": "body {\n  counter-reset: section;\n}\nh2::before {\n  counter-increment: section;\n  content: 'Section ' counter(section) ': ';\n}"
+        },
+        {
+          "title": "CSS Scroll Snap",
+          "level": "Advanced",
+          "type": "Layout",
+          "description": "CSS Scroll Snap allows for smooth scrolling experiences by defining points where the scroll should stop.",
+          "example": "/* Scroll snap container */\n.container {\n  scroll-snap-type: y mandatory;\n  overflow-y: scroll;\n  height: 100vh;\n}\n\n/* Scroll snap child */\n.section {\n  scroll-snap-align: start;\n  height: 100vh;\n}"
+        },
+        {
+          "title": "Multi-column Layout",
+          "level": "Intermediate",
+          "type": "Layout",
+          "description": "CSS multi-column layout allows content to flow into multiple columns, similar to newspaper layouts.",
+          "example": "p {\n  column-count: 3;\n  column-gap: 20px;\n}"
+        },
+        {
+          "title": "CSS Masks",
+          "level": "Advanced",
+          "type": "Graphics",
+          "description": "CSS masking allows you to partially or fully hide elements using images or gradients as masks.",
+          "example": "div {\n  mask-image: url('mask.png');\n  mask-size: cover;\n}"
+        },
+        {
+          "title": "CSS Writing Modes",
+          "level": "Advanced",
+          "type": "Internationalization",
+          "description": "The `writing-mode` property defines whether lines of text are laid out horizontally or vertically and the direction in which blocks progress.",
+          "example": "p {\n  writing-mode: vertical-rl;\n}"
+        },
+        {
+          "title": "Content Property",
+          "level": "Intermediate",
+          "type": "Content Generation",
+          "description": "The `content` property is used with pseudo-elements like `::before` and `::after` to insert generated content.",
+          "example": "a::after {\n  content: ' ↗';\n}\n\nblockquote::before {\n  content: '“';\n}\n\nblockquote::after {\n  content: '”';\n}"
+        },
+        {
+          "title": "Blend Modes",
+          "level": "Advanced",
+          "type": "Graphics",
+          "description": "CSS blend modes allow you to specify how an element's content should blend with its background.",
+          "example": "div {\n  background-image: url('image.jpg');\n  background-blend-mode: multiply;\n}\n\nimg {\n  mix-blend-mode: screen;\n}"
+        },
+        {
+          "title": "Vendor Prefixes",
+          "level": "Intermediate",
+          "type": "Best Practices",
+          "description": "Vendor prefixes are used to add support for new CSS features before they are fully supported across all browsers.",
+          "example": "/* Vendor prefixes example */\ndiv {\n  -webkit-border-radius: 10px;\n  -moz-border-radius: 10px;\n  border-radius: 10px;\n}"
+        },
+        {
+          "title": "CSS Functions: Gradients",
+          "level": "Intermediate",
+          "type": "Graphics",
+          "description": "CSS gradients allow you to display smooth transitions between two or more specified colors.",
+          "example": "/* Linear gradient */\nbody {\n  background: linear-gradient(to right, red, yellow);\n}\n\n/* Radial gradient */\ndiv {\n  background: radial-gradient(circle, red, yellow, green);\n}"
+        },
+        {
+          "title": "Responsive Units (vh, vw, rem, em)",
+          "level": "Intermediate",
+          "type": "Responsive Design",
+          "description": "Responsive units like `vh`, `vw`, `rem`, and `em` help create flexible layouts that adapt to different screen sizes.",
+          "example": "/* Using vh and vw */\nheader {\n  height: 10vh; /* 10% of viewport height */\n}\n\n/* Using rem and em */\nbody {\n  font-size: 16px;\n}\nh1 {\n  font-size: 2em; /* 32px */\n}\np {\n  font-size: 1rem; /* 16px */\n}"
+        }
+      ]
+    }
+  }
+}

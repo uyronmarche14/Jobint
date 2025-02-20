@@ -1,0 +1,452 @@
+[
+  {
+    "question_id": "Q001",
+    "question_text": "Differentiate between Blockchain and Hyperledger.",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer", "Blockchain Architect"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A001",
+        "answer_quality": "High",
+        "answer_text": "Blockchain is a decentralized technology consisting of immutable records called blocks, which are secured using cryptography. It allows for the creation of public and private blockchains. Hyperledger, on the other hand, is a platform or an umbrella project of open-source blockchains and related tools, primarily focused on developing private and permissioned blockchains for enterprise use.\n\nWhile blockchain technology can be applied in various fields such as business, government, and healthcare, Hyperledger is specifically designed for enterprise-based solutions. Public blockchains are accessible over the internet, whereas Hyperledger-based solutions are meant for use within an organization's intranet, providing controlled access to blockchain data limited to predefined users and configurations."
+      }
+    ]
+  },
+  {
+    "question_id": "Q002",
+    "question_text": "How do you explain Blockchain technology to someone who doesn't know it?",
+    "question_type": "Technical",
+    "roles": ["Blockchain Consultant", "Blockchain Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A002",
+        "answer_quality": "High",
+        "answer_text": "Blockchain technology is like a digital ledger that records transactions in a secure and transparent way. Imagine a school's report card system where each student's record is a block that contains their grades and a timestamp of when the record was entered. Neither the teacher nor the student can modify the details once recorded, ensuring the data's integrity. The teacher holds a private key to add new records, while students have a public key to view their report cards at any time. This system uses cryptography to secure the records, making the data safe and immutable."
+      }
+    ]
+  },
+  {
+    "question_id": "Q003",
+    "question_text": "What is a Merkle Tree?",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A003",
+        "answer_quality": "High",
+        "answer_text": "A Merkle Tree is a data structure used in blockchain technology to efficiently summarize and verify the integrity of large sets of transactional data. It's structured like a binary tree where each leaf node represents a hash of a block of transaction data, and each non-leaf node is a hash of its child nodes. The topmost node is known as the Merkle Root or Hash Root, which encompasses all the underlying transactions. This allows for quick and secure verification of data integrity within a block."
+      }
+    ]
+  },
+  {
+    "question_id": "Q004",
+    "question_text": "What do you mean by blocks in Blockchain technology?",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A004",
+        "answer_quality": "High",
+        "answer_text": "In blockchain technology, a block is a record of new transactions that are added to the blockchain. Each block contains several components: the hash of the previous block, transaction data, a nonce (a random number used for mining), and the block's own hash value. Blocks are linked together in a chronological chain, and once data is recorded in a block, it cannot be altered retroactively without altering all subsequent blocks, ensuring data integrity."
+      }
+    ]
+  },
+  {
+    "question_id": "Q005",
+    "question_text": "How is Blockchain distributed ledger different from a traditional ledger?",
+    "question_type": "Technical",
+    "roles": ["Blockchain Consultant", "Blockchain Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A005",
+        "answer_quality": "High",
+        "answer_text": "A blockchain distributed ledger differs from a traditional ledger in several key ways:\n\n- **Transparency**: Blockchain ledgers are highly transparent; all participants can view transactions, whereas traditional ledgers are often private.\n- **Immutability**: Transactions on a blockchain are irreversible and cannot be altered, while traditional ledger entries can be modified.\n- **Security**: Blockchain uses cryptographic techniques to secure data, making it tamper-resistant, whereas traditional ledgers are more susceptible to fraud.\n- **Decentralization**: Blockchain operates on a decentralized network without a central authority, whereas traditional ledgers are controlled centrally.\n- **Anonymity**: Participants in a blockchain can remain anonymous, while traditional ledgers require known identities.\n- **Single Point of Failure**: Blockchain's distributed nature eliminates a single point of failure, unlike centralized traditional ledgers.\n- **Validation**: Transactions on a blockchain are validated by network participants, whereas traditional ledgers rely on a central authority for validation.\n- **Data Sharing**: In blockchain, the ledger is shared among participants, whereas in traditional systems, it's often kept in a single location."
+      }
+    ]
+  },
+  {
+    "question_id": "Q006",
+    "question_text": "How can you identify a block?",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A006",
+        "answer_quality": "High",
+        "answer_text": "A block in a blockchain can be identified by its unique hash address, which is a 64-character hexadecimal value containing both letters and digits. This hash is generated using the SHA-256 algorithm and serves as the digital fingerprint of the block. Each block contains the following:\n\n- **Hash of the Previous Block**: Linking it to the chain.\n- **Transaction Data**: Details of the transactions included in the block.\n- **Nonce**: A random number used during the mining process to find a valid hash.\n- **Hash of the Block Itself**: The unique identifier generated from the block's data."
+      }
+    ]
+  },
+  {
+    "question_id": "Q007",
+    "question_text": "What is cryptography? What is its role in Blockchain?",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer", "Security Analyst"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A007",
+        "answer_quality": "High",
+        "answer_text": "Cryptography is the practice of secure communication through the use of codes and ciphers, ensuring that only intended recipients can read and process the data. In blockchain, cryptography secures users' identities and transactions by employing public and private keys. Public keys can be shared openly and are used to receive transactions, while private keys are kept secret and used to sign transactions. Blockchain utilizes cryptographic hash functions like SHA-256 to ensure data integrity and create unique digital signatures for blocks, making the blockchain secure and tamper-resistant."
+      }
+    ]
+  },
+  {
+    "question_id": "Q008",
+    "question_text": "What are the different types of Blockchain?",
+    "question_type": "Technical",
+    "roles": ["Blockchain Consultant", "Blockchain Developer"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A008",
+        "answer_quality": "High",
+        "answer_text": "The three main types of blockchain are:\n\n1. **Public Blockchain**: Open to anyone to participate and validate transactions, with all records visible to the public. Examples include Bitcoin and Ethereum.\n\n2. **Private Blockchain**: Permissioned networks where access is restricted to specific users within an organization. Only authorized participants can validate transactions. An example is Blockstack.\n\n3. **Consortium Blockchain**: A hybrid model managed by a group of organizations, allowing selected nodes to participate in the consensus process. Records are visible to all consortium members. An example is Ripple."
+      }
+    ]
+  },
+  {
+    "question_id": "Q009",
+    "question_text": "What happens when you try to deploy a file with multiple contracts?",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer", "Smart Contract Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A009",
+        "answer_quality": "High",
+        "answer_text": "When deploying a file containing multiple contracts, the compiler will only deploy the last contract in the file by default. The other contracts will be compiled but not deployed unless explicitly specified. To deploy multiple contracts from a single file, you need to deploy each contract individually or set up your deployment script to handle multiple contracts."
+      }
+    ]
+  },
+  {
+    "question_id": "Q010",
+    "question_text": "What is a Genesis Block?",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A010",
+        "answer_quality": "High",
+        "answer_text": "A Genesis Block is the very first block in a blockchain network, also known as Block 0. It serves as the foundation of the blockchain and is unique because it does not reference a previous block. The Genesis Block defines the initial parameters of the blockchain, such as the level of difficulty and the consensus mechanism used for mining subsequent blocks."
+      }
+    ]
+  },
+  {
+    "question_id": "Q011",
+    "question_text": "How is the hash (Block signature) generated?",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer", "Security Analyst"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A011",
+        "answer_quality": "High",
+        "answer_text": "The hash, or block signature, is generated through a two-step process:\n\n1. **Hashing Transaction Data**: Transaction details are passed through a cryptographic hash function like SHA-256, producing a fixed-size hash value that uniquely represents the data.\n\n2. **Digital Signature**: This hash value is then encrypted using a digital signature algorithm, such as the Elliptic Curve Digital Signature Algorithm (ECDSA), with the miner's private key. The resulting encrypted hash, along with additional information like the hashing algorithm used, forms the digital signature of the block."
+      }
+    ]
+  },
+  {
+    "question_id": "Q012",
+    "question_text": "List down some of the extensively used cryptographic algorithms.",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer", "Security Analyst"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A012",
+        "answer_quality": "High",
+        "answer_text": "Some widely used cryptographic algorithms in blockchain and cybersecurity are:\n\n- **SHA-256 (Secure Hash Algorithm 256-bit)**\n- **RSA (Rivest-Shamir-Adleman)**\n- **Triple DES (Data Encryption Standard)**\n- **Ethash**\n- **Blowfish**"
+      }
+    ]
+  },
+  {
+    "question_id": "Q013",
+    "question_text": "What is a smart contract and list some of its applications?",
+    "question_type": "Technical",
+    "roles": ["Smart Contract Developer", "Blockchain Developer"],
+    "industries": ["Tech", "Finance", "Logistics"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A013",
+        "answer_quality": "High",
+        "answer_text": "A smart contract is a self-executing contract with the terms of the agreement directly written into code. It automatically enforces and executes the terms when predetermined conditions are met.\n\nApplications of smart contracts include:\n\n- **Transportation**: Tracking shipments and automating logistics processes.\n- **Intellectual Property**: Protecting ownership rights for music, books, and other creative works.\n- **Insurance**: Automating claim processing and preventing fraudulent claims.\n- **Employment Contracts**: Facilitating automatic wage payments based on predefined conditions."
+      }
+    ]
+  },
+  {
+    "question_id": "Q014",
+    "question_text": "What is the Ethereum network and how many Ethereum networks are you familiar with?",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer", "Smart Contract Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A014",
+        "answer_quality": "High",
+        "answer_text": "Ethereum is a decentralized, open-source blockchain platform featuring smart contract functionality. It enables developers to build and deploy decentralized applications (DApps).\n\nThere are three types of Ethereum networks:\n\n1. **Main Network (Live Network)**: The primary Ethereum blockchain where real transactions occur and smart contracts are deployed for public use.\n\n2. **Test Networks (Testnets)**: Networks like Ropsten, Kovan, and Rinkeby used for testing smart contracts without real monetary value. They allow developers to experiment and debug before deploying to the main network.\n\n3. **Private Networks**: Networks that are not connected to the main Ethereum network, running within an organization's premises. They are used for internal testing and development with Ethereum features."
+      }
+    ]
+  },
+  {
+    "question_id": "Q015",
+    "question_text": "Where do nodes run a smart contract code?",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer", "Smart Contract Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A015",
+        "answer_quality": "High",
+        "answer_text": "Nodes run smart contract code on the Ethereum Virtual Machine (EVM), which is a runtime environment for executing smart contracts on the Ethereum network. The EVM operates in a sandboxed environment, isolated from the main network, providing a secure space to test and execute smart contracts before deploying them to the live blockchain."
+      }
+    ]
+  },
+  {
+    "question_id": "Q016",
+    "question_text": "What is a DApp and how is it different from a normal application?",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer", "DApp Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A016",
+        "answer_quality": "High",
+        "answer_text": "A DApp, or decentralized application, is an application that runs on a blockchain network using smart contracts. The key differences between a DApp and a normal application are:\n\n- **Backend Code**: DApps have their backend code (smart contracts) running on a decentralized peer-to-peer network, while normal applications run their backend on centralized servers.\n- **Decentralization**: DApps operate without a central authority, enhancing transparency and security.\n- **Process Flow for DApps**:\n  - Front-end interface\n  - Smart Contract (backend code)\n  - Blockchain (peer-to-peer network)\n\n- **Process Flow for Normal Applications**:\n  - Front-end interface\n  - API calls\n  - Database (hosted on central servers)"
+      }
+    ]
+  },
+  {
+    "question_id": "Q017",
+    "question_text": "Name some leading open-source platforms for developing Blockchain applications.",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A017",
+        "answer_quality": "High",
+        "answer_text": "Some of the leading open-source platforms for developing blockchain applications are:\n\n- **Ethereum**: Popular for building decentralized applications and smart contracts.\n- **Hyperledger Fabric**: A permissioned blockchain framework for enterprise solutions.\n- **Eris Industries (now Monax)**: Used for building enterprise blockchain applications.\n- **Multichain**: An open-source platform for building private blockchains.\n- **OpenChain**: A platform for managing digital assets."
+      }
+    ]
+  },
+  {
+    "question_id": "Q018",
+    "question_text": "What is the very first thing you must specify in a Solidity file?",
+    "question_type": "Technical",
+    "roles": ["Smart Contract Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A018",
+        "answer_quality": "High",
+        "answer_text": "The very first thing you must specify in a Solidity file is the pragma directive, which declares the version of the Solidity compiler to be used. This is written as `pragma solidity ^0.x.x;` at the top of the file. Specifying the compiler version helps prevent incompatibility errors during compilation."
+      }
+    ]
+  },
+  {
+    "question_id": "Q019",
+    "question_text": "What is the difference between Bitcoin and Ethereum?",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer", "Blockchain Analyst"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A019",
+        "answer_quality": "High",
+        "answer_text": "**Bitcoin**:\n- Concept: Peer-to-peer digital currency.\n- Consensus Mechanism: Proof of Work (PoW).\n- Hashing Algorithm: SHA-256.\n- Block Mining Time: Approximately 10 minutes.\n- Block Reward: 12.5 BTC.\n- Transaction Fee: Optional.\n\n**Ethereum**:\n- Concept: Platform for smart contracts and decentralized applications (DApps).\n- Consensus Mechanism: Proof of Work (PoW) transitioning to Proof of Stake (PoS).\n- Hashing Algorithm: Ethash.\n- Block Mining Time: Approximately 12-15 seconds.\n- Block Reward: 3 ETH.\n- Transaction Fee: Calculated in 'Gas' and required for transactions."
+      }
+    ]
+  },
+  {
+    "question_id": "Q020",
+    "question_text": "What is the nonce and how is it used in mining?",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer", "Miner"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A020",
+        "answer_quality": "High",
+        "answer_text": "A nonce is a random or arbitrary number that is used only once in cryptographic communication. In blockchain mining, the nonce is a 32-bit field in a block header that miners adjust to create a hash value less than or equal to the target hash. Miners iterate over possible nonce values to solve the Proof of Work puzzle, and finding the correct nonce allows the miner to validate the block and receive the block reward."
+      }
+    ]
+  },
+  {
+    "question_id": "Q021",
+    "question_text": "Name the steps that are involved in the Blockchain project implementation.",
+    "question_type": "Technical",
+    "roles": ["Blockchain Project Manager", "Blockchain Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A021",
+        "answer_quality": "High",
+        "answer_text": "The steps involved in blockchain project implementation are:\n\n1. **Requirement Identification**:\n   - Define the problem and project goals.\n   - Determine the most suitable consensus mechanism.\n   - Select the appropriate blockchain platform.\n   - Estimate implementation and deployment costs.\n\n2. **Planning Stage**:\n   - Evaluate all requirements thoroughly.\n   - Design the architecture and user interface.\n   - Plan the development process.\n\n3. **Development and Implementation**:\n   - Build the blockchain network and smart contracts.\n   - Develop APIs and integrate with existing systems.\n   - Implement front-end and back-end components.\n\n4. **Testing and Deployment**:\n   - Apply Proof of Concept (PoC) to validate the project.\n   - Identify and fix issues through testing.\n   - Deploy the project to the production environment.\n\n5. **Control and Monitoring**:\n   - Monitor the network performance.\n   - Implement updates and maintenance as needed."
+      }
+    ]
+  },
+  {
+    "question_id": "Q022",
+    "question_text": "Explain a real-life use-case where Blockchain is being used.",
+    "question_type": "Technical",
+    "roles": ["Blockchain Consultant", "Blockchain Developer"],
+    "industries": ["Logistics", "Supply Chain"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A022",
+        "answer_quality": "High",
+        "answer_text": "In supply chain management, blockchain is used to provide transparency and traceability of goods as they move from manufacturers to consumers. By utilizing smart contracts, all transactions and movements are recorded immutably on the blockchain. This enables participants to track shipments in real-time, verify authenticity, reduce fraud, and improve efficiency by automating processes and reducing paperwork."
+      }
+    ]
+  },
+  {
+    "question_id": "Q023",
+    "question_text": "List and explain the parts of EVM memory.",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer", "Smart Contract Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A023",
+        "answer_quality": "High",
+        "answer_text": "The Ethereum Virtual Machine (EVM) memory is divided into three types:\n\n1. **Storage**:\n   - Persistent storage on the blockchain.\n   - Data stored here remains permanently and is accessible across function calls and transactions.\n   - It is expensive in terms of gas costs.\n\n2. **Memory**:\n   - Temporary and mutable storage used during contract execution.\n   - Data is lost after the execution completes.\n   - Used for storing variables and data needed only within a function call.\n\n3. **Stack**:\n   - Last-In-First-Out (LIFO) storage used for small data like operands during computation.\n   - Limited in size (usually 1024 items).\n   - Data is also lost after execution."
+      }
+    ]
+  },
+  {
+    "question_id": "Q024",
+    "question_text": "What happens if the execution of a smart contract costs more than the specified gas?",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer", "Smart Contract Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A024",
+        "answer_quality": "High",
+        "answer_text": "If the execution of a smart contract consumes more gas than specified in the transaction, the execution halts, and the transaction is recorded as failed on the blockchain. The state changes made during execution are reverted, but the gas spent is not refunded to the user. This is because miners have already performed the computation and must be compensated for their work."
+      }
+    ]
+  },
+  {
+    "question_id": "Q025",
+    "question_text": "What does the gas usage in a transaction depend on and how is the transaction fee calculated?",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer", "Smart Contract Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A025",
+        "answer_quality": "High",
+        "answer_text": "Gas usage in a transaction depends on the complexity of the smart contract code, including the amount of storage used and the computational steps required to execute the transaction. Each operation in Ethereum has an associated gas cost.\n\nThe transaction fee is calculated using the formula:\n\n**Transaction Fee (in Ether) = Gas Limit × Gas Price**\n\n- **Gas Limit**: The maximum amount of gas the user is willing to spend.\n- **Gas Price**: The amount of Ether the user is willing to pay per unit of gas (usually specified in Gwei).\n\nThe total fee incentivizes miners to include the transaction in a block."
+      }
+    ]
+  },
+  {
+    "question_id": "Q026",
+    "question_text": "What is a fork? What are some of the types of forking?",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer", "Blockchain Analyst"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A026",
+        "answer_quality": "High",
+        "answer_text": "A fork in blockchain is an update or change to the protocol or code that creates a divergence in the blockchain, resulting in two separate chains. Forks can occur due to disagreements among network participants or the need to implement new features.\n\nTypes of forks:\n\n1. **Hard Fork**:\n   - A significant change to the network protocol that is not backward-compatible.\n   - Requires all nodes to upgrade to the new protocol.\n   - Creates a permanent split from the old version.\n\n2. **Soft Fork**:\n   - A backward-compatible change to the protocol.\n   - Non-upgraded nodes can still participate but may have reduced functionality.\n   - No permanent split occurs if a majority of nodes adopt the new rules.\n\n3. **Accidental Fork**:\n   - Occurs when two miners find a block at nearly the same time.\n   - Temporary and resolved when subsequent blocks are added, and one chain becomes longer."
+      }
+    ]
+  },
+  {
+    "question_id": "Q027",
+    "question_text": "Differentiate between Proof of Work and Proof of Stake.",
+    "question_type": "Technical",
+    "roles": ["Blockchain Developer", "Blockchain Analyst"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A027",
+        "answer_quality": "High",
+        "answer_text": "**Proof of Work (PoW)**:\n- Miners solve complex mathematical puzzles using computational power.\n- The probability of mining a block depends on the amount of computational work done.\n- Energy-intensive and requires specialized hardware.\n\n**Proof of Stake (PoS)**:\n- Validators are chosen to create new blocks based on the amount of cryptocurrency they hold and are willing to 'stake' or lock up as collateral.\n- The probability of validating a block increases with the number of tokens held.\n- More energy-efficient and reduces the need for extensive hardware.\n\nPoS was developed to address the energy consumption and scalability issues associated with PoW."
+      }
+    ]
+  },
+  {
+    "question_id": "Q028",
+    "question_text": "What is a 51% attack?",
+    "question_type": "Technical",
+    "roles": ["Blockchain Security Analyst", "Blockchain Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A028",
+        "answer_quality": "High",
+        "answer_text": "A 51% attack refers to a situation where a single entity or group gains control of more than 50% of the network's mining hash rate or computational power. This allows the attacker to prevent new transactions from gaining confirmations, halt payments between users, reverse transactions, and potentially double-spend coins. Such attacks threaten the integrity of the blockchain and are more feasible on smaller cryptocurrencies with less network power."
+      }
+    ]
+  },
+  {
+    "question_id": "Q029",
+    "question_text": "What are function modifiers in Solidity? Mention the most widely used modifiers.",
+    "question_type": "Technical",
+    "roles": ["Smart Contract Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A029",
+        "answer_quality": "High",
+        "answer_text": "Function modifiers in Solidity are used to modify the behavior of functions. They can enforce prerequisites, add validation, or manage access control before the execution of the function body.\n\nThe most widely used modifiers are:\n\n- **View**: Functions declared as `view` promise not to modify the state. They are read-only functions that can access state variables but cannot alter them.\n\n- **Pure**: Functions declared as `pure` promise not to read or modify the state. They perform computations based solely on their input parameters and produce outputs without side effects.\n\nThese modifiers help optimize gas usage and maintain the integrity of the contract's state."
+      }
+    ]
+  },
+  {
+    "question_id": "Q030",
+    "question_text": "Write a crowd-sale smart contract code in Solidity programming language.",
+    "question_type": "Technical",
+    "roles": ["Smart Contract Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Expert",
+    "sample_answers": [
+      {
+        "answer_id": "A030",
+        "answer_quality": "High",
+        "answer_text": "Here's a simple example of a crowdsale smart contract in Solidity:\n\n```solidity\npragma solidity ^0.8.0;\n\ncontract SimpleCrowdsale {\n    address public owner;\n    uint256 public rate = 1000; // Number of tokens per Ether\n    ERC20Token public token;\n\n    constructor(address _tokenAddress) {\n        owner = msg.sender;\n        token = ERC20Token(_tokenAddress);\n    }\n\n    receive() external payable {\n        buyTokens();\n    }\n\n    function buyTokens() public payable {\n        uint256 tokenAmount = msg.value * rate;\n        require(token.balanceOf(address(this)) >= tokenAmount, \"Not enough tokens available\");\n        token.transfer(msg.sender, tokenAmount);\n    }\n\n    function withdrawFunds() public {\n        require(msg.sender == owner, \"Only owner can withdraw funds\");\n        payable(owner).transfer(address(this).balance);\n    }\n\n    function endCrowdsale() public {\n        require(msg.sender == owner, \"Only owner can end crowdsale\");\n        uint256 remainingTokens = token.balanceOf(address(this));\n        if (remainingTokens > 0) {\n            token.transfer(owner, remainingTokens);\n        }\n        selfdestruct(payable(owner));\n    }\n}\n\ninterface ERC20Token {\n    function transfer(address recipient, uint256 amount) external returns (bool);\n    function balanceOf(address account) external view returns (uint256);\n}\n```\n\nThis contract allows users to buy tokens by sending Ether to the contract. It includes basic functions for buying tokens, withdrawing funds by the owner, and ending the crowdsale."
+      }
+    ]
+  }
+]

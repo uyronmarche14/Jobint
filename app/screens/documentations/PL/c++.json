@@ -1,0 +1,309 @@
+{
+  "languages": {
+    "C++": {
+      "topics": [
+        {
+          "title": "Introduction to C++",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "C++ is a high-level, general-purpose programming language that supports procedural, object-oriented, and generic programming. It's widely used for system/software development, game development, drivers, client-server applications, and embedded firmware.",
+          "example": "// Your first C++ program\n#include <iostream>\n\nint main() {\n    std::cout << \"Hello, World!\" << std::endl;\n    return 0;\n}"
+        },
+        {
+          "title": "Variables and Data Types",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Variables are containers for storing data values. C++ supports various data types like int, float, double, char, bool, and more.",
+          "example": "// Variable declaration and initialization\nint age = 30;\ndouble price = 19.99;\nchar grade = 'A';\nbool isStudent = true;"
+        },
+        {
+          "title": "Operators",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Operators are used to perform operations on variables and values. C++ supports arithmetic, assignment, comparison, logical, bitwise, and other operators.",
+          "example": "// Arithmetic Operators\nint a = 10;\nint b = 3;\nstd::cout << a + b << std::endl;  // Addition\nstd::cout << a - b << std::endl;  // Subtraction\nstd::cout << a * b << std::endl;  // Multiplication\nstd::cout << a / b << std::endl;  // Division\n"
+        },
+        {
+          "title": "Input and Output",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "C++ uses streams for input and output operations. `std::cin` is used for input, and `std::cout` is used for output.",
+          "example": "// Basic I/O\n#include <iostream>\n\nint main() {\n    int age;\n    std::cout << \"Enter your age: \";\n    std::cin >> age;\n    std::cout << \"You are \" << age << \" years old.\" << std::endl;\n    return 0;\n}"
+        },
+        {
+          "title": "Conditional Statements",
+          "level": "Beginner",
+          "type": "Control Flow",
+          "description": "Conditional statements allow you to execute code based on conditions. C++ supports `if`, `else if`, and `else` statements.",
+          "example": "// If statement\nint x = 10;\nif (x > 5) {\n    std::cout << \"x is greater than 5\" << std::endl;\n} else if (x == 5) {\n    std::cout << \"x is equal to 5\" << std::endl;\n} else {\n    std::cout << \"x is less than 5\" << std::endl;\n}"
+        },
+        {
+          "title": "Switch Statements",
+          "level": "Beginner",
+          "type": "Control Flow",
+          "description": "Switch statements are used to perform different actions based on different conditions, similar to if statements but more efficient in some cases.",
+          "example": "// Switch statement\nchar grade = 'A';\nswitch (grade) {\n    case 'A':\n        std::cout << \"Excellent!\" << std::endl;\n        break;\n    case 'B':\n        std::cout << \"Good job!\" << std::endl;\n        break;\n    default:\n        std::cout << \"Keep trying!\" << std::endl;\n        break;\n}"
+        },
+        {
+          "title": "For Loops",
+          "level": "Beginner",
+          "type": "Loops",
+          "description": "For loops are used to execute a block of code a specific number of times.",
+          "example": "// For loop\nfor (int i = 0; i < 5; i++) {\n    std::cout << i << std::endl;\n}"
+        },
+        {
+          "title": "While Loops",
+          "level": "Beginner",
+          "type": "Loops",
+          "description": "While loops execute a block of code as long as a specified condition is true.",
+          "example": "// While loop\nint count = 0;\nwhile (count < 5) {\n    std::cout << count << std::endl;\n    count++;\n}"
+        },
+        {
+          "title": "Do...While Loops",
+          "level": "Beginner",
+          "type": "Loops",
+          "description": "Do...while loops execute a block of code once, before checking if the condition is true, then repeat the loop as long as the condition is true.",
+          "example": "// Do...while loop\nint count = 0;\ndo {\n    std::cout << count << std::endl;\n    count++;\n} while (count < 5);"
+        },
+        {
+          "title": "Arrays",
+          "level": "Beginner",
+          "type": "Data Structures",
+          "description": "Arrays are used to store multiple values in a single variable. They have a fixed size.",
+          "example": "// Array declaration and initialization\nint numbers[5] = {1, 2, 3, 4, 5};\nstd::cout << numbers[0] << std::endl;"
+        },
+        {
+          "title": "Pointers",
+          "level": "Intermediate",
+          "type": "Basics",
+          "description": "Pointers are variables that store the memory address of another variable. They are a powerful feature in C++ but require careful handling.",
+          "example": "// Pointer example\nint var = 20;\nint *ptr = &var;\nstd::cout << \"Value: \" << var << std::endl;\nstd::cout << \"Pointer: \" << ptr << std::endl;\nstd::cout << \"Value via pointer: \" << *ptr << std::endl;"
+        },
+        {
+          "title": "References",
+          "level": "Intermediate",
+          "type": "Basics",
+          "description": "References are an alternative to pointers. They are aliases for other variables.",
+          "example": "// Reference example\nint x = 10;\nint &ref = x;\nref = 20;\nstd::cout << x << std::endl;  // Output: 20"
+        },
+        {
+          "title": "Functions",
+          "level": "Beginner",
+          "type": "Functions",
+          "description": "Functions are blocks of code that perform a specific task. They can accept parameters and return values.",
+          "example": "// Function declaration and definition\nint add(int a, int b) {\n    return a + b;\n}\n\nint main() {\n    int result = add(5, 3);\n    std::cout << \"Sum: \" << result << std::endl;\n    return 0;\n}"
+        },
+        {
+          "title": "Function Overloading",
+          "level": "Intermediate",
+          "type": "Functions",
+          "description": "Function overloading allows you to have multiple functions with the same name but different parameters.",
+          "example": "// Function overloading\nint multiply(int a, int b) {\n    return a * b;\n}\ndouble multiply(double a, double b) {\n    return a * b;\n}\n\nint main() {\n    std::cout << multiply(5, 3) << std::endl;      // Calls int version\n    std::cout << multiply(2.5, 4.0) << std::endl;  // Calls double version\n    return 0;\n}"
+        },
+        {
+          "title": "Classes and Objects",
+          "level": "Beginner",
+          "type": "Object-Oriented Programming",
+          "description": "Classes are blueprints for creating objects. They encapsulate data and functions that operate on that data.",
+          "example": "// Class definition\nclass Dog {\npublic:\n    std::string name;\n    void bark() {\n        std::cout << name << \" says woof!\" << std::endl;\n    }\n};\n\nint main() {\n    Dog myDog;\n    myDog.name = \"Buddy\";\n    myDog.bark();\n    return 0;\n}"
+        },
+        {
+          "title": "Constructors and Destructors",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Constructors are special functions called when an object is created. Destructors are called when an object is destroyed.",
+          "example": "// Constructors and Destructors\nclass Person {\npublic:\n    Person(std::string n) {\n        name = n;\n        std::cout << name << \" is created.\" << std::endl;\n    }\n    ~Person() {\n        std::cout << name << \" is destroyed.\" << std::endl;\n    }\nprivate:\n    std::string name;\n};\n\nint main() {\n    Person p(\"Alice\");\n    return 0;\n}"
+        },
+        {
+          "title": "Inheritance",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Inheritance allows a class to inherit attributes and methods from another class.",
+          "example": "// Inheritance example\nclass Animal {\npublic:\n    void eat() {\n        std::cout << \"Eating\" << std::endl;\n    }\n};\n\nclass Cat : public Animal {\npublic:\n    void meow() {\n        std::cout << \"Meow\" << std::endl;\n    }\n};\n\nint main() {\n    Cat myCat;\n    myCat.eat();\n    myCat.meow();\n    return 0;\n}"
+        },
+        {
+          "title": "Polymorphism",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Polymorphism allows methods to do different things based on the object it is acting upon.",
+          "example": "// Polymorphism example\nclass Shape {\npublic:\n    virtual void draw() {\n        std::cout << \"Drawing Shape\" << std::endl;\n    }\n};\n\nclass Circle : public Shape {\npublic:\n    void draw() override {\n        std::cout << \"Drawing Circle\" << std::endl;\n    }\n};\n\nint main() {\n    Shape *shape = new Circle();\n    shape->draw();  // Output: Drawing Circle\n    delete shape;\n    return 0;\n}"
+        },
+        {
+          "title": "Templates",
+          "level": "Intermediate",
+          "type": "Templates",
+          "description": "Templates allow you to write generic and reusable code that can work with any data type.",
+          "example": "// Function template\ntemplate <typename T>\nT add(T a, T b) {\n    return a + b;\n}\n\nint main() {\n    std::cout << add(5, 3) << std::endl;        // Integers\n    std::cout << add(2.5, 4.5) << std::endl;    // Doubles\n    return 0;\n}"
+        },
+        {
+          "title": "Exception Handling",
+          "level": "Intermediate",
+          "type": "Error Handling",
+          "description": "Exception handling allows you to handle errors using try, catch, and throw blocks.",
+          "example": "// Exception handling\nint main() {\n    try {\n        int denominator = 0;\n        if (denominator == 0) {\n            throw std::runtime_error(\"Division by zero\");\n        }\n        int result = 10 / denominator;\n    } catch (const std::exception &e) {\n        std::cout << \"Error: \" << e.what() << std::endl;\n    }\n    return 0;\n}"
+        },
+        {
+          "title": "Standard Template Library (STL)",
+          "level": "Intermediate",
+          "type": "Libraries",
+          "description": "The STL provides a set of common classes and interfaces for data structures and algorithms.",
+          "example": "// Using vector from STL\n#include <vector>\n\nint main() {\n    std::vector<int> numbers;\n    numbers.push_back(1);\n    numbers.push_back(2);\n    numbers.push_back(3);\n    for (int num : numbers) {\n        std::cout << num << std::endl;\n    }\n    return 0;\n}"
+        },
+        {
+          "title": "Iterators",
+          "level": "Intermediate",
+          "type": "Data Structures",
+          "description": "Iterators are used to point to the memory addresses of STL containers. They are used to iterate over the elements of a container.",
+          "example": "// Iterator example\n#include <vector>\n\nint main() {\n    std::vector<int> numbers = {1, 2, 3};\n    for (std::vector<int>::iterator it = numbers.begin(); it != numbers.end(); ++it) {\n        std::cout << *it << std::endl;\n    }\n    return 0;\n}"
+        },
+        {
+          "title": "Lambda Expressions",
+          "level": "Advanced",
+          "type": "Functions",
+          "description": "Lambda expressions are anonymous functions that can be used to create function objects.",
+          "example": "// Lambda expression\n#include <algorithm>\n#include <vector>\n\nint main() {\n    std::vector<int> numbers = {1, 2, 3, 4, 5};\n    std::for_each(numbers.begin(), numbers.end(), [](int n) {\n        std::cout << n * 2 << std::endl;\n    });\n    return 0;\n}"
+        },
+        {
+          "title": "Smart Pointers",
+          "level": "Advanced",
+          "type": "Memory Management",
+          "description": "Smart pointers are objects which store pointers to dynamically allocated objects. They help in automatic memory management.",
+          "example": "// Using unique_ptr\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> ptr(new int(10));\n    std::cout << *ptr << std::endl;\n    // No need to delete ptr; it will be automatically deleted\n    return 0;\n}"
+        },
+        {
+          "title": "Multithreading",
+          "level": "Advanced",
+          "type": "Concurrency",
+          "description": "Multithreading allows a program to run multiple threads concurrently, enabling parallel execution.",
+          "example": "// Multithreading example\n#include <iostream>\n#include <thread>\n\nvoid threadFunction() {\n    std::cout << \"Thread executing\" << std::endl;\n}\n\nint main() {\n    std::thread t(threadFunction);\n    t.join();\n    return 0;\n}"
+        },
+        {
+          "title": "Mutex and Lock Guards",
+          "level": "Advanced",
+          "type": "Concurrency",
+          "description": "Mutexes are used to prevent data races by ensuring that only one thread can access a resource at a time.",
+          "example": "// Mutex example\n#include <iostream>\n#include <thread>\n#include <mutex>\n\nstd::mutex mtx;\n\nvoid printNumber(int n) {\n    mtx.lock();\n    std::cout << \"Thread \" << n << std::endl;\n    mtx.unlock();\n}\n\nint main() {\n    std::thread t1(printNumber, 1);\n    std::thread t2(printNumber, 2);\n    t1.join();\n    t2.join();\n    return 0;\n}"
+        },
+        {
+          "title": "Move Semantics",
+          "level": "Advanced",
+          "type": "Memory Management",
+          "description": "Move semantics improve performance by eliminating unnecessary copying. They enable the resources owned by an rvalue object to be moved rather than copied.",
+          "example": "// Move semantics example\n#include <iostream>\n#include <string>\n\nint main() {\n    std::string str = \"Hello\";\n    std::string movedStr = std::move(str);\n    std::cout << \"Moved String: \" << movedStr << std::endl;\n    std::cout << \"Original String: \" << str << std::endl;  // str is now empty\n    return 0;\n}"
+        },
+        {
+          "title": "Friend Functions and Classes",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Friend functions and classes can access private and protected members of other classes.",
+          "example": "// Friend function example\nclass Box {\nprivate:\n    double width;\npublic:\n    friend void printWidth(Box box);\n    void setWidth(double w) {\n        width = w;\n    }\n};\n\nvoid printWidth(Box box) {\n    std::cout << \"Width: \" << box.width << std::endl;\n}\n\nint main() {\n    Box box;\n    box.setWidth(10.0);\n    printWidth(box);\n    return 0;\n}"
+        },
+        {
+          "title": "Namespaces",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Namespaces are used to organize code into logical groups and to prevent name collisions.",
+          "example": "// Using namespaces\n#include <iostream>\n\nnamespace first {\n    void func() {\n        std::cout << \"First namespace\" << std::endl;\n    }\n}\n\nnamespace second {\n    void func() {\n        std::cout << \"Second namespace\" << std::endl;\n    }\n}\n\nint main() {\n    first::func();\n    second::func();\n    return 0;\n}"
+        },
+        {
+          "title": "Preprocessor Directives",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Preprocessor directives are lines included in the code of programs preceded by a hash sign (#). Examples include `#include`, `#define`, and conditional compilation directives.",
+          "example": "// Preprocessor directives\n#include <iostream>\n#define PI 3.1416\n\nint main() {\n    std::cout << \"Value of PI: \" << PI << std::endl;\n    return 0;\n}"
+        },
+        {
+          "title": "Operator Overloading",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Operator overloading allows you to redefine the way operators work for user-defined types.",
+          "example": "// Operator overloading\nclass Complex {\npublic:\n    double real, imag;\n    Complex(double r = 0, double i = 0) : real(r), imag(i) {}\n    Complex operator + (const Complex &obj) {\n        return Complex(real + obj.real, imag + obj.imag);\n    }\n};\n\nint main() {\n    Complex c1(3, 4), c2(1, 2);\n    Complex c3 = c1 + c2;\n    std::cout << \"Result: \" << c3.real << \" + \" << c3.imag << \"i\" << std::endl;\n    return 0;\n}"
+        },
+        {
+          "title": "Type Casting",
+          "level": "Intermediate",
+          "type": "Basics",
+          "description": "C++ supports both C-style casts and new C++ casts: `static_cast`, `dynamic_cast`, `const_cast`, and `reinterpret_cast`.",
+          "example": "// Type casting\nint main() {\n    int a = 10;\n    double b = static_cast<double>(a) / 3;\n    std::cout << b << std::endl;  // Output: 3.33333\n    return 0;\n}"
+        },
+        {
+          "title": "File Handling",
+          "level": "Intermediate",
+          "type": "File I/O",
+          "description": "C++ provides file handling capabilities using streams. You can read from and write to files using `ifstream`, `ofstream`, and `fstream`.",
+          "example": "// File handling example\n#include <fstream>\n\nint main() {\n    // Writing to a file\n    std::ofstream outfile(\"example.txt\");\n    outfile << \"Hello, World!\" << std::endl;\n    outfile.close();\n\n    // Reading from a file\n    std::ifstream infile(\"example.txt\");\n    std::string content;\n    std::getline(infile, content);\n    std::cout << content << std::endl;\n    infile.close();\n    return 0;\n}"
+        },
+        {
+          "title": "Enumerations",
+          "level": "Beginner",
+          "type": "Data Types",
+          "description": "Enumerations are user-defined data types that consist of integral constants. They make a program easy to read and maintain.",
+          "example": "// Enumeration example\nenum Color { RED, GREEN, BLUE };\n\nint main() {\n    Color myColor = GREEN;\n    if (myColor == GREEN) {\n        std::cout << \"Color is green.\" << std::endl;\n    }\n    return 0;\n}"
+        },
+        {
+          "title": "Dynamic Memory Allocation",
+          "level": "Intermediate",
+          "type": "Memory Management",
+          "description": "Dynamic memory allocation allows you to allocate memory during runtime using `new` and deallocate it using `delete`.",
+          "example": "// Dynamic memory allocation\nint main() {\n    int *ptr = new int;\n    *ptr = 10;\n    std::cout << *ptr << std::endl;\n    delete ptr;\n    return 0;\n}"
+        },
+        {
+          "title": "Macros and Inline Functions",
+          "level": "Intermediate",
+          "type": "Functions",
+          "description": "Macros are preprocessor directives for code substitution. Inline functions are functions defined with the `inline` keyword to suggest to the compiler to insert the function's body where the function call is.",
+          "example": "// Macro and inline function\n#define SQUARE(x) ((x) * (x))\n\ninline int cube(int x) {\n    return x * x * x;\n}\n\nint main() {\n    int num = 3;\n    std::cout << \"Square: \" << SQUARE(num) << std::endl;\n    std::cout << \"Cube: \" << cube(num) << std::endl;\n    return 0;\n}"
+        },
+        {
+          "title": "Namespaces and Scope Resolution",
+          "level": "Intermediate",
+          "type": "Basics",
+          "description": "Namespaces help to avoid name conflicts. The scope resolution operator `::` is used to access a namespace member.",
+          "example": "// Scope resolution operator\nint var = 10;\nnamespace myNamespace {\n    int var = 20;\n}\n\nint main() {\n    std::cout << var << std::endl;                // Output: 10\n    std::cout << myNamespace::var << std::endl;   // Output: 20\n    return 0;\n}"
+        },
+        {
+          "title": "Precompiled Headers",
+          "level": "Advanced",
+          "type": "Compilation",
+          "description": "Precompiled headers can speed up compilation time by compiling a set of headers only once and reusing them.",
+          "example": "// Precompiled headers are compiler-specific and often managed in the build system.\n// Example usage in Visual Studio:\n// 1. Create a header file named 'pch.h'.\n// 2. Include common headers in 'pch.h'.\n// 3. Set 'pch.h' as a precompiled header in project settings."
+        },
+        {
+          "title": "C++17 and C++20 Features",
+          "level": "Advanced",
+          "type": "Modern C++",
+          "description": "Modern C++ standards introduce new features like structured bindings, optional, variant, coroutines, concepts, and more.",
+          "example": "// Structured bindings (C++17)\n#include <tuple>\n\nint main() {\n    std::tuple<int, double, std::string> tup(1, 2.5, \"Hello\");\n    auto [i, d, s] = tup;\n    std::cout << i << \", \" << d << \", \" << s << std::endl;\n    return 0;\n}"
+        },
+        {
+          "title": "Design Patterns",
+          "level": "Advanced",
+          "type": "Design Patterns",
+          "description": "Design patterns are typical solutions to common problems in software design. Examples include Singleton, Factory, Observer, and Strategy patterns.",
+          "example": "// Singleton pattern example\nclass Singleton {\nprivate:\n    static Singleton *instance;\n    Singleton() {}\npublic:\n    static Singleton *getInstance() {\n        if (!instance)\n            instance = new Singleton();\n        return instance;\n    }\n};\n\nSingleton *Singleton::instance = nullptr;\n\nint main() {\n    Singleton *s = Singleton::getInstance();\n    return 0;\n}"
+        },
+        {
+          "title": "Function Objects (Functors)",
+          "level": "Intermediate",
+          "type": "Functions",
+          "description": "Function objects are objects that can be called as if they are ordinary functions, using operator().",
+          "example": "// Functor example\nclass Multiply {\npublic:\n    int operator()(int a, int b) {\n        return a * b;\n    }\n};\n\nint main() {\n    Multiply multiply;\n    int result = multiply(5, 3);\n    std::cout << \"Result: \" << result << std::endl;\n    return 0;\n}"
+        },
+        {
+          "title": "Regular Expressions",
+          "level": "Advanced",
+          "type": "String Manipulation",
+          "description": "C++11 introduced support for regular expressions via the `<regex>` library.",
+          "example": "// Regular expressions\n#include <iostream>\n#include <regex>\n\nint main() {\n    std::string email = \"user@example.com\";\n    std::regex pattern(\"(\\w+)(\\.|_)?(\\w*)@(\\w+)(\\.(\\w+))+\");\n    if (std::regex_match(email, pattern)) {\n        std::cout << \"Valid email\" << std::endl;\n    } else {\n        std::cout << \"Invalid email\" << std::endl;\n    }\n    return 0;\n}"
+        },
+        {
+          "title": "Atomic Operations",
+          "level": "Advanced",
+          "type": "Concurrency",
+          "description": "Atomic operations are used in multithreaded applications to perform thread-safe operations on shared data without using mutexes.",
+          "example": "// Atomic operations\n#include <atomic>\n#include <thread>\n#include <vector>\n\nstd::atomic<int> counter(0);\n\nvoid increment() {\n    for (int i = 0; i < 1000; ++i) {\n        counter++;\n    }\n}\n\nint main() {\n    std::vector<std::thread> threads;\n    for (int i = 0; i < 10; ++i) {\n        threads.push_back(std::thread(increment));\n    }\n    for (auto &t : threads) {\n        t.join();\n    }\n    std::cout << \"Counter: \" << counter << std::endl;\n    return 0;\n}"
+        }
+      ]
+    }
+  }
+}

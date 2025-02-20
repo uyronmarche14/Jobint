@@ -1,0 +1,25 @@
+{
+  "cli": {
+    "version": ">= 11.0.2"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "env": {
+        "DEEPGRAM_API_KEY": "7260f190eab118d373475215f1ad8bb9ac937e30"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

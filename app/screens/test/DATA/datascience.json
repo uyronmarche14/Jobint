@@ -1,0 +1,787 @@
+[
+  {
+    "question_id": "Q001",
+    "question_text": "Tell me about a time when you led a team...",
+    "question_type": "Behavioral",
+    "roles": ["Manager"],
+    "industries": ["Any"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A001",
+        "answer_quality": "High",
+        "answer_text": "In my previous role as a team leader, I was responsible for managing a team of five developers. I successfully led the team through a complex software development project, ensuring effective communication, task delegation, and timely delivery. By fostering a collaborative and supportive environment, I motivated team members to perform at their best and achieve project goals."
+      },
+      {
+        "answer_id": "A002",
+        "answer_quality": "Average",
+        "answer_text": "I have led teams before in various projects, where I coordinated team activities, assigned tasks, and monitored progress. I encouraged open communication and provided guidance to team members when needed. By promoting a positive team culture and leveraging individual strengths, we were able to achieve project objectives."
+      }
+    ]
+  },
+  {
+    "question_id": "Q002",
+    "question_text": "Explain polymorphism in object-oriented programming.",
+    "question_type": "Technical",
+    "roles": ["Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A003",
+        "answer_quality": "High",
+        "answer_text": "Polymorphism is a concept where objects can take on multiple forms. It allows methods to behave differently based on the object they are acting upon. In object-oriented programming, polymorphism enables code reusability and flexibility. By defining common interfaces and implementing them differently in derived classes, we can write generic code that can work with different types of objects."
+      }
+    ]
+  },
+  {
+    "question_id": "Q003",
+    "question_text": "What are MSE and RMSE?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Any"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A004",
+        "answer_quality": "High",
+        "answer_text": "MSE (Mean Squared Error) measures the average squared difference between predicted and actual values. It is commonly used as a loss function in regression problems. RMSE (Root Mean Squared Error) is the square root of MSE, providing error in the same units as the target variable. It is a popular metric for evaluating the performance of regression models."
+      }
+    ]
+  },
+  {
+    "question_id": "Q004",
+    "question_text": "Explain the DBSCAN algorithm.",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Any"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A005",
+        "answer_quality": "High",
+        "answer_text": "DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a density-based clustering algorithm. It groups together points that are closely packed together while marking points in low-density areas as outliers. DBSCAN requires two parameters: epsilon (radius) and minimum points. It is particularly useful for discovering clusters of arbitrary shapes and handling noisy data."
+      }
+    ]
+  },
+  {
+    "question_id": "Q005",
+    "question_text": "What are dummy variables?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Statistician"],
+    "industries": ["Any"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A006",
+        "answer_quality": "High",
+        "answer_text": "Dummy variables, also known as indicator variables, are binary variables created to represent categories in regression models. They take the value 0 or 1 to indicate the absence or presence of a categorical effect. Dummy variables allow us to include categorical variables in regression analysis and capture their impact on the dependent variable."
+      }
+    ]
+  },
+  {
+    "question_id": "Q006",
+    "question_text": "What is anomaly detection?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Security Analyst"],
+    "industries": ["Any"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A007",
+        "answer_quality": "High",
+        "answer_text": "Anomaly detection involves identifying unusual patterns or observations that do not conform to expected behavior. It is commonly used in various domains, such as fraud detection, fault diagnosis, and network security. Anomaly detection algorithms aim to distinguish normal behavior from abnormal behavior by analyzing data patterns and identifying deviations from the norm."
+      }
+    ]
+  },
+  {
+    "question_id": "Q007",
+    "question_text": "What is Bayesian inference?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Statistician"],
+    "industries": ["Any"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A008",
+        "answer_quality": "High",
+        "answer_text": "Bayesian inference is a statistical method that updates the probability of a hypothesis as more evidence becomes available. It is based on Bayes' theorem, which calculates the posterior probability by combining prior knowledge and observed data. Bayesian inference allows us to make probabilistic predictions and estimate unknown parameters by incorporating prior beliefs and updating them with new information."
+      }
+    ]
+  },
+  {
+    "question_id": "Q008",
+    "question_text": "What is the R-Squared value?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Statistician"],
+    "industries": ["Any"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A009",
+        "answer_quality": "High",
+        "answer_text": "The R-Squared value, also known as the coefficient of determination, measures how well the data fits a statistical model. It represents the proportion of variance in the dependent variable that can be explained by the independent variables. R-Squared ranges from 0 to 1, where 0 indicates no linear relationship and 1 indicates a perfect fit. It is commonly used to evaluate the goodness of fit in regression models."
+      }
+    ]
+  },
+  {
+    "question_id": "Q009",
+    "question_text": "What about ordinal features?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist"],
+    "industries": ["Any"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A010",
+        "answer_quality": "High",
+        "answer_text": "Ordinal features are categorical variables with a clear ordering or ranking, such as 'low', 'medium', 'high'. They can be encoded using techniques that preserve this order, such as assigning numerical values or using ordinal encoding. Ordinal features are commonly encountered in surveys, ratings, and subjective scales, and they provide valuable information for predictive modeling."
+      }
+    ]
+  },
+  {
+    "question_id": "Q010",
+    "question_text": "Explain loss functions in regression.",
+    "question_type": "Technical",
+    "roles": ["Data Scientist"],
+    "industries": ["Any"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A011",
+        "answer_quality": "High",
+        "answer_text": "Loss functions in regression measure the difference between predicted and actual values. They quantify the error or cost associated with the model's predictions. Common examples of loss functions in regression include Mean Squared Error (MSE), Mean Absolute Error (MAE), and Huber loss. The choice of loss function depends on the specific problem and the desired properties of the model."
+      }
+    ]
+  },
+  {
+    "question_id": "Q011",
+    "question_text": "What are Recommender Systems?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["E-commerce", "Entertainment"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A012",
+        "answer_quality": "High",
+        "answer_text": "Recommender systems are algorithms that suggest relevant items to users, such as products or content, based on their preferences and behavior. They analyze user data, such as past purchases, ratings, or browsing history, to generate personalized recommendations. Recommender systems are widely used in e-commerce, entertainment, and content platforms to enhance user experience and improve customer satisfaction."
+      }
+    ]
+  },
+  {
+    "question_id": "Q012",
+    "question_text": "Undersampling vs Oversampling.",
+    "question_type": "Technical",
+    "roles": ["Data Scientist"],
+    "industries": ["Any"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A013",
+        "answer_quality": "High",
+        "answer_text": "Undersampling and oversampling are techniques used to address class imbalance in datasets. Undersampling reduces the majority class to balance the dataset, typically by randomly removing instances. Oversampling increases the minority class by generating synthetic samples or replicating existing ones. Both approaches have trade-offs, and the choice depends on the specific problem and the available data."
+      }
+    ]
+  },
+  {
+    "question_id": "Q013",
+    "question_text": "What is reinforcement learning?",
+    "question_type": "Technical",
+    "roles": ["Machine Learning Engineer", "AI Researcher"],
+    "industries": ["Tech", "Robotics"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A014",
+        "answer_quality": "High",
+        "answer_text": "Reinforcement learning is a type of machine learning where an agent learns to make decisions by interacting with an environment. The agent receives feedback in the form of rewards or penalties based on its actions. Through trial and error, the agent learns to maximize cumulative rewards by discovering optimal strategies or policies. Reinforcement learning is widely used in robotics, game playing, and autonomous systems."
+      }
+    ]
+  },
+  {
+    "question_id": "Q014",
+    "question_text": "Do we call KNN a lazy algorithm?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist"],
+    "industries": ["Any"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A015",
+        "answer_quality": "High",
+        "answer_text": "Yes, KNN (K-Nearest Neighbors) is considered a lazy algorithm because it doesn't learn a model during the training phase. Instead, it stores the entire training dataset and makes predictions based on the similarity to the nearest neighbors. KNN is a non-parametric algorithm that can handle both classification and regression tasks."
+      }
+    ]
+  },
+  {
+    "question_id": "Q015",
+    "question_text": "Define a Monte Carlo simulation.",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Quantitative Analyst"],
+    "industries": ["Finance", "Engineering"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A016",
+        "answer_quality": "High",
+        "answer_text": "A Monte Carlo simulation uses random sampling to model the probability of different outcomes in a process that cannot easily be predicted. It involves running multiple simulations, each with different input values or parameters, to estimate the distribution of possible outcomes. Monte Carlo simulations are widely used in finance, engineering, and risk analysis to assess uncertainty and make informed decisions."
+      }
+    ]
+  },
+  {
+    "question_id": "Q016",
+    "question_text": "Is K-means and K-means++ the same?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist"],
+    "industries": ["Any"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A017",
+        "answer_quality": "High",
+        "answer_text": "No, K-means++ is an extension of the K-means clustering algorithm that improves the initialization of cluster centroids. K-means++ selects initial centroids in a way that ensures better convergence and reduces the chance of getting stuck in suboptimal solutions. It is a popular variant of K-means that often leads to more accurate and stable clustering results."
+      }
+    ]
+  },
+  {
+    "question_id": "Q017",
+    "question_text": "What is pruning in Decision Trees?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist"],
+    "industries": ["Any"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A018",
+        "answer_quality": "High",
+        "answer_text": "Pruning is a technique used to reduce the complexity of decision trees by removing unnecessary branches. It involves iteratively evaluating the impact of removing a subtree and deciding whether it improves the tree's performance. Pruning helps prevent overfitting and improves the tree's ability to generalize to unseen data. Common pruning methods include cost-complexity pruning and reduced-error pruning."
+      }
+    ]
+  },
+  {
+    "question_id": "Q018",
+    "question_text": "How does an XGB control overfitting?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Any"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A019",
+        "answer_quality": "High",
+        "answer_text": "XGBoost (Extreme Gradient Boosting) controls overfitting through various techniques. It uses regularization parameters, such as L1 and L2 regularization, to penalize complex models. XGBoost also applies tree pruning techniques to limit the depth and complexity of individual trees. Additionally, it allows setting constraints like maximum depth and learning rate to control the model's complexity and prevent overfitting."
+      }
+    ]
+  },
+  {
+    "question_id": "Q019",
+    "question_text": "What is the class imbalance problem?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist"],
+    "industries": ["Any"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A020",
+        "answer_quality": "High",
+        "answer_text": "The class imbalance problem occurs when one class significantly outnumbers the others in a dataset. This imbalance can bias the predictive model towards the majority class, leading to poor performance on the minority class. Class imbalance is common in various domains, such as fraud detection, rare disease diagnosis, or anomaly detection. Addressing class imbalance requires specialized techniques, such as oversampling, undersampling, or using algorithms designed for imbalanced data."
+      }
+    ]
+  },
+  {
+    "question_id": "Q020",
+    "question_text": "Why is LightGBM prone to overfitting?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Any"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A021",
+        "answer_quality": "High",
+        "answer_text": "LightGBM is prone to overfitting due to its aggressive leaf-wise growth strategy. This strategy can create complex trees that fit the training data too closely, leading to poor generalization on unseen data. To mitigate overfitting, it is important to tune regularization parameters, such as max depth, learning rate, and min child weight. Additionally, using early stopping and cross-validation can help identify the optimal number of boosting rounds and prevent overfitting."
+      }
+    ]
+  },
+  {
+    "question_id": "Q021",
+    "question_text": "Name any one distance-based algorithm.",
+    "question_type": "Technical",
+    "roles": ["Data Scientist"],
+    "industries": ["Any"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A022",
+        "answer_quality": "High",
+        "answer_text": "K-Nearest Neighbors (KNN) is a popular distance-based algorithm used for classification and regression tasks. It classifies data points based on their proximity to other labeled data points. KNN calculates the distance between the query point and its k nearest neighbors to determine the class or predict the value. It is a simple yet effective algorithm for pattern recognition and data analysis."
+      }
+    ]
+  },
+  {
+    "question_id": "Q022",
+    "question_text": "What is the objective function for KNN?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist"],
+    "industries": ["Any"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A023",
+        "answer_quality": "High",
+        "answer_text": "KNN (K-Nearest Neighbors) does not have an explicit objective function like other machine learning algorithms. Instead, it predicts the label or value based on the majority class among the k nearest neighbors. The objective of KNN is to find the most similar instances in the training data to make predictions for new, unseen instances. The choice of k and the distance metric are important parameters in KNN."
+      }
+    ]
+  },
+  {
+    "question_id": "Q023",
+    "question_text": "What is the standard error of the mean?",
+    "question_type": "Technical",
+    "roles": ["Statistician", "Data Analyst"],
+    "industries": ["Any"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A024",
+        "answer_quality": "High",
+        "answer_text": "The standard error of the mean (SEM) measures how much the sample mean of the data is likely to differ from the true population mean. It quantifies the uncertainty or variability in the sample mean due to random sampling. SEM is calculated as the standard deviation of the sample divided by the square root of the sample size. It is commonly used in inferential statistics to estimate the precision of the sample mean."
+      }
+    ]
+  },
+  {
+    "question_id": "Q024",
+    "question_text": "What are some disadvantages of K-means?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist"],
+    "industries": ["Any"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A025",
+        "answer_quality": "High",
+        "answer_text": "Disadvantages of K-means include sensitivity to the initial cluster centers, difficulty clustering non-spherical data, and the need to specify K."
+      }
+    ]
+  },
+  {
+    "question_id": "Q025",
+    "question_text": "What is data augmentation? Give examples.",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A026",
+        "answer_quality": "High",
+        "answer_text": "Data augmentation involves increasing the diversity of data by applying transformations like rotation, scaling, or flipping images."
+      }
+    ]
+  },
+  {
+    "question_id": "Q026",
+    "question_text": "What is Euclidean and Manhattan distance?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Statistician"],
+    "industries": ["Any"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A027",
+        "answer_quality": "High",
+        "answer_text": "Euclidean distance measures the straight-line distance between two points, while Manhattan distance measures the distance along axes at right angles."
+      }
+    ]
+  },
+  {
+    "question_id": "Q027",
+    "question_text": "What is the role of gamma in RBF kernels?",
+    "question_type": "Technical",
+    "roles": ["Machine Learning Engineer"],
+    "industries": ["Any"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A028",
+        "answer_quality": "High",
+        "answer_text": "Gamma defines how much influence a single training example has in an RBF kernel; a large gamma means close points influence each other."
+      }
+    ]
+  },
+  {
+    "question_id": "Q028",
+    "question_text": "How would you handle an imbalanced dataset?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist"],
+    "industries": ["Any"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A029",
+        "answer_quality": "High",
+        "answer_text": "I would handle it by resampling methods like oversampling the minority class, undersampling the majority class, or using specialized algorithms."
+      }
+    ]
+  },
+  {
+    "question_id": "Q029",
+    "question_text": "Is it a good idea to combine multiple trees?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist"],
+    "industries": ["Any"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A030",
+        "answer_quality": "High",
+        "answer_text": "Yes, combining multiple trees in ensemble methods like Random Forests can improve predictive performance and reduce overfitting."
+      }
+    ]
+  },
+  {
+    "question_id": "Q030",
+    "question_text": "How do support vector machine algorithms work?",
+    "question_type": "Technical",
+    "roles": ["Machine Learning Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A031",
+        "answer_quality": "High",
+        "answer_text": "SVMs find the hyperplane that best separates classes by maximizing the margin between data points of different classes."
+      }
+    ]
+  },
+  {
+    "question_id": "Q031",
+    "question_text": "What is the significance of Residual Networks?",
+    "question_type": "Technical",
+    "roles": ["Machine Learning Engineer", "AI Researcher"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A032",
+        "answer_quality": "High",
+        "answer_text": "Residual Networks (ResNets) allow training of very deep networks by using skip connections to mitigate the vanishing gradient problem."
+      }
+    ]
+  },
+  {
+    "question_id": "Q032",
+    "question_text": "What does it mean to have low MAE and high MSE?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist"],
+    "industries": ["Any"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A033",
+        "answer_quality": "High",
+        "answer_text": "This suggests that while most predictions are close to actual values (low MAE), some predictions are significantly off (high MSE) due to squaring errors."
+      }
+    ]
+  },
+  {
+    "question_id": "Q033",
+    "question_text": "What are the disadvantages of linear regression?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Statistician"],
+    "industries": ["Any"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A034",
+        "answer_quality": "High",
+        "answer_text": "Disadvantages include the assumption of linearity, sensitivity to outliers, and it cannot model complex relationships."
+      }
+    ]
+  },
+  {
+    "question_id": "Q034",
+    "question_text": "What is a recommendation engine? How does it work?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Software Engineer"],
+    "industries": ["E-commerce", "Entertainment"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A035",
+        "answer_quality": "High",
+        "answer_text": "A recommendation engine suggests items to users by analyzing data patterns using collaborative or content-based filtering techniques."
+      }
+    ]
+  },
+  {
+    "question_id": "Q035",
+    "question_text": "What is K-means? How can you select K for K-means?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist"],
+    "industries": ["Any"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A036",
+        "answer_quality": "High",
+        "answer_text": "K-means is a clustering algorithm that partitions data into K clusters. K can be selected using methods like the Elbow method or Silhouette analysis."
+      }
+    ]
+  },
+  {
+    "question_id": "Q036",
+    "question_text": "Does Radial basis kernel function exist in SVM?",
+    "question_type": "Technical",
+    "roles": ["Machine Learning Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A037",
+        "answer_quality": "High",
+        "answer_text": "Yes, the Radial Basis Function (RBF) kernel is commonly used in SVMs to handle non-linear classification tasks."
+      }
+    ]
+  },
+  {
+    "question_id": "Q037",
+    "question_text": "What is linear regression? Why is it called linear?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Statistician"],
+    "industries": ["Any"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A038",
+        "answer_quality": "High",
+        "answer_text": "Linear regression models the relationship between variables by fitting a linear equation to observed data, hence the term 'linear.'"
+      }
+    ]
+  },
+  {
+    "question_id": "Q038",
+    "question_text": "Is pruning always a good method to construct a tree?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist"],
+    "industries": ["Any"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A039",
+        "answer_quality": "High",
+        "answer_text": "While pruning reduces overfitting, excessive pruning can lead to underfitting. It must be balanced based on the dataset."
+      }
+    ]
+  },
+  {
+    "question_id": "Q039",
+    "question_text": "What is the difference between bagging and boosting?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Any"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A040",
+        "answer_quality": "High",
+        "answer_text": "Bagging builds models in parallel to reduce variance, while boosting builds models sequentially to reduce bias by focusing on misclassified data."
+      }
+    ]
+  },
+  {
+    "question_id": "Q040",
+    "question_text": "Which algorithm uses margin to classify the classes?",
+    "question_type": "Technical",
+    "roles": ["Machine Learning Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A041",
+        "answer_quality": "High",
+        "answer_text": "Support Vector Machines (SVM) use the concept of margins to classify classes by finding the hyperplane that maximizes the margin."
+      }
+    ]
+  },
+  {
+    "question_id": "Q041",
+    "question_text": "What algorithm can be used to summarize Twitter feed?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "NLP Engineer"],
+    "industries": ["Tech", "Social Media"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A042",
+        "answer_quality": "High",
+        "answer_text": "Text summarization algorithms like TF-IDF with clustering or advanced models like Transformers can be used to summarize Twitter feeds."
+      }
+    ]
+  },
+  {
+    "question_id": "Q042",
+    "question_text": "How do you generate arbitrary or random shape clusters?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist"],
+    "industries": ["Any"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A043",
+        "answer_quality": "High",
+        "answer_text": "Algorithms like DBSCAN or hierarchical clustering can identify clusters of arbitrary shapes by considering data density."
+      }
+    ]
+  },
+  {
+    "question_id": "Q043",
+    "question_text": "How to compute standard error of median in a simple way?",
+    "question_type": "Technical",
+    "roles": ["Statistician"],
+    "industries": ["Any"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A044",
+        "answer_quality": "High",
+        "answer_text": "Computing the standard error of the median is complex, but bootstrap methods can be used to estimate it."
+      }
+    ]
+  },
+  {
+    "question_id": "Q044",
+    "question_text": "How does GBDT decide to split a node? What does it minimize?",
+    "question_type": "Technical",
+    "roles": ["Machine Learning Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A045",
+        "answer_quality": "High",
+        "answer_text": "Gradient Boosted Decision Trees split nodes based on minimizing the loss function's gradient, effectively focusing on areas where previous models performed poorly."
+      }
+    ]
+  },
+  {
+    "question_id": "Q045",
+    "question_text": "What is the difference between R-squared and Adjusted R-squared?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Statistician"],
+    "industries": ["Any"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A046",
+        "answer_quality": "High",
+        "answer_text": "Adjusted R-squared adjusts for the number of predictors in the model, penalizing the addition of non-significant predictors, unlike R-squared."
+      }
+    ]
+  },
+  {
+    "question_id": "Q046",
+    "question_text": "How is matrix factorization useful in recommendation systems?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Software Engineer"],
+    "industries": ["E-commerce", "Entertainment"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A047",
+        "answer_quality": "High",
+        "answer_text": "Matrix factorization decomposes the user-item interaction matrix into latent factors, capturing underlying preferences and improving recommendations."
+      }
+    ]
+  },
+  {
+    "question_id": "Q047",
+    "question_text": "What are the approximation methods in Reinforcement Learning?",
+    "question_type": "Technical",
+    "roles": ["AI Researcher"],
+    "industries": ["Tech", "Robotics"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A048",
+        "answer_quality": "High",
+        "answer_text": "Approximation methods like Q-learning with function approximators (e.g., neural networks) are used when the state-action space is large."
+      }
+    ]
+  },
+  {
+    "question_id": "Q048",
+    "question_text": "What is the difference between an error and a residual error?",
+    "question_type": "Technical",
+    "roles": ["Statistician", "Data Scientist"],
+    "industries": ["Any"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A049",
+        "answer_quality": "High",
+        "answer_text": "An error is the difference between the true value and the expected value, while a residual is the difference between the observed value and the predicted value."
+      }
+    ]
+  },
+  {
+    "question_id": "Q049",
+    "question_text": "Why does training an SVM take a long time? How can I speed up?",
+    "question_type": "Technical",
+    "roles": ["Machine Learning Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A050",
+        "answer_quality": "High",
+        "answer_text": "Training SVMs can be slow with large datasets due to quadratic optimization complexity. Speed can be improved using approximate methods or by reducing dimensionality."
+      }
+    ]
+  },
+  {
+    "question_id": "Q050",
+    "question_text": "Difference between bagging, boosting, and the relation to Bayes theorem.",
+    "question_type": "Technical",
+    "roles": ["Data Scientist"],
+    "industries": ["Any"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A051",
+        "answer_quality": "High",
+        "answer_text": "Bagging reduces variance by averaging models built in parallel; boosting reduces bias by sequentially focusing on errors. Both can be connected to Bayes theorem through probabilistic interpretations."
+      }
+    ]
+  },
+  {
+    "question_id": "Q051",
+    "question_text": "Which algorithm takes the data to the next dimension and then classify?",
+    "question_type": "Technical",
+    "roles": ["Machine Learning Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A052",
+        "answer_quality": "High",
+        "answer_text": "Support Vector Machines with kernel tricks map data to higher dimensions to make it linearly separable."
+      }
+    ]
+  },
+  {
+    "question_id": "Q052",
+    "question_text": "What are categorical variables and what do we do with them?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist"],
+    "industries": ["Any"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A053",
+        "answer_quality": "High",
+        "answer_text": "Categorical variables represent discrete categories or groups. They are encoded using techniques like one-hot encoding for use in models."
+      }
+    ]
+  }
+]

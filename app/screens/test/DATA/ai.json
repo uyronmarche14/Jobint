@@ -1,0 +1,392 @@
+[
+  {
+    "question_id": "Q001",
+    "question_text": "Explain Artificial Intelligence and give its applications.",
+    "question_type": "Technical",
+    "roles": ["AI Engineer", "Data Scientist"],
+    "industries": ["Tech", "Healthcare", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A001",
+        "answer_quality": "High",
+        "answer_text": "Artificial Intelligence (AI) is a field of computer science focused on creating systems that can perform tasks that typically require human intelligence, such as recognizing speech, understanding natural language, making decisions, and learning. Applications of AI include image and speech recognition, natural language processing (NLP), robotics, autonomous vehicles, and machine learning models like neural networks."
+      }
+    ]
+  },
+  {
+    "question_id": "Q002",
+    "question_text": "How are machine learning and AI related?",
+    "question_type": "Technical",
+    "roles": ["AI Engineer", "Machine Learning Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A002",
+        "answer_quality": "High",
+        "answer_text": "Machine learning is a subset of Artificial Intelligence (AI) that focuses on the development of algorithms that allow computers to learn from and make decisions based on data. While AI encompasses a broader range of techniques aiming to mimic human intelligence, machine learning provides the statistical methods and algorithms that enable computers to improve at tasks with experience."
+      }
+    ]
+  },
+  {
+    "question_id": "Q003",
+    "question_text": "What is Deep Learning based on?",
+    "question_type": "Technical",
+    "roles": ["AI Engineer", "Data Scientist"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A003",
+        "answer_quality": "High",
+        "answer_text": "Deep learning is based on artificial neural networks with multiple layers, known as deep neural networks. It is inspired by the structure and function of the human brain's biological neural networks. Deep learning models are particularly effective at modeling complex, hierarchical patterns in data, enabling advancements in areas like image and speech recognition."
+      }
+    ]
+  },
+  {
+    "question_id": "Q004",
+    "question_text": "How many layers are in a Neural Network?",
+    "question_type": "Technical",
+    "roles": ["AI Engineer", "Machine Learning Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A004",
+        "answer_quality": "High",
+        "answer_text": "A typical neural network consists of at least three layers: the input layer, one or more hidden layers, and the output layer. The input layer receives the input data, hidden layers process the data and extract features, and the output layer provides the final prediction or classification."
+      }
+    ]
+  },
+  {
+    "question_id": "Q005",
+    "question_text": "Explain TensorFlow.",
+    "question_type": "Technical",
+    "roles": ["AI Engineer", "Machine Learning Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A005",
+        "answer_quality": "High",
+        "answer_text": "TensorFlow is an open-source machine learning platform developed by Google. It is designed for high-performance numerical computation and provides a comprehensive ecosystem of tools, libraries, and community resources. TensorFlow allows developers to create and deploy machine learning models, particularly neural networks, for tasks such as classification, regression, and clustering."
+      }
+    ]
+  },
+  {
+    "question_id": "Q006",
+    "question_text": "What are the pros of cognitive computing?",
+    "question_type": "Technical",
+    "roles": ["AI Engineer", "Cognitive Computing Specialist"],
+    "industries": ["Tech", "Healthcare", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A006",
+        "answer_quality": "High",
+        "answer_text": "Cognitive computing aims to simulate human thought processes in a computerized model. The pros include:\n\n- **Enhanced Human Interaction**: It understands human language and interactions, providing more natural interfaces.\n- **Knowledge Acquisition**: Cognitive systems learn and adapt from data, improving over time.\n- **Operational Efficiency**: Automates complex processes, reducing errors and increasing productivity.\n- **Decision Support**: Assists in making informed decisions by analyzing large amounts of data quickly."
+      }
+    ]
+  },
+  {
+    "question_id": "Q007",
+    "question_text": "What’s the difference between NLP and NLU?",
+    "question_type": "Technical",
+    "roles": ["AI Engineer", "NLP Specialist"],
+    "industries": ["Tech", "Customer Service"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A007",
+        "answer_quality": "High",
+        "answer_text": "Natural Language Processing (NLP) is a field of AI focused on enabling computers to understand, interpret, and generate human language. NLP encompasses a wide range of tasks, such as text analysis and machine translation.\n\nNatural Language Understanding (NLU) is a subset of NLP that focuses on machine reading comprehension. NLU aims to understand the intent, context, and meaning behind human language inputs, dealing with tasks like sentiment analysis, intent recognition, and semantic parsing."
+      }
+    ]
+  },
+  {
+    "question_id": "Q008",
+    "question_text": "Give some examples of weak and strong AI.",
+    "question_type": "Technical",
+    "roles": ["AI Engineer", "Data Scientist"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A008",
+        "answer_quality": "High",
+        "answer_text": "Examples of **Weak AI** (Artificial Narrow Intelligence) include virtual assistants like Siri and Alexa, recommendation systems, and rule-based chatbots. These systems perform specific tasks but do not possess consciousness or self-awareness.\n\n**Strong AI** (Artificial General Intelligence) refers to hypothetical systems that exhibit human-like intelligence across a wide range of tasks. As of now, strong AI does not exist, but it's the ultimate goal of some AI research."
+      }
+    ]
+  },
+  {
+    "question_id": "Q009",
+    "question_text": "What is the need of data mining?",
+    "question_type": "Technical",
+    "roles": ["Data Analyst", "Data Scientist"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A009",
+        "answer_quality": "High",
+        "answer_text": "Data mining is needed to extract valuable insights, patterns, and knowledge from large datasets. As organizations collect massive amounts of data, data mining helps in decision-making, identifying trends, predicting outcomes, and discovering hidden relationships within the data, leading to improved strategies and competitive advantages."
+      }
+    ]
+  },
+  {
+    "question_id": "Q010",
+    "question_text": "Name some sectors where data mining is applicable.",
+    "question_type": "Technical",
+    "roles": ["Data Analyst", "Data Scientist"],
+    "industries": ["Healthcare", "Finance", "Retail"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A010",
+        "answer_quality": "High",
+        "answer_text": "Data mining is applicable in various sectors:\n\n- **Healthcare**: Predicting patient outcomes, detecting fraud and abuse, measuring treatment effectiveness.\n- **Finance**: Stock price prediction, loan default prediction, credit rating determination.\n- **Retail**: Analyzing consumer behavior, identifying buying patterns, improving customer service and satisfaction.\n- **Marketing**: Targeted advertising, customer segmentation, churn prediction."
+      }
+    ]
+  },
+  {
+    "question_id": "Q011",
+    "question_text": "What are the components of NLP?",
+    "question_type": "Technical",
+    "roles": ["NLP Specialist", "AI Engineer"],
+    "industries": ["Tech", "Customer Service"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A011",
+        "answer_quality": "High",
+        "answer_text": "The main components of Natural Language Processing (NLP) are:\n\n- **Language Understanding**: Interpreting the meaning of text, including syntax and semantics.\n- **Language Generation**: Producing grammatically correct and meaningful text outputs.\n- **Language Processing**: Performing operations on text, such as tokenization, lemmatization, stemming, and part-of-speech tagging."
+      }
+    ]
+  },
+  {
+    "question_id": "Q012",
+    "question_text": "What is the full form of LSTM?",
+    "question_type": "Technical",
+    "roles": ["AI Engineer", "Data Scientist"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A012",
+        "answer_quality": "High",
+        "answer_text": "LSTM stands for **Long Short-Term Memory**. It is a type of recurrent neural network (RNN) architecture used in deep learning to model sequential data and capture long-term dependencies, effectively addressing the vanishing gradient problem found in traditional RNNs."
+      }
+    ]
+  },
+  {
+    "question_id": "Q013",
+    "question_text": "What is Artificial Narrow Intelligence (ANI)?",
+    "question_type": "Technical",
+    "roles": ["AI Engineer", "Data Scientist"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A013",
+        "answer_quality": "High",
+        "answer_text": "Artificial Narrow Intelligence (ANI), also known as Weak AI, refers to AI systems designed to perform a specific task or a limited range of tasks. These systems operate under a narrow set of constraints and limitations, such as virtual assistants, recommendation algorithms, and image recognition systems."
+      }
+    ]
+  },
+  {
+    "question_id": "Q014",
+    "question_text": "What is a data cube?",
+    "question_type": "Technical",
+    "roles": ["Data Analyst", "Data Scientist"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A014",
+        "answer_quality": "High",
+        "answer_text": "A data cube is a multidimensional array of values used to represent data along multiple dimensions in data warehousing and OLAP (Online Analytical Processing). It allows users to model and view data in multiple dimensions, enabling complex queries and analysis like slicing, dicing, and pivoting to identify patterns and insights."
+      }
+    ]
+  },
+  {
+    "question_id": "Q015",
+    "question_text": "What is the difference between model accuracy and model performance?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A015",
+        "answer_quality": "High",
+        "answer_text": "Model accuracy refers to the proportion of correct predictions made by a model out of all predictions. Model performance is a broader term that encompasses various evaluation metrics beyond accuracy, such as precision, recall, F1 score, AUC-ROC, and mean squared error. Depending on the problem and dataset, metrics other than accuracy might provide better insights into the model's effectiveness."
+      }
+    ]
+  },
+  {
+    "question_id": "Q016",
+    "question_text": "What are different components of GAN?",
+    "question_type": "Technical",
+    "roles": ["AI Engineer", "Data Scientist"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A016",
+        "answer_quality": "High",
+        "answer_text": "Generative Adversarial Networks (GANs) consist of two main components:\n\n- **Generator**: A neural network that generates synthetic data samples from random noise, aiming to produce data indistinguishable from real data.\n- **Discriminator**: A neural network that evaluates data samples and tries to distinguish between real data and data generated by the generator.\n\nThe two networks are trained simultaneously in a zero-sum game, where the generator improves to produce more realistic data, and the discriminator improves to better detect fake data."
+      }
+    ]
+  },
+  {
+    "question_id": "Q017",
+    "question_text": "What are common data structures used in deep learning?",
+    "question_type": "Technical",
+    "roles": ["AI Engineer", "Data Scientist"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A017",
+        "answer_quality": "High",
+        "answer_text": "Common data structures in deep learning include:\n\n- **Tensors**: Multi-dimensional arrays used to store data and parameters; fundamental in frameworks like TensorFlow and PyTorch.\n- **Matrices**: Two-dimensional arrays used for representing weights and activations.\n- **Vectors**: One-dimensional arrays representing inputs, outputs, or parameters.\n- **Arrays**: General-purpose data structures for storing collections of values."
+      }
+    ]
+  },
+  {
+    "question_id": "Q018",
+    "question_text": "What is the role of the hidden layer in a neural network?",
+    "question_type": "Technical",
+    "roles": ["AI Engineer", "Machine Learning Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A018",
+        "answer_quality": "High",
+        "answer_text": "Hidden layers in a neural network transform the inputs into a set of nonlinear features. They enable the network to learn complex patterns and representations in the data by performing nonlinear transformations and extracting relevant features that contribute to the final output."
+      }
+    ]
+  },
+  {
+    "question_id": "Q019",
+    "question_text": "Mention some advantages of neural networks.",
+    "question_type": "Technical",
+    "roles": ["AI Engineer", "Data Scientist"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A019",
+        "answer_quality": "High",
+        "answer_text": "Advantages of neural networks include:\n\n- **Ability to Model Nonlinear Relationships**: They can capture complex patterns in data.\n- **Adaptive Learning**: Can adjust to changing input data and improve over time.\n- **Fault Tolerance**: Robust against noise and errors in input data.\n- **Parallel Processing Capability**: Can handle multiple computations simultaneously.\n- **Versatility**: Applicable in various domains like image recognition, speech processing, and natural language processing."
+      }
+    ]
+  },
+  {
+    "question_id": "Q020",
+    "question_text": "What is the difference between stemming and lemmatization?",
+    "question_type": "Technical",
+    "roles": ["NLP Specialist", "Data Scientist"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A020",
+        "answer_quality": "High",
+        "answer_text": "Stemming and lemmatization are text normalization techniques in NLP:\n\n- **Stemming**: A rule-based process that cuts off word endings to reduce a word to its root or stem, which may not be a valid word (e.g., 'running' becomes 'run').\n- **Lemmatization**: A dictionary-based approach that reduces words to their base or dictionary form called a lemma (e.g., 'running' becomes 'run'), ensuring the output is a valid word."
+      }
+    ]
+  },
+  {
+    "question_id": "Q021",
+    "question_text": "What are the different types of text summarization?",
+    "question_type": "Technical",
+    "roles": ["NLP Specialist", "AI Engineer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A021",
+        "answer_quality": "High",
+        "answer_text": "There are two main types of text summarization:\n\n- **Extraction-based Summarization**: Selects and combines key sentences or phrases from the original text without altering them, presenting the most relevant information.\n- **Abstraction-based Summarization**: Generates new phrases and sentences that capture the meaning of the original text, potentially paraphrasing or using different wording."
+      }
+    ]
+  },
+  {
+    "question_id": "Q022",
+    "question_text": "What is the meaning of corpus in NLP?",
+    "question_type": "Technical",
+    "roles": ["NLP Specialist", "Data Scientist"],
+    "industries": ["Tech", "Education"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A022",
+        "answer_quality": "High",
+        "answer_text": "In NLP, a corpus (plural: corpora) is a large and structured set of texts used for linguistic analysis and training language models. It serves as a database for algorithms to learn language patterns, vocabulary, and grammar."
+      }
+    ]
+  },
+  {
+    "question_id": "Q023",
+    "question_text": "Explain binarizing of data.",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A023",
+        "answer_quality": "High",
+        "answer_text": "Binarizing data involves converting numerical or categorical features into binary values (0 or 1). This process can improve the performance of certain algorithms, particularly classifiers that operate better with binary inputs. Techniques like thresholding can binarize continuous variables, and one-hot encoding can convert categorical variables into binary vectors."
+      }
+    ]
+  },
+  {
+    "question_id": "Q024",
+    "question_text": "What is perception and its types?",
+    "question_type": "Technical",
+    "roles": ["AI Engineer", "Robotics Engineer"],
+    "industries": ["Tech", "Automotive"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A024",
+        "answer_quality": "High",
+        "answer_text": "Perception in AI refers to the ability of a system to interpret sensory data to understand the environment. Types of perception include:\n\n- **Visual Perception**: Processing and interpreting visual data, such as image and video recognition, face recognition, and scene understanding.\n- **Auditory Perception**: Understanding sound data, including speech recognition and audio analysis.\n- **Tactile Perception**: Interpreting touch and force data, enabling machines to respond to physical interactions with the environment."
+      }
+    ]
+  },
+  {
+    "question_id": "Q025",
+    "question_text": "Give some pros and cons of decision trees.",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A025",
+        "answer_quality": "High",
+        "answer_text": "**Pros of Decision Trees**:\n\n- Easy to understand and interpret.\n- Can handle both numerical and categorical data.\n- Requires little data preprocessing.\n- Capable of modeling nonlinear relationships.\n\n**Cons of Decision Trees**:\n\n- Prone to overfitting if not properly pruned.\n- Can be unstable; small changes in data might lead to different trees.\n- May create biased trees if some classes dominate."
+      }
+    ]
+  },
+  {
+    "question_id": "Q026",
+    "question_text": "Explain marginalization process.",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Statistician"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A026",
+        "answer_quality": "High",
+        "answer_text": "Marginalization in probability theory involves summing or integrating over a subset of variables in a joint probability distribution to obtain the marginal distribution of the remaining variables. It effectively 'eliminates' unwanted variables, focusing on those of interest. This process is essential in Bayesian inference and probabilistic modeling."
+      }
+    ]
+  }
+]

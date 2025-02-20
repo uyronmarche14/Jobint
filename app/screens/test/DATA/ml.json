@@ -1,0 +1,689 @@
+[
+  {
+    "question_id": "Q001",
+    "question_text": "What are the different types of Machine Learning?",
+    "question_type": "Conceptual",
+    "roles": ["Machine Learning Engineer", "Data Scientist", "AI Researcher"],
+    "industries": ["Tech", "Finance", "Healthcare", "E-commerce"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A001",
+        "answer_quality": "High",
+        "answer_text": "There are three main types of machine learning:\n\n1. **Supervised Learning**: In this type, the model is trained on labeled data, meaning that each training sample is paired with an output label. The model learns to predict the output from the input data.\n\n2. **Unsupervised Learning**: Here, the model works with unlabeled data and tries to find inherent patterns, structures, or relationships within the dataset without any guidance.\n\n3. **Reinforcement Learning**: This involves training models to make sequences of decisions. The model learns to achieve a goal in an uncertain, potentially complex environment by performing actions and receiving feedback in terms of rewards or penalties."
+      }
+    ]
+  },
+  {
+    "question_id": "Q002",
+    "question_text": "What is overfitting, and how can you avoid it?",
+    "question_type": "Conceptual",
+    "roles": ["Machine Learning Engineer", "Data Scientist"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A002",
+        "answer_quality": "High",
+        "answer_text": "Overfitting occurs when a machine learning model learns the training data too well, including its noise and outliers, which negatively impacts the model's performance on new, unseen data. The model becomes too complex and captures random fluctuations in the training data as concepts, failing to generalize.\n\nTo avoid overfitting, you can:\n\n- Use **Cross-Validation** techniques like k-fold cross-validation.\n- Apply **Regularization** methods such as Lasso (L1) or Ridge (L2) to penalize complex models.\n- Simplify the model by reducing the number of features or parameters.\n- Gather more training data to provide a broader dataset.\n- Use **Early Stopping** during training to halt when performance on a validation set starts to degrade."
+      }
+    ]
+  },
+  {
+    "question_id": "Q003",
+    "question_text": "What is a 'training set' and 'test set' in a machine learning model? How much data will you allocate for your training, validation, and test sets?",
+    "question_type": "Conceptual",
+    "roles": ["Machine Learning Engineer", "Data Scientist"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A003",
+        "answer_quality": "High",
+        "answer_text": "A **training set** is a subset of the dataset used to train machine learning models. The model learns patterns and relationships from this data.\n\nA **test set** is a separate subset used to evaluate the performance of the trained model on unseen data.\n\nTypically, the data is split as follows:\n\n- **Training Set**: 70% of the data, used for training the model.\n- **Validation Set**: 15% of the data, used for tuning hyperparameters and preventing overfitting.\n- **Test Set**: 15% of the data, used for final evaluation of the model's performance.\n\nThese proportions can vary depending on the dataset size and specific requirements."
+      }
+    ]
+  },
+  {
+    "question_id": "Q004",
+    "question_text": "How do you handle missing or corrupted data in a dataset?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Machine Learning Engineer", "Data Analyst"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A004",
+        "answer_quality": "High",
+        "answer_text": "Handling missing or corrupted data can be done in several ways:\n\n- **Removal**: Use functions like `isnull()` and `dropna()` in Pandas to identify and remove rows or columns with missing data.\n- **Imputation**: Replace missing values with a placeholder or estimated value using methods like `fillna()`. Common strategies include using the mean, median, or mode of the column.\n- **Interpolation**: For time series data, interpolate missing values based on neighboring data points.\n- **Prediction**: Use machine learning algorithms to predict missing values based on other features."
+      }
+    ]
+  },
+  {
+    "question_id": "Q005",
+    "question_text": "How can you choose a classifier based on a training set data size?",
+    "question_type": "Conceptual",
+    "roles": ["Machine Learning Engineer", "Data Scientist"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A005",
+        "answer_quality": "High",
+        "answer_text": "The size of the training data influences the choice of classifier:\n\n- **Small Dataset**: Use models with high bias and low variance to avoid overfitting, such as Naïve Bayes or linear models.\n- **Large Dataset**: You can opt for low bias and high variance models like decision trees or ensemble methods (e.g., Random Forests) that can capture complex patterns.\n\nAdditionally, consider the computational complexity and the nature of the data when selecting a classifier."
+      }
+    ]
+  },
+  {
+    "question_id": "Q006",
+    "question_text": "Explain the confusion matrix with respect to machine learning algorithms.",
+    "question_type": "Conceptual",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A006",
+        "answer_quality": "High",
+        "answer_text": "A **confusion matrix** is a table used to evaluate the performance of a classification model. It compares the actual target values with those predicted by the model.\n\nThe matrix includes:\n\n- **True Positives (TP)**: Correctly predicted positive observations.\n- **True Negatives (TN)**: Correctly predicted negative observations.\n- **False Positives (FP)**: Incorrectly predicted positive observations (Type I error).\n- **False Negatives (FN)**: Incorrectly predicted negative observations (Type II error).\n\nThe confusion matrix helps compute performance metrics like accuracy, precision, recall, and F1 score."
+      }
+    ]
+  },
+  {
+    "question_id": "Q007",
+    "question_text": "What is a false positive and false negative, and how are they significant?",
+    "question_type": "Conceptual",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Healthcare", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A007",
+        "answer_quality": "High",
+        "answer_text": "In classification tasks:\n\n- A **False Positive (Type I Error)** occurs when the model incorrectly predicts the positive class. For example, a medical test indicates a disease when the patient is healthy.\n\n- A **False Negative (Type II Error)** occurs when the model incorrectly predicts the negative class. For example, a medical test fails to detect a disease when the patient actually has it.\n\nTheir significance lies in the cost associated with each error type. Depending on the application, one may be more critical to minimize than the other."
+      }
+    ]
+  },
+  {
+    "question_id": "Q008",
+    "question_text": "What are the three stages of building a model in machine learning?",
+    "question_type": "Conceptual",
+    "roles": ["Machine Learning Engineer", "Data Scientist"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A008",
+        "answer_quality": "High",
+        "answer_text": "The three stages are:\n\n1. **Model Building**: Select an appropriate algorithm and train it on the training dataset.\n2. **Model Testing**: Evaluate the model's performance using the test dataset to check for accuracy and generalization.\n3. **Model Deployment**: Implement the model in a real-world environment where it can make predictions on new data. Ongoing monitoring and maintenance are essential to ensure continued performance."
+      }
+    ]
+  },
+  {
+    "question_id": "Q009",
+    "question_text": "What is Deep Learning?",
+    "question_type": "Conceptual",
+    "roles": ["Machine Learning Engineer", "AI Researcher", "Data Scientist"],
+    "industries": ["Tech", "Healthcare", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A009",
+        "answer_quality": "High",
+        "answer_text": "Deep Learning is a subset of machine learning that uses artificial neural networks with multiple layers (deep neural networks) to model and understand complex patterns in data. Unlike traditional machine learning, deep learning automatically extracts features from raw data, reducing the need for manual feature engineering. It's particularly effective in tasks like image and speech recognition."
+      }
+    ]
+  },
+  {
+    "question_id": "Q010",
+    "question_text": "What are the differences between Machine Learning and Deep Learning?",
+    "question_type": "Conceptual",
+    "roles": ["Machine Learning Engineer", "AI Researcher", "Data Scientist"],
+    "industries": ["Tech", "Healthcare", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A010",
+        "answer_quality": "High",
+        "answer_text": "**Machine Learning**:\n\n- Requires manual feature extraction.\n- Works well with smaller datasets.\n- Algorithms include linear regression, decision trees, etc.\n- Less computational power required.\n\n**Deep Learning**:\n\n- Performs automatic feature extraction through neural networks.\n- Excels with large datasets.\n- Uses architectures like CNNs, RNNs.\n- Requires significant computational resources.\n\nThe main difference lies in how features are extracted and the complexity of the models."
+      }
+    ]
+  },
+  {
+    "question_id": "Q011",
+    "question_text": "What are the applications of supervised machine learning in modern businesses?",
+    "question_type": "Conceptual",
+    "roles": [
+      "Data Scientist",
+      "Machine Learning Engineer",
+      "Business Analyst"
+    ],
+    "industries": ["Tech", "Finance", "E-commerce"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A011",
+        "answer_quality": "High",
+        "answer_text": "Applications include:\n\n- **Email Spam Detection**: Classifying emails as spam or not spam.\n- **Healthcare Diagnosis**: Predicting diseases based on patient data.\n- **Sentiment Analysis**: Determining sentiment from text data for brand monitoring.\n- **Fraud Detection**: Identifying fraudulent transactions in finance.\n- **Customer Churn Prediction**: Predicting if a customer is likely to leave a service."
+      }
+    ]
+  },
+  {
+    "question_id": "Q012",
+    "question_text": "What is semi-supervised machine learning?",
+    "question_type": "Conceptual",
+    "roles": ["Machine Learning Engineer", "Data Scientist"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A012",
+        "answer_quality": "High",
+        "answer_text": "Semi-supervised learning is a machine learning approach that involves training models on a dataset that contains both labeled and unlabeled data. Typically, a small amount of labeled data is used along with a large amount of unlabeled data. This approach leverages the abundance of unlabeled data to improve learning accuracy without the high cost of labeling large datasets."
+      }
+    ]
+  },
+  {
+    "question_id": "Q013",
+    "question_text": "What are unsupervised machine learning techniques?",
+    "question_type": "Conceptual",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Tech", "Marketing"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A013",
+        "answer_quality": "High",
+        "answer_text": "Unsupervised learning techniques include:\n\n- **Clustering**: Grouping similar data points together (e.g., K-Means, Hierarchical Clustering).\n- **Association**: Discovering rules that describe large portions of data (e.g., Apriori algorithm for market basket analysis).\n- **Dimensionality Reduction**: Reducing the number of variables under consideration (e.g., PCA, t-SNE).\n- **Anomaly Detection**: Identifying unusual data points within the dataset."
+      }
+    ]
+  },
+  {
+    "question_id": "Q014",
+    "question_text": "What is the difference between supervised and unsupervised machine learning?",
+    "question_type": "Conceptual",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A014",
+        "answer_quality": "High",
+        "answer_text": "**Supervised Learning**:\n\n- Uses labeled data.\n- The model learns to predict outputs from inputs.\n- Used for classification and regression tasks.\n\n**Unsupervised Learning**:\n\n- Uses unlabeled data.\n- The model finds patterns and relationships within the data.\n- Used for clustering, association, and dimensionality reduction."
+      }
+    ]
+  },
+  {
+    "question_id": "Q015",
+    "question_text": "What is the difference between inductive machine learning and deductive machine learning?",
+    "question_type": "Conceptual",
+    "roles": ["AI Researcher", "Machine Learning Engineer"],
+    "industries": ["Tech", "Academic Research"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A015",
+        "answer_quality": "High",
+        "answer_text": "**Inductive Learning**:\n\n- Derives generalized rules from specific training examples.\n- Learns by observing instances and inferring patterns.\n- Example: Teaching a child that touching fire causes burns by showing examples.\n\n**Deductive Learning**:\n\n- Applies general rules to specific instances to draw conclusions.\n- Starts with a hypothesis and tests it against data.\n- Example: A child touches fire, gets burned, and deduces that fire is dangerous."
+      }
+    ]
+  },
+  {
+    "question_id": "Q016",
+    "question_text": "Compare K-Means and K-Nearest Neighbors algorithms.",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A016",
+        "answer_quality": "High",
+        "answer_text": "**K-Means**:\n\n- Unsupervised learning algorithm.\n- Used for clustering data into K clusters based on feature similarity.\n- Assigns data points to clusters to minimize intra-cluster variance.\n\n**K-Nearest Neighbors (KNN)**:\n\n- Supervised learning algorithm.\n- Used for classification and regression tasks.\n- Classifies a data point based on the majority class among its K nearest neighbors in the feature space."
+      }
+    ]
+  },
+  {
+    "question_id": "Q017",
+    "question_text": "What is 'naive' in the Naive Bayes classifier?",
+    "question_type": "Conceptual",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A017",
+        "answer_quality": "High",
+        "answer_text": "The term 'naive' in Naive Bayes refers to the assumption that all features in a dataset are mutually independent given the class label. This simplification makes computation more efficient but may not hold true in real-world data. Despite this, Naive Bayes often performs well in practice."
+      }
+    ]
+  },
+  {
+    "question_id": "Q018",
+    "question_text": "Explain how a system can play a game of chess using reinforcement learning.",
+    "question_type": "Conceptual",
+    "roles": ["AI Researcher", "Machine Learning Engineer"],
+    "industries": ["Tech", "Gaming"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A018",
+        "answer_quality": "High",
+        "answer_text": "In reinforcement learning, an agent learns to make decisions by performing actions in an environment to achieve a goal. For chess:\n\n- **Agent**: The chess-playing program.\n- **Environment**: The chessboard and game rules.\n- **Actions**: Possible legal moves.\n- **Rewards**: Positive reward for winning, negative for losing or making poor moves.\n\nThe agent plays games against itself or other opponents, learning strategies by receiving feedback in the form of rewards or penalties, and adjusting its policy to improve performance over time."
+      }
+    ]
+  },
+  {
+    "question_id": "Q019",
+    "question_text": "How will you know which machine learning algorithm to choose for your classification problem?",
+    "question_type": "Conceptual",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A019",
+        "answer_quality": "High",
+        "answer_text": "Choosing an algorithm depends on:\n\n- **Dataset Size**: Some algorithms perform better with large datasets (e.g., Neural Networks), others with small datasets (e.g., Naïve Bayes).\n- **Feature Types**: Nature of input features (categorical, numerical).\n- **Computational Resources**: Availability of processing power and time.\n- **Accuracy vs. Interpretability**: Trade-off between model performance and ease of understanding.\n- **Problem Complexity**: The complexity of the underlying patterns in the data.\n\nTesting multiple algorithms and using cross-validation can help determine the best choice."
+      }
+    ]
+  },
+  {
+    "question_id": "Q020",
+    "question_text": "How is Amazon able to recommend other things to buy? How does the recommendation engine work?",
+    "question_type": "Conceptual",
+    "roles": ["Data Scientist", "Machine Learning Engineer", "Data Analyst"],
+    "industries": ["E-commerce", "Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A020",
+        "answer_quality": "High",
+        "answer_text": "Amazon's recommendation engine uses machine learning algorithms, particularly **association rules** and **collaborative filtering**, to suggest products:\n\n- **Association Rules**: Identifies items frequently bought together.\n- **Collaborative Filtering**: Recommends products based on similarities between users' behaviors and preferences.\n\nBy analyzing purchase history, browsing behavior, items in the cart, and wish lists, Amazon predicts and recommends items that a customer is likely to buy."
+      }
+    ]
+  },
+  {
+    "question_id": "Q021",
+    "question_text": "When will you use classification over regression?",
+    "question_type": "Conceptual",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Finance", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A021",
+        "answer_quality": "High",
+        "answer_text": "Use **classification** when the target variable is categorical and you want to predict class labels (e.g., spam detection, disease diagnosis). Use **regression** when the target variable is continuous and you want to predict numerical values (e.g., predicting house prices, sales forecasting). The choice depends on the nature of the problem and the desired output."
+      }
+    ]
+  },
+  {
+    "question_id": "Q022",
+    "question_text": "How do you design an email spam filter?",
+    "question_type": "Technical",
+    "roles": [
+      "Machine Learning Engineer",
+      "Data Scientist",
+      "Software Engineer"
+    ],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A022",
+        "answer_quality": "High",
+        "answer_text": "Designing an email spam filter involves:\n\n- **Data Collection**: Gather a labeled dataset of emails marked as 'spam' or 'not spam'.\n- **Feature Extraction**: Identify features like word frequencies, presence of certain keywords (e.g., 'lottery', 'free'), sender's address, etc.\n- **Model Selection**: Use algorithms like Naïve Bayes, SVM, or Decision Trees known for text classification.\n- **Training**: Train the model on the labeled dataset.\n- **Evaluation**: Test the model on a separate dataset to evaluate accuracy, precision, recall.\n- **Deployment**: Implement the model in the email system to classify incoming emails.\n- **Continuous Learning**: Update the model with new data to adapt to evolving spam techniques."
+      }
+    ]
+  },
+  {
+    "question_id": "Q023",
+    "question_text": "What is a Random Forest?",
+    "question_type": "Conceptual",
+    "roles": ["Machine Learning Engineer", "Data Scientist"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A023",
+        "answer_quality": "High",
+        "answer_text": "Random Forest is an ensemble learning method that constructs multiple decision trees during training and outputs the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees. It reduces overfitting by averaging the results and improves predictive accuracy."
+      }
+    ]
+  },
+  {
+    "question_id": "Q024",
+    "question_text": "Considering a long list of machine learning algorithms, given a dataset, how do you decide which one to use?",
+    "question_type": "Conceptual",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A024",
+        "answer_quality": "High",
+        "answer_text": "Algorithm selection depends on:\n\n- **Data Size and Quality**: Some algorithms handle large datasets better.\n- **Data Type**: Numerical, categorical, text, images.\n- **Problem Type**: Classification, regression, clustering.\n- **Computational Resources**: Time and hardware constraints.\n- **Model Interpretability**: Need for understanding model decisions.\n- **Performance Metrics**: Prioritize accuracy, precision, recall, etc.\n\nExperimentation and cross-validation are key. Start with simple models and progressively try more complex ones."
+      }
+    ]
+  },
+  {
+    "question_id": "Q025",
+    "question_text": "What is bias and variance in a machine learning model?",
+    "question_type": "Conceptual",
+    "roles": ["Machine Learning Engineer", "Data Scientist"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A025",
+        "answer_quality": "High",
+        "answer_text": "**Bias** refers to errors due to overly simplistic assumptions in the learning algorithm. High bias can cause the model to miss relevant relations (underfitting).\n\n**Variance** refers to errors due to too much complexity in the learning algorithm. High variance can cause the model to model the random noise in the training data (overfitting).\n\nA good model balances bias and variance to minimize total error."
+      }
+    ]
+  },
+  {
+    "question_id": "Q026",
+    "question_text": "What is the trade-off between bias and variance?",
+    "question_type": "Conceptual",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A026",
+        "answer_quality": "High",
+        "answer_text": "The **bias-variance trade-off** is the balance between a model's ability to generalize to new data and its accuracy on the training data. Increasing model complexity decreases bias but increases variance, and vice versa. The goal is to find the optimal complexity that minimizes total error by balancing bias and variance."
+      }
+    ]
+  },
+  {
+    "question_id": "Q027",
+    "question_text": "Define precision and recall.",
+    "question_type": "Conceptual",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Healthcare", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A027",
+        "answer_quality": "High",
+        "answer_text": "**Precision** is the ratio of true positive predictions to the total positive predictions made by the model. It measures the accuracy of positive predictions.\n\nPrecision = TP / (TP + FP)\n\n**Recall** is the ratio of true positive predictions to all actual positive instances. It measures the model's ability to identify positive instances.\n\nRecall = TP / (TP + FN)"
+      }
+    ]
+  },
+  {
+    "question_id": "Q028",
+    "question_text": "What is a decision tree classification?",
+    "question_type": "Conceptual",
+    "roles": ["Machine Learning Engineer", "Data Scientist"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A028",
+        "answer_quality": "High",
+        "answer_text": "Decision tree classification involves creating a model that predicts the value of a target variable by learning simple decision rules inferred from data features. It splits the dataset into subsets based on feature values, forming a tree-like structure where each node represents a feature, branches represent decision rules, and leaves represent outcomes."
+      }
+    ]
+  },
+  {
+    "question_id": "Q029",
+    "question_text": "What is pruning in decision trees, and how is it done?",
+    "question_type": "Technical",
+    "roles": ["Machine Learning Engineer", "Data Scientist"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A029",
+        "answer_quality": "High",
+        "answer_text": "Pruning reduces the size of a decision tree by removing sections that provide little power to classify instances. This helps prevent overfitting.\n\nMethods of pruning:\n\n- **Pre-pruning (Early Stopping)**: Stop growing the tree before it perfectly fits the training data by setting conditions like minimum number of samples per leaf.\n- **Post-pruning**: Grow the full tree and then remove branches that have little significance using techniques like reduced error pruning or cost complexity pruning.\n\nPruning can be done in a top-down or bottom-up fashion, evaluating the impact on model performance."
+      }
+    ]
+  },
+  {
+    "question_id": "Q030",
+    "question_text": "Briefly explain logistic regression.",
+    "question_type": "Conceptual",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Healthcare", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A030",
+        "answer_quality": "High",
+        "answer_text": "Logistic regression is a statistical model used for binary classification tasks. It estimates the probability that a given input belongs to a certain class using the logistic function to model a binary dependent variable. The output is between 0 and 1, and a threshold (e.g., 0.5) is used to classify the input."
+      }
+    ]
+  },
+  {
+    "question_id": "Q031",
+    "question_text": "Explain the K-Nearest Neighbor algorithm.",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A031",
+        "answer_quality": "High",
+        "answer_text": "K-Nearest Neighbors (KNN) is a non-parametric, instance-based learning algorithm used for classification and regression. It works by:\n\n- **Storing** all available cases.\n- **Classifying** new cases based on a majority vote or averaging the K nearest neighbors in the feature space.\n- **Distance Metrics**: Commonly uses Euclidean distance to find nearest neighbors.\n\nThe choice of K and the distance metric significantly affect the model's performance."
+      }
+    ]
+  },
+  {
+    "question_id": "Q032",
+    "question_text": "What is a recommendation system?",
+    "question_type": "Conceptual",
+    "roles": [
+      "Data Scientist",
+      "Machine Learning Engineer",
+      "Software Engineer"
+    ],
+    "industries": ["E-commerce", "Entertainment"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A032",
+        "answer_quality": "High",
+        "answer_text": "A recommendation system is an information filtering tool that predicts and recommends items of interest to users based on their preferences and behavior. It uses algorithms to analyze data and suggest products, services, or content. Types include:\n\n- **Content-Based Filtering**: Recommends items similar to those the user liked in the past.\n- **Collaborative Filtering**: Recommends items based on the preferences of similar users."
+      }
+    ]
+  },
+  {
+    "question_id": "Q033",
+    "question_text": "What is Kernel SVM?",
+    "question_type": "Technical",
+    "roles": ["Machine Learning Engineer", "Data Scientist"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A033",
+        "answer_quality": "High",
+        "answer_text": "Kernel SVM refers to the use of kernel functions in Support Vector Machines to transform data into a higher-dimensional space where it becomes linearly separable. Common kernels include:\n\n- **Linear Kernel**\n- **Polynomial Kernel**\n- **Radial Basis Function (RBF) Kernel**\n\nBy applying the kernel trick, SVMs can efficiently perform non-linear classification."
+      }
+    ]
+  },
+  {
+    "question_id": "Q034",
+    "question_text": "What are some methods of reducing dimensionality?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A034",
+        "answer_quality": "High",
+        "answer_text": "Methods include:\n\n- **Feature Selection**: Selecting a subset of relevant features using techniques like variance thresholding, recursive feature elimination.\n- **Feature Extraction**: Transforming data into a lower-dimensional space using algorithms like Principal Component Analysis (PCA), Linear Discriminant Analysis (LDA), t-SNE.\n- **Combining Features**: Creating new features by combining existing ones through feature engineering.\n- **Removing Collinear Features**: Eliminating correlated variables to reduce redundancy."
+      }
+    ]
+  },
+  {
+    "question_id": "Q035",
+    "question_text": "What is Principal Component Analysis?",
+    "question_type": "Technical",
+    "roles": ["Data Scientist", "Machine Learning Engineer", "Data Analyst"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A035",
+        "answer_quality": "High",
+        "answer_text": "Principal Component Analysis (PCA) is a dimensionality reduction technique that transforms a large set of variables into a smaller one while retaining most of the original variability. It does this by identifying the principal components, which are linear combinations of the original variables that capture the maximum variance in the data."
+      }
+    ]
+  },
+  {
+    "question_id": "Q036",
+    "question_text": "What do you understand by the F1 score?",
+    "question_type": "Conceptual",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Healthcare", "Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A036",
+        "answer_quality": "High",
+        "answer_text": "The F1 score is the harmonic mean of precision and recall, providing a balance between the two. It is calculated as:\n\nF1 = 2 * (Precision * Recall) / (Precision + Recall)\n\nAn F1 score reaches its best value at 1 (perfect precision and recall) and worst at 0."
+      }
+    ]
+  },
+  {
+    "question_id": "Q037",
+    "question_text": "What do you understand by Type I vs Type II error?",
+    "question_type": "Conceptual",
+    "roles": ["Data Scientist", "Statistician"],
+    "industries": ["Healthcare", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A037",
+        "answer_quality": "High",
+        "answer_text": "**Type I Error (False Positive)**: Rejecting the null hypothesis when it is true. Detecting an effect that is not present.\n\n**Type II Error (False Negative)**: Failing to reject the null hypothesis when it is false. Not detecting an effect that is present.\n\nBalancing these errors is crucial in hypothesis testing and statistical inference."
+      }
+    ]
+  },
+  {
+    "question_id": "Q038",
+    "question_text": "Explain correlation and covariance.",
+    "question_type": "Conceptual",
+    "roles": ["Data Scientist", "Statistician"],
+    "industries": ["Finance", "Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A038",
+        "answer_quality": "High",
+        "answer_text": "**Covariance** measures the directional relationship between two variables; it can range from negative to positive infinity. A positive value indicates that variables move in the same direction, while a negative value indicates opposite directions.\n\n**Correlation** is a standardized version of covariance that measures both the strength and direction of a linear relationship between two variables, ranging from -1 to 1.\n\nCorrelation = Covariance(X, Y) / (Standard Deviation X * Standard Deviation Y)"
+      }
+    ]
+  },
+  {
+    "question_id": "Q039",
+    "question_text": "What are support vectors in SVM?",
+    "question_type": "Technical",
+    "roles": ["Machine Learning Engineer", "Data Scientist"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A039",
+        "answer_quality": "High",
+        "answer_text": "Support vectors are the data points that are closest to the separating hyperplane in a Support Vector Machine (SVM). They are critical elements of the dataset because they directly influence the position and orientation of the hyperplane. Removing them would change the SVM model, while removing other non-support vectors would not."
+      }
+    ]
+  },
+  {
+    "question_id": "Q040",
+    "question_text": "What is ensemble learning?",
+    "question_type": "Conceptual",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A040",
+        "answer_quality": "High",
+        "answer_text": "Ensemble learning combines predictions from multiple machine learning models to improve accuracy and robustness over a single model. Techniques include:\n\n- **Bagging**: Training multiple models in parallel on different subsets of data (e.g., Random Forest).\n- **Boosting**: Training models sequentially, where each new model focuses on correcting errors from previous ones (e.g., AdaBoost, XGBoost).\n- **Stacking**: Combining different types of models and using a meta-model to make final predictions."
+      }
+    ]
+  },
+  {
+    "question_id": "Q041",
+    "question_text": "What is cross-validation?",
+    "question_type": "Conceptual",
+    "roles": ["Data Scientist", "Machine Learning Engineer"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A041",
+        "answer_quality": "High",
+        "answer_text": "Cross-validation is a resampling technique used to evaluate machine learning models on a limited data sample. It involves partitioning the data into subsets, training the model on some subsets (training set), and validating it on the remaining subsets (validation set). The most common method is K-Fold Cross-Validation."
+      }
+    ]
+  },
+  {
+    "question_id": "Q042",
+    "question_text": "What are the different methods to split a tree in a decision tree algorithm?",
+    "question_type": "Technical",
+    "roles": ["Machine Learning Engineer", "Data Scientist"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A042",
+        "answer_quality": "High",
+        "answer_text": "Methods include:\n\n- **Gini Impurity**: Measures the likelihood of an incorrect classification of a new instance. Used for categorical target variables.\n\n  Gini = 1 - Σ (P_i)^2\n\n- **Information Gain**: Based on entropy, measures the reduction in entropy after a dataset is split on an attribute.\n\n  Information Gain = Entropy(before) - Entropy(after)\n\n- **Variance Reduction**: Used for continuous target variables. Splits that minimize the variance within each node are preferred."
+      }
+    ]
+  },
+  {
+    "question_id": "Q043",
+    "question_text": "How does the Support Vector Machine algorithm handle self-learning?",
+    "question_type": "Conceptual",
+    "roles": ["Machine Learning Engineer", "AI Researcher"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A043",
+        "answer_quality": "High",
+        "answer_text": "Support Vector Machines are not inherently self-learning algorithms. However, they can be adapted for semi-supervised learning by modifying the objective function to include unlabeled data. Techniques like transductive SVM or using SVM in conjunction with self-training methods allow the algorithm to leverage unlabeled data to improve learning."
+      }
+    ]
+  },
+  {
+    "question_id": "Q044",
+    "question_text": "What are the assumptions you need to take before starting with linear regression?",
+    "question_type": "Conceptual",
+    "roles": ["Data Scientist", "Statistician"],
+    "industries": ["Finance", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A044",
+        "answer_quality": "High",
+        "answer_text": "Assumptions include:\n\n1. **Linearity**: Linear relationship between independent and dependent variables.\n2. **Independence**: Observations are independent of each other.\n3. **Homoscedasticity**: Constant variance of errors.\n4. **Normality**: Errors are normally distributed.\n5. **No Multicollinearity**: Independent variables are not highly correlated with each other."
+      }
+    ]
+  },
+  {
+    "question_id": "Q045",
+    "question_text": "What is the difference between Lasso and Ridge regression?",
+    "question_type": "Conceptual",
+    "roles": ["Data Scientist", "Machine Learning Engineer", "Statistician"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A045",
+        "answer_quality": "High",
+        "answer_text": "Both Lasso and Ridge are regularization techniques used to prevent overfitting by penalizing large coefficients.\n\n- **Lasso Regression (L1 Regularization)**:\n  - Adds absolute value of coefficients (L1 penalty) to the loss function.\n  - Can shrink some coefficients to zero, effectively performing feature selection.\n\n- **Ridge Regression (L2 Regularization)**:\n  - Adds squared value of coefficients (L2 penalty) to the loss function.\n  - Shrinks coefficients but does not eliminate them; all features remain in the model."
+      }
+    ]
+  }
+]

@@ -1,0 +1,624 @@
+{
+  "categories": [
+    {
+      "name": "Mobile Development",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is mobile development?",
+          "options": [
+            "The process of creating websites for desktops",
+            "The process of developing apps specifically for mobile devices such as smartphones and tablets",
+            "A technique for building mainframe applications",
+            "A set of rules for styling web pages"
+          ],
+          "answer": "The process of developing apps specifically for mobile devices such as smartphones and tablets",
+          "difficulty": "Easy",
+          "explanation": "Mobile development focuses on creating applications optimized for mobile platforms like Android and iOS."
+        },
+        {
+          "id": 2,
+          "question": "Which programming language is primarily used for native Android development?",
+          "options": ["Swift", "Objective-C", "Java or Kotlin", "C#"],
+          "answer": "Java or Kotlin",
+          "difficulty": "Easy",
+          "explanation": "Modern Android development often uses Kotlin, though Java has been historically common."
+        },
+        {
+          "id": 3,
+          "question": "Which programming language is primarily used for native iOS development?",
+          "options": ["Java", "Kotlin", "Swift", "Dart"],
+          "answer": "Swift",
+          "difficulty": "Easy",
+          "explanation": "Swift is the primary language for iOS development, replacing Objective-C in most modern projects."
+        },
+        {
+          "id": 4,
+          "question": "What is the Android SDK?",
+          "options": [
+            "A hardware component of Android devices",
+            "A set of development tools provided by Google for building Android apps",
+            "A framework for building iOS applications",
+            "A version control system for mobile code"
+          ],
+          "answer": "A set of development tools provided by Google for building Android apps",
+          "difficulty": "Medium",
+          "explanation": "The Android Software Development Kit includes libraries, tools, and documentation necessary for creating Android apps."
+        },
+        {
+          "id": 5,
+          "question": "What is Xcode?",
+          "options": [
+            "An Android emulator",
+            "A code minification tool",
+            "Apple's Integrated Development Environment (IDE) for iOS and macOS development",
+            "A cloud service for mobile analytics"
+          ],
+          "answer": "Apple's Integrated Development Environment (IDE) for iOS and macOS development",
+          "difficulty": "Easy",
+          "explanation": "Xcode is used to develop iOS, watchOS, and macOS applications, providing tools, simulators, and debugging features."
+        },
+        {
+          "id": 6,
+          "question": "What is the difference between native and hybrid mobile apps?",
+          "options": [
+            "Native apps are built using web technologies, hybrid apps use platform-specific languages",
+            "Hybrid apps are built for one platform only, while native apps run on multiple platforms",
+            "Native apps are built with platform-specific languages and tools, hybrid apps use web technologies wrapped in a native shell",
+            "There is no difference"
+          ],
+          "answer": "Native apps are built with platform-specific languages and tools, hybrid apps use web technologies wrapped in a native shell",
+          "difficulty": "Medium",
+          "explanation": "Native apps use native SDKs and languages, while hybrid apps rely on HTML, CSS, and JavaScript running inside a native container."
+        },
+        {
+          "id": 7,
+          "question": "Which popular cross-platform framework uses JavaScript to build mobile apps?",
+          "options": ["Flutter", "Xamarin", "React Native", "Ionic"],
+          "answer": "React Native",
+          "difficulty": "Easy",
+          "explanation": "React Native, developed by Facebook, uses JavaScript and React concepts to build native mobile apps for Android and iOS."
+        },
+        {
+          "id": 8,
+          "question": "Which cross-platform framework uses the Dart programming language?",
+          "options": ["React Native", "Flutter", "Xamarin", "Cordova"],
+          "answer": "Flutter",
+          "difficulty": "Easy",
+          "explanation": "Flutter, developed by Google, uses the Dart language to build fast, cross-platform mobile apps."
+        },
+        {
+          "id": 9,
+          "question": "What is an APK?",
+          "options": [
+            "Android Package Kit, the file format used to distribute and install apps on Android",
+            "Apple Package Kernel, a format for iOS apps",
+            "A configuration file for mobile networks",
+            "A debugging tool for Android"
+          ],
+          "answer": "Android Package Kit, the file format used to distribute and install apps on Android",
+          "difficulty": "Easy",
+          "explanation": "APK files contain all the code, resources, and metadata needed to install and run an Android app."
+        },
+        {
+          "id": 10,
+          "question": "What is an IPA file?",
+          "options": [
+            "iOS App Store configuration file",
+            "An archive file that contains iOS application binaries, used for distribution",
+            "A plugin file for Android environments",
+            "A file containing Apple Developer credentials"
+          ],
+          "answer": "An archive file that contains iOS application binaries, used for distribution",
+          "difficulty": "Medium",
+          "explanation": "IPA (iOS App Store Package) files are used to distribute and install apps on iOS devices."
+        },
+        {
+          "id": 11,
+          "question": "What is the significance of MVVM in mobile development?",
+          "options": [
+            "A design pattern (Model-View-ViewModel) that separates logic from the UI for more maintainable code",
+            "A tool for debugging network requests",
+            "A language exclusive to iOS development",
+            "A hardware component in mobile devices"
+          ],
+          "answer": "A design pattern (Model-View-ViewModel) that separates logic from the UI for more maintainable code",
+          "difficulty": "Medium",
+          "explanation": "MVVM helps structure code, making mobile apps easier to test, maintain, and scale."
+        },
+        {
+          "id": 12,
+          "question": "What is the purpose of an emulator or simulator?",
+          "options": [
+            "To build code more efficiently",
+            "To run mobile applications on a desktop environment for testing without a physical device",
+            "To encrypt application files",
+            "To minify JavaScript code in hybrid apps"
+          ],
+          "answer": "To run mobile applications on a desktop environment for testing without a physical device",
+          "difficulty": "Easy",
+          "explanation": "Emulators (Android) and simulators (iOS) let developers test apps on virtual devices, speeding up development."
+        },
+        {
+          "id": 13,
+          "question": "What is Firebase commonly used for in mobile apps?",
+          "options": [
+            "Local database storage only",
+            "Continuous Integration (CI)",
+            "Backend as a Service (BaaS) offering authentication, real-time database, hosting, and more",
+            "Video editing in mobile applications"
+          ],
+          "answer": "Backend as a Service (BaaS) offering authentication, real-time database, hosting, and more",
+          "difficulty": "Easy",
+          "explanation": "Firebase provides ready-to-use backend services, including authentication, database, storage, analytics, and more."
+        },
+        {
+          "id": 14,
+          "question": "What is the purpose of code signing in mobile app development?",
+          "options": [
+            "To improve app performance",
+            "To verify the authenticity and integrity of the app before installation",
+            "To reduce app size",
+            "To translate the app's content into multiple languages"
+          ],
+          "answer": "To verify the authenticity and integrity of the app before installation",
+          "difficulty": "Medium",
+          "explanation": "Code signing ensures apps come from a trusted developer and haven't been tampered with."
+        },
+        {
+          "id": 15,
+          "question": "Which markup language is commonly used for designing Android app layouts?",
+          "options": ["HTML", "XML", "JSON", "YAML"],
+          "answer": "XML",
+          "difficulty": "Easy",
+          "explanation": "Android layouts and UI elements are often defined in XML resource files."
+        },
+        {
+          "id": 16,
+          "question": "Which UI framework is used by default in iOS development?",
+          "options": [
+            "UIKit (and SwiftUI for newer apps)",
+            "Jetpack Compose",
+            "Flutter Widgets",
+            "React Native Components"
+          ],
+          "answer": "UIKit (and SwiftUI for newer apps)",
+          "difficulty": "Medium",
+          "explanation": "UIKit has historically been the primary iOS UI framework, while SwiftUI is a newer, declarative alternative."
+        },
+        {
+          "id": 17,
+          "question": "What is the main difference between a 'Simulator' and an 'Emulator'?",
+          "options": [
+            "They are the same",
+            "A simulator mimics software but not hardware, while an emulator tries to replicate both hardware and software",
+            "An emulator is for iOS and a simulator is for Android",
+            "A simulator is only for testing performance"
+          ],
+          "answer": "A simulator mimics software but not hardware, while an emulator tries to replicate both hardware and software",
+          "difficulty": "Hard",
+          "explanation": "iOS uses simulators (software-level), and Android commonly uses emulators (closer hardware-level simulation)."
+        },
+        {
+          "id": 18,
+          "question": "What is Gradle in the context of Android development?",
+          "options": [
+            "A UI toolkit for Android",
+            "A build automation and dependency management tool",
+            "A layout file format",
+            "A type of Android device"
+          ],
+          "answer": "A build automation and dependency management tool",
+          "difficulty": "Medium",
+          "explanation": "Gradle automates the build process, manages dependencies, and simplifies tasks like testing and packaging in Android."
+        },
+        {
+          "id": 19,
+          "question": "What is CocoaPods?",
+          "options": [
+            "A dependency manager for Swift and Objective-C projects",
+            "A version control system",
+            "A testing framework for Android",
+            "A design pattern for iOS"
+          ],
+          "answer": "A dependency manager for Swift and Objective-C projects",
+          "difficulty": "Medium",
+          "explanation": "CocoaPods is a popular dependency manager for iOS/macOS projects, simplifying library integration."
+        },
+        {
+          "id": 20,
+          "question": "What is a mobile app 'bundle identifier' or 'application ID'?",
+          "options": [
+            "A unique identifier for each device",
+            "A unique name that identifies an app across the ecosystem",
+            "A key used for encryption",
+            "A UI component used in layout files"
+          ],
+          "answer": "A unique name that identifies an app across the ecosystem",
+          "difficulty": "Easy",
+          "explanation": "Bundle identifiers or application IDs uniquely identify an app, used by stores and operating systems."
+        },
+        {
+          "id": 21,
+          "question": "What is the Apple App Store?",
+          "options": [
+            "A code editor",
+            "A marketplace for distributing and downloading iOS applications",
+            "A testing framework for iOS",
+            "A hardware accessory for iPhones"
+          ],
+          "answer": "A marketplace for distributing and downloading iOS applications",
+          "difficulty": "Easy",
+          "explanation": "The App Store is where iOS apps are published and users can browse, purchase, and install them."
+        },
+        {
+          "id": 22,
+          "question": "What is Google Play?",
+          "options": [
+            "A build automation tool",
+            "A device emulator",
+            "The official app store for Android devices",
+            "A UI layout manager"
+          ],
+          "answer": "The official app store for Android devices",
+          "difficulty": "Easy",
+          "explanation": "Google Play is the primary distribution platform for Android apps."
+        },
+        {
+          "id": 23,
+          "question": "What does 'Responsive Design' mean in mobile development?",
+          "options": [
+            "Adapting the app layout to different device sizes and orientations",
+            "Automatically translating the app into multiple languages",
+            "Making the app respond to voice commands",
+            "Ensuring the app runs offline"
+          ],
+          "answer": "Adapting the app layout to different device sizes and orientations",
+          "difficulty": "Easy",
+          "explanation": "Responsive design ensures that the UI looks and functions well on various screen sizes and devices."
+        },
+        {
+          "id": 24,
+          "question": "What is Android Jetpack?",
+          "options": [
+            "A proprietary UI framework for iOS",
+            "A collection of Android libraries and tools to help developers follow best practices",
+            "A hardware device for Android debugging",
+            "A cloud storage service"
+          ],
+          "answer": "A collection of Android libraries and tools to help developers follow best practices",
+          "difficulty": "Medium",
+          "explanation": "Android Jetpack provides components and guidelines to make Android development faster and more maintainable."
+        },
+        {
+          "id": 25,
+          "question": "What is SwiftUI?",
+          "options": [
+            "A testing tool for Android",
+            "A declarative UI framework for building iOS/macOS/watchOS/tvOS interfaces",
+            "A language for server-side development",
+            "A third-party library for augmented reality"
+          ],
+          "answer": "A declarative UI framework for building iOS/macOS/watchOS/tvOS interfaces",
+          "difficulty": "Medium",
+          "explanation": "SwiftUI simplifies UI development with a declarative approach and is a modern alternative to UIKit."
+        },
+        {
+          "id": 26,
+          "question": "Which protocol is commonly used for network requests in mobile apps?",
+          "options": ["SMTP", "HTTP/HTTPS", "FTP", "RTP"],
+          "answer": "HTTP/HTTPS",
+          "difficulty": "Easy",
+          "explanation": "HTTP and HTTPS are commonly used protocols for communicating with web servers and APIs."
+        },
+        {
+          "id": 27,
+          "question": "What is a ViewModel in MVVM architecture?",
+          "options": [
+            "A data visualization library",
+            "A component that holds the data and business logic for the View, exposing observable data",
+            "A tool for code compilation",
+            "A device-specific configuration file"
+          ],
+          "answer": "A component that holds the data and business logic for the View, exposing observable data",
+          "difficulty": "Medium",
+          "explanation": "The ViewModel mediates between the Model and the View, providing data in a usable format."
+        },
+        {
+          "id": 28,
+          "question": "What is AsyncTask (in older Android projects)?",
+          "options": [
+            "A type of Android fragment",
+            "A background thread helper that simplifies running short asynchronous tasks",
+            "A JSON parser",
+            "A build script for Gradle"
+          ],
+          "answer": "A background thread helper that simplifies running short asynchronous tasks",
+          "difficulty": "Medium",
+          "explanation": "AsyncTask was an Android class for easy background operations on the UI thread, now largely replaced by newer APIs."
+        },
+        {
+          "id": 29,
+          "question": "What is ARKit?",
+          "options": [
+            "A UI toolkit for Android",
+            "Apple’s augmented reality framework for iOS",
+            "A version control system",
+            "A tool for memory leak detection"
+          ],
+          "answer": "Apple’s augmented reality framework for iOS",
+          "difficulty": "Medium",
+          "explanation": "ARKit allows developers to create AR experiences on iOS devices by blending digital objects with the real world."
+        },
+        {
+          "id": 30,
+          "question": "What is Android's fragment?",
+          "options": [
+            "A stand-alone app",
+            "A piece of UI or behavior that can be placed in an Activity to create modular UIs",
+            "A data storage mechanism",
+            "A configuration file"
+          ],
+          "answer": "A piece of UI or behavior that can be placed in an Activity to create modular UIs",
+          "difficulty": "Medium",
+          "explanation": "Fragments allow for more flexible UI designs that adapt to different screen sizes and orientations."
+        },
+        {
+          "id": 31,
+          "question": "What is ProGuard (or R8) in Android?",
+          "options": [
+            "A testing framework",
+            "A tool for obfuscating and shrinking Android app code",
+            "A library for parsing XML",
+            "A version control system"
+          ],
+          "answer": "A tool for obfuscating and shrinking Android app code",
+          "difficulty": "Hard",
+          "explanation": "ProGuard (and now R8) reduces the size of the APK and makes reverse-engineering more difficult."
+        },
+        {
+          "id": 32,
+          "question": "What is the role of Apple’s TestFlight?",
+          "options": [
+            "A performance optimization tool",
+            "A tool to test Android apps",
+            "A service for distributing iOS beta apps to testers",
+            "A language for scripting the App Store"
+          ],
+          "answer": "A service for distributing iOS beta apps to testers",
+          "difficulty": "Medium",
+          "explanation": "TestFlight allows developers to send beta versions of their iOS apps to external testers before going live."
+        },
+        {
+          "id": 33,
+          "question": "Which architecture pattern is commonly used for scalable Android apps?",
+          "options": [
+            "MVP, MVVM, or Clean Architecture",
+            "MVC only",
+            "Singleton-only patterns",
+            "No architecture pattern is used in Android"
+          ],
+          "answer": "MVP, MVVM, or Clean Architecture",
+          "difficulty": "Medium",
+          "explanation": "Patterns like MVP, MVVM, and Clean Architecture help maintain large, complex codebases by separating concerns."
+        },
+        {
+          "id": 34,
+          "question": "What is the purpose of ViewBinding or DataBinding in Android?",
+          "options": [
+            "They are tools for code obfuscation",
+            "They help in connecting UI elements to code without findViewById()",
+            "They provide network requests out-of-the-box",
+            "They are tools for animation"
+          ],
+          "answer": "They help in connecting UI elements to code without findViewById()",
+          "difficulty": "Medium",
+          "explanation": "ViewBinding and DataBinding generate classes that directly reference layout elements, reducing boilerplate."
+        },
+        {
+          "id": 35,
+          "question": "What is the Apple Human Interface Guidelines (HIG)?",
+          "options": [
+            "A legal document for developers",
+            "Guidelines provided by Apple to ensure consistent and intuitive user interfaces on iOS apps",
+            "A testing framework for iOS",
+            "A performance tuning guide for Apple Watch"
+          ],
+          "answer": "Guidelines provided by Apple to ensure consistent and intuitive user interfaces on iOS apps",
+          "difficulty": "Medium",
+          "explanation": "The HIG helps developers create visually appealing, accessible, and user-friendly apps consistent with Apple’s ecosystem."
+        },
+        {
+          "id": 36,
+          "question": "What is the purpose of Android's ConstraintLayout?",
+          "options": [
+            "A layout for simple vertical lists",
+            "A performance testing tool",
+            "A flexible layout that helps design complex UIs with flat view hierarchies",
+            "A library for managing user permissions"
+          ],
+          "answer": "A flexible layout that helps design complex UIs with flat view hierarchies",
+          "difficulty": "Medium",
+          "explanation": "ConstraintLayout provides a versatile way to create complex layouts with fewer nested views, improving performance."
+        },
+        {
+          "id": 37,
+          "question": "What is a Splash Screen in mobile apps?",
+          "options": [
+            "A debugging tool",
+            "An initial screen that appears briefly when the app is launched",
+            "A screen used only for authentication",
+            "An analytics dashboard"
+          ],
+          "answer": "An initial screen that appears briefly when the app is launched",
+          "difficulty": "Easy",
+          "explanation": "A splash screen provides initial branding or loading indication while the app initializes."
+        },
+        {
+          "id": 38,
+          "question": "Which language is commonly used alongside XML in Android development to implement business logic?",
+          "options": ["Dart", "Java or Kotlin", "C++", "PHP"],
+          "answer": "Java or Kotlin",
+          "difficulty": "Easy",
+          "explanation": "While XML defines the layout, Java or Kotlin is used for logic and interaction with Android components."
+        },
+        {
+          "id": 39,
+          "question": "What is CodePush?",
+          "options": [
+            "A code editor for iOS development",
+            "A continuous integration service",
+            "A service for pushing live updates to React Native apps without re-submitting to the app store",
+            "A method to speed up code compilation"
+          ],
+          "answer": "A service for pushing live updates to React Native apps without re-submitting to the app store",
+          "difficulty": "Hard",
+          "explanation": "CodePush (from Microsoft) allows developers to deploy updates to JavaScript code instantly."
+        },
+        {
+          "id": 40,
+          "question": "What does responsive UI mean in mobile context?",
+          "options": [
+            "UI that changes based on available screen size and orientation",
+            "UI that never changes regardless of screen size",
+            "UI that only works in landscape mode",
+            "UI that requires manual user resizing"
+          ],
+          "answer": "UI that changes based on available screen size and orientation",
+          "difficulty": "Easy",
+          "explanation": "Responsive UI adapts to different screen sizes and orientations, ensuring a good experience on various devices."
+        },
+        {
+          "id": 41,
+          "question": "What is Android’s LiveData?",
+          "options": [
+            "A database engine",
+            "A lifecycle-aware data holder that can be observed for changes",
+            "A tool for code minification",
+            "A testing framework"
+          ],
+          "answer": "A lifecycle-aware data holder that can be observed for changes",
+          "difficulty": "Medium",
+          "explanation": "LiveData notifies observers (like UI components) when underlying data changes, respecting lifecycle states."
+        },
+        {
+          "id": 42,
+          "question": "Which tool can be used for inspecting network traffic in mobile apps during development?",
+          "options": [
+            "ProGuard",
+            "Charles Proxy",
+            "Xcode Simulator only",
+            "Android Studio Layout Inspector"
+          ],
+          "answer": "Charles Proxy",
+          "difficulty": "Hard",
+          "explanation": "Charles Proxy is often used by developers to monitor and debug network requests made by mobile apps."
+        },
+        {
+          "id": 43,
+          "question": "What does 'App Bundle' (.aab) mean in Android?",
+          "options": [
+            "A legacy format for Android apps",
+            "A publishing format that includes all resources, with Google Play serving only the necessary parts to each device",
+            "A configuration file for Gradle",
+            "A testing utility"
+          ],
+          "answer": "A publishing format that includes all resources, with Google Play serving only the necessary parts to each device",
+          "difficulty": "Medium",
+          "explanation": "Android App Bundle is a publishing format that optimizes APK size by delivering only what's needed to a specific device."
+        },
+        {
+          "id": 44,
+          "question": "What is Fastlane?",
+          "options": [
+            "A CI service by Google",
+            "A command-line tool suite to automate building and releasing iOS/Android apps",
+            "An alternative programming language for iOS",
+            "A device testing framework"
+          ],
+          "answer": "A command-line tool suite to automate building and releasing iOS/Android apps",
+          "difficulty": "Medium",
+          "explanation": "Fastlane helps automate the entire mobile app release process, from building and testing to deployment."
+        },
+        {
+          "id": 45,
+          "question": "What is a 'provisioning profile' in iOS development?",
+          "options": [
+            "A document describing coding standards",
+            "A profile that combines a distribution certificate and device IDs, allowing the app to run on specified devices",
+            "A runtime configuration file for Android apps",
+            "A database schema definition"
+          ],
+          "answer": "A profile that combines a distribution certificate and device IDs, allowing the app to run on specified devices",
+          "difficulty": "Hard",
+          "explanation": "Provisioning profiles, together with certificates, ensure that only authorized apps run on Apple devices."
+        },
+        {
+          "id": 46,
+          "question": "What does OTA (Over-The-Air) mean in the context of mobile app updates?",
+          "options": [
+            "A way to send apps via email",
+            "A manual installation method using USB cables",
+            "Updating apps directly on the device through wireless distribution, no tethering required",
+            "A method for compressing resources"
+          ],
+          "answer": "Updating apps directly on the device through wireless distribution, no tethering required",
+          "difficulty": "Easy",
+          "explanation": "OTA updates allow users to download and install app updates directly from the internet to their devices."
+        },
+        {
+          "id": 47,
+          "question": "What is the purpose of APK splitting?",
+          "options": [
+            "To reduce the size of the app by creating multiple APKs for different device configurations",
+            "To increase the complexity of code signing",
+            "To create backup copies of the app",
+            "To deploy apps on multiple stores simultaneously"
+          ],
+          "answer": "To reduce the size of the app by creating multiple APKs for different device configurations",
+          "difficulty": "Medium",
+          "explanation": "APK splits target specific screen densities, architectures, or locales, reducing overall download sizes."
+        },
+        {
+          "id": 48,
+          "question": "What is Xamarin?",
+          "options": [
+            "A native Android framework",
+            "A Microsoft-owned framework that uses C# and .NET for cross-platform mobile development",
+            "A build automation tool for Android",
+            "A testing library for iOS"
+          ],
+          "answer": "A Microsoft-owned framework that uses C# and .NET for cross-platform mobile development",
+          "difficulty": "Easy",
+          "explanation": "Xamarin lets developers write mobile apps in C# that run on Android, iOS, and other platforms."
+        },
+        {
+          "id": 49,
+          "question": "What is a launch storyboard in iOS?",
+          "options": [
+            "A default screen configuration for Android",
+            "A primary navigation component in iOS",
+            "A storyboard file that shows a static launch screen before the app UI loads",
+            "A debugging tool for iOS layouts"
+          ],
+          "answer": "A storyboard file that shows a static launch screen before the app UI loads",
+          "difficulty": "Medium",
+          "explanation": "A launch storyboard gives a quick initial visual to the user as the app starts up."
+        },
+        {
+          "id": 50,
+          "question": "What is one common approach to store small amounts of local data on mobile devices?",
+          "options": [
+            "Storing it in a remote server only",
+            "Using SharedPreferences (Android) or UserDefaults (iOS)",
+            "Directly modifying the OS files",
+            "Embedding data into the APK or IPA"
+          ],
+          "answer": "Using SharedPreferences (Android) or UserDefaults (iOS)",
+          "difficulty": "Easy",
+          "explanation": "SharedPreferences on Android and UserDefaults on iOS provide simple key-value storage for small pieces of data."
+        }
+      ]
+    }
+  ]
+}

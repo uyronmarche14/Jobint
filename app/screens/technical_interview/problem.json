@@ -1,0 +1,17 @@
+{
+  "title": "Add Two Numbers",
+  "difficulty": "Easy",
+  "description": "Fill in the blanks to complete the function.",
+  "hints": ["Remember to return the sum of a and b."],
+  "solution": {
+    "text": "The function adds two numbers and returns the result.",
+    "code": "def add_numbers(a, b):\n    return a + b"
+  },
+  "codeWithBlanks": "def add_numbers(a, b):\n    return a + ____",
+  "blanks": [
+    {
+      "id": 1,
+      "answer": "b"
+    }
+  ]
+}

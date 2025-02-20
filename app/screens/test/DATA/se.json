@@ -1,0 +1,707 @@
+[
+  {
+    "question_id": "Q001",
+    "question_text": "What programming languages are you familiar with?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Full Stack Developer"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A001",
+        "answer_quality": "High",
+        "answer_text": "I am proficient in several programming languages including Python, Java, C++, and JavaScript. Each language has its strengths, and I choose the one that best fits the project requirements."
+      }
+    ]
+  },
+  {
+    "question_id": "Q002",
+    "question_text": "Describe the last project you worked on, including any obstacles and your contributions to its success.",
+    "question_type": "Behavioral",
+    "roles": ["Software Engineer", "Project Manager"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A002",
+        "answer_quality": "High",
+        "answer_text": "In my last project, I developed an e-commerce platform. One major obstacle was optimizing the site for high traffic volumes. I implemented efficient database queries and caching mechanisms, which improved load times by 50%."
+      }
+    ]
+  },
+  {
+    "question_id": "Q003",
+    "question_text": "What are your thoughts on declarative vs. imperative paradigms such as functional and object-oriented programming?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Software Architect"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A003",
+        "answer_quality": "High",
+        "answer_text": "Declarative programming focuses on what to achieve, making code more readable and maintainable, especially in functional programming. Imperative programming details how to achieve it, offering more control. Both paradigms have their place, and I often use them based on the project needs."
+      }
+    ]
+  },
+  {
+    "question_id": "Q004",
+    "question_text": "What are your most used design patterns and in what contexts do you use them?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Backend Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A004",
+        "answer_quality": "High",
+        "answer_text": "I frequently use the Singleton pattern for managing shared resources, the Observer pattern for event handling, and the Factory pattern for object creation without specifying exact classes. These patterns help in writing scalable and maintainable code."
+      }
+    ]
+  },
+  {
+    "question_id": "Q005",
+    "question_text": "What is 'Agile' software development, and what are your thoughts on it?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Project Manager"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A005",
+        "answer_quality": "High",
+        "answer_text": "Agile is an iterative approach to software development that values collaboration, customer feedback, and small, rapid releases. I find Agile methodologies enhance adaptability and improve product quality."
+      }
+    ]
+  },
+  {
+    "question_id": "Q006",
+    "question_text": "What are your thoughts on software testing?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "QA Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A006",
+        "answer_quality": "High",
+        "answer_text": "Software testing is crucial for delivering reliable products. It helps identify bugs early, ensures code quality, and improves user satisfaction. I advocate for automated testing to streamline the process."
+      }
+    ]
+  },
+  {
+    "question_id": "Q007",
+    "question_text": "Describe a difficult bug you were tasked with fixing in a large application. How did you debug the issue?",
+    "question_type": "Behavioral",
+    "roles": ["Software Engineer", "Debugging Specialist"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A007",
+        "answer_quality": "High",
+        "answer_text": "I once faced a concurrency bug in a multithreaded application causing random crashes. I used logging and debugging tools to trace thread execution and identified a race condition. Implementing proper synchronization resolved the issue."
+      }
+    ]
+  },
+  {
+    "question_id": "Q008",
+    "question_text": "How do you explain technical challenges to stakeholders who do not have technical knowledge or backgrounds?",
+    "question_type": "Behavioral",
+    "roles": ["Software Engineer", "Project Manager"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A008",
+        "answer_quality": "High",
+        "answer_text": "I use simple, non-technical language and analogies to explain complex concepts. I focus on the impact and benefits to the business to ensure they understand the significance without getting lost in technical details."
+      }
+    ]
+  },
+  {
+    "question_id": "Q009",
+    "question_text": "What aspect of our company, product, or team interests you most?",
+    "question_type": "Cultural Fit",
+    "roles": ["Software Engineer"],
+    "industries": ["Company-specific"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A009",
+        "answer_quality": "High",
+        "answer_text": "I'm impressed by your company's commitment to innovation and the impact of your products on improving user experience. I'm excited about the collaborative culture and the opportunity to work with a talented team."
+      }
+    ]
+  },
+  {
+    "question_id": "Q010",
+    "question_text": "How do you determine a project's success?",
+    "question_type": "Behavioral",
+    "roles": ["Software Engineer", "Project Manager"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A010",
+        "answer_quality": "High",
+        "answer_text": "A project's success is determined by meeting its objectives within the set time frame and budget while delivering quality outcomes that satisfy stakeholders' expectations and contribute positively to the organization."
+      }
+    ]
+  },
+  {
+    "question_id": "Q011",
+    "question_text": "Why did you decide to become a software engineer?",
+    "question_type": "Behavioral",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A011",
+        "answer_quality": "High",
+        "answer_text": "I have always been passionate about technology and problem-solving. Becoming a software engineer allows me to create solutions that can positively impact people's lives and continuously challenge myself to learn and grow."
+      }
+    ]
+  },
+  {
+    "question_id": "Q012",
+    "question_text": "What programming languages do you prefer?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Full Stack Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A012",
+        "answer_quality": "High",
+        "answer_text": "I prefer Python for its readability and versatility, and JavaScript for frontend development due to its ubiquity and strong community support. The choice often depends on the project requirements."
+      }
+    ]
+  },
+  {
+    "question_id": "Q013",
+    "question_text": "What's important when checking a team member's code?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Team Lead"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A013",
+        "answer_quality": "High",
+        "answer_text": "When reviewing code, I focus on correctness, readability, adherence to coding standards, and efficiency. Providing constructive feedback is essential to help team members improve."
+      }
+    ]
+  },
+  {
+    "question_id": "Q014",
+    "question_text": "What project management tools have you used?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Project Manager"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A014",
+        "answer_quality": "High",
+        "answer_text": "I have experience with Jira, Trello, and Asana for task management and collaboration. These tools help in tracking progress, assigning tasks, and facilitating communication within the team."
+      }
+    ]
+  },
+  {
+    "question_id": "Q015",
+    "question_text": "Talk about a project you completed successfully.",
+    "question_type": "Behavioral",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech", "Healthcare"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A015",
+        "answer_quality": "High",
+        "answer_text": "I led the development of a mobile health app that tracks user fitness data. We overcame challenges related to data synchronization and delivered a user-friendly product that received positive reviews."
+      }
+    ]
+  },
+  {
+    "question_id": "Q016",
+    "question_text": "What are you looking for in this job?",
+    "question_type": "Cultural Fit",
+    "roles": ["Software Engineer"],
+    "industries": ["Company-specific"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A016",
+        "answer_quality": "High",
+        "answer_text": "I'm seeking an opportunity to apply my skills in a dynamic environment where I can contribute to meaningful projects, collaborate with a talented team, and continue to grow professionally."
+      }
+    ]
+  },
+  {
+    "question_id": "Q017",
+    "question_text": "Why should we hire you?",
+    "question_type": "Cultural Fit",
+    "roles": ["Software Engineer"],
+    "industries": ["Company-specific"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A017",
+        "answer_quality": "High",
+        "answer_text": "I bring a strong technical background, a passion for problem-solving, and a collaborative spirit. My experience aligns with your company's needs, and I'm committed to delivering high-quality work."
+      }
+    ]
+  },
+  {
+    "question_id": "Q018",
+    "question_text": "What are your salary expectations?",
+    "question_type": "Cultural Fit",
+    "roles": ["Software Engineer"],
+    "industries": ["Company-specific"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A018",
+        "answer_quality": "High",
+        "answer_text": "I'm open to discussing a competitive salary that reflects my experience and the value I can bring to the company."
+      }
+    ]
+  },
+  {
+    "question_id": "Q019",
+    "question_text": "What do you know about our company?",
+    "question_type": "Cultural Fit",
+    "roles": ["Software Engineer"],
+    "industries": ["Company-specific"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A019",
+        "answer_quality": "High",
+        "answer_text": "I know that your company is a leader in innovative tech solutions, focusing on user-centric products. I admire your commitment to sustainability and community engagement."
+      }
+    ]
+  },
+  {
+    "question_id": "Q020",
+    "question_text": "What are your career goals?",
+    "question_type": "Behavioral",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A020",
+        "answer_quality": "High",
+        "answer_text": "My goal is to become a lead software engineer, managing projects and mentoring junior developers, while continuing to expand my technical expertise."
+      }
+    ]
+  },
+  {
+    "question_id": "Q021",
+    "question_text": "What is your experience with working in an Agile environment?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Scrum Master"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A021",
+        "answer_quality": "High",
+        "answer_text": "I have over three years of experience working in Agile teams, participating in sprint planning, daily stand-ups, and retrospectives. This approach has improved team collaboration and project delivery."
+      }
+    ]
+  },
+  {
+    "question_id": "Q022",
+    "question_text": "How do you handle tight deadlines?",
+    "question_type": "Behavioral",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A022",
+        "answer_quality": "High",
+        "answer_text": "I prioritize tasks based on urgency and impact, communicate effectively with the team, and may put in extra hours if necessary to meet deadlines without compromising quality."
+      }
+    ]
+  },
+  {
+    "question_id": "Q023",
+    "question_text": "Can you describe a time when you had to learn a new technology quickly?",
+    "question_type": "Behavioral",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A023",
+        "answer_quality": "High",
+        "answer_text": "I was once required to use a new JavaScript framework for a project. I dedicated extra time to study the documentation and built small projects to get up to speed quickly, which enabled me to contribute effectively."
+      }
+    ]
+  },
+  {
+    "question_id": "Q024",
+    "question_text": "How do you ensure the quality of your code?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A024",
+        "answer_quality": "High",
+        "answer_text": "I follow coding standards, write unit tests, perform code reviews, and use static code analysis tools to maintain high code quality."
+      }
+    ]
+  },
+  {
+    "question_id": "Q025",
+    "question_text": "Have you ever had a conflict with a team member? How was it resolved?",
+    "question_type": "Behavioral",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A025",
+        "answer_quality": "High",
+        "answer_text": "Yes, there was a disagreement over the approach to a problem. We resolved it by discussing our perspectives openly and agreeing on a solution that combined the best of both ideas."
+      }
+    ]
+  },
+  {
+    "question_id": "Q026",
+    "question_text": "What is your experience with version control systems?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "DevOps Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A026",
+        "answer_quality": "High",
+        "answer_text": "I have extensive experience with Git and SVN. I use Git for branching, merging, and collaborating with team members, and I'm familiar with workflows like Gitflow."
+      }
+    ]
+  },
+  {
+    "question_id": "Q027",
+    "question_text": "How do you stay updated with the latest industry trends and technologies?",
+    "question_type": "Behavioral",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A027",
+        "answer_quality": "High",
+        "answer_text": "I regularly read tech blogs, attend webinars and conferences, and participate in online communities. Continuous learning is important to me."
+      }
+    ]
+  },
+  {
+    "question_id": "Q028",
+    "question_text": "Can you explain the concept of 'Continuous Integration' and its benefits?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "DevOps Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A028",
+        "answer_quality": "High",
+        "answer_text": "Continuous Integration is a development practice where developers integrate code into a shared repository frequently. Automated builds and tests run to detect issues early, improving software quality and reducing integration problems."
+      }
+    ]
+  },
+  {
+    "question_id": "Q029",
+    "question_text": "How do you ensure the security of your code?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Security Engineer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A029",
+        "answer_quality": "High",
+        "answer_text": "I follow secure coding practices, validate inputs, handle errors properly, and use tools to identify vulnerabilities. Regular code reviews and staying informed about security threats are also important."
+      }
+    ]
+  },
+  {
+    "question_id": "Q030",
+    "question_text": "Can you describe the MVC (Model-View-Controller) architecture?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Web Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A030",
+        "answer_quality": "High",
+        "answer_text": "MVC is a design pattern that separates an application into three main components: Model (data), View (UI), and Controller (business logic). This separation enhances modularity and makes the codebase easier to manage."
+      }
+    ]
+  },
+  {
+    "question_id": "Q031",
+    "question_text": "What is the difference between a library and a framework?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A031",
+        "answer_quality": "High",
+        "answer_text": "A library is a collection of functions or classes that you can call in your code. A framework provides a structure and flow, and it often calls your code. Essentially, with a library, you control the flow; with a framework, the flow controls you."
+      }
+    ]
+  },
+  {
+    "question_id": "Q032",
+    "question_text": "How would you handle a situation where a project you're working on is behind schedule?",
+    "question_type": "Behavioral",
+    "roles": ["Software Engineer", "Project Manager"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A032",
+        "answer_quality": "High",
+        "answer_text": "I would assess the causes of the delay, prioritize tasks, and communicate with stakeholders about realistic timelines. If possible, I'd allocate additional resources or adjust the scope to get back on track."
+      }
+    ]
+  },
+  {
+    "question_id": "Q033",
+    "question_text": "Can you explain the concept of a binary search tree?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A033",
+        "answer_quality": "High",
+        "answer_text": "A binary search tree is a node-based data structure where each node has at most two children, referred to as the left and right child. For any node, all elements in the left subtree are less, and all elements in the right subtree are greater."
+      }
+    ]
+  },
+  {
+    "question_id": "Q034",
+    "question_text": "How would you implement a hash table?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A034",
+        "answer_quality": "High",
+        "answer_text": "I would use an array to store the data and a hash function to map keys to array indices. Collision resolution techniques like chaining or open addressing would handle cases where multiple keys map to the same index."
+      }
+    ]
+  },
+  {
+    "question_id": "Q035",
+    "question_text": "What is the difference between synchronous and asynchronous execution?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A035",
+        "answer_quality": "High",
+        "answer_text": "In synchronous execution, tasks are performed one after another, and each task waits for the previous one to complete. In asynchronous execution, tasks can be executed concurrently without waiting, often improving efficiency."
+      }
+    ]
+  },
+  {
+    "question_id": "Q036",
+    "question_text": "Can you explain the concept of 'Big O' notation?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Algorithm Specialist"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A036",
+        "answer_quality": "High",
+        "answer_text": "Big O notation describes the upper bound of an algorithm's running time or space requirements in terms of input size. It helps in understanding the scalability and performance of algorithms."
+      }
+    ]
+  },
+  {
+    "question_id": "Q037",
+    "question_text": "How do you manage memory in your applications?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Systems Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A037",
+        "answer_quality": "High",
+        "answer_text": "I manage memory by optimizing data structures, avoiding memory leaks through proper allocation and deallocation, and utilizing tools to monitor memory usage. In languages with manual memory management, I ensure that references are handled correctly."
+      }
+    ]
+  },
+  {
+    "question_id": "Q038",
+    "question_text": "Can you explain the concept of recursion?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A038",
+        "answer_quality": "High",
+        "answer_text": "Recursion is a programming technique where a function calls itself to solve smaller instances of the same problem, typically with a base case to terminate the recursive calls."
+      }
+    ]
+  },
+  {
+    "question_id": "Q039",
+    "question_text": "How do you handle error handling and exceptions in your code?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A039",
+        "answer_quality": "High",
+        "answer_text": "I use try-catch blocks to handle exceptions gracefully, logging errors for debugging purposes, and providing meaningful messages to users. I also validate inputs to prevent errors from occurring."
+      }
+    ]
+  },
+  {
+    "question_id": "Q040",
+    "question_text": "What is the difference between REST and SOAP?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "API Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A040",
+        "answer_quality": "High",
+        "answer_text": "REST is an architectural style using standard HTTP methods, is stateless, and typically uses JSON for data exchange. SOAP is a protocol with stricter standards, uses XML, and supports advanced features like security and transactions."
+      }
+    ]
+  },
+  {
+    "question_id": "Q041",
+    "question_text": "Can you explain the concept of polymorphism?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A041",
+        "answer_quality": "High",
+        "answer_text": "Polymorphism is an object-oriented programming concept where objects of different classes can be treated as instances of a parent class. It allows methods to perform different functions based on the object's actual class."
+      }
+    ]
+  },
+  {
+    "question_id": "Q042",
+    "question_text": "How do you ensure your code is maintainable and scalable?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A042",
+        "answer_quality": "High",
+        "answer_text": "write clean, well-documented code, follow design principles like SOLID, and use design patterns where appropriate. I also modularize code and write tests to ensure it can adapt to future requirements."
+      }
+    ]
+  },
+  {
+    "question_id": "Q043",
+    "question_text": "What is the difference between SQL and NoSQL databases?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Database Administrator"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A043",
+        "answer_quality": "High",
+        "answer_text": "SQL databases are relational, use structured query language, and are table-based. They are suitable for complex queries and transactions. NoSQL databases are non-relational, can be document, key-value, or graph-based, and are better for unstructured data and scalability."
+      }
+    ]
+  },
+  {
+    "question_id": "Q044",
+    "question_text": "Can you explain the concept of 'garbage collection'?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A044",
+        "answer_quality": "High",
+        "answer_text": "Garbage collection is an automatic memory management feature that frees up memory allocated to objects that are no longer in use, preventing memory leaks and optimizing resource utilization."
+      }
+    ]
+  },
+  {
+    "question_id": "Q045",
+    "question_text": "How do you approach testing and debugging your code?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "QA Engineer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A045",
+        "answer_quality": "High",
+        "answer_text": "I write unit tests to cover different scenarios, use debugging tools to step through code, and log information for analysis. I also perform code reviews and integrate continuous testing in the development process."
+      }
+    ]
+  },
+  {
+    "question_id": "Q046",
+    "question_text": "What is the difference between GET and POST methods in HTTP?",
+    "question_type": "Technical",
+    "roles": ["Software Engineer", "Web Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A046",
+        "answer_quality": "High",
+        "answer_text": "GET requests data from a specified resource and should not affect data. Parameters are visible in the URL. POST submits data to be processed to a specified resource and can change the server state. Data is sent in the request body."
+      }
+    ]
+  },
+  {
+    "question_id": "Q047",
+    "question_text": "What is the difference between a process and a thread?",
+    "question_type": "Technical",
+    "roles": ["Backend Developer", "Systems Engineer"],
+    "industries": ["Tech", "Finance", "Healthcare"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A047",
+        "answer_quality": "High",
+        "answer_text": "A process is an independent execution unit with its own memory space, while a thread is a subset of a process that shares the same memory. Threads are used for smaller tasks within a process and are more efficient for communication."
+      }
+    ]
+  }
+]

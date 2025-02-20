@@ -1,0 +1,602 @@
+[
+  {
+    "question_id": "Q001",
+    "question_text": "Tell us about yourself.",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA001",
+        "answer_quality": "High",
+        "answer_text": "I am a motivated professional with a background in [relevant field], known for my strong communication skills, adaptability, and a track record of contributing to team success. I enjoy taking on new challenges and continuously learning to add value to any organization."
+      }
+    ]
+  },
+  {
+    "question_id": "Q002",
+    "question_text": "Why should we hire you?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA002",
+        "answer_quality": "High",
+        "answer_text": "You should hire me because I bring a combination of relevant experience, a proactive work ethic, and the ability to quickly learn and adapt. I am committed to delivering high-quality results, collaborating effectively with teams, and helping achieve organizational goals."
+      }
+    ]
+  },
+  {
+    "question_id": "Q003",
+    "question_text": "What accomplishment are you most proud of?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA003",
+        "answer_quality": "High",
+        "answer_text": "I am most proud of leading a project at my previous company that streamlined a key process, reducing errors by 20% and saving significant time. Seeing the positive impact on our team's efficiency and client satisfaction was incredibly rewarding."
+      }
+    ]
+  },
+  {
+    "question_id": "Q004",
+    "question_text": "Why do you want to work in this field?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA004",
+        "answer_quality": "High",
+        "answer_text": "I am drawn to this field because it allows me to apply my analytical skills to solve complex problems. I find the fast-paced nature and continuous innovation exciting, and I look forward to contributing to meaningful projects that have tangible impacts."
+      }
+    ]
+  },
+  {
+    "question_id": "Q005",
+    "question_text": "Describe a time you disagreed with a teammate or supervisor.",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA005",
+        "answer_quality": "High",
+        "answer_text": "In one instance, I disagreed with a supervisor about prioritizing certain project tasks. I scheduled a calm, constructive conversation to understand their perspective and presented data supporting my viewpoint. We found a compromise that aligned with our goals, improving outcomes and maintaining respect."
+      }
+    ]
+  },
+  {
+    "question_id": "Q006",
+    "question_text": "What are your strengths?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA006",
+        "answer_quality": "High",
+        "answer_text": "My strengths include strong problem-solving capabilities, excellent communication, and adaptability. I excel at breaking down complex challenges, collaborating with diverse teams, and adjusting my approach to achieve the best results."
+      }
+    ]
+  },
+  {
+    "question_id": "Q007",
+    "question_text": "What are your goals?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA007",
+        "answer_quality": "High",
+        "answer_text": "My goals include continuously expanding my skill set, taking on increasingly responsible roles, and ultimately contributing to projects that make a positive impact. I hope to grow into a leadership position where I can mentor others and help shape the organization's future."
+      }
+    ]
+  },
+  {
+    "question_id": "Q008",
+    "question_text": "Why do you want this job?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA008",
+        "answer_quality": "High",
+        "answer_text": "I want this job because it aligns with my career interests and offers opportunities to use my expertise in a meaningful way. The company's values, culture, and focus on innovation resonate with me, and I see potential for long-term growth."
+      }
+    ]
+  },
+  {
+    "question_id": "Q009",
+    "question_text": "What are your interests?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA009",
+        "answer_quality": "High",
+        "answer_text": "My interests include staying current with industry trends, engaging in continuous learning, and refining my technical and interpersonal skills. Outside of work, I enjoy activities that help me stay creative, such as reading, traveling, or volunteering in the community."
+      }
+    ]
+  },
+  {
+    "question_id": "Q010",
+    "question_text": "Why did you choose your major?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA010",
+        "answer_quality": "High",
+        "answer_text": "I chose my major because it allowed me to combine my analytical thinking with my passion for innovation. The curriculum offered hands-on projects and a multidisciplinary perspective, which prepared me to tackle complex challenges in a professional environment."
+      }
+    ]
+  },
+  {
+    "question_id": "Q011",
+    "question_text": "Tell us about a time you failed.",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA011",
+        "answer_quality": "High",
+        "answer_text": "I once led a small project that missed its deadline due to underestimating the complexity involved. I learned to better assess scope, build contingency plans, and communicate proactively. The experience improved my project management and made me more effective in future endeavors."
+      }
+    ]
+  },
+  {
+    "question_id": "Q012",
+    "question_text": "What is a weakness of yours?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA012",
+        "answer_quality": "High",
+        "answer_text": "One weakness is that I sometimes take on too many responsibilities at once. However, I’ve been working on setting clearer priorities, using time management tools, and learning to delegate when appropriate to maintain balance and effectiveness."
+      }
+    ]
+  },
+  {
+    "question_id": "Q013",
+    "question_text": "Do you have any questions for us?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA013",
+        "answer_quality": "High",
+        "answer_text": "Could you share more about your team’s current priorities and how this role will contribute to achieving the organization’s strategic goals?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q014",
+    "question_text": "What specific skill set do you bring to this job?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA014",
+        "answer_quality": "High",
+        "answer_text": "I bring strong analytical skills, proficiency in industry-standard tools, and the ability to quickly understand complex data. I am adept at translating insights into actionable solutions and collaborating across departments to drive improvements."
+      }
+    ]
+  },
+  {
+    "question_id": "Q015",
+    "question_text": "How do you deal with stressful situations?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA015",
+        "answer_quality": "High",
+        "answer_text": "I approach stressful situations by remaining calm, breaking tasks into manageable steps, and seeking input from colleagues when needed. I prioritize efficiently and focus on problem-solving rather than dwelling on the stress itself."
+      }
+    ]
+  },
+  {
+    "question_id": "Q016",
+    "question_text": "What kind of culture are you looking for in a company?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA016",
+        "answer_quality": "High",
+        "answer_text": "I’m looking for a culture that values collaboration, continuous learning, and open communication. A supportive environment where creativity and new ideas are encouraged, and professional growth is fostered, is ideal for me."
+      }
+    ]
+  },
+  {
+    "question_id": "Q017",
+    "question_text": "What type of people annoy you?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA017",
+        "answer_quality": "High",
+        "answer_text": "I value teamwork and respect different working styles. While I don’t focus on annoyance, I find it challenging when individuals consistently refuse to communicate openly or undermine team efforts. I address this by staying professional, seeking common ground, and encouraging constructive dialogue."
+      }
+    ]
+  },
+  {
+    "question_id": "Q018",
+    "question_text": "Tell us about a product you think is well-designed. How would you improve it?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA018",
+        "answer_quality": "High",
+        "answer_text": "I find [Product X] well-designed due to its intuitive interface and seamless user flow. To improve it, I might add personalized recommendations or enhance accessibility features, ensuring it serves a broader range of user needs."
+      }
+    ]
+  },
+  {
+    "question_id": "Q019",
+    "question_text": "Describe a time when you stepped out of your comfort zone.",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA019",
+        "answer_quality": "High",
+        "answer_text": "I once volunteered to lead a training session, even though public speaking wasn’t my strong suit. Preparing thoroughly and practicing helped me deliver a successful session. This experience boosted my confidence and showed me I could excel outside my comfort zone."
+      }
+    ]
+  },
+  {
+    "question_id": "Q020",
+    "question_text": "Tell us about a time you planned and accomplished a challenging goal.",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA020",
+        "answer_quality": "High",
+        "answer_text": "I set a goal to improve a key process within six weeks. I researched best practices, consulted teammates, and developed a detailed timeline. By monitoring progress and adjusting strategies, I met the deadline and improved efficiency, earning positive feedback from stakeholders."
+      }
+    ]
+  },
+  {
+    "question_id": "Q021",
+    "question_text": "Describe a time where you had to learn a new skill.",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA021",
+        "answer_quality": "High",
+        "answer_text": "When my team adopted new software, I took the initiative to learn it quickly. I watched tutorials, experimented with test projects, and asked colleagues for tips. Soon, I became a resource for others, helping everyone adapt more smoothly."
+      }
+    ]
+  },
+  {
+    "question_id": "Q022",
+    "question_text": "When have you had many tasks to accomplish and a short amount of time to accomplish them?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA022",
+        "answer_quality": "High",
+        "answer_text": "During a tight project deadline, I prioritized tasks by urgency and impact, delegated where possible, and maintained open communication with my team. This approach helped us meet the deadline while maintaining quality and reducing stress."
+      }
+    ]
+  },
+  {
+    "question_id": "Q023",
+    "question_text": "Do you value creativity or efficiency more?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA023",
+        "answer_quality": "High",
+        "answer_text": "Both have value. Creativity fosters innovation and problem-solving, while efficiency ensures results are delivered effectively. Ideally, I seek a balance, using creativity to find new solutions and efficiency to implement them smoothly."
+      }
+    ]
+  },
+  {
+    "question_id": "Q024",
+    "question_text": "How do you set priorities or manage time?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA024",
+        "answer_quality": "High",
+        "answer_text": "I start by identifying urgent and high-impact tasks, then create a clear schedule and set achievable milestones. I use tools like to-do lists or project management software and reassess priorities regularly to stay on track."
+      }
+    ]
+  },
+  {
+    "question_id": "Q025",
+    "question_text": "Do you prefer to work alone or on a team?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA025",
+        "answer_quality": "High",
+        "answer_text": "I’m comfortable in both settings. I enjoy collaborating with others, exchanging ideas, and supporting collective goals. At the same time, I value focused individual work when I need to deep-dive into specific tasks."
+      }
+    ]
+  },
+  {
+    "question_id": "Q026",
+    "question_text": "You have 1,000 unread emails in your inbox; whom do you respond to first?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA026",
+        "answer_quality": "High",
+        "answer_text": "I would prioritize emails based on urgency and relevance. For example, I’d respond first to messages from key stakeholders or those that affect deadlines. Using filters and flags helps ensure important matters are addressed promptly."
+      }
+    ]
+  },
+  {
+    "question_id": "Q027",
+    "question_text": "Describe a time you made a successful sale.",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA027",
+        "answer_quality": "High",
+        "answer_text": "I once identified a client’s pain points and tailored my presentation to highlight how our product solved their specific challenges. By listening carefully, addressing their concerns, and demonstrating value, I closed the deal and built a lasting customer relationship."
+      }
+    ]
+  },
+  {
+    "question_id": "Q028",
+    "question_text": "In what ways do you think you can make the greatest contributions to our team?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA028",
+        "answer_quality": "High",
+        "answer_text": "I can contribute by sharing my analytical insights, promoting open communication, and supporting others in problem-solving. My adaptability and willingness to learn ensure I can fill gaps and help achieve collective goals efficiently."
+      }
+    ]
+  },
+  {
+    "question_id": "Q029",
+    "question_text": "What have you done over the past year for professional development?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA029",
+        "answer_quality": "High",
+        "answer_text": "I attended industry webinars, completed a relevant certification, and participated in a mentorship program. These experiences broadened my skill set and kept me current with emerging trends and best practices."
+      }
+    ]
+  },
+  {
+    "question_id": "Q030",
+    "question_text": "What do you bring to our organization that other candidates do not?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA030",
+        "answer_quality": "High",
+        "answer_text": "I bring a unique blend of technical expertise, strong communication, and a track record of delivering measurable results. My ability to quickly adapt, build relationships, and drive improvement sets me apart."
+      }
+    ]
+  },
+  {
+    "question_id": "Q031",
+    "question_text": "What are you passionate about?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA031",
+        "answer_quality": "High",
+        "answer_text": "I’m passionate about continuous learning and using my skills to solve problems that impact people positively. Whether it’s improving a process or designing a new solution, I find purpose in making meaningful contributions."
+      }
+    ]
+  },
+  {
+    "question_id": "Q032",
+    "question_text": "How do you stay on top of current knowledge in your field?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA032",
+        "answer_quality": "High",
+        "answer_text": "I subscribe to reputable industry publications, attend webinars, and participate in professional forums. Networking with peers and following thought leaders also helps me remain informed and ahead of emerging trends."
+      }
+    ]
+  },
+  {
+    "question_id": "Q033",
+    "question_text": "What makes an effective team?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA033",
+        "answer_quality": "High",
+        "answer_text": "An effective team is built on trust, clear communication, and a shared vision. When team members respect each other’s strengths, collaborate openly, and stay focused on common goals, they can achieve remarkable results."
+      }
+    ]
+  },
+  {
+    "question_id": "Q034",
+    "question_text": "What are you currently reading/researching/working on?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA034",
+        "answer_quality": "High",
+        "answer_text": "I’m currently studying the latest trends in [relevant topic] and exploring best practices for [specific skill]. I’m also working on a side project that allows me to apply these insights and refine my expertise."
+      }
+    ]
+  },
+  {
+    "question_id": "Q035",
+    "question_text": "What can you contribute/bring to our organization?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA035",
+        "answer_quality": "High",
+        "answer_text": "I can bring a fresh perspective, a commitment to continuous improvement, and a proactive approach to tackling challenges. My ability to collaborate, innovate, and execute on strategies will help your organization move forward."
+      }
+    ]
+  },
+  {
+    "question_id": "Q036",
+    "question_text": "What motivates you?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA036",
+        "answer_quality": "High",
+        "answer_text": "I’m motivated by the opportunity to make a tangible impact, whether through improving processes, reaching ambitious targets, or helping my team succeed. Seeing positive results and knowing I’ve contributed to them drives me."
+      }
+    ]
+  },
+  {
+    "question_id": "Q037",
+    "question_text": "What are your hobbies?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA037",
+        "answer_quality": "High",
+        "answer_text": "Outside of work, I enjoy activities that help me stay balanced and creative, such as reading, exploring the outdoors, and participating in community events. These pursuits keep me energized and inspired."
+      }
+    ]
+  },
+  {
+    "question_id": "Q038",
+    "question_text": "How would previous supervisors describe your work ethic?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA038",
+        "answer_quality": "High",
+        "answer_text": "They’d likely say I’m reliable, detail-oriented, and resourceful. I consistently meet deadlines, maintain professionalism, and show willingness to take on new responsibilities, making me a valued team member."
+      }
+    ]
+  },
+  {
+    "question_id": "Q039",
+    "question_text": "What will you do if you don’t get this job/into this program?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA039",
+        "answer_quality": "High",
+        "answer_text": "If I don’t get this opportunity, I’ll continue to refine my skills, seek other positions or programs that align with my goals, and use this experience to improve my approach for future applications."
+      }
+    ]
+  },
+  {
+    "question_id": "Q040",
+    "question_text": "How do you define success?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA040",
+        "answer_quality": "High",
+        "answer_text": "I define success as achieving meaningful goals, contributing positively to my team, and growing professionally. It’s about consistently delivering value, learning from challenges, and feeling fulfilled in my work."
+      }
+    ]
+  },
+  {
+    "question_id": "Q041",
+    "question_text": "Describe a time you have demonstrated leadership.",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA041",
+        "answer_quality": "High",
+        "answer_text": "I led a cross-functional project where I guided the team’s vision, assigned roles based on strengths, and provided support. By fostering open communication and encouraging accountability, we successfully delivered the project on time."
+      }
+    ]
+  },
+  {
+    "question_id": "Q042",
+    "question_text": "Are you applying for other positions/programs?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA042",
+        "answer_quality": "High",
+        "answer_text": "I’m exploring several opportunities that match my career goals. However, I am genuinely interested in this role because it closely aligns with my skills and what I’m looking for in my next step."
+      }
+    ]
+  },
+  {
+    "question_id": "Q043",
+    "question_text": "What questions have we not asked that you wish we would have?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA043",
+        "answer_quality": "High",
+        "answer_text": "I appreciate the thorough discussion. Perhaps you might ask about my long-term vision for contributing to the company’s growth, allowing me to share how I see my role evolving over time."
+      }
+    ]
+  },
+  {
+    "question_id": "Q044",
+    "question_text": "Are you willing to work extra hours? Nights? Weekends? Holidays? Travel for the job?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA044",
+        "answer_quality": "High",
+        "answer_text": "I am willing to be flexible when necessary, as I understand some roles require adapting schedules or traveling. I value clear communication around expectations and ensuring work-life balance when possible."
+      }
+    ]
+  },
+  {
+    "question_id": "Q045",
+    "question_text": "What would you do if you caught your boss doing something unethical or illegal?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA045",
+        "answer_quality": "High",
+        "answer_text": "I would follow the organization’s established protocols, such as reporting the issue to the appropriate internal department or ethics committee. Maintaining integrity and upholding company values would guide my actions."
+      }
+    ]
+  },
+  {
+    "question_id": "Q046",
+    "question_text": "How many basketballs would fit in this room/why are pizzas round? (curveball questions)",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA046",
+        "answer_quality": "High",
+        "answer_text": "For a hypothetical like how many basketballs fit in the room, I’d approach it logically by estimating room volume and ball volume. For why pizzas are round, it might be due to ease of cutting and equal slice distribution. The key is demonstrating problem-solving and reasoning rather than a perfect answer."
+      }
+    ]
+  },
+  {
+    "question_id": "Q047",
+    "question_text": "Describe a time in which you went above and beyond.",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA047",
+        "answer_quality": "High",
+        "answer_text": "While working on a project, I noticed a related issue outside my direct responsibilities. I took initiative to address it, proposing a solution and staying late to implement it. This extra effort improved our final outcome and impressed the team."
+      }
+    ]
+  },
+  {
+    "question_id": "Q048",
+    "question_text": "Who has been your favorite boss/coworker?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA048",
+        "answer_quality": "High",
+        "answer_text": "My favorite coworker was someone who excelled at communication and mentorship. They provided constructive feedback, encouraged collaboration, and supported professional growth, which helped me become a stronger contributor."
+      }
+    ]
+  },
+  {
+    "question_id": "Q049",
+    "question_text": "Who has been your least favorite boss/coworker?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA049",
+        "answer_quality": "High",
+        "answer_text": "I’ve worked with individuals whose styles didn’t align with my own, but rather than focusing on negativity, I used those experiences to improve my communication and adaptability. Each interaction taught me valuable lessons on working with diverse personalities."
+      }
+    ]
+  },
+  {
+    "question_id": "Q050",
+    "question_text": "Do you view yourself as overqualified for this position/program?",
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "GA050",
+        "answer_quality": "High",
+        "answer_text": "I see this opportunity as a chance to apply my experience while continuing to learn and grow. Even if I meet or exceed qualifications, I’m eager to contribute, take on new challenges, and advance within the organization."
+      }
+    ]
+  }
+]

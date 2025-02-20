@@ -1,0 +1,309 @@
+{
+  "languages": {
+    "Java": {
+      "topics": [
+        {
+          "title": "Introduction to Java",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is widely used for building enterprise-scale applications.",
+          "example": "// Your first Java program\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+        },
+        {
+          "title": "Variables and Data Types",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Variables are containers for storing data values. Java supports various data types such as int, float, double, char, boolean, and more.",
+          "example": "// Variable declaration and initialization\nint age = 25;\ndouble price = 19.99;\nchar grade = 'A';\nboolean isStudent = true;\nString name = \"Alice\";"
+        },
+        {
+          "title": "Operators",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Operators are used to perform operations on variables and values. Java supports arithmetic, assignment, comparison, logical, bitwise, and other operators.",
+          "example": "// Arithmetic Operators\nint a = 10;\nint b = 3;\nSystem.out.println(a + b);  // Addition\nSystem.out.println(a - b);  // Subtraction\nSystem.out.println(a * b);  // Multiplication\nSystem.out.println(a / b);  // Division\nSystem.out.println(a % b);  // Modulus"
+        },
+        {
+          "title": "Input and Output",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Java uses `System.out` for output and `Scanner` class for input operations.",
+          "example": "// Basic I/O\nimport java.util.Scanner;\n\npublic class UserInput {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        System.out.print(\"Enter your name: \");\n        String name = scanner.nextLine();\n        System.out.println(\"Hello, \" + name + \"!\");\n        scanner.close();\n    }\n}"
+        },
+        {
+          "title": "Conditional Statements",
+          "level": "Beginner",
+          "type": "Control Flow",
+          "description": "Conditional statements allow you to execute code based on conditions. Java supports `if`, `else if`, and `else` statements.",
+          "example": "// If statement\nint x = 10;\nif (x > 5) {\n    System.out.println(\"x is greater than 5\");\n} else if (x == 5) {\n    System.out.println(\"x is equal to 5\");\n} else {\n    System.out.println(\"x is less than 5\");\n}"
+        },
+        {
+          "title": "Switch Statements",
+          "level": "Beginner",
+          "type": "Control Flow",
+          "description": "Switch statements are used to perform different actions based on different conditions, similar to if statements but more efficient in some cases.",
+          "example": "// Switch statement\nchar grade = 'A';\nswitch (grade) {\n    case 'A':\n        System.out.println(\"Excellent!\");\n        break;\n    case 'B':\n        System.out.println(\"Good job!\");\n        break;\n    default:\n        System.out.println(\"Keep trying!\");\n        break;\n}"
+        },
+        {
+          "title": "Loops",
+          "level": "Beginner",
+          "type": "Loops",
+          "description": "Loops allow you to execute a block of code multiple times. Java supports `for`, `while`, and `do...while` loops.",
+          "example": "// For loop\nfor (int i = 0; i < 5; i++) {\n    System.out.println(\"i = \" + i);\n}\n\n// While loop\nint count = 0;\nwhile (count < 5) {\n    System.out.println(\"count = \" + count);\n    count++;\n}\n\n// Do...while loop\nint num = 0;\ndo {\n    System.out.println(\"num = \" + num);\n    num++;\n} while (num < 5);"
+        },
+        {
+          "title": "Arrays",
+          "level": "Beginner",
+          "type": "Data Structures",
+          "description": "Arrays are used to store multiple values in a single variable. Java arrays have a fixed size and can store elements of the same type.",
+          "example": "// Array declaration and initialization\nint[] numbers = {1, 2, 3, 4, 5};\nSystem.out.println(numbers[0]);  // Accessing array element\n\n// Iterating over an array\nfor (int num : numbers) {\n    System.out.println(num);\n}"
+        },
+        {
+          "title": "Strings",
+          "level": "Beginner",
+          "type": "Basics",
+          "description": "Strings in Java are objects that represent sequences of characters. The `String` class provides a lot of useful methods for string manipulation.",
+          "example": "// String operations\nString greeting = \"Hello\";\nString name = \"World\";\nString message = greeting + \", \" + name + \"!\";\nSystem.out.println(message);\nSystem.out.println(\"Length: \" + message.length());\nSystem.out.println(\"Uppercase: \" + message.toUpperCase());"
+        },
+        {
+          "title": "Methods",
+          "level": "Beginner",
+          "type": "Functions",
+          "description": "Methods are reusable blocks of code that perform a specific task. They can accept parameters and return values.",
+          "example": "// Method definition and invocation\npublic class Calculator {\n    public static int add(int a, int b) {\n        return a + b;\n    }\n\n    public static void main(String[] args) {\n        int result = add(5, 3);\n        System.out.println(\"Sum: \" + result);\n    }\n}"
+        },
+        {
+          "title": "Classes and Objects",
+          "level": "Beginner",
+          "type": "Object-Oriented Programming",
+          "description": "Classes are blueprints for creating objects. Objects are instances of classes with their own state and behavior.",
+          "example": "// Class and object example\npublic class Dog {\n    String name;\n\n    public void bark() {\n        System.out.println(name + \" says woof!\");\n    }\n\n    public static void main(String[] args) {\n        Dog myDog = new Dog();\n        myDog.name = \"Buddy\";\n        myDog.bark();\n    }\n}"
+        },
+        {
+          "title": "Inheritance",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Inheritance allows a class to inherit attributes and methods from another class using the `extends` keyword.",
+          "example": "// Inheritance example\nclass Animal {\n    public void eat() {\n        System.out.println(\"Eating\");\n    }\n}\n\nclass Cat extends Animal {\n    public void meow() {\n        System.out.println(\"Meow\");\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Cat myCat = new Cat();\n        myCat.eat();\n        myCat.meow();\n    }\n}"
+        },
+        {
+          "title": "Polymorphism",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Polymorphism allows methods to perform differently based on the object that is calling them.",
+          "example": "// Polymorphism example\nclass Animal {\n    public void speak() {\n        System.out.println(\"Animal speaks\");\n    }\n}\n\nclass Dog extends Animal {\n    @Override\n    public void speak() {\n        System.out.println(\"Dog barks\");\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Animal myAnimal = new Dog();\n        myAnimal.speak();  // Output: Dog barks\n    }\n}"
+        },
+        {
+          "title": "Abstraction and Interfaces",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Abstraction allows you to hide complex implementation details and show only the essential features. Interfaces define methods that a class must implement.",
+          "example": "// Interface example\ninterface Flyable {\n    void fly();\n}\n\nclass Bird implements Flyable {\n    public void fly() {\n        System.out.println(\"Bird is flying\");\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Flyable bird = new Bird();\n        bird.fly();\n    }\n}"
+        },
+        {
+          "title": "Exception Handling",
+          "level": "Intermediate",
+          "type": "Error Handling",
+          "description": "Exception handling allows you to handle runtime errors using try, catch, finally, throw, and throws keywords.",
+          "example": "// Exception handling example\npublic class ExceptionExample {\n    public static void main(String[] args) {\n        try {\n            int[] numbers = {1, 2, 3};\n            System.out.println(numbers[5]);\n        } catch (ArrayIndexOutOfBoundsException e) {\n            System.out.println(\"Index out of bounds\");\n        } finally {\n            System.out.println(\"Finished\");\n        }\n    }\n}"
+        },
+        {
+          "title": "Generics",
+          "level": "Intermediate",
+          "type": "Generics",
+          "description": "Generics allow you to define classes, interfaces, and methods with type parameters, enabling code reusability and type safety.",
+          "example": "// Generic class example\npublic class GenericBox<T> {\n    private T item;\n\n    public void setItem(T item) {\n        this.item = item;\n    }\n\n    public T getItem() {\n        return item;\n    }\n\n    public static void main(String[] args) {\n        GenericBox<String> box = new GenericBox<>();\n        box.setItem(\"Hello\");\n        System.out.println(box.getItem());\n    }\n}"
+        },
+        {
+          "title": "Collections Framework",
+          "level": "Intermediate",
+          "type": "Data Structures",
+          "description": "The Java Collections Framework provides classes and interfaces for storing and manipulating groups of data as a single unit.",
+          "example": "// Using ArrayList\nimport java.util.ArrayList;\n\npublic class CollectionsExample {\n    public static void main(String[] args) {\n        ArrayList<String> list = new ArrayList<>();\n        list.add(\"Apple\");\n        list.add(\"Banana\");\n        list.add(\"Cherry\");\n        for (String fruit : list) {\n            System.out.println(fruit);\n        }\n    }\n}"
+        },
+        {
+          "title": "File I/O",
+          "level": "Intermediate",
+          "type": "File I/O",
+          "description": "Java provides classes for reading from and writing to files, such as `FileReader`, `FileWriter`, `BufferedReader`, and `BufferedWriter`.",
+          "example": "// File reading example\nimport java.io.BufferedReader;\nimport java.io.FileReader;\nimport java.io.IOException;\n\npublic class FileReadExample {\n    public static void main(String[] args) {\n        try (BufferedReader br = new BufferedReader(new FileReader(\"example.txt\"))) {\n            String line;\n            while ((line = br.readLine()) != null) {\n                System.out.println(line);\n            }\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}"
+        },
+        {
+          "title": "Multithreading",
+          "level": "Advanced",
+          "type": "Concurrency",
+          "description": "Multithreading allows a program to perform multiple tasks concurrently. Java provides the `Thread` class and the `Runnable` interface for creating threads.",
+          "example": "// Multithreading example\npublic class ThreadExample implements Runnable {\n    public void run() {\n        System.out.println(\"Thread \" + Thread.currentThread().getId() + \" is running\");\n    }\n\n    public static void main(String[] args) {\n        for (int i = 0; i < 5; i++) {\n            Thread thread = new Thread(new ThreadExample());\n            thread.start();\n        }\n    }\n}"
+        },
+        {
+          "title": "Synchronized Methods and Blocks",
+          "level": "Advanced",
+          "type": "Concurrency",
+          "description": "Synchronization in Java is achieved with the synchronized keyword, which allows only one thread to access a resource at a time, preventing data inconsistency.",
+          "example": "// Synchronized method example\npublic class Counter {\n    private int count = 0;\n\n    public synchronized void increment() {\n        count++;\n    }\n\n    public int getCount() {\n        return count;\n    }\n\n    public static void main(String[] args) throws InterruptedException {\n        Counter counter = new Counter();\n        Thread t1 = new Thread(() -> {\n            for (int i = 0; i < 1000; i++) {\n                counter.increment();\n            }\n        });\n        Thread t2 = new Thread(() -> {\n            for (int i = 0; i < 1000; i++) {\n                counter.increment();\n            }\n        });\n        t1.start();\n        t2.start();\n        t1.join();\n        t2.join();\n        System.out.println(\"Final count: \" + counter.getCount());\n    }\n}"
+        },
+        {
+          "title": "Lambda Expressions",
+          "level": "Intermediate",
+          "type": "Functional Programming",
+          "description": "Lambda expressions are a feature introduced in Java 8 that enable you to treat functionality as method arguments or code as data.",
+          "example": "// Lambda expression example\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class LambdaExample {\n    public static void main(String[] args) {\n        List<String> names = new ArrayList<>();\n        names.add(\"Alice\");\n        names.add(\"Bob\");\n        names.add(\"Charlie\");\n\n        // Using lambda expression\n        names.forEach(name -> System.out.println(name));\n    }\n}"
+        },
+        {
+          "title": "Streams API",
+          "level": "Intermediate",
+          "type": "Functional Programming",
+          "description": "The Streams API, introduced in Java 8, provides a modern way to process collections of objects using a sequence of operations.",
+          "example": "// Streams example\nimport java.util.Arrays;\nimport java.util.List;\n\npublic class StreamsExample {\n    public static void main(String[] args) {\n        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);\n        int sum = numbers.stream()\n                .filter(n -> n % 2 == 0)\n                .mapToInt(n -> n)\n                .sum();\n        System.out.println(\"Sum of even numbers: \" + sum);\n    }\n}"
+        },
+        {
+          "title": "Functional Interfaces",
+          "level": "Intermediate",
+          "type": "Functional Programming",
+          "description": "Functional interfaces are interfaces with a single abstract method. They are used extensively in lambda expressions and method references.",
+          "example": "// Functional interface example\nimport java.util.function.Function;\n\npublic class FunctionalInterfaceExample {\n    public static void main(String[] args) {\n        Function<Integer, Integer> square = x -> x * x;\n        System.out.println(square.apply(5));  // Output: 25\n    }\n}"
+        },
+        {
+          "title": "Annotations",
+          "level": "Intermediate",
+          "type": "Metadata",
+          "description": "Annotations provide metadata about the program that is not part of the program itself. They can be used to give instructions to the compiler or runtime.",
+          "example": "// Annotation example\npublic class DeprecatedExample {\n    @Deprecated\n    public void oldMethod() {\n        System.out.println(\"This method is deprecated\");\n    }\n\n    public static void main(String[] args) {\n        DeprecatedExample ex = new DeprecatedExample();\n        ex.oldMethod();\n    }\n}"
+        },
+        {
+          "title": "Reflection",
+          "level": "Advanced",
+          "type": "Metaprogramming",
+          "description": "Reflection allows Java code to examine and manipulate the internal properties of classes, interfaces, fields, and methods at runtime.",
+          "example": "// Reflection example\nimport java.lang.reflect.Method;\n\npublic class ReflectionExample {\n    public static void main(String[] args) {\n        try {\n            Class<?> clazz = Class.forName(\"java.util.ArrayList\");\n            Method[] methods = clazz.getDeclaredMethods();\n            for (Method method : methods) {\n                System.out.println(method.getName());\n            }\n        } catch (ClassNotFoundException e) {\n            e.printStackTrace();\n        }\n    }\n}"
+        },
+        {
+          "title": "JDBC (Java Database Connectivity)",
+          "level": "Advanced",
+          "type": "Data Access",
+          "description": "JDBC is an API that enables Java applications to interact with databases. It allows you to execute SQL statements and retrieve results.",
+          "example": "// JDBC example\nimport java.sql.Connection;\nimport java.sql.DriverManager;\nimport java.sql.ResultSet;\nimport java.sql.Statement;\n\npublic class JDBCExample {\n    public static void main(String[] args) {\n        String url = \"jdbc:mysql://localhost:3306/mydatabase\";\n        String user = \"username\";\n        String password = \"password\";\n\n        try {\n            Connection conn = DriverManager.getConnection(url, user, password);\n            Statement stmt = conn.createStatement();\n            ResultSet rs = stmt.executeQuery(\"SELECT * FROM users\");\n            while (rs.next()) {\n                System.out.println(rs.getString(\"name\"));\n            }\n            rs.close();\n            stmt.close();\n            conn.close();\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}"
+        },
+        {
+          "title": "Serialization",
+          "level": "Advanced",
+          "type": "File I/O",
+          "description": "Serialization is the process of converting an object into a byte stream, enabling it to be saved to a file or transmitted over a network.",
+          "example": "// Serialization example\nimport java.io.FileOutputStream;\nimport java.io.ObjectOutputStream;\nimport java.io.Serializable;\n\nclass Employee implements Serializable {\n    private static final long serialVersionUID = 1L;\n    String name;\n    int id;\n\n    Employee(String name, int id) {\n        this.name = name;\n        this.id = id;\n    }\n}\n\npublic class SerializationExample {\n    public static void main(String[] args) {\n        Employee emp = new Employee(\"Alice\", 101);\n        try (FileOutputStream fos = new FileOutputStream(\"employee.ser\");\n             ObjectOutputStream oos = new ObjectOutputStream(fos)) {\n            oos.writeObject(emp);\n            System.out.println(\"Employee serialized\");\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}"
+        },
+        {
+          "title": "Networking",
+          "level": "Advanced",
+          "type": "Networking",
+          "description": "Java provides classes for network communication using sockets, enabling you to create client-server applications.",
+          "example": "// Simple TCP client\nimport java.io.BufferedReader;\nimport java.io.InputStreamReader;\nimport java.io.PrintWriter;\nimport java.net.Socket;\n\npublic class Client {\n    public static void main(String[] args) {\n        try {\n            Socket socket = new Socket(\"localhost\", 1234);\n            PrintWriter out = new PrintWriter(socket.getOutputStream(), true);\n            BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));\n\n            out.println(\"Hello, Server!\");\n            String response = in.readLine();\n            System.out.println(\"Server says: \" + response);\n\n            in.close();\n            out.close();\n            socket.close();\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}"
+        },
+        {
+          "title": "Regular Expressions",
+          "level": "Intermediate",
+          "type": "String Manipulation",
+          "description": "Java provides the `Pattern` and `Matcher` classes for pattern matching with regular expressions.",
+          "example": "// Regular expression example\nimport java.util.regex.Matcher;\nimport java.util.regex.Pattern;\n\npublic class RegexExample {\n    public static void main(String[] args) {\n        String text = \"The rain in Spain stays mainly in the plain.\";\n        Pattern pattern = Pattern.compile(\"\\b\\w{5}\\b\");\n        Matcher matcher = pattern.matcher(text);\n        while (matcher.find()) {\n            System.out.println(\"Found: \" + matcher.group());\n        }\n    }\n}"
+        },
+        {
+          "title": "JavaFX for GUI Development",
+          "level": "Advanced",
+          "type": "GUI Development",
+          "description": "JavaFX is a set of graphics and media packages that enables you to create rich client applications.",
+          "example": "// JavaFX example\nimport javafx.application.Application;\nimport javafx.scene.Scene;\nimport javafx.scene.control.Button;\nimport javafx.scene.layout.StackPane;\nimport javafx.stage.Stage;\n\npublic class JavaFXExample extends Application {\n    public static void main(String[] args) {\n        launch(args);\n    }\n\n    @Override\n    public void start(Stage primaryStage) {\n        Button btn = new Button(\"Say 'Hello World'\");\n        btn.setOnAction(e -> System.out.println(\"Hello World!\"));\n\n        StackPane root = new StackPane();\n        root.getChildren().add(btn);\n\n        Scene scene = new Scene(root, 300, 250);\n\n        primaryStage.setTitle(\"Hello World!\");\n        primaryStage.setScene(scene);\n        primaryStage.show();\n    }\n}"
+        },
+        {
+          "title": "Design Patterns",
+          "level": "Advanced",
+          "type": "Design Patterns",
+          "description": "Design patterns are typical solutions to common problems in software design. Examples include Singleton, Factory, Observer, and Strategy patterns.",
+          "example": "// Singleton pattern example\nclass Singleton {\n    private static Singleton instance;\n\n    private Singleton() {}\n\n    public static Singleton getInstance() {\n        if (instance == null) {\n            instance = new Singleton();\n        }\n        return instance;\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Singleton s = Singleton.getInstance();\n    }\n}"
+        },
+        {
+          "title": "Garbage Collection and Memory Management",
+          "level": "Advanced",
+          "type": "Memory Management",
+          "description": "Java handles memory management through automatic garbage collection, freeing up memory used by objects that are no longer referenced.",
+          "example": "// Memory management example\npublic class MemoryExample {\n    public static void main(String[] args) {\n        Runtime runtime = Runtime.getRuntime();\n        System.out.println(\"Total Memory: \" + runtime.totalMemory());\n        System.out.println(\"Free Memory: \" + runtime.freeMemory());\n\n        String[] array = new String[100000];\n        for (int i = 0; i < array.length; i++) {\n            array[i] = \"Element \" + i;\n        }\n\n        System.out.println(\"Free Memory after allocation: \" + runtime.freeMemory());\n\n        array = null;\n        System.gc();  // Suggest garbage collection\n\n        System.out.println(\"Free Memory after GC: \" + runtime.freeMemory());\n    }\n}"
+        },
+        {
+          "title": "JVM Internals",
+          "level": "Advanced",
+          "type": "JVM",
+          "description": "Understanding the Java Virtual Machine (JVM) internals helps in optimizing performance and memory management.",
+          "example": "// JVM arguments example\n// Run the program with JVM arguments: -Xms256m -Xmx512m\npublic class JVMExample {\n    public static void main(String[] args) {\n        System.out.println(\"Max Memory: \" + Runtime.getRuntime().maxMemory());\n        System.out.println(\"Total Memory: \" + Runtime.getRuntime().totalMemory());\n    }\n}"
+        },
+        {
+          "title": "Advanced Generics and Wildcards",
+          "level": "Advanced",
+          "type": "Generics",
+          "description": "Advanced usage of generics includes bounded type parameters and wildcards, enhancing code flexibility and type safety.",
+          "example": "// Generics with wildcards\nimport java.util.List;\n\npublic class WildcardExample {\n    public static void printList(List<?> list) {\n        for (Object elem : list) {\n            System.out.println(elem);\n        }\n    }\n\n    public static void main(String[] args) {\n        List<String> strings = List.of(\"One\", \"Two\", \"Three\");\n        printList(strings);\n    }\n}"
+        },
+        {
+          "title": "Enums",
+          "level": "Beginner",
+          "type": "Data Types",
+          "description": "Enums are special classes that represent a group of constants (unchangeable variables).",
+          "example": "// Enum example\npublic enum Day {\n    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY\n}\n\npublic class EnumExample {\n    public static void main(String[] args) {\n        Day today = Day.WEDNESDAY;\n        switch (today) {\n            case MONDAY:\n                System.out.println(\"Start of the work week\");\n                break;\n            case FRIDAY:\n                System.out.println(\"End of the work week\");\n                break;\n            default:\n                System.out.println(\"Midweek\");\n                break;\n        }\n    }\n}"
+        },
+        {
+          "title": "Inner Classes and Anonymous Classes",
+          "level": "Intermediate",
+          "type": "Object-Oriented Programming",
+          "description": "Inner classes are classes defined within another class. Anonymous classes are inner classes without a name and are used for instant use.",
+          "example": "// Anonymous class example\ninterface Greeting {\n    void sayHello();\n}\n\npublic class AnonymousClassExample {\n    public static void main(String[] args) {\n        Greeting greeting = new Greeting() {\n            @Override\n            public void sayHello() {\n                System.out.println(\"Hello from anonymous class!\");\n            }\n        };\n        greeting.sayHello();\n    }\n}"
+        },
+        {
+          "title": "Java Modules (JPMS)",
+          "level": "Advanced",
+          "type": "Modules",
+          "description": "The Java Platform Module System (JPMS) allows you to modularize your applications, improving maintainability and scalability.",
+          "example": "// module-info.java\nmodule com.example.myapp {\n    requires java.base;\n    exports com.example.myapp;\n}\n\n// Usage in your codebase\n// Organize code into modules and specify dependencies in module-info.java files."
+        },
+        {
+          "title": "Internationalization (i18n)",
+          "level": "Advanced",
+          "type": "Best Practices",
+          "description": "Internationalization is the process of designing an application so that it can be adapted to various languages and regions.",
+          "example": "// ResourceBundle example\nimport java.util.Locale;\nimport java.util.ResourceBundle;\n\npublic class I18nExample {\n    public static void main(String[] args) {\n        Locale locale = new Locale(\"fr\", \"FR\");\n        ResourceBundle bundle = ResourceBundle.getBundle(\"Messages\", locale);\n        System.out.println(bundle.getString(\"greeting\"));\n    }\n}\n\n// Messages_fr_FR.properties\n// greeting=Bonjour le monde!"
+        },
+        {
+          "title": "Java NIO (Non-blocking I/O)",
+          "level": "Advanced",
+          "type": "File I/O",
+          "description": "Java NIO provides features for high-speed, non-blocking I/O operations, useful for scalable network applications.",
+          "example": "// NIO example\nimport java.nio.file.Files;\nimport java.nio.file.Paths;\n\npublic class NIOExample {\n    public static void main(String[] args) {\n        try {\n            String content = Files.readString(Paths.get(\"example.txt\"));\n            System.out.println(content);\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}"
+        },
+        {
+          "title": "Concurrency Utilities",
+          "level": "Advanced",
+          "type": "Concurrency",
+          "description": "Java provides advanced concurrency utilities in the `java.util.concurrent` package, such as Executors, Futures, and Locks.",
+          "example": "// ExecutorService example\nimport java.util.concurrent.ExecutorService;\nimport java.util.concurrent.Executors;\n\npublic class ExecutorExample {\n    public static void main(String[] args) {\n        ExecutorService executor = Executors.newFixedThreadPool(2);\n        Runnable task = () -> {\n            System.out.println(\"Task executed by \" + Thread.currentThread().getName());\n        };\n        executor.submit(task);\n        executor.shutdown();\n    }\n}"
+        },
+        {
+          "title": "Optional Class",
+          "level": "Intermediate",
+          "type": "Functional Programming",
+          "description": "Introduced in Java 8, the `Optional` class is a container object used to contain not-null objects and avoid `NullPointerException`.",
+          "example": "// Optional example\nimport java.util.Optional;\n\npublic class OptionalExample {\n    public static void main(String[] args) {\n        String str = null;\n        Optional<String> optionalStr = Optional.ofNullable(str);\n        optionalStr.ifPresentOrElse(\n            s -> System.out.println(\"String is: \" + s),\n            () -> System.out.println(\"String is null\")\n        );\n    }\n}"
+        },
+        {
+          "title": "Method References",
+          "level": "Intermediate",
+          "type": "Functional Programming",
+          "description": "Method references provide a way to refer to methods without executing them, often used with lambda expressions.",
+          "example": "// Method reference example\nimport java.util.Arrays;\n\npublic class MethodReferenceExample {\n    public static void main(String[] args) {\n        String[] names = {\"Alice\", \"Bob\", \"Charlie\"};\n        Arrays.sort(names, String::compareToIgnoreCase);\n        for (String name : names) {\n            System.out.println(name);\n        }\n    }\n}"
+        },
+        {
+          "title": "Parallel Streams",
+          "level": "Advanced",
+          "type": "Functional Programming",
+          "description": "Parallel streams in Java 8 allow you to process data in parallel, leveraging multi-core architectures for improved performance.",
+          "example": "// Parallel streams example\nimport java.util.stream.IntStream;\n\npublic class ParallelStreamExample {\n    public static void main(String[] args) {\n        int sum = IntStream.rangeClosed(1, 1000)\n                .parallel()\n                .sum();\n        System.out.println(\"Sum: \" + sum);\n    }\n}"
+        }
+      ]
+    }
+  }
+}

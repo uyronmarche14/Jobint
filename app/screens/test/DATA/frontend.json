@@ -1,0 +1,752 @@
+[
+  {
+    "question_id": "Q001",
+    "question_text": "What is the Document Object Model (DOM)?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Web Developer"],
+    "industries": ["Tech", "Media", "E-commerce"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A001",
+        "answer_quality": "High",
+        "answer_text": "The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can manipulate the document's structure, style, and content. Essentially, it treats the HTML or XML document as a tree structure where each node is an object representing a part of the document."
+      }
+    ]
+  },
+  {
+    "question_id": "Q002",
+    "question_text": "Explain the difference between == and === in JavaScript.",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "JavaScript Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A002",
+        "answer_quality": "High",
+        "answer_text": "In JavaScript, == is the abstract equality operator that compares two values for equality after converting both values to a common type. === is the strict equality operator that compares both the value and the type without doing type conversion. Therefore, '5' == 5 returns true, while '5' === 5 returns false."
+      }
+    ]
+  },
+  {
+    "question_id": "Q003",
+    "question_text": "What are CSS selectors, and how do they work?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "UI Developer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A003",
+        "answer_quality": "High",
+        "answer_text": "CSS selectors are patterns used to select elements on a web page that you want to style. They work by matching HTML elements based on their name, id, classes, attributes, and more. For example, '.class' selects all elements with the specified class, while '#id' selects the element with the specific id."
+      }
+    ]
+  },
+  {
+    "question_id": "Q004",
+    "question_text": "What is the purpose of the 'this' keyword in JavaScript?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "JavaScript Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A004",
+        "answer_quality": "High",
+        "answer_text": "In JavaScript, the 'this' keyword refers to the object it belongs to. Its value depends on where it is used: in a method, 'this' refers to the owner object; alone, it refers to the global object; in a function, its value depends on how the function is called; in strict mode, 'this' is undefined."
+      }
+    ]
+  },
+  {
+    "question_id": "Q005",
+    "question_text": "Explain the box model in CSS.",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Web Designer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A005",
+        "answer_quality": "High",
+        "answer_text": "The CSS box model describes the rectangular boxes that are generated for elements in the document tree. It consists of margins, borders, padding, and the actual content. Understanding the box model is crucial for layout and design, as it affects how elements size and position themselves on a page."
+      }
+    ]
+  },
+  {
+    "question_id": "Q006",
+    "question_text": "What is event delegation in JavaScript?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "JavaScript Developer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A006",
+        "answer_quality": "High",
+        "answer_text": "Event delegation is a technique in JavaScript where you add a single event listener to a parent element instead of adding listeners to multiple child elements. The event listener analyzes bubbled events to find a match on child elements, improving performance and simplifying code."
+      }
+    ]
+  },
+  {
+    "question_id": "Q007",
+    "question_text": "What is a responsive design, and why is it important?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "UI/UX Designer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A007",
+        "answer_quality": "High",
+        "answer_text": "Responsive design is an approach to web design that makes web pages render well on a variety of devices and screen sizes. It is important because it enhances user experience across devices, improves SEO rankings, and reduces the need for multiple versions of a site."
+      }
+    ]
+  },
+  {
+    "question_id": "Q008",
+    "question_text": "Explain what a Single Page Application (SPA) is.",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Full Stack Developer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A008",
+        "answer_quality": "High",
+        "answer_text": "A Single Page Application (SPA) is a web application that interacts with the user by dynamically rewriting the current page rather than loading entire new pages from the server. SPAs provide a smoother user experience similar to a desktop application by reducing page load times."
+      }
+    ]
+  },
+  {
+    "question_id": "Q009",
+    "question_text": "What are promises in JavaScript?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "JavaScript Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A009",
+        "answer_quality": "High",
+        "answer_text": "Promises in JavaScript are objects representing the eventual completion or failure of an asynchronous operation. They provide a cleaner alternative to callbacks by allowing you to chain asynchronous operations and handle errors more effectively using .then() and .catch() methods."
+      }
+    ]
+  },
+  {
+    "question_id": "Q010",
+    "question_text": "What is the Virtual DOM in React, and how does it work?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "React Developer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A010",
+        "answer_quality": "High",
+        "answer_text": "The Virtual DOM in React is an in-memory representation of the real DOM elements generated by React components. When the state changes, React creates a new Virtual DOM tree, compares it with the previous one (a process called diffing), and efficiently updates the real DOM with minimal operations."
+      }
+    ]
+  },
+  {
+    "question_id": "Q011",
+    "question_text": "Explain the concept of closures in JavaScript.",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "JavaScript Developer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A011",
+        "answer_quality": "High",
+        "answer_text": "A closure is a feature in JavaScript where an inner function has access to its own scope, the outer function's scope, and the global scope. It allows a function to retain access to its lexical scope even when executed outside of its original context."
+      }
+    ]
+  },
+  {
+    "question_id": "Q012",
+    "question_text": "What are the differences between var, let, and const in JavaScript?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "JavaScript Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A012",
+        "answer_quality": "High",
+        "answer_text": "'var' is function-scoped and can be redeclared and updated. 'let' is block-scoped and can be updated but not redeclared in the same scope. 'const' is block-scoped, cannot be redeclared or updated; it defines a constant reference to a value."
+      }
+    ]
+  },
+  {
+    "question_id": "Q013",
+    "question_text": "What is the difference between flexbox and grid in CSS?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Web Designer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A013",
+        "answer_quality": "High",
+        "answer_text": "Flexbox is a one-dimensional layout model for arranging items in rows or columns, best for small-scale layouts. CSS Grid is a two-dimensional layout system that handles both rows and columns, ideal for more complex layouts."
+      }
+    ]
+  },
+  {
+    "question_id": "Q014",
+    "question_text": "Explain the concept of hoisting in JavaScript.",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "JavaScript Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A014",
+        "answer_quality": "High",
+        "answer_text": "Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope. It means variables and function declarations are processed before any code is executed, so you can use them before they are declared."
+      }
+    ]
+  },
+  {
+    "question_id": "Q015",
+    "question_text": "What are higher-order components (HOCs) in React?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "React Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A015",
+        "answer_quality": "High",
+        "answer_text": "Higher-order components are functions that take a component and return a new component. They are used to reuse component logic and are a pattern derived from React's compositional nature."
+      }
+    ]
+  },
+  {
+    "question_id": "Q016",
+    "question_text": "What is the purpose of the async and await keywords in JavaScript?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "JavaScript Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A016",
+        "answer_quality": "High",
+        "answer_text": "The 'async' keyword is used to declare an asynchronous function, which returns a Promise. The 'await' keyword is used inside async functions to pause execution until a Promise is resolved, making asynchronous code look and behave more like synchronous code."
+      }
+    ]
+  },
+  {
+    "question_id": "Q017",
+    "question_text": "Explain how you would optimize a website's performance.",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Performance Engineer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A017",
+        "answer_quality": "High",
+        "answer_text": "To optimize a website's performance, I would minimize HTTP requests, use code splitting and lazy loading, optimize images, leverage browser caching, minify CSS and JavaScript files, and use a Content Delivery Network (CDN). Additionally, I would analyze performance bottlenecks using tools like Lighthouse and WebPageTest."
+      }
+    ]
+  },
+  {
+    "question_id": "Q018",
+    "question_text": "What are Web Workers in HTML5, and why are they used?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A018",
+        "answer_quality": "High",
+        "answer_text": "Web Workers are a feature in HTML5 that allows JavaScript to run in the background, on a separate thread from the main execution thread. They are used to perform computationally expensive tasks without blocking the user interface, improving the performance of web applications."
+      }
+    ]
+  },
+  {
+    "question_id": "Q019",
+    "question_text": "What is CORS, and how do you handle it?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Web Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A019",
+        "answer_quality": "High",
+        "answer_text": "CORS (Cross-Origin Resource Sharing) is a security feature implemented in browsers that restricts web pages from making requests to a different domain than the one that served the web page. It can be handled by configuring the server to include appropriate headers (like Access-Control-Allow-Origin) that tell the browser to allow the cross-origin request."
+      }
+    ]
+  },
+  {
+    "question_id": "Q020",
+    "question_text": "Explain the difference between synchronous and asynchronous functions in JavaScript.",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "JavaScript Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A020",
+        "answer_quality": "High",
+        "answer_text": "Synchronous functions block the execution of code until they are completed, meaning subsequent code won't run until the function finishes. Asynchronous functions, on the other hand, allow the code to continue running while they execute in the background, often using callbacks, promises, or async/await."
+      }
+    ]
+  },
+  {
+    "question_id": "Q021",
+    "question_text": "What is AJAX, and how does it work?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Web Developer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A021",
+        "answer_quality": "High",
+        "answer_text": "AJAX (Asynchronous JavaScript and XML) is a technique for creating dynamic web pages by sending and retrieving data from a server asynchronously without interfering with the display and behavior of the existing page. It works by using the XMLHttpRequest object or the Fetch API to communicate with the server."
+      }
+    ]
+  },
+  {
+    "question_id": "Q022",
+    "question_text": "How do you ensure cross-browser compatibility in your web applications?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Web Developer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A022",
+        "answer_quality": "High",
+        "answer_text": "To ensure cross-browser compatibility, I use modern web standards, validate code with tools like W3C validators, use CSS resets or normalize.css, test applications on different browsers and devices, and use feature detection libraries like Modernizr. I also keep an eye on browser-specific issues and polyfills."
+      }
+    ]
+  },
+  {
+    "question_id": "Q023",
+    "question_text": "What are CSS preprocessors, and why would you use them?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Web Designer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A023",
+        "answer_quality": "High",
+        "answer_text": "CSS preprocessors like Sass, LESS, and Stylus extend the default capabilities of CSS by adding features like variables, nesting, mixins, and functions. They make CSS more maintainable, extendable, and easier to write, especially for large projects."
+      }
+    ]
+  },
+  {
+    "question_id": "Q024",
+    "question_text": "Explain what JSX is in React.",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "React Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A024",
+        "answer_quality": "High",
+        "answer_text": "JSX stands for JavaScript XML. It is a syntax extension for JavaScript used in React to describe what the UI should look like. JSX allows you to write HTML structures in the same file as JavaScript code, making it easier to write and understand the code."
+      }
+    ]
+  },
+  {
+    "question_id": "Q025",
+    "question_text": "What is the difference between state and props in React?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "React Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A025",
+        "answer_quality": "High",
+        "answer_text": "In React, 'props' (short for properties) are read-only components that must be kept pure and immutable; they are passed from parent to child components. 'State' represents parts of the component that can change, and is managed within the component itself."
+      }
+    ]
+  },
+  {
+    "question_id": "Q026",
+    "question_text": "What are the benefits of using TypeScript in frontend development?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "TypeScript Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A026",
+        "answer_quality": "High",
+        "answer_text": "TypeScript adds optional static typing to JavaScript, which helps catch errors at compile time rather than runtime. It improves code maintainability, readability, and makes refactoring easier. It also offers better tooling support with autocompletion and type checking."
+      }
+    ]
+  },
+  {
+    "question_id": "Q027",
+    "question_text": "How do you manage state in a React application?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "React Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A027",
+        "answer_quality": "High",
+        "answer_text": "State in React can be managed using React's built-in useState and useReducer hooks for local state. For global state management, libraries like Redux, MobX, or Context API can be used. The choice depends on the complexity of the application and the specific requirements."
+      }
+    ]
+  },
+  {
+    "question_id": "Q028",
+    "question_text": "What is progressive rendering in web development?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Performance Engineer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A028",
+        "answer_quality": "High",
+        "answer_text": "Progressive rendering is a technique to improve the performance of web applications by rendering content in stages as the data becomes available. This can include lazy loading images, code splitting, and server-side rendering to display critical content quickly."
+      }
+    ]
+  },
+  {
+    "question_id": "Q029",
+    "question_text": "Explain how prototypal inheritance works in JavaScript.",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "JavaScript Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A029",
+        "answer_quality": "High",
+        "answer_text": "Prototypal inheritance in JavaScript means that objects can inherit properties and methods from other objects. Every object has a prototype, and when a property or method is accessed, JavaScript looks up the prototype chain until it finds it or reaches the end (null). This allows for shared functionality and dynamic inheritance."
+      }
+    ]
+  },
+  {
+    "question_id": "Q030",
+    "question_text": "What are the new features in ES6 (ECMAScript 2015)?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "JavaScript Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A030",
+        "answer_quality": "High",
+        "answer_text": "ES6 introduced several new features, including let and const for variable declarations, arrow functions, template literals, default parameters, destructuring assignments, classes, modules, promises, and the spread and rest operators."
+      }
+    ]
+  },
+  {
+    "question_id": "Q031",
+    "question_text": "How does event bubbling and capturing work in JavaScript?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "JavaScript Developer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A031",
+        "answer_quality": "High",
+        "answer_text": "Event bubbling and capturing are two phases of event propagation in the DOM. In event bubbling, the event starts from the target element and bubbles up to the ancestors. In event capturing, the event starts from the window and goes down to the target element. You can control this behavior by specifying the useCapture parameter in addEventListener."
+      }
+    ]
+  },
+  {
+    "question_id": "Q032",
+    "question_text": "What is lazy loading, and how do you implement it?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Performance Engineer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A032",
+        "answer_quality": "High",
+        "answer_text": "Lazy loading is a technique that defers the loading of non-critical resources until they are needed. This improves initial load time and performance. It can be implemented by using the 'loading' attribute for images and iframes, dynamic imports in JavaScript, or Intersection Observer API to load content when it comes into the viewport."
+      }
+    ]
+  },
+  {
+    "question_id": "Q033",
+    "question_text": "Explain the concept of middleware in Redux.",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "React Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A033",
+        "answer_quality": "High",
+        "answer_text": "Middleware in Redux provides a third-party extension point between dispatching an action and the moment it reaches the reducer. It can be used for logging, crash reporting, performing asynchronous tasks, and more. Common middleware includes Redux Thunk and Redux Saga."
+      }
+    ]
+  },
+  {
+    "question_id": "Q034",
+    "question_text": "What is CSS specificity, and how does it work?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Web Designer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A034",
+        "answer_quality": "High",
+        "answer_text": "CSS specificity determines which style rules apply to an element when there are multiple conflicting rules. It is calculated based on the selectors used: inline styles have the highest specificity, followed by IDs, classes, attributes, and pseudo-classes, and then elements and pseudo-elements."
+      }
+    ]
+  },
+  {
+    "question_id": "Q035",
+    "question_text": "How do you handle forms in React?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "React Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A035",
+        "answer_quality": "High",
+        "answer_text": "In React, forms can be handled using controlled components where the form data is managed by the component's state, or uncontrolled components where data is managed by the DOM. Libraries like Formik or React Hook Form can also be used to simplify form management."
+      }
+    ]
+  },
+  {
+    "question_id": "Q036",
+    "question_text": "What is a CSS float, and how does it work?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Web Designer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A036",
+        "answer_quality": "High",
+        "answer_text": "The CSS float property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. Floats are often used for layouts, but can cause issues like collapsing parent containers if not cleared properly."
+      }
+    ]
+  },
+  {
+    "question_id": "Q037",
+    "question_text": "Explain the concept of shadow DOM in web components.",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Web Developer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A037",
+        "answer_quality": "High",
+        "answer_text": "The shadow DOM is a part of the Web Components standard that allows encapsulation of DOM and CSS in custom elements. It creates a separate DOM tree for an element, which isolates styles and scripts from the main DOM and prevents style conflicts."
+      }
+    ]
+  },
+  {
+    "question_id": "Q038",
+    "question_text": "What is a polyfill in web development?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A038",
+        "answer_quality": "High",
+        "answer_text": "A polyfill is code that implements a feature on web browsers that do not support it natively. It allows developers to use modern web features while maintaining compatibility with older browsers by providing fallback functionality."
+      }
+    ]
+  },
+  {
+    "question_id": "Q039",
+    "question_text": "How do you use media queries in CSS?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Web Designer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A039",
+        "answer_quality": "High",
+        "answer_text": "Media queries in CSS are used to apply styles based on the characteristics of the device, such as screen width, height, orientation, and resolution. They enable responsive design by allowing different styles for different devices. For example: '@media (max-width: 600px) { /* styles */ }'."
+      }
+    ]
+  },
+  {
+    "question_id": "Q040",
+    "question_text": "What is the difference between a CSS reset and normalize.css?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Web Designer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A040",
+        "answer_quality": "High",
+        "answer_text": "A CSS reset removes all built-in browser styling, forcing the styles to a consistent baseline. normalize.css, on the other hand, preserves useful default styles and addresses cross-browser inconsistencies, providing a more moderate approach to standardization."
+      }
+    ]
+  },
+  {
+    "question_id": "Q041",
+    "question_text": "Explain what a service worker is and how it works.",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Web Developer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A041",
+        "answer_quality": "High",
+        "answer_text": "A service worker is a script that the browser runs in the background, separate from the web page. It enables features like push notifications and background sync. Service workers can intercept network requests and serve custom responses, making them essential for building Progressive Web Apps (PWAs) that work offline."
+      }
+    ]
+  },
+  {
+    "question_id": "Q042",
+    "question_text": "What is the purpose of using a Content Delivery Network (CDN)?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Performance Engineer"],
+    "industries": ["Tech", "E-commerce"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A042",
+        "answer_quality": "High",
+        "answer_text": "A CDN is a network of servers distributed geographically to deliver content more efficiently to users based on their location. Using a CDN reduces latency and improves load times by serving content from the server closest to the user."
+      }
+    ]
+  },
+  {
+    "question_id": "Q043",
+    "question_text": "What are pure components in React?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "React Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A043",
+        "answer_quality": "High",
+        "answer_text": "Pure components in React are components that render the same output for the same state and props. They implement a shallow comparison of props and state in shouldComponentUpdate(), optimizing performance by preventing unnecessary re-renders."
+      }
+    ]
+  },
+  {
+    "question_id": "Q044",
+    "question_text": "Explain how you would handle accessibility in web design.",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "UI/UX Designer"],
+    "industries": ["Tech", "Government"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A044",
+        "answer_quality": "High",
+        "answer_text": "To handle accessibility, I would follow Web Content Accessibility Guidelines (WCAG), use semantic HTML tags, ensure keyboard navigability, provide alt text for images, use ARIA roles and attributes, ensure sufficient color contrast, and test with screen readers."
+      }
+    ]
+  },
+  {
+    "question_id": "Q045",
+    "question_text": "What is the purpose of the useEffect hook in React?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "React Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A045",
+        "answer_quality": "High",
+        "answer_text": "The useEffect hook lets you perform side effects in function components, such as data fetching, subscriptions, or manually changing the DOM. It combines componentDidMount, componentDidUpdate, and componentWillUnmount lifecycle methods from class components."
+      }
+    ]
+  },
+  {
+    "question_id": "Q046",
+    "question_text": "What are CSS sprites, and how do you implement them?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Web Designer"],
+    "industries": ["Tech", "Gaming"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A046",
+        "answer_quality": "High",
+        "answer_text": "CSS sprites combine multiple images into a single image file to reduce the number of HTTP requests. You display a specific image by adjusting the background-position property to show only the desired part of the sprite."
+      }
+    ]
+  },
+  {
+    "question_id": "Q047",
+    "question_text": "Explain the difference between client-side and server-side rendering.",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Full Stack Developer"],
+    "industries": ["Tech", "Media"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A047",
+        "answer_quality": "High",
+        "answer_text": "Client-side rendering renders content in the browser using JavaScript, providing a rich user experience but potentially slower initial load times. Server-side rendering generates the HTML on the server, resulting in faster initial loads and better SEO but can increase server load."
+      }
+    ]
+  },
+  {
+    "question_id": "Q048",
+    "question_text": "What is a higher-order function in JavaScript?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "JavaScript Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Easy",
+    "sample_answers": [
+      {
+        "answer_id": "A048",
+        "answer_quality": "High",
+        "answer_text": "A higher-order function is a function that can take other functions as arguments or return them as results. Examples include map(), filter(), and reduce(). They enable functional programming patterns and help in writing concise and expressive code."
+      }
+    ]
+  },
+  {
+    "question_id": "Q049",
+    "question_text": "How do you handle errors in JavaScript?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer"],
+    "industries": ["Tech", "Finance"],
+    "difficulty": "Medium",
+    "sample_answers": [
+      {
+        "answer_id": "A049",
+        "answer_quality": "High",
+        "answer_text": "Errors in JavaScript can be handled using try-catch blocks, where code that might throw an error is placed inside the try block, and the catch block handles the error. Promises and async/await also have error handling mechanisms using .catch() and try-catch blocks with async functions."
+      }
+    ]
+  },
+  {
+    "question_id": "Q050",
+    "question_text": "What are web components, and why are they important?",
+    "question_type": "Technical",
+    "roles": ["Frontend Developer", "Web Developer"],
+    "industries": ["Tech"],
+    "difficulty": "Hard",
+    "sample_answers": [
+      {
+        "answer_id": "A050",
+        "answer_quality": "High",
+        "answer_text": "Web components are a set of web platform APIs that allow you to create custom, reusable, encapsulated HTML tags to use in web pages and web apps. They are important because they promote reusability and encapsulation, enabling developers to build large applications with modular components."
+      }
+    ]
+  }
+]
